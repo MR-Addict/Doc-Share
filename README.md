@@ -1,19 +1,23 @@
-<p style="font-size: 2.4em; font-weight: bold">
+<h1>
   嵌入式学习👻
   <a href="https://drone.jinhun.moe/MR-Addict/Doc-Share">
     <img src="https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg" />
   </a>
-</p>
+</h1>
 
 ## 说明
 
-本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**老前辈卢佬**完成。本内容主要是用来给南京工业大学校科协技术开发部2021电子组培训学习使用。我们会在日后陆续加入其他内容。
+本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**老前辈卢佬**完成。
+
+本内容主要是用来给南京工业大学校科协技术开发部2021电子组培训学习使用。我们会在日后陆续加入其他内容。
+
+你可以通过[book.jinhun.moe](https://book.jinhun.moe/)访问网页内容。
 
 下面是已有章节：
 
-[介绍](./book/index.html)
+[介绍](./src/README.md)
 
-- [Arduino基础](./book/Arduino基础/index.html)
+- [Arduino基础](./src/Arduino基础/README.md)
   - [第一章——Arduino和Arduino IDE](./src/Arduino基础/第一章.md)
   - [第二章——第一个程序Blink](./src/Arduino基础/第二章.md)
   - [第三章——使用按钮](./src/Arduino基础/第三章.md)
@@ -23,7 +27,7 @@
   - [第七章——模数转换ADC](./src/Arduino基础/第七章.md)
   - [第八章——串口通信UART](./src/Arduino基础/第八章.md)
 
-- [C语言基础](./book/C语言基础/index.html)
+- [C语言基础](./src/C语言基础/README.md)
   - [第一章——C语言基本语法](./src/C语言基础/第一章.md)
   - [第二章——数据类型](./src/C语言基础/第二章.md)
   - [第三章——变量和常量](./src/C语言基础/第三章.md)
@@ -43,32 +47,32 @@
   - [第十七章——结构体(struct)](./src/C语言基础/第十七章.md)
   - [第十八章——共用体(union)](./src/C语言基础/第十八章.md)
 
-- [通信专题](./book/通信专题/index.html)
-  - [One-Wire](./book/通信专题/串口通信/One-Wire/index.html)
+- [通信专题](./src/通信专题/README.md)
+  - [One-Wire](./src/通信专题/串口通信/One-Wire/README.md)
     - [第一章——One-Wire通信原理](./src/通信专题/串口通信/One-Wire/第一章.md)
     - [第二章——DHT11数据手册速览](./src/通信专题/串口通信/One-Wire/第二章.md)
     - [第三章——代码逻辑分析](./src/通信专题/串口通信/One-Wire/第三章.md)
     - [第四章——整合打包代码](./src/通信专题/串口通信/One-Wire/第四章.md)
     - [第五章——总结和拓展](./src/通信专题/串口通信/One-Wire/第五章.md)
-  - [UART](./book/通信专题/串口通信/UART/index.html)
+  - [UART](./src/通信专题/串口通信/UART/README.md)
     - [第一章](./src/通信专题/串口通信/UART/第一章.md)
     - [第二章](./src/通信专题/串口通信/UART/第一章.md)
     - [第三章](./src/通信专题/串口通信/UART/第三章.md)
     - [第四章](./src/通信专题/串口通信/UART/第四章.md)
     - [第五章](./src/通信专题/串口通信/UART/第五章.md)
-  - [I2C](./book/通信专题/串口通信/I2C/index.html)
+  - [I2C](./src/通信专题/串口通信/I2C/README.md)
     - [第一章](./src/通信专题/串口通信/I2C/第一章.md)
     - [第二章](./src/通信专题/串口通信/I2C/第一章.md)
     - [第三章](./src/通信专题/串口通信/I2C/第三章.md)
     - [第四章](./src/通信专题/串口通信/I2C/第四章.md)
     - [第五章](./src/通信专题/串口通信/I2C/第五章.md)
-  - [SPI](./book/通信专题/串口通信/SPI/index.html)
+  - [SPI](./src/通信专题/串口通信/SPI/README.md)
     - [第一章](./src/通信专题/串口通信/SPI/第一章.md)
     - [第二章](./src/通信专题/串口通信/SPI/第一章.md)
     - [第三章](./src/通信专题/串口通信/SPI/第三章.md)
     - [第四章](./src/通信专题/串口通信/SPI/第四章.md)
     - [第五章](./src/通信专题/串口通信/SPI/第五章.md)
-  - [并口通信](./book/通信专题/并口通信/index.html)
+  - [并口通信](./src/通信专题/并口通信/README.md)
     - [第一章](./src/通信专题/并口通信/第一章.md)
     - [第二章](./src/通信专题/并口通信/第一章.md)
     - [第三章](./src/通信专题/并口通信/第三章.md)
