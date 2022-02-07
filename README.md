@@ -5,11 +5,11 @@
   </a>
 </h1>
 
-本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**老前辈卢佬**完成。
+本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**卢老前辈**完成。
 
 本内容主要是用来给南京工业大学校科协技术开发部2021电子组培训学习使用。我们会在日后陆续加入其他内容。
 
-你可以通过[book.jinhun.moe](https://book.jinhun.moe/)访问网页内容。
+你可以通过以下网址访问网页内容[book.jinhun.moe](https://book.jinhun.moe/)
 
 下面是已有章节：
 
