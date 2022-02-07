@@ -4,3 +4,27 @@ language = "en"
 multilingual = false
 src = "src"
 title = "嵌入式学习"
+
+[output.html]
+default-theme = "Rust"
+git-repository-url = "https://github.com/510Lab/ArduinoTutorial"
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.playground]
+editable = true
+line-numbers = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
