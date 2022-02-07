@@ -1,0 +1,6 @@
+[book]
+authors = ["MR-Addcit"]
+language = "en"
+multilingual = false
+src = "src"
+title = "嵌入式学习"
