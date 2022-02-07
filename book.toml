@@ -7,7 +7,7 @@ title = "嵌入式学习"
 
 [output.html]
 default-theme = "Rust"
-git-repository-url = "https://github.com/510Lab/ArduinoTutorial"
+git-repository-url = "https://github.com/MR-Addict/Doc-Share.git"
 
 [output.html.fold]
 enable = true
