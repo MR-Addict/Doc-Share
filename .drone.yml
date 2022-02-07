@@ -1,11 +1,11 @@
 ---
 kind: pipeline
 type: docker
-name: fiber-frontend
+name: cluster-hk-01
 
 steps:
   - name: build
-    image: harbor.jinhun.moe/library/mdbook-builder:latest
+    image: harbor.jinhun.moe/library/mdbook_builder:latest
     commands:
       - mdbook build
   - name: publish
@@ -32,7 +32,3 @@ steps:
         from_secret: depoly_key
       script:
         from_secret: depoly_script
-     
-
-image_pull_secrets:
-  - dockerconfig
