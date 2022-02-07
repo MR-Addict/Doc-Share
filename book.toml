@@ -1,13 +1,25 @@
 [book]
 authors = ["MR-Addcit"]
-language = "en"
-multilingual = false
+language = "zh-cn"
 src = "src"
 title = "嵌入式学习"
 
+[build]
+build-dir = "book"
+create-missing = false
+use-default-preprocessors = true
+
 [output.html]
 default-theme = "Rust"
+preferred-dark-theme = "Navy"
+curly-quotes = true
+mathjax-support = true
+copy-fonts = true
+no-section-label = false
 git-repository-url = "https://github.com/MR-Addict/Doc-Share.git"
+
+[output.html.print]
+enable = true
 
 [output.html.fold]
 enable = true
@@ -15,6 +27,8 @@ level = 0
 
 [output.html.playground]
 editable = true
+copyable = true
+copy-js = true
 line-numbers = true
 
 [output.html.search]
