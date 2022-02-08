@@ -10,7 +10,7 @@
   - [第五章——定时器Timer](Arduino基础/第五章.md)
   - [第六章——脉冲宽度调制PWM](Arduino基础/第六章.md)
   - [第七章——模数转换ADC](Arduino基础/第七章.md)
-  - [第八章——串口通信UART](Arduino基础/第八章.md)
+  - [第八章——串行通信UART](Arduino基础/第八章.md)
 
 - [C语言基础](./C语言基础/README.md)
   - [第一章——C语言基本语法](C语言基础/第一章.md)
