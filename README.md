@@ -1,7 +1,7 @@
 <h1>
   嵌入式学习👻
   <a href="https://drone.jinhun.moe/MR-Addict/Doc-Share">
-    <img src/markdown="https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg" />
+    <img src="https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg" />
   </a>
 </h1>
 
@@ -15,9 +15,9 @@
 
 下面是已有章节：
 
-[介绍](./src/markdown/markdown/介绍.md)
+[介绍](./srcmarkdown/介绍.md)
 
-- [Arduino基础](./src/markdown/markdown/Arduino基础/介绍.md)
+- [Arduino基础](./src/markdown/Arduino基础/介绍.md)
   - [第一章——Arduino和Arduino IDE](./src/markdown/Arduino基础/第一章.md)
   - [第二章——第一个程序Blink](./src/markdown/Arduino基础/第二章.md)
   - [第三章——使用按钮](./src/markdown/Arduino基础/第三章.md)
