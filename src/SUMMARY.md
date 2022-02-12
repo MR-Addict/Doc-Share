@@ -11,6 +11,7 @@
   - [第六章——脉冲宽度调制PWM](./markdown/Arduino基础/第六章.md)
   - [第七章——模数转换ADC](./markdown/Arduino基础/第七章.md)
   - [第八章——串行通信UART](./markdown/Arduino基础/第八章.md)
+  - [第九章——单片机的存储器和EEPROM](markdown/Arduino基础/第九章.md)
 
 - [C语言基础](./markdown/C语言基础/介绍.md)
   - [第一章——C语言基本语法](./markdown/C语言基础/第一章.md)

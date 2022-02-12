@@ -26,6 +26,7 @@
   - [第六章——脉冲宽度调制PWM](./src/markdown/Arduino基础/第六章.md)
   - [第七章——模数转换ADC](./src/markdown/Arduino基础/第七章.md)
   - [第八章——串口通信UART](./src/markdown/Arduino基础/第八章.md)
+  - [第九章——单片机的存储器和EEPROM](src/markdown/Arduino基础/第九章.md)
 
 - [C语言基础](./src/markdown/C语言基础/介绍.md)
   - [第一章——C语言基本语法](./src/markdown/C语言基础/第一章.md)
@@ -77,4 +78,4 @@
     - [第二章——LCD1602数据手册速览](./src/markdown/通信专题/并口通信/第一章.md)
     - [第三章——代码逻辑分析](./src/markdown/通信专题/并口通信/第三章.md)
     - [第四章——整合打包代码](./src/markdown/通信专题/并口通信/第四章.md)
-    - [第五章——总计和拓展](./src/markdown/通信专题/并口通信/第五章.md)
+    - [第五章——总结和拓展](./src/markdown/通信专题/并口通信/第五章.md)
