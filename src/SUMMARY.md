@@ -43,7 +43,7 @@
   - [UART](./markdown/通信专题/串行通信/UART/介绍.md)
     - [第一章——UART通信原理](./markdown/通信专题/串行通信/UART/第一章.md)
     - [第二章——HC-05数据手册速览](./markdown/通信专题/串行通信/UART/第二章.md)
-    - [第三章——代码逻辑分析](./markdown/通信专题/串行通信/UART/第三章.md)
+    - [第三章——HC-05蓝牙的使用](./markdown/通信专题/串行通信/UART/第三章.md)
     - [第四章——整合打包代码](./markdown/通信专题/串行通信/UART/第四章.md)
     - [第五章——总结和拓展](./markdown/通信专题/串行通信/UART/第五章.md)
   - [I2C](./markdown/通信专题/串行通信/I2C/介绍.md)
