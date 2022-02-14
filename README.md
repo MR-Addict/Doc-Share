@@ -15,7 +15,7 @@
 
 下面是已有章节：
 
-[介绍](./src/markdown/介绍.md)
+[介绍](./src/介绍.md)
 
 - [Arduino基础](./src/markdown/Arduino基础/介绍.md)
   - [第一章——Arduino和Arduino IDE](./src/markdown/Arduino基础/第一章.md)
