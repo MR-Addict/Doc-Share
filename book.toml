@@ -10,7 +10,7 @@ create-missing = false
 use-default-preprocessors = true
 
 [output.html]
-default-theme = "Light"
+default-theme = "Rust"
 preferred-dark-theme = "Navy"
 curly-quotes = true
 mathjax-support = true
