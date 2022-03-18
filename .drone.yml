@@ -32,3 +32,8 @@ steps:
         from_secret: depoly_key
       script:
         from_secret: depoly_script
+---
+kind: signature
+hmac: 921a798c383945e87c662a17cfa2b1465256539644870f86407a301e56d2748d
+
+...
