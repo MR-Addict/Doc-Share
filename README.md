@@ -89,7 +89,7 @@
     - [第二章——代码及使用](./src/markdown/项目制作/LED%20Board/第二章.md)
     - [第三章——总结和拓展](./src/markdown/项目制作/LED%20Board/第三章.md)
   - [激光雕刻机](./src/markdown/项目制作/激光雕刻机/介绍.md)
-    - [第一章](./src/markdown/项目制作/激光雕刻机/第一章.md)
+    - [第一章——什么是CNC](./src/markdown/项目制作/激光雕刻机/第一章.md)
     - [第二章](./src/markdown/项目制作/激光雕刻机/第二章.md)
     - [第三章](./src/markdown/项目制作/激光雕刻机/第三章.md)
     - [第四章](./src/markdown/项目制作/激光雕刻机/第四章.md)
