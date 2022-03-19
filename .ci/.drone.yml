@@ -11,7 +11,7 @@ steps:
   - name: publish
     image: plugins/docker:latest
     settings:
-      dockerfile: Dockerfile
+      dockerfile: .ci/Dockerfile
       tag:
         - latest
         - ${DRONE_BUILD_NUMBER}
@@ -34,6 +34,6 @@ steps:
         from_secret: depoly_script
 ---
 kind: signature
-hmac: 921a798c383945e87c662a17cfa2b1465256539644870f86407a301e56d2748d
+hmac: 0c339891427be8335a384aee485e397df99529b84a1817c8fc1659700addc6ed
 
 ...
