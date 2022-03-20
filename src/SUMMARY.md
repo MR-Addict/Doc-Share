@@ -79,3 +79,8 @@
     - [第三章——雕刻机控制软件](./markdown/项目制作/激光雕刻机/第三章.md)
     - [第四章——总结和拓展](./markdown/项目制作/激光雕刻机/第四章.md)
     - [第五章](./markdown/项目制作/激光雕刻机/第五章.md)
+
+- [Git及Github教程](markdown/Git及Github教程/介绍.md)
+  - [第一章——集中式vs分布式](markdown/Git及Github教程/第一章.md)
+  - [第二章——Git的安装与配置](markdown/Git及Github教程/第二章.md)
+  - [第三章——Git常用命令](markdown/Git及Github教程/第三章.md)
