@@ -90,10 +90,9 @@
     - [第三章——总结和拓展](./src/markdown/项目制作/LED%20Board/第三章.md)
   - [激光雕刻机](./src/markdown/项目制作/激光雕刻机/介绍.md)
     - [第一章——什么是CNC](./src/markdown/项目制作/激光雕刻机/第一章.md)
-    - [第二章](./src/markdown/项目制作/激光雕刻机/第二章.md)
-    - [第三章](./src/markdown/项目制作/激光雕刻机/第三章.md)
-    - [第四章](./src/markdown/项目制作/激光雕刻机/第四章.md)
-    - [第五章](./src/markdown/项目制作/激光雕刻机/第五章.md)
+    - [第二章——雕刻机硬件搭建](./src/markdown/项目制作/激光雕刻机/第二章.md)
+    - [第三章——雕刻机控制软件](./src/markdown/项目制作/激光雕刻机/第三章.md)
+    - [第四章——总结和拓展](./src/markdown/项目制作/激光雕刻机/第四章.md)
 
 - [Markdown教程](./src/markdown/Markdown教程/介绍.md)
   - [第一章——Markdown语法](./src/markdown/Markdown教程/第一章.md)
