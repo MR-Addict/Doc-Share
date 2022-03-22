@@ -55,7 +55,7 @@
 
 我使用了一个叫做[MIT APP Inventor](http://ai2.appinventor.mit.edu/?locale=en#5202799305818112)开源项目制作了这个手机APP，该软件只支持安卓系统。
 
-你可以通过这个链接[下载](../../software/LED-Board.apk)安装使用。
+你可以通过这个链接[下载](software/LED-Board.apk)安装使用。
 
 ![Android APP](images/1-6.png)
 

@@ -55,7 +55,7 @@ void loop() {
 一般呢，我们不直接自己制作相应的软件，下面是一个我认为比较简单实用的软件，大家可以点击连接下载安装。
 
 <ul>
-  <li><a href="../../../software/Bluetooth-Android.apk" target="_blank">安卓用户点击直接下载</a></li>
+  <li><a href="../../software/Bluetooth-Android.apk" target="_blank">安卓用户点击直接下载</a></li>
   <li><a href="https://apps.apple.com/us/app/bluetooth-for-arduino/id1505096526" target="_blank">苹果用户请前往此网页下载</a></li>
 </ul>
 

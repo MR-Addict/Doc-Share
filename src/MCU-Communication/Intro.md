@@ -15,10 +15,10 @@
 同时本章需要阅读一些数据手册，你可以通过下方链接阅读下载：
 
 <ul>
-  <li><a href="../datasheet/DHT11.pdf" target="_blank">DHT11数据手册</a></li>
-  <li><a href="../datasheet/HC-05.pdf" target="_blank">HC-05数据手册</a></li>
-  <li><a href="../datasheet/DS3231.pdf" target="_blank">DS3231数据手册</a></li>
-  <li><a href="../datasheet/MPU9250.pdf" target="_blank">MPU9250数据手册</a></li>
-  <li><a href="../datasheet/MPU9250-Register-Map.pdf" target="_blank">MPU9250 Register Map数据手册</a></li>
-  <li><a href="../datasheet/LCD1602.pdf" target="_blank">LCD1602数据手册</a></li>
+  <li><a href="Datasheet/DHT11.pdf" target="_blank">DHT11数据手册</a></li>
+  <li><a href="Datasheet/HC-05.pdf" target="_blank">HC-05数据手册</a></li>
+  <li><a href="Datasheet/DS3231.pdf" target="_blank">DS3231数据手册</a></li>
+  <li><a href="Datasheet/MPU9250.pdf" target="_blank">MPU9250数据手册</a></li>
+  <li><a href="Datasheet/MPU9250-Register-Map.pdf" target="_blank">MPU9250 Register Map数据手册</a></li>
+  <li><a href="Datasheet/LCD1602.pdf" target="_blank">LCD1602数据手册</a></li>
 </ul>
