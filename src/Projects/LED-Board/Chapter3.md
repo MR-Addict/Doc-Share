@@ -4,9 +4,9 @@
 
 ## 1. 桌面灯条
 
-比如我带电子组制作的LED灯条，虽然我没有把这个项目放到GitHub上，但是我也带着大家亲手做了，从焊接板子，到学习FastLED库，在到整合代码，相信大家还有印象。目前我的桌子下面就用的是这个灯条，我还给它添加了电源以及充电的功能，总的来说挺好用的，也很好看。
+比如我带电子组制作的LED灯条，虽然我没有把这个项目放到GitHub上，但是我也带着大家亲手做了，从焊接板子，到学习FastLED库，再到整合代码，相信大家还有印象。有点懒，不想整理文件了，大家自己学习。目前我的桌子下面就用的是这个灯条，我还给它添加了电源以及充电的功能，总的来说挺好用的，也很好看。
 
-![LED Strip](../../../images/项目制作/LED%20Board/4.2.2-1.jpg)
+![LED Strip](images/2-1.jpg)
 
 ## 2. 初代8x8灯阵
 
@@ -14,7 +14,7 @@
 
 大家可以前往我的[GitHub仓库](https://github.com/MR-Addict/8X8-LED-Matrix-using-ESP32-Web-Server.git)参考相关内容。
 
-![LED Matrix](../../../images/项目制作/LED%20Board/4.2.2-2.png)
+![LED Matrix](images/2-2.png)
 
 ## 3. 进阶灯阵
 
@@ -24,4 +24,4 @@
 
 后来我借助这个库，制作了另一个项目[SmartLED](https://github.com/MR-Addict/SmartLED.git)大部分也就是上面提到的功能，我记得我还在这个灯阵上写了一个贪吃蛇的游戏，有兴趣的可以去看一下。
 
-![Mario](../../../images/项目制作/LED%20Board/4.2.2-3.jpg)
+![Mario](images/2-3.jpg)

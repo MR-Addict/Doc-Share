@@ -19,7 +19,7 @@
 
 其中`HeaderConfig.h`主要包含了全局变量的声明，`LEDBoard21x7.ino`就是主程序了，`LEDFunction.h`主要是灯板的控制以及光效函数，`WIFI.h`包含了有关WIFI服务器和websocket的配置，`data`文件夹包含了有关网页的文件。
 
-本项目同样有很大的难度，包括网页设计，WIFI服务器搭建，以及SPIFFS的使用，相关内容可参考上一个项目[NFC门禁卡](../NFC门禁卡/第二章.md)。这里我不做详细介绍了，三言两语也讲不清楚，大家可以自行学习。
+本项目同样有很大的难度，包括网页设计，WIFI服务器搭建，以及SPIFFS的使用，相关内容可参考上一个项目[NFC门禁卡](../NFC/Chapter2.md)。这里我不做详细介绍了，三言两语也讲不清楚，大家可以自行学习。
 
 ## 2. 灯板的使用
 
@@ -59,7 +59,7 @@
 
 ![Android APP](images/1-6.png)
 
-在使用APP前，你需要先连接ESP32的蓝牙，我设置了蓝牙名称为`LED Board 507`，你可以通过更改`LEDBoard21x7.ino`文件中`setup`函数的下面一行改变设备蓝牙名称：
+在使用APP前，你需要先连接ESP32的蓝牙，我设置了蓝牙名称为`LED Board 507`，你可以通过更改`LEDBoard21x7.ino`文件中`setup`函数的下面一行更改设备蓝牙名称：
 
 ```cpp
 // 设置蓝牙名称
@@ -70,7 +70,7 @@ SerialBT.begin("LED Board 507");
 
 ### 2.3 WIFI
 
-这里WIFI的使用和NFCWIFI开门是相似的，也需要先登录验证。在连接相同路由器的情况下，你可以通过ESP32的主机名进行访问，我设置的主机名是`ledboard-507`，即，你可以通过[http://ledboard-507](http://ledboard-507)访问。
+这里WIFI的使用和NFC的WIFI开门是相似的，也需要先登录验证。在连接相同路由器的情况下，你可以通过ESP32的主机名进行访问，我设置的主机名是`ledboard-507`，即，你可以通过[http://ledboard-507](http://ledboard-507)访问。
 
 你可以通过更改`WIFI.h`文件下的`WIFI_INIT`的以下几行更改ESP32的主机名：
 
