@@ -1,8 +1,16 @@
-# Summary
+# 嵌入式学习
+
+本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**卢老前辈**完成。
+
+本内容主要是用来给，南京工业大学校科协技术开发部2021电子组同学培训学习使用。
+
+本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
+
+下面是已有章节：
 
 [介绍](./Intro.md)
 
-- [Arduino基础](Arduino/Intro.md)
+- [Arduino基础](Arduino/README.md)
   - [第一章——Arduino和Arduino IDE](Arduino/Chapter1.md)
   - [第二章——第一个程序Blink](Arduino/Chapter2.md)
   - [第三章——使用按钮](Arduino/Chapter3.md)
