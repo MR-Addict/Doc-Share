@@ -133,4 +133,4 @@ void loop() {
 
 有关Arduino串口通信的其他函数可以参考以下内容：[Arduino Serial Function Lists](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
 
-这里只对Arduino的串口通信进行简单介绍，有关UART的通信机制及更多内容，请参考后面的章节([通讯专题/UART](../MCU-Communication/Serial/UART/Intro.md)
+这里只对Arduino的串口通信进行简单介绍，有关UART的通信机制及更多内容，请参考后面的章节([通讯专题/UART](../MCU-Communication/Serial/UART/Intro.md))

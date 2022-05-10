@@ -78,11 +78,11 @@
     - [第二章——雕刻机硬件搭建](Projects/CNC-Engraver/Chapter2.md)
     - [第三章——雕刻机控制软件](Projects/CNC-Engraver/Chapter3.md)
     - [第四章——总结和拓展](Projects/CNC-Engraver/Chapter4.md)
-
-- [Markdown教程](Markdown/Intro.md)
+<!-- 
+- [Markdown入门](Markdown/Intro.md)
   - [第一章——Markdown语法](Markdown/Chapter1.md)
 
-- [Git及Github教程](Git-Github/Intro.md)
+- [Git及Github入门](Git-Github/Intro.md)
   - [第一章——集中式vs分布式](Git-Github/Chapter1.md)
   - [第二章——Git的安装与配置](Git-Github/Chapter2.md)
-  - [第三章——Git常用命令](Git-Github/Chapter3.md)
+  - [第三章——Git常用命令](Git-Github/Chapter3.md) -->

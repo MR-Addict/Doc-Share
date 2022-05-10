@@ -2,7 +2,7 @@
 
 本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**卢老前辈**完成。
 
-本内容主要是用来给，南京工业大学校科协技术开发部2021电子组同学培训学习使用。
+本内容主要是用来给，南京工业大学校科协技术开发部电子组同学培训学习使用。
 
 本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
 
@@ -10,7 +10,7 @@
 
 [介绍](./Intro.md)
 
-- [Arduino基础](Arduino/README.md)
+- [Arduino基础](Arduino/Intro.md)
   - [第一章——Arduino和Arduino IDE](Arduino/Chapter1.md)
   - [第二章——第一个程序Blink](Arduino/Chapter2.md)
   - [第三章——使用按钮](Arduino/Chapter3.md)
@@ -86,11 +86,11 @@
     - [第二章——雕刻机硬件搭建](Projects/CNC-Engraver/Chapter2.md)
     - [第三章——雕刻机控制软件](Projects/CNC-Engraver/Chapter3.md)
     - [第四章——总结和拓展](Projects/CNC-Engraver/Chapter4.md)
-
+<!-- 
 - [Markdown教程](Markdown/Intro.md)
   - [第一章——Markdown语法](Markdown/Chapter1.md)
 
 - [Git及Github教程](Git-Github/Intro.md)
   - [第一章——集中式vs分布式](Git-Github/Chapter1.md)
   - [第二章——Git的安装与配置](Git-Github/Chapter2.md)
-  - [第三章——Git常用命令](Git-Github/Chapter3.md)
+  - [第三章——Git常用命令](Git-Github/Chapter3.md) -->

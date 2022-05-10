@@ -19,4 +19,4 @@ Arduino这个名字来自意大利伊夫雷亚的一家**酒吧**，该项目的
 
 在这里我们也只对Arduino这个硬件和软件平台作简单的介绍，嵌入式学习肯定不是学习Arduino，只是arduino很适合入门，不需要配置环境，使用非常之简便，很适合教学，也很适合做项目。
 
-同时本专题内容进队Arduino的基础硬件做简单介绍，有关Arduino硬件的通信内容可以学习后面的章节([通信专题](../MCU-Communication/Intro.md)
+同时本专题内容进队Arduino的基础硬件做简单介绍，有关Arduino硬件的通信内容可以学习后面的章节([通信专题](../MCU-Communication/Intro.md))

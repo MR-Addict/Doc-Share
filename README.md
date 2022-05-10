@@ -7,7 +7,7 @@
 
 本网页内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**卢老前辈**完成。
 
-本内容主要是用来给，南京工业大学校科协技术开发部2021电子组同学培训学习使用。
+本内容主要是用来给，南京工业大学校科协技术开发部电子组同学培训学习使用。
 
 本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
 
@@ -94,10 +94,10 @@
     - [第三章——雕刻机控制软件](src/Projects/CNC-Engraver/Chapter3.md)
     - [第四章——总结和拓展](src/Projects/CNC-Engraver/Chapter4.md)
 
-- [Markdown教程](src/Markdown/Intro.md)
+- [Markdown入门](src/Markdown/Intro.md)
   - [第一章——Markdown语法](src/Markdown/Chapter1.md)
 
-- [Git及Github教程](src/Git-Github/Intro.md)
+- [Git及Github入门](src/Git-Github/Intro.md)
   - [第一章——集中式vs分布式](src/Git-Github/Chapter1.md)
   - [第二章——Git的安装与配置](src/Git-Github/Chapter2.md)
   - [第三章——Git常用命令](src/Git-Github/Chapter3.md)
