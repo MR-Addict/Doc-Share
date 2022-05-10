@@ -78,11 +78,18 @@
     - [第二章——雕刻机硬件搭建](Projects/CNC-Engraver/Chapter2.md)
     - [第三章——雕刻机控制软件](Projects/CNC-Engraver/Chapter3.md)
     - [第四章——总结和拓展](Projects/CNC-Engraver/Chapter4.md)
-<!-- 
-- [Markdown入门](Markdown/Intro.md)
-  - [第一章——Markdown语法](Markdown/Chapter1.md)
 
-- [Git及Github入门](Git-Github/Intro.md)
-  - [第一章——集中式vs分布式](Git-Github/Chapter1.md)
-  - [第二章——Git的安装与配置](Git-Github/Chapter2.md)
-  - [第三章——Git常用命令](Git-Github/Chapter3.md) -->
+- [半小时入门介绍](Speeches/Intro.md)
+  - [Markdown入门](Speeches/Markdown/Intro.md)
+    - [第一章——基础语法1](Speeches/Markdown/Chapter1.md)
+    - [第二章——基础语法2](Speeches/Markdown/Chapter2.md)
+
+  - [Git及Github入门](Speeches/Git-Github/Intro.md)
+    - [第一章——集中式vs分布式](Speeches/Git-Github/Chapter1.md)
+    - [第二章——Git的安装与配置](Speeches/Git-Github/Chapter2.md)
+    - [第三章——Git常用命令](Speeches/Git-Github/Chapter3.md)
+
+- [参与完善本文档](Join-us/Intro.md)
+  - [第一章——配置环境](Join-us/Chapter1.md)
+  - [第二章——文档撰写规范](Join-us/Chapter2.md)
+  - [第三章——编译发布文档](Join-us/Chapter3.md)
