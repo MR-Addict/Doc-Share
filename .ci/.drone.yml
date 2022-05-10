@@ -21,19 +21,19 @@ steps:
         from_secret: docker_password
       registry: https://harbor.jinhun.moe
       repo: harbor.jinhun.moe/library/doc_share
-  - name: depoly
-    image: harbor.jinhun.moe/library/depoly:latest
+  - name: deploy
+    image: harbor.jinhun.moe/drone/deploy:latest
     settings:
       host:
-        from_secret: depoly_host
+        from_secret: deploy_host
       username: 
-        from_secret: depoly_username
+        from_secret: deploy_username
       key:
-        from_secret: depoly_key
+        from_secret: deploy_key
       script:
-        from_secret: depoly_script
+        from_secret: deploy_script
 ---
 kind: signature
-hmac: 713e10f973330e5ff9bbed1904bb06d5094c4876b060a0fb3d07c40eccb70d8e
+hmac: d2bdd316dc96d6b1d8dd85b2e2eccbb0c13308e0e9534dba0c663ea5b9a6846a
 
 ...
