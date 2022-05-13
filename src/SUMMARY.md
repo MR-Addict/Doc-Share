@@ -1,6 +1,6 @@
 # Summary
 
-[介绍](./Intro.md)
+[嵌入式学习](./Intro.md)
 
 - [Arduino基础](Arduino/Intro.md)
   - [第一章——Arduino和Arduino IDE](Arduino/Chapter1.md)
@@ -80,6 +80,12 @@
     - [第四章——总结和拓展](Projects/CNC-Engraver/Chapter4.md)
 
 - [半小时入门介绍](Speeches/Intro.md)
+  - [EDA入门](Speeches/EDA/Intro.md)
+    - [555计时器](Speeches/EDA/Chapter1.md)
+    - [绘制符号和封装](Speeches/EDA/Chapter2.md)
+    - [设计原理图](Speeches/EDA/Chapter3.md)
+    - [设计PCB](Speeches/EDA/Chapter4.md)
+
   - [Markdown入门](Speeches/Markdown/Intro.md)
     - [第一章——基础语法1](Speeches/Markdown/Chapter1.md)
     - [第二章——基础语法2](Speeches/Markdown/Chapter2.md)
