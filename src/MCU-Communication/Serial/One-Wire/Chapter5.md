@@ -6,7 +6,7 @@
 
 下面是NEC协议的红外遥控的方波图：
 
-![红外遥控方波图](images/5-1.png)
+![红外遥控方波图](Images/5-1.png)
 
 ## 2. 拓展二
 
@@ -14,7 +14,7 @@
 
 感兴趣的同学可以参考下面的文章进行学习 [AVR I/O Register Configuration](https://exploreembedded.com/wiki/AVR_I/O_Register_Configuration)。
 
-![AVR I/O Register Configuration](images/5-2.png)
+![AVR I/O Register Configuration](Images/5-2.png)
 
 ## 3. 拓展三
 
@@ -29,4 +29,4 @@
 
 下面是WS2812的时序表，想挑战一下的同学可以尝试如何自己驱动点亮WS2812：
 
-![](images/5-3.png)
+![](Images/5-3.png)

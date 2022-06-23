@@ -37,7 +37,7 @@
 
 下面是LCD1602和Arduino Uno的接线图：
 
-![LCD1602 and arduino](images/2-1.png)
+![LCD1602 and arduino](Images/2-1.png)
 
 ## 3. LCD1602的存储器
 
@@ -51,7 +51,7 @@ LCD1602主要有三个存储器，分别是DDRAM，CGROM，CGRAM。
 
 该存储器一共可以存储40x2个字符，存储器内部结构示意图如下：
 
-![SSRAM](images/2-2.png)
+![SSRAM](Images/2-2.png)
 
 ### 3.2 CGROM
 
@@ -59,7 +59,7 @@ LCD1602主要有三个存储器，分别是DDRAM，CGROM，CGRAM。
 
 下面是LCD1602内置的字符表：
 
-![CGROM](images/2-3.png)
+![CGROM](Images/2-3.png)
 
 ### 3.3 CGRAM
 
@@ -98,11 +98,11 @@ RS和RW是命令/数据的读/写选择端口，但是如何让LCD1602知道何�
 
 LCD1602写操作：
 
-![LCD1602 write and read operation](images/2-4.png)
+![LCD1602 write and read operation](Images/2-4.png)
 
 LCD1602读操作：
 
-![LCD1602 write and read operation](images/2-4.png)
+![LCD1602 write and read operation](Images/2-4.png)
 
 ## 5. LCD1602指令表
 
@@ -110,7 +110,7 @@ LCD1602读操作：
 
 同时**AC**(Address Counter)在LCD1602中指的是指向DDRAM或者CGRAM的地址计数器，这个计数器很重要。
 
-![LCD1602 Introduction Table](images/2-5.png)
+![LCD1602 Introduction Table](Images/2-5.png)
 
 下面介绍一下每一条指令：
 
@@ -262,10 +262,10 @@ LCD有8总线和4总线模式。
 
 根据数据手册的介绍，8总线的初始化如下：
 
-![LCD1602 Init](images/2-6.png)
+![LCD1602 Init](Images/2-6.png)
 
 相似地，4总线的初始化如下：
 
-![LCD1602 Init](images/2-7.png)
+![LCD1602 Init](Images/2-7.png)
 
 下一章我们将学习如何借助8总线方式驱动LCD1602。

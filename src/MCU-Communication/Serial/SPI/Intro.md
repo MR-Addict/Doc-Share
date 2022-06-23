@@ -12,4 +12,4 @@ SPI几乎不需要什么外设，这也降低了SPI通信的功耗，只是SPI�
 
 下面是标准的SPI通信示意图：
 
-![SPI Bus](images/0-1.png)
+![SPI Bus](Images/0-1.png)

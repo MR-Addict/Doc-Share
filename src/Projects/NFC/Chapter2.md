@@ -6,11 +6,11 @@
 
 原理图如下：
 
-![Schematic](images/2-3.png)
+![Schematic](Images/2-3.png)
 
 PCB三维示意图如下：
 
-![PCB Preview](images/2-4.png)
+![PCB Preview](Images/2-4.png)
 
 ## 2. 项目文件及代码
 
@@ -94,8 +94,8 @@ const uint8_t UID[][4] = {
 
 你也可以通过WIFI，访问ESP32的内部服务器。在连接办公室网络的情况下，你可以通过[http://unlockdoor-507](http://unlockdoor-507)进行访问，`unlockdoor-507`是ESP32的主机名。进入网页的时候需要进行身份验证，默认的用户名是`admin`，默认密码`dinghao666`。
 
-![Login](images/2-1.png)
+![Login](Images/2-1.png)
 
 登录成功后点击`open`就可以开门了。
 
-![WEB UI](images/2-2.png)
+![WEB UI](Images/2-2.png)

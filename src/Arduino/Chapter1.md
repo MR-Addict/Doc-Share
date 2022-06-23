@@ -8,25 +8,25 @@ AVR开发板：
 
 |          Arduino Uno           |          Arduino Nano           | Arduino Mega                    |
 | :----------------------------: | :-----------------------------: | :------------------------------ |
-| ![Arduino Uno](images/1-1.png) | ![Arduino Nano](images/1-2.png) | ![Arduino Mega](images/1-3.png) |
+| ![Arduino Uno](Images/1-1.png) | ![Arduino Nano](Images/1-2.png) | ![Arduino Mega](Images/1-3.png) |
 
 Arduino Nano 33系列开发板：
 
 |          Arduino Nano 33 IOT           |          Arduino Nano 33 BLE           | Arduino Nano 33 BLE Sense                    |
 | :------------------------------------: | :------------------------------------: | :------------------------------------------- |
-| ![Arduino Nano 33 IOT](images/1-4.png) | ![Arduino Nano 33 BLE](images/1-5.png) | ![Arduino Nano 33 BLE Sense](images/1-6.png) |
+| ![Arduino Nano 33 IOT](Images/1-4.png) | ![Arduino Nano 33 BLE](Images/1-5.png) | ![Arduino Nano 33 BLE Sense](Images/1-6.png) |
 
 Arduino还有一些工业级的开发板：
 
 |           Arduino MKR Vidor 4000           |           Arduino MKR NB 1500           |           Arduino Portenta H7           |
 | :----------------------------------------: | :-------------------------------------: | :-------------------------------------: |
-| ![Arduino MKR Vidor 4000](images/1-11.png) | ![Arduino MKR NB 1500](images/1-12.png) | ![Arduino Portenta H7](images/1-13.png) |
+| ![Arduino MKR Vidor 4000](Images/1-11.png) | ![Arduino MKR NB 1500](Images/1-12.png) | ![Arduino Portenta H7](Images/1-13.png) |
 
 以及一批不再生产的退休开发板:
 
 |          Arduino Lilypad           |          Arduino ESPLORA           |           Arduino YUN Shiled           |
 | :--------------------------------: | :--------------------------------: | :------------------------------------: |
-| ![Arduino Lilypad](images/1-7.png) | ![Arduino ESPLORA](images/1-8.png) | ![Arduino YUN Shield](images/1-14.png) |
+| ![Arduino Lilypad](Images/1-7.png) | ![Arduino ESPLORA](Images/1-8.png) | ![Arduino YUN Shield](Images/1-14.png) |
 
 ## 2. Arduino Uno
 
@@ -34,7 +34,7 @@ Arduino Uno可以说是Arduino开发板家族中最为流行的一款，可以�
 
 下面是Arduino Uno的引脚图：
 
-![Arduino引脚图](images/1-9.png)
+![Arduino引脚图](Images/1-9.png)
 
 可以发现Arduino Uno有以下几个引脚分布：
 
@@ -68,4 +68,4 @@ Arduino Uno是一个5V的单片机，IO口高电平时5V，开发板上还有一
 
 下面是Arduino IDE的基本信息，关于该IDE的更多使用可以访问官方教程：[Arduino IDE Guide](https://www.arduino.cc/en/Guide)
 
-![Arduino IDE](images/1-10.png)
+![Arduino IDE](Images/1-10.png)

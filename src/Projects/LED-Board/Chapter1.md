@@ -16,7 +16,7 @@
 
 准备好板子后，把板子按照如下尺寸进行切割：
 
-![Ping pong board layout](images/1-1.jpg)
+![Ping pong board layout](Images/1-1.jpg)
 
 ## 2. 焊接灯条及乒乓球
 
@@ -24,13 +24,13 @@
 
 然后把135个乒乓球底部切掉大概1/4。
 
-![Cut Ping pong balls](images/1-2.png)
+![Cut Ping pong balls](Images/1-2.png)
 
 然后按照上面的位置把切好的乒乓球用热熔胶粘贴在每个灯珠上，留出三根导线就好了，你也可以对外观进行一些装饰。
 
 最终的成品大概如下：
 
-![Finished Project](images/1-3.png)
+![Finished Project](Images/1-3.png)
 
 ## 3. 原理图及PCB
 
@@ -49,10 +49,10 @@
 
 你可以按照如下原理把各个零件焊接洞洞板上：
 
-![Schematic](images/1-4.png)
+![Schematic](Images/1-4.png)
 
 也可以到我的[GitHub仓库](https://github.com/MR-Addict/WS2812-LED-Ping-Pong-Board.git)下载Gerber文件进行PCB打样。
 
 下面是PCB的三维示意图：
 
-![PCB 3D viewer](images/1-5.png)
+![PCB 3D viewer](Images/1-5.png)

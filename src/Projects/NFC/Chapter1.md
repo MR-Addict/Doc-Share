@@ -8,7 +8,7 @@
 
 继电器版的接线图如下：
 
-![Relay Version](images/1-1.png)
+![Relay Version](Images/1-1.png)
 
 我使用的示例代码如下：
 
@@ -103,7 +103,7 @@ void loop()
 
 舵机版接线图如下：
 
-![Servo Version](images/1-2.png)
+![Servo Version](Images/1-2.png)
 
 我使用的示例代码如下：
 
@@ -206,7 +206,7 @@ void loop()
 
 步进电机版接线图如下：
 
-![Relay Version](images/1-3.png)
+![Relay Version](Images/1-3.png)
 
 我使用的示例代码如下：
 

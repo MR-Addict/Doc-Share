@@ -28,13 +28,13 @@
 |   SCL/SCLK    |               I2C或者SPI模式下的时钟线               |
 |    SDA/SDI    |            I2C模式下数据口，SPI模式下MOSI            |
 
-![MPU9250 Pinout](images/2-1.png)
+![MPU9250 Pinout](Images/2-1.png)
 
 由于我们这一章是介绍SPI的通信方式，因此我们要把MPU9250和Arduino通过SPI的方式连接。
 
 接线图如下：
 
-![MPU9250 and Arduino](images/2-2.png)
+![MPU9250 and Arduino](Images/2-2.png)
 
 ## 3. MPU9250的寄存器列表
 
@@ -146,6 +146,6 @@
 
 需要注意的是，MPU9250的SPI通信需要在地址位的MSB加入读写位，1表示读数据，0表示写数据，示意图如下：
 
-![MPU SPI Protocol](images/2-3.png)
+![MPU SPI Protocol](Images/2-3.png)
 
 下一章，我们将学习如何通过SPI对MPU9250进行读写操作。

@@ -8,7 +8,7 @@
 
 如果你想尝试MPU的姿态解算，可以使用[Jrowberg的GitHub项目](https://github.com/jrowberg/i2cdevlib.git)，里面包含了各个单片机平台的MPU库。
 
-![MPU6050](images/5-1.png)
+![MPU6050](Images/5-1.png)
 
 ## 2. 拓展2
 

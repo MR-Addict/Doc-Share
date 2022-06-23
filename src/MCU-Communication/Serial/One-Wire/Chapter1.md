@@ -12,6 +12,6 @@
 
 |          DHT11           |          WS2812           |          IR Receiver           |
 | :----------------------: | :-----------------------: | :----------------------------: |
-| ![DHT11](images/1-1.png) | ![WS2812](images/1-2.png) | ![IR Receiver](images/1-3.png) |
+| ![DHT11](Images/1-1.png) | ![WS2812](Images/1-2.png) | ![IR Receiver](Images/1-3.png) |
 
 后面我们将具体学习DHT11的单总线通信方式。

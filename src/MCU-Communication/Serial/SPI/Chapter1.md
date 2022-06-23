@@ -4,7 +4,7 @@
 
 下面是典型的单主从机模式的SPI示意图：
 
-![SPI Circuit](images/1-1.png)
+![SPI Circuit](Images/1-1.png)
 
 - **MOSI(Master In Slave Out)**——用于主机向从机发送数据。
 - **MISO(Master In Slave Out)**——用于从机向主机发送数据。
@@ -21,7 +21,7 @@ CPHA简单来说，就是数据是否在时钟信号的上升沿或下降沿移�
 
 根据CPOL和CPHA的不同，SPI通信可以分为以下四类：
 
-![SPI模式示意图](images/1-2.png)
+![SPI模式示意图](Images/1-2.png)
 
 通常情况下，SPI的通信模式为**模式0**。
 
@@ -37,7 +37,7 @@ SPI虽然不像UART那样，没有开始位和结束位；但是和I2C相似，�
 
 下面是模式0的SPI通信时域图：
 
-![SPI通信时域图](images/1-3.png)
+![SPI通信时域图](Images/1-3.png)
 
 ## 4. SPI的优缺点
 
@@ -248,6 +248,6 @@ void loop() {
 
 |       SD Card Module       |       RFID Module       |    ST7735 TFT Display     |
 | :------------------------: | :---------------------: | :-----------------------: |
-| ![SD Card](images/1-4.png) | ![RFID](images/1-5.png) | ![ST7735](images/1-6.png) |
+| ![SD Card](Images/1-4.png) | ![RFID](Images/1-5.png) | ![ST7735](Images/1-6.png) |
 
 下一个章节我们将详细学习如何通过SPI向MPU9250读写数据。

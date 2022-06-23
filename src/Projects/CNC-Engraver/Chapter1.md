@@ -16,25 +16,25 @@ CNC机器有很多种结构类型，我介绍几种常见的类型。
 
 大部分的CNC机器都是`XYZ型`的，也就是可以在X，Y及Z轴独立运动的机器，常见的3D打印机都是这种类型，同时我设计的雕刻机也是XY类型，这种机器控制起来比较方便。
 
-![XY CNC machine](images/1-1.png)
+![XY CNC machine](Images/1-1.png)
 
 ### 1.2 SCARA robot
 
 还有一种结构的CNC机器在制作机械臂方面应用比较广泛，一般称之为`SCARA robot`，这种结构的机器运动方式比较简单，搭建也很容易。
 
-![Scara Robot](images/1-3.png)
+![Scara Robot](Images/1-3.png)
 
 ### 1.3 CoreXY类型
 
 另外还有一种移动快速的`CoreXY类型`，这种类型的机器在运动的时候X轴和Y轴会相互牵连运动，从一点到另一点的也运动更加快速。这种结构在DIY CNC机器中使用比较多，商业化的很少。
 
-![CoreXY CNC machine](images/1-2.png)
+![CoreXY CNC machine](Images/1-2.png)
 
 ### 1.4 Delta Robot
 
 最后还有一种运动更加高效的CNC机器，叫做`Delta Robot`，这种结构的机器在3D打印机和工厂的流水线上都有使用，主要优点就是效率高，结构简单。
 
-![Delata Robot](images/1-4.png)
+![Delata Robot](Images/1-4.png)
 
 ## 2. 固件
 
@@ -48,11 +48,11 @@ CNC机器有很多种结构类型，我介绍几种常见的类型。
 
 GRBL这个项目最初是由`Sungeon (Sonny) Jeon`编写的，并且原项目是专门为Arduino的AVR芯片设计的，因此几乎每一个学习Arduino的人最终都会了解到这个项目。目前这个项目已经更新到1.1版本。
 
-![GRBL](images/1-5.png)
+![GRBL](Images/1-5.png)
 
 GRBL目前有以下几个官方合作的项目：
 
-![OFFICAL GRBL PROJECT](images/1-6.png)
+![OFFICAL GRBL PROJECT](Images/1-6.png)
 
 因为GRBL固件的流行，后来在GRBL的基础上逐渐衍生出其他功能更强大的开源项目，知名的项目有以下三个：
 
@@ -137,10 +137,10 @@ GRBL目前一共有34个配置参数，大家不理解的话可以直接参考�
 
 目前为止，我所知道的、比较好用的开源软件是[LaserGrbl](https://lasergrbl.com/)，作者花了很多的心思和精力在这个软件上，虽然这个软件不是最好的，但是作为一个开源软件已经非常优秀了，使用起来效果也很好，大家可以支持一下。
 
-![LaserGrbl](images/1-7.png)
+![LaserGrbl](Images/1-7.png)
 
 这个软件虽然没有强大编辑能力，但是它支持.svg格式的图片，所以我们只需要把我们需要雕刻的图片或者文字借助.svg进行编辑，然后导入到LaserGrbl中就可以了。
 
 [Inksacpe](https://inkscape.org/)就是一个比较好用、功能强大开源的软件。
 
-![Inkscape](images/1-8.png)
+![Inkscape](Images/1-8.png)

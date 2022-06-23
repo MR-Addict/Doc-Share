@@ -14,7 +14,7 @@
 
 下面是HC-05和Arduino Uno的接线图，接线方式与前面相似，注意RX-TX。
 
-![HC-05和Arduino Uno的接线图](images/3-1.png)
+![HC-05和Arduino Uno的接线图](Images/3-1.png)
 
 ## 3. 编写代码
 
@@ -63,15 +63,15 @@ void loop() {
 
 第一步，连接蓝牙后，打开软件，选择`Switch Mode`：
 
-![Switch Mode](images/3-2.png)
+![Switch Mode](Images/3-2.png)
 
 第二步，点击右上角`小齿轮`，进入设置：
 
-![小齿轮](images/3-3.png)
+![小齿轮](Images/3-3.png)
 
 第三步，`设置相应的参数`：
 
-![设置参数](images/3-4.png)
+![设置参数](Images/3-4.png)
 
 最后点击左上角的开关返回就可以使用了，大家尝试点击一下，观察LED是不是可以被点亮和关闭。
 

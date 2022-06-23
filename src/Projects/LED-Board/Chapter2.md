@@ -57,7 +57,7 @@
 
 你可以通过这个链接[下载](software/LED-Board.apk)安装使用。
 
-![Android APP](images/1-6.png)
+![Android APP](Images/1-6.png)
 
 在使用APP前，你需要先连接ESP32的蓝牙，我设置了蓝牙名称为`LED Board 507`，你可以通过更改`LEDBoard21x7.ino`文件中`setup`函数的下面一行更改设备蓝牙名称：
 
@@ -84,11 +84,11 @@ WiFi.setHostname(hostname.c_str());
 
 登录后的需要身份验证，默认用户名是`admin`，默认密码是`dinghao666`：
 
-![Login](images/1-7.png)
+![Login](Images/1-7.png)
 
 登录后就可以控制灯板了：
 
-![WEB UI](images/1-8.png)
+![WEB UI](Images/1-8.png)
 
 相信大家看了这个UI应该也知道怎么用了，这里我也不做详细介绍了。
 

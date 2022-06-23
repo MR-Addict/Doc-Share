@@ -99,7 +99,7 @@ void write_data(uint8_t dat) {
 
 首先我们要对LCD进行初始化。由于LCD1602默认使用8总线模式，因此数据手册中前面选择模式的部分我们不需要操作，我们只需要初始化最后四条指令。
 
-![LCD1602 Init](images/2-8.png)
+![LCD1602 Init](Images/2-8.png)
 
 ```cpp
 // LCD初始化

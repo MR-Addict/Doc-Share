@@ -84,7 +84,7 @@ void read_data(uint8_t* data, uint8_t length) {
 
 ### 3.1 读取温度
 
-![DS3231的I2C通信](images/2-10.png)
+![DS3231的I2C通信](Images/2-10.png)
 
 参照DS3231读/写数据的时序图，可以发现，完成读操作我们需要完成以下几步：
 

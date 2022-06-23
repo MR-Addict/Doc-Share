@@ -12,13 +12,13 @@
 
 选择相应的端口以及波特率，一般是`115200`，但我设置了更小一点的波特率。
 
-![LaseGrbl](images/3-1.png)
+![LaseGrbl](Images/3-1.png)
 
 ## 1.3 第三步，配置Grbl
 
 在使用之前你需要对你的机器做一些配置，打开Grbl Configuration，然后按照前面介绍的进行配置对应的数值。
 
-![Grbl Configuration](images/3-2.png)
+![Grbl Configuration](Images/3-2.png)
 
 你们可以参照下面的默认值：
 
@@ -44,7 +44,7 @@
 
 ## 1.4 第四步，LaserGrbl功能分区
 
-![LaserGrbl Fucntion](images/3-3.png)
+![LaserGrbl Fucntion](Images/3-3.png)
 
 在启动连接设备之后，你可以通过左下方的移动箭头移动雕刻机，两侧的数字可以用来调节移动的速度和移动的距离。
 
@@ -62,11 +62,11 @@
 
 点击Filename旁的图标可以打开需要雕刻的文件，LaserGrbl支持`G-Code`，`.svg`，`图片`等格式的文件。这里我们以图片为例。
 
-![Open File](images/3-4.png)
+![Open File](Images/3-4.png)
 
 打开图片后会跳出模式选择窗口：
 
-![Mode select](images/3-5.png)
+![Mode select](Images/3-5.png)
 
 我们选择平滑模式，下面的滑动条可以对图片做调整，比如对比度，亮度等等。
 
@@ -74,7 +74,7 @@
 
 然后点击下一步：
 
-![Next](images/3-6.png)
+![Next](Images/3-6.png)
 
 在这里你可以选择雕刻时的参数，比如雕刻速度，建议默认值1000，最下面可以选择雕刻图案的大小以及偏移量，一般不使用偏移量，但是可以大小很有用，这里我设置80*100mm。
 
@@ -84,7 +84,7 @@
 
 一切都准备好之后，点击开始雕刻就可以了。
 
-![Begin Engraving](images/3-7.png)
+![Begin Engraving](Images/3-7.png)
 
 ## 2. 成品展示
 
@@ -92,8 +92,8 @@
 
 |           卡通            |           山脉            |
 | :-----------------------: | :-----------------------: |
-| ![image1](images/3-8.png) | ![image2](images/3-9.png) |
+| ![image1](Images/3-8.png) | ![image2](Images/3-9.png) |
 
 |           长恨歌           |             龙             |
 | :------------------------: | :------------------------: |
-| ![image3](images/3-10.png) | ![image4](images/3-11.png) |
+| ![image3](Images/3-10.png) | ![image4](Images/3-11.png) |

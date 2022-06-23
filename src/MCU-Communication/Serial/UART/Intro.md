@@ -12,10 +12,10 @@ UART(Universal Asynchronous Receiver/Transmitter)指的是**通用异步收发�
 
 下面是典型的接线示意图：
 
-![UART接线示意图](images/0-1.png)
+![UART接线示意图](Images/0-1.png)
 
 而电脑和单片机之间的通信就需要另外的外设。因为现在大部分的电脑以不再使用笨重的9针串行接口，更多的是使用USB虚拟串口，因此单片机和电脑通信都需要一个**USB转串口芯片**，通常在单片机开发板上都是做好这样的外设的。
 
 下面是一个典型的CH340C原理图：
 
-![CH340C](images/0-2.png)
+![CH340C](Images/0-2.png)

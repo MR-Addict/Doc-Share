@@ -40,7 +40,7 @@
 | 雕刻机支架支座 |   4   |
 | CNC扩展板支座  |   1   |
 
-![3D viewer](images/0-3.png)
+![3D viewer](Images/0-3.png)
 
 大家可以前往我的[Github仓库](https://github.com/MR-Addict/CNC-Laser-Engraver.git)下载相关文件，同时我设计了一块适用于Arduino Nano的CNC扩展板，大家也可以前往下载使用，如果你不想使用购买的CNC扩展版的话。
 
@@ -48,12 +48,12 @@
 
 |            原理图            |          PCB           |
 | :--------------------------: | :--------------------: |
-| ![SCHEMATIC](images/2-1.png) | ![PCB](images/2-2.png) |
+| ![SCHEMATIC](Images/2-1.png) | ![PCB](Images/2-2.png) |
 
 ## 2. 搭建硬件
 
 因为我没有视频，我制作的时候也没有拍照片，大家准备好所有的元器件之后，根据感觉安装吧，没啥难度。你们可以参考下面的实物图进行安装。
 
-![Assemble process](images/0-2.jpg)
+![Assemble process](Images/0-2.jpg)
 
 另外扩展版的使用和焊接可以参考上面的原理图，或者多找一些DIY的CNC机器看一看，加深对CNC机制的了解，这里我也不做介绍了。
