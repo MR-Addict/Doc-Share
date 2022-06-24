@@ -60,6 +60,8 @@ Arduino Uno是一个5V的单片机，IO口高电平时5V，开发板上还有一
 
 ## 3. Arduino IDE
 
+Arduino IDE 是一个开源的软件，它使编写代码和上传到开发板变得容易。该工具不仅可以为所有的 Arduino 开发板开发和调试代码，而且社区也为很多其他平台开发了 Arduino 支持库，如 ESP32, STM32, Raspberry Pi Pico 等。
+
 ### 下载链接
 
 - Windows: [`点击下载`](https://downloads.arduino.cc/arduino-1.8.19-windows.exe)
@@ -69,3 +71,9 @@ Arduino Uno是一个5V的单片机，IO口高电平时5V，开发板上还有一
 下面是Arduino IDE的基本信息，关于该IDE的更多使用可以访问官方教程：[Arduino IDE Guide](https://www.arduino.cc/en/Guide)
 
 ![Arduino IDE](Images/1-10.png)
+
+### Arduino 2.x
+
+Arduino 2.x 是 Arduino IDE 的最新版本，使用 electron 开发。和 1.x 相比速度更快，功能更强大，具有更现代的编辑器，它还加入了代码自动补全、代码导航、实时调试器等功能。
+
+Arduino 2.x 的正式版还在开发中，但是如果想抢先体验，可以访问 [`Github releases 页面`](https://github.com/arduino/arduino-ide/releases) 下载最新的 RC(Release Candidate) 版本。
