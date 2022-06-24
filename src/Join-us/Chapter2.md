@@ -25,6 +25,7 @@
 如果你的项目包含很多的小项目，请参照以下格式创建文件：
 
 - Awesome-Projects
+  - Intro.md
   - Awesome-Project1
     - Intro.md
     - Chapter1.md
