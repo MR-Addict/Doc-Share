@@ -2,7 +2,7 @@
 
 ## 1. Arduino简介
 
-<img src="Images/0-1.png" align="right" alt="Arduino logo"/>
+<img src="Images/0-1.png" align="right" alt="Arduino logo" width="250px"/>
 
 Arduino是一个**开源的嵌入式硬件平台**，用来供用户制作可交互式的嵌入式项目。此外Arduino作为一个**开源硬件**和**开源软件**的公司，同时兼有项目和用户社区。
 

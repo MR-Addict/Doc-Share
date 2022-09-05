@@ -1,6 +1,6 @@
 # C语言简介
 
-<img src="Images/0-1.png" align="right" />
+<img src="Images/0-1.png" align="right" width="250px"/>
 
 C是一种通用的编程语言，广泛用于系统软件与应用软件的开发。于1969年至1973年间，为了移植与开发UNIX操作系统，由丹尼斯·里奇与肯·汤普逊，以B语言为基础，在贝尔实验室设计、开发出来。
 

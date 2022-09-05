@@ -1,6 +1,6 @@
 # Markdown简介
 
-<img src="Images/0-1.png" align="right" alt="Arduino logo"/>
+<img src="Images/0-1.png" align="right" alt="Arduino logo" width="250px"/>
 
 Markdown是一种**轻量级标记语言**，它允许人们使用**易读易写**的纯文本格式编写文档。
 
