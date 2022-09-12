@@ -5,7 +5,7 @@ name: cluster-hk-01
 
 steps:
   - name: build
-    image: harbor.jinhun.moe/library/mdbook_builder:0.4.15
+    image: harbor.jinhun.moe/library/mdbook_builder:v0.4.21
     commands:
       - mdbook build
   - name: publish
@@ -32,8 +32,12 @@ steps:
         from_secret: deploy_key
       script:
         from_secret: deploy_script
+
+image_pull_secrets:
+  - dockerconfig
+
 ---
 kind: signature
-hmac: d2bdd316dc96d6b1d8dd85b2e2eccbb0c13308e0e9534dba0c663ea5b9a6846a
+hmac: e008a9cdec013598ee1e77e6ef569de1034f38494c6b748a7bfd042d7ac17a2d
 
 ...
