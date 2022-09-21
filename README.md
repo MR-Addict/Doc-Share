@@ -3,6 +3,7 @@
   <a href="https://drone.jinhun.moe/MR-Addict/Doc-Share" target="_blank">
     <img src="https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg" />
   </a>
+  <img src="https://github.com/MR-Addict/Doc-Share/actions/workflows/docker.yml/badge.svg?branch=main"/>
 </h1>
 
 本文档内容主要由markdown写成，由[mdbook](https://rust-lang.github.io/mdBook/)生成网页模板，网页部署及CI由**卢老前辈**完成。
