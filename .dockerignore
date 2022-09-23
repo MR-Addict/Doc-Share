@@ -2,7 +2,6 @@ README.md
 Dockerfile
 actions-runner
 docker-compose.yml
-.ci
 .git
 .github
 .gitignore
