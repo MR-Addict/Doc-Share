@@ -164,7 +164,7 @@ unsigned long lastTime;
 
 void setup() {
   // 上拉电阻——硬件消抖
-  pinMode(button, INPUT);
+  pinMode(button, INPUT_PULLUP);
   pinMode(led, OUTPUT);
 }
 
