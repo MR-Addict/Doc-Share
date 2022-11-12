@@ -8,31 +8,17 @@
 - 欢迎根据个人能力进行自我发挥
 - 上传到分享网址
 
-> 上传分享网址：[https://azure.mraddict.top/](https://azure.mraddict.top/)
+## 一、VSCode插件
 
-参考图片：
+安装VSCode插件`HTML CSS Support`，输入`!`后按下回车会自动生成基础模板。
 
-![Preview]()
+![Extenstion](Images/4-1.png)
 
-## 一、安装VSCode插件
+## 二、相关链接
 
-安装VSCode插件`HTML CSS Support`，新建一个**index.html**，输入`!`后按下回车。
+- 下载素材图片：[images](images.zip)。
+- 上传分享网址：[https://azure.mraddict.top](https://azure.mraddict.top/)
 
-![Extenstion](images/4-1.png)
+## 三、示例图片
 
-基础模板：
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
-```
-
-## 二、可选学习素材
+![Preview](Images/4-2.png)
