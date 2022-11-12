@@ -16,8 +16,8 @@
 
 ## 二、相关链接
 
-- 下载素材图片：[images](images.zip)。
-- 上传分享网址：[https://azure.mraddict.top](https://azure.mraddict.top/)
+- 示例源码：[profile](profile.zip)
+- 分享网址：[https://azure.mraddict.top](https://azure.mraddict.top/)
 
 ## 三、示例图片
 
