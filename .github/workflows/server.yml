@@ -1,10 +1,10 @@
 name: server
 
 on:
-  workflow_run:
-    workflows: ["docker"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["docker"]
+  #   types:
+  #     - completed
   workflow_dispatch:
   pull_request:
 
