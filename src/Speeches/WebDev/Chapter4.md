@@ -17,7 +17,7 @@
 ## 二、相关链接
 
 - 示例源码：[profile](profile.zip)
-- 分享网址：[https://azure.mraddict.top](https://azure.mraddict.top/)
+- 分享网址：[https://hello.mraddict.one](https://hello.mraddict.one/)
 
 ## 三、示例图片
 
