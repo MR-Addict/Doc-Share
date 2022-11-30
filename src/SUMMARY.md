@@ -1,6 +1,6 @@
 # Summary
 
-[嵌入式学习](./Intro.md)
+[电子组培训文档](./Intro.md)
 
 - [Arduino基础](Arduino/Intro.md)
   - [Arduino和Arduino IDE](Arduino/Chapter1.md)

@@ -1,5 +1,5 @@
 <h1>
-  嵌入式学习👻
+  电子组培训文档👻
   <a href="https://drone.jinhun.moe/MR-Addict/Doc-Share" target="_blank">
     <img src="https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg" />
   </a>

@@ -2,7 +2,7 @@
 authors = ["MR-Addcit"]
 language = "zh-cn"
 src = "src"
-title = "嵌入式学习"
+title = "电子组培训文档"
 
 [build]
 build-dir = "book"
