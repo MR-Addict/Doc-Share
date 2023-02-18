@@ -16,5 +16,6 @@
 你可以通过以下网址访问网页内容:
 
 - [https://book.jinhun.moe](https://book.jinhun.moe)
+- [https://book.mraddict.one](https://book.mraddict.one)
 - [https://book.mraddict.vercel.app](https://book.mraddict.vercel.app)
 - [https://mr-addict.github.io/Doc-Share](https://mr-addict.github.io/Doc-Share)
