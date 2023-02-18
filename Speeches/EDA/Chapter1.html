@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>555计时器 - 电子组培训文档</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../Intro.html">电子组培训文档</a></li><li class="chapter-item expanded "><a href="../../Arduino/Intro.html"><strong aria-hidden="true">1.</strong> Arduino基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Arduino/Chapter1.html"><strong aria-hidden="true">1.1.</strong> Arduino和Arduino IDE</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter2.html"><strong aria-hidden="true">1.2.</strong> 第一个程序Blink</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter3.html"><strong aria-hidden="true">1.3.</strong> 使用按钮</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter4.html"><strong aria-hidden="true">1.4.</strong> 中断Interrupt</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter5.html"><strong aria-hidden="true">1.5.</strong> 定时器Timer</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter6.html"><strong aria-hidden="true">1.6.</strong> 脉冲宽度调制PWM</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter7.html"><strong aria-hidden="true">1.7.</strong> 模数转换ADC</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter8.html"><strong aria-hidden="true">1.8.</strong> 串口通信UART</a></li><li class="chapter-item expanded "><a href="../../Arduino/Chapter9.html"><strong aria-hidden="true">1.9.</strong> 单片机的存储器和EEPROM</a></li></ol></li><li class="chapter-item expanded "><a href="../../C-Language/Intro.html"><strong aria-hidden="true">2.</strong> C语言基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../C-Language/Chapter1.html"><strong aria-hidden="true">2.1.</strong> C语言基本语法</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter2.html"><strong aria-hidden="true">2.2.</strong> 数据类型</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter3.html"><strong aria-hidden="true">2.3.</strong> 变量和常量</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter4.html"><strong aria-hidden="true">2.4.</strong> 运算符</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter5.html"><strong aria-hidden="true">2.5.</strong> 条件判断if和switch</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter6.html"><strong aria-hidden="true">2.6.</strong> 循环while和do/while</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter7.html"><strong aria-hidden="true">2.7.</strong> 循环for</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter8.html"><strong aria-hidden="true">2.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter9.html"><strong aria-hidden="true">2.9.</strong> 函数的作用域规则</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter10.html"><strong aria-hidden="true">2.10.</strong> 数组</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter11.html"><strong aria-hidden="true">2.11.</strong> 多维数组</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter12.html"><strong aria-hidden="true">2.12.</strong> 字符串</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter13.html"><strong aria-hidden="true">2.13.</strong> 指针</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter14.html"><strong aria-hidden="true">2.14.</strong> 指针的算数运算</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter15.html"><strong aria-hidden="true">2.15.</strong> 指针和数组、函数</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter16.html"><strong aria-hidden="true">2.16.</strong> 枚举(enum)</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter17.html"><strong aria-hidden="true">2.17.</strong> 结构体(struct)</a></li><li class="chapter-item expanded "><a href="../../C-Language/Chapter18.html"><strong aria-hidden="true">2.18.</strong> 共用体(union)</a></li></ol></li><li class="chapter-item expanded "><a href="../../MCU-Communication/Intro.html"><strong aria-hidden="true">3.</strong> 通信专题</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../MCU-Communication/Serial/One-Wire/Intro.html"><strong aria-hidden="true">3.1.</strong> One-Wire</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../MCU-Communication/Serial/One-Wire/Chapter1.html"><strong aria-hidden="true">3.1.1.</strong> One-Wire通信原理</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/One-Wire/Chapter2.html"><strong aria-hidden="true">3.1.2.</strong> DHT11数据手册速览</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/One-Wire/Chapter3.html"><strong aria-hidden="true">3.1.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/One-Wire/Chapter4.html"><strong aria-hidden="true">3.1.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/One-Wire/Chapter5.html"><strong aria-hidden="true">3.1.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../../MCU-Communication/Serial/UART/Intro.html"><strong aria-hidden="true">3.2.</strong> UART</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../MCU-Communication/Serial/UART/Chapter1.html"><strong aria-hidden="true">3.2.1.</strong> UART通信原理</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/UART/Chapter2.html"><strong aria-hidden="true">3.2.2.</strong> HC-05数据手册速览</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/UART/Chapter3.html"><strong aria-hidden="true">3.2.3.</strong> HC-05蓝牙的使用</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/UART/Chapter4.html"><strong aria-hidden="true">3.2.4.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../../MCU-Communication/Serial/I2C/Intro.html"><strong aria-hidden="true">3.3.</strong> I2C</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../MCU-Communication/Serial/I2C/Chapter1.html"><strong aria-hidden="true">3.3.1.</strong> I2C的通信原理</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/I2C/Chapter2.html"><strong aria-hidden="true">3.3.2.</strong> DS3231数据手册速览</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/I2C/Chapter3.html"><strong aria-hidden="true">3.3.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/I2C/Chapter4.html"><strong aria-hidden="true">3.3.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/I2C/Chapter5.html"><strong aria-hidden="true">3.3.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../../MCU-Communication/Serial/SPI/Intro.html"><strong aria-hidden="true">3.4.</strong> SPI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../MCU-Communication/Serial/SPI/Chapter1.html"><strong aria-hidden="true">3.4.1.</strong> SPI通信原理</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/SPI/Chapter2.html"><strong aria-hidden="true">3.4.2.</strong> MPU9250数据手册速览</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/SPI/Chapter3.html"><strong aria-hidden="true">3.4.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/SPI/Chapter4.html"><strong aria-hidden="true">3.4.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../../MCU-Communication/Serial/SPI/Chapter5.html"><strong aria-hidden="true">3.4.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../../MCU-Communication/Parallel/Intro.html"><strong aria-hidden="true">3.5.</strong> 并行通信</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../MCU-Communication/Parallel/Chapter1.html"><strong aria-hidden="true">3.5.1.</strong> 并行通信原理</a></li><li class="chapter-item "><a href="../../MCU-Communication/Parallel/Chapter2.html"><strong aria-hidden="true">3.5.2.</strong> LCD1602数据手册速览</a></li><li class="chapter-item "><a href="../../MCU-Communication/Parallel/Chapter3.html"><strong aria-hidden="true">3.5.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../../MCU-Communication/Parallel/Chapter4.html"><strong aria-hidden="true">3.5.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../../MCU-Communication/Parallel/Chapter5.html"><strong aria-hidden="true">3.5.5.</strong> 总结和拓展</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../Projects/Intro.html"><strong aria-hidden="true">4.</strong> 项目制作</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Projects/NFC/Intro.html"><strong aria-hidden="true">4.1.</strong> NFC</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Projects/NFC/Chapter1.html"><strong aria-hidden="true">4.1.1.</strong> 初代门禁版本</a></li><li class="chapter-item "><a href="../../Projects/NFC/Chapter2.html"><strong aria-hidden="true">4.1.2.</strong> 目前门禁版本</a></li><li class="chapter-item "><a href="../../Projects/NFC/Chapter3.html"><strong aria-hidden="true">4.1.3.</strong> 未来的改进</a></li></ol></li><li class="chapter-item expanded "><a href="../../Projects/LED-Board/Intro.html"><strong aria-hidden="true">4.2.</strong> LED Board</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Projects/LED-Board/Chapter1.html"><strong aria-hidden="true">4.2.1.</strong> 制作步骤</a></li><li class="chapter-item "><a href="../../Projects/LED-Board/Chapter2.html"><strong aria-hidden="true">4.2.2.</strong> 代码及使用</a></li><li class="chapter-item "><a href="../../Projects/LED-Board/Chapter3.html"><strong aria-hidden="true">4.2.3.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../../Projects/CNC-Engraver/Intro.html"><strong aria-hidden="true">4.3.</strong> CNC-Engraver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Projects/CNC-Engraver/Chapter1.html"><strong aria-hidden="true">4.3.1.</strong> 什么是CNC</a></li><li class="chapter-item "><a href="../../Projects/CNC-Engraver/Chapter2.html"><strong aria-hidden="true">4.3.2.</strong> 雕刻机硬件搭建</a></li><li class="chapter-item "><a href="../../Projects/CNC-Engraver/Chapter3.html"><strong aria-hidden="true">4.3.3.</strong> 雕刻机控制软件</a></li><li class="chapter-item "><a href="../../Projects/CNC-Engraver/Chapter4.html"><strong aria-hidden="true">4.3.4.</strong> 总结和拓展</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../Speeches/Intro.html"><strong aria-hidden="true">5.</strong> 半小时入门介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Speeches/EDA/Intro.html"><strong aria-hidden="true">5.1.</strong> EDA入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Speeches/EDA/Chapter1.html" class="active"><strong aria-hidden="true">5.1.1.</strong> 555计时器</a></li><li class="chapter-item "><a href="../../Speeches/EDA/Chapter2.html"><strong aria-hidden="true">5.1.2.</strong> 绘制符号和封装</a></li><li class="chapter-item "><a href="../../Speeches/EDA/Chapter3.html"><strong aria-hidden="true">5.1.3.</strong> 设计原理图</a></li><li class="chapter-item "><a href="../../Speeches/EDA/Chapter4.html"><strong aria-hidden="true">5.1.4.</strong> 设计PCB</a></li></ol></li><li class="chapter-item expanded "><a href="../../Speeches/Markdown/Intro.html"><strong aria-hidden="true">5.2.</strong> Markdown入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Speeches/Markdown/Chapter1.html"><strong aria-hidden="true">5.2.1.</strong> 基础语法1</a></li><li class="chapter-item "><a href="../../Speeches/Markdown/Chapter2.html"><strong aria-hidden="true">5.2.2.</strong> 基础语法2</a></li></ol></li><li class="chapter-item expanded "><a href="../../Speeches/Git-Github/Intro.html"><strong aria-hidden="true">5.3.</strong> Git及Github入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Speeches/Git-Github/Chapter1.html"><strong aria-hidden="true">5.3.1.</strong> 集中式vs分布式</a></li><li class="chapter-item "><a href="../../Speeches/Git-Github/Chapter2.html"><strong aria-hidden="true">5.3.2.</strong> Git的安装与配置</a></li><li class="chapter-item "><a href="../../Speeches/Git-Github/Chapter3.html"><strong aria-hidden="true">5.3.3.</strong> Git常用命令</a></li></ol></li><li class="chapter-item expanded "><a href="../../Speeches/WebDev/Intro.html"><strong aria-hidden="true">5.4.</strong> 前端开发入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../Speeches/WebDev/Chapter1.html"><strong aria-hidden="true">5.4.1.</strong> 前端三语言</a></li><li class="chapter-item "><a href="../../Speeches/WebDev/Chapter2.html"><strong aria-hidden="true">5.4.2.</strong> HTML基础</a></li><li class="chapter-item "><a href="../../Speeches/WebDev/Chapter3.html"><strong aria-hidden="true">5.4.3.</strong> CSS基础</a></li><li class="chapter-item "><a href="../../Speeches/WebDev/Chapter4.html"><strong aria-hidden="true">5.4.4.</strong> 自我介绍</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../Join-us/Intro.html"><strong aria-hidden="true">6.</strong> 参与完善本文档</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Join-us/Chapter1.html"><strong aria-hidden="true">6.1.</strong> 配置环境</a></li><li class="chapter-item expanded "><a href="../../Join-us/Chapter2.html"><strong aria-hidden="true">6.2.</strong> 文档撰写规范</a></li><li class="chapter-item expanded "><a href="../../Join-us/Chapter3.html"><strong aria-hidden="true">6.3.</strong> 编译发布文档</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">电子组培训文档</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="eda入门555计时器"><a class="header" href="#eda入门555计时器">EDA入门——555计时器</a></h1>
+<p>一般在设计PCB之前我们已经对所要设计的核心原件有了足够的认识了，一无所知就去设计PCB非常不明智。你最好是已经通过实物验证过了你的设计，然后再设计。本入门的例子使用的是555计时器，首先我们来了解一下555计时器。</p>
+<h2 id="1-555计时器"><a class="header" href="#1-555计时器">1. 555计时器</a></h2>
+<p>55定时器是美国Signetics公司1972年研制的用于取代机械式定时器的中规模集成电路，因输入端设计有三个5kΩ的电阻而得名。此电路后来竟风靡世界。目前，流行的产品有4个：</p>
+<ul>
+<li>BJT
+<ul>
+<li>555</li>
+<li>556(含有两个555)</li>
+</ul>
+</li>
+<li>CMOS
+<ul>
+<li>7555</li>
+<li>7556(含有两个7555)</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-555计时器工作原理"><a class="header" href="#2-555计时器工作原理">2. 555计时器工作原理</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">原理图</th><th style="text-align: center">波形</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="Images/1-1.png" alt="555Timer-Schematic" /></td><td style="text-align: center"><img src="Images/1-2.png" alt="Scope" /></td></tr>
+</tbody></table>
+</div>
+<h3 id="3-555计时器计算公式"><a class="header" href="#3-555计时器计算公式">3. 555计时器计算公式</a></h3>
+<p>不同的R1，R2，和C能够获得不同的频率和占空比，计算公式如下：</p>
+<p>\(T_{high} = In(2)*(R_1+R_2)*C\)</p>
+<p>\(T_{low} = In(2)*{R_2}*C\)</p>
+<p>\(F = \frac{1}{T_{high}+T_{low}}=\frac{1}{In(2)*(R1+2R2)*C}\)</p>
+<p>\(W_{duty} = 100*\frac{T_{high}}{T_{high}+T_{low}}=100*\frac{R_1+R_2}{R1+2R2}\)</p>
+<p>因此加入我们使用R1=1K，R2=470K，C=1uF，我们可以得到：</p>
+<ul>
+<li>\(T_{high} = 0.326\)</li>
+<li>\(T_{low} = 0.325\)</li>
+<li>\(F = 1.530\)</li>
+<li>\(W_{duty} = 50.053\)</li>
+</ul>
+<p>你可以通过一些写好的程序计算这个值，比如：</p>
+<p><a href="https://www.kechuang.org/tools/elc/tool/ne555.html"><img src="Images/1-3.png" alt="555Timer-Online-Calculator" /></a></p>
+<h3 id="4-555计时器应用"><a class="header" href="#4-555计时器应用">4. 555计时器应用</a></h3>
+<p>555计时器的应用主要有：</p>
+<ul>
+<li>震荡器</li>
+<li>PWM产生器</li>
+</ul>
+<h3 id="5-555timer-bom"><a class="header" href="#5-555timer-bom">5. 555Timer BOM</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">BOM</th><th style="text-align: center">数量</th><th style="text-align: center">备注</th></tr></thead><tbody>
+<tr><td style="text-align: center">555Timer</td><td style="text-align: center">1</td><td style="text-align: center">定时器</td></tr>
+<tr><td style="text-align: center">电源</td><td style="text-align: center">1</td><td style="text-align: center">4.5-18V</td></tr>
+<tr><td style="text-align: center">LED</td><td style="text-align: center">1</td><td style="text-align: center">红色</td></tr>
+<tr><td style="text-align: center">电容</td><td style="text-align: center">1</td><td style="text-align: center">1uF</td></tr>
+<tr><td style="text-align: center">电阻</td><td style="text-align: center">3</td><td style="text-align: center">1K,1K,470K</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Speeches/EDA/Intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../Speeches/EDA/Chapter2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Speeches/EDA/Intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../Speeches/EDA/Chapter2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
