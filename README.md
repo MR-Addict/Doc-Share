@@ -13,7 +13,7 @@
 
 本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
 
-你可以通过以下网址访问网页内容
+你可以通过以下网址访问网页内容:
 
 - [https://book.jinhun.moe](https://book.jinhun.moe)
 - [https://book.mraddict.vercel.app](https://book.mraddict.vercel.app)
