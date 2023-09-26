@@ -172,39 +172,29 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="第一章配置环境"><a class="header" href="#第一章配置环境">第一章——配置环境</a></h1>
-<p>在撰写文档时，你需要配置一下相关环境，以便你能在本地预览你写的内容，我默认你是使用的Windows系统，同时是使用vscode作为你的编辑器。</p>
+<p>在撰写文档时，你需要配置一下相关环境，以便你能在本地预览你写的内容，我默认你是使用的 Windows 系统，同时是使用 vscode 作为你的编辑器。</p>
 <ul>
-<li>安装Git</li>
-<li>安装Rust语言环境</li>
-<li>配置mdbook环境</li>
-<li>安装vscode的markdown预览插件</li>
+<li>安装 Git</li>
+<li>安装 mdbook</li>
+<li>安装 vscode 的 markdown 预览插件</li>
 </ul>
-<h2 id="1-安装git"><a class="header" href="#1-安装git">1. 安装Git</a></h2>
-<p>直接前往<a href="https://gitforwindows.org/">Gitforwindows官网</a>下载安装Git即可。</p>
-<p>安装完成后，你可以在命令行中输入<code>git</code>测试你的Git是否安装成功。</p>
-<h2 id="2-安装rust"><a class="header" href="#2-安装rust">2. 安装Rust</a></h2>
-<p>因为mdbook是基于Rust语言的一个框架，因此使用mdbook前你需要安装Rust。你可以前往<a href="https://www.rust-lang.org/tools/install">Rust官网</a>下载安装Rust，安装需要一定的时间，如果在安装过程中出现了什么错误可以自行百度或者Google，一般都能解决。</p>
-<p><img src="Images/1-1.png" alt="Install-Rust" /></p>
-<p>安装完成后，你可以在命令行中输入<code>rustc</code>或者<code>cargo</code>测试你的Rust是否安装成功。</p>
-<h2 id="3-配置mdbook环境"><a class="header" href="#3-配置mdbook环境">3. 配置mdbook环境</a></h2>
-<p>你可以通过Rust直接安装mdbook：</p>
-<pre><code class="language-shell">cargo install mdbook
-</code></pre>
-<p>你也可以通过Github安装最新的版本：</p>
-<pre><code class="language-shell">cargo install --git https://github.com/rust-lang/mdBook.git mdbook
-</code></pre>
-<p>上面两者选择一个就可以了，如果在安装过程中出现了什么错误可以自行百度或者Google，一般都能解决。</p>
-<p>如果实在解决不了，你还可以去<a href="https://github.com/rust-lang/mdBook/releases">Github主页</a>下载已经编译好的文件，将这个编译好的文件放到你的环境变量里面就可以了。</p>
+<h2 id="1-安装-git"><a class="header" href="#1-安装-git">1. 安装 Git</a></h2>
+<p>直接前往<a href="https://gitforwindows.org/">Gitforwindows 官网</a>下载安装 Git 即可。</p>
+<p>安装完成后，你可以在命令行中输入<code>git</code>测试你的 Git 是否安装成功。</p>
+<h2 id="2-安装-mdbook"><a class="header" href="#2-安装-mdbook">2. 安装 mdbook</a></h2>
+<p>前往 <a href="https://github.com/rust-lang/mdBook/releases">Github 主页</a>下载已经编译好的文件：</p>
 <p><img src="Images/1-2.png" alt="Github-mdbook" /></p>
-<p>你可以在命令行中输入<code>mdbook</code>测试你的mdbook环境是否安装成功。</p>
-<h2 id="4-安装vscode的markdown预览插件"><a class="header" href="#4-安装vscode的markdown预览插件">4. 安装vscode的markdown预览插件</a></h2>
-<p>在你的vscode中安装以下两个插件：</p>
+<p>然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：</p>
+<p><img src="Images/1-1.png" alt="PATH" /></p>
+<p>你可以在命令行中输入<code>mdbook</code>测试你的 mdbook 环境是否安装成功。</p>
+<h2 id="4-安装-vscode-的-markdown-预览插件"><a class="header" href="#4-安装-vscode-的-markdown-预览插件">4. 安装 vscode 的 markdown 预览插件</a></h2>
+<p>在你的 vscode 中安装以下两个插件：</p>
 <ul>
 <li>Markdown All in One</li>
 <li>Markdown Preview Enhanced</li>
 </ul>
 <p><img src="Images/1-3.png" alt="Plugin" /></p>
-<p>安装完成后，用vscode打开一个markdown文档时，你可以通过点击右上角的预览图标预览你的markdown文本。</p>
+<p>安装完成后，用 vscode 打开一个 markdown 文档时，你可以通过点击右上角的预览图标预览你的 markdown 文本。</p>
 <p><img src="Images/1-4.png" alt="Preview" /></p>
 
                     </main>
