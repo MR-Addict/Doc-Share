@@ -173,12 +173,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="电子组培训文档"><a class="header" href="#电子组培训文档">电子组培训文档</a></h1>
-<h2 id="1-项目介绍"><a class="header" href="#1-项目介绍">1. 项目介绍</a></h2>
-<p>本文档内容主要由markdown写成，使用<a href="https://rust-lang.github.io/mdBook/">mdbook</a>作为文档框架，网页部署及CI由<strong>卢老前辈</strong>完成。</p>
+<p>本文档内容主要由 markdown 写成，使用<a href="https://rust-lang.github.io/mdBook/">mdbook</a>作为文档框架，网页部署及 CI 由<strong>卢老前辈</strong>完成。</p>
 <p>本内容主要是用来给，南京工业大学校科协技术开发部电子组同学培训学习使用。</p>
 <p>本人能力有限，内容肯定存在错误和不足，欢迎大家指正。</p>
-<h2 id="2-如何使用本文档"><a class="header" href="#2-如何使用本文档">2. 如何使用本文档</a></h2>
-<p><img src="Images/0-1.png" alt="Intro-mdbook" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="arduino基础"><a class="header" href="#arduino基础">Arduino基础</a></h1>
 <h2 id="1-arduino简介"><a class="header" href="#1-arduino简介">1. Arduino简介</a></h2>
 <img src="Arduino/Images/0-1.png" align="right" alt="Arduino logo" width="250px"/>
@@ -1073,7 +1070,7 @@ const uint8_t NUM_LEDS = 30;
 <tr><td style="text-align: center">+</td><td style="text-align: center">将两个操作数相加</td><td style="text-align: center">int a = 5+6;</td></tr>
 <tr><td style="text-align: center">-</td><td style="text-align: center">将两个操作数相减</td><td style="text-align: center">int a = 5-6;</td></tr>
 <tr><td style="text-align: center">*</td><td style="text-align: center">将两个操作数相乘</td><td style="text-align: center">int a = 5*6;</td></tr>
-<tr><td style="text-align: center">/</td><td style="text-align: center">将两个操作数相除</td><td style="text-align: center">int a = 5/2;   float b = 5/2.0;</td></tr>
+<tr><td style="text-align: center">/</td><td style="text-align: center">将两个操作数相除</td><td style="text-align: center">int a = 5/2; float b = 5/2.0;</td></tr>
 <tr><td style="text-align: center">%</td><td style="text-align: center">取模运算</td><td style="text-align: center">int a = 5%2;</td></tr>
 <tr><td style="text-align: center">++</td><td style="text-align: center">将自身体的值加1</td><td style="text-align: center">int a = 12;a++;++a;</td></tr>
 <tr><td style="text-align: center">–</td><td style="text-align: center">将自身体的值减1</td><td style="text-align: center">int a =12;a–;–a;</td></tr>
@@ -1092,7 +1089,7 @@ const uint8_t NUM_LEDS = 30;
 <h2 id="4-逻辑运算符"><a class="header" href="#4-逻辑运算符">4. 逻辑运算符</a></h2>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">运算符</th><th style="text-align: center">描述</th><th style="text-align: center">示例</th></tr></thead><tbody>
 <tr><td style="text-align: center">&amp;&amp;</td><td style="text-align: center">且运算</td><td style="text-align: center">bool result = (4==5)&amp;&amp;(4&lt;3);</td></tr>
-<tr><td style="text-align: center">||</td><td style="text-align: center">或运算</td><td style="text-align: center">bool result = (4==5)     || (4&lt;3);</td></tr>
+<tr><td style="text-align: center">||</td><td style="text-align: center">或运算</td><td style="text-align: center">bool result = (4==5) || (4&lt;3);</td></tr>
 <tr><td style="text-align: center">！</td><td style="text-align: center">非运算</td><td style="text-align: center">bool result = !(4&gt;5);</td></tr>
 </tbody></table>
 </div>
@@ -1209,7 +1206,7 @@ int main() {
     else if (salary &lt; 3000) tax = 0.1;
     else if (salary &lt; 5000) tax = 0.15;
     else tax = 0.2;
-    
+
     salary = salary * (1 - tax);
     printf(&quot;Your final salary is %.2f&quot;, salary);
     return 0;
@@ -2060,7 +2057,7 @@ int main() {
 }
 </code></pre>
 <p>其输出的结果是一样的：</p>
-<pre><code class="language-plaintext">25 20 12 36 89 65 35 45 67 34 
+<pre><code class="language-plaintext">25 20 12 36 89 65 35 45 67 34
 25 20 12 36 89 65 35 45 67 34
 </code></pre>
 <p>可见，我们通过 <strong>ptr[i]</strong> 和通过 <strong>num[i]</strong> 来对数组进行访问是一样的，也就是说，我们对数组的操作其实就是对指针的操作，<strong>指针同样支持下标进行访问</strong>，这点在下面将数组作为参数传递给函数的例子中体现得更为明显。</p>
@@ -2242,7 +2239,7 @@ int main() {
 <pre><code class="language-c">//此声明声明了拥有3个成员的结构体，分别为整型的a，字符型的b和双精度的c
 //同时又声明了结构体变量s1
 //这个结构体并没有标明其标签
-struct 
+struct
 {
     int a;
     char b;
@@ -2265,7 +2262,7 @@ typedef struct
 {
    int a;
    char b;
-   double c; 
+   double c;
 } Simple2;
 //现在可以用Simple2作为类型声明新的结构体变量
 Simple2 u1, u2[20], *u3;
@@ -3612,7 +3609,7 @@ void loop() {
 </div>
 <p>该寄存器用于配置MPU9250的模式，Bit7用于重置设备，Bit6用于唤醒MPU9250。</p>
 <p>由于MPU650在上电时会进入睡眠模式，因此为了兼容MPU9250，建议上电时对此寄存器写入<strong>0x00</strong>。</p>
-<h3 id="32--寄存器0x6auser_ctrl"><a class="header" href="#32--寄存器0x6auser_ctrl">3.2  寄存器0x6A——USER_CTRL</a></h3>
+<h3 id="32-寄存器0x6auser_ctrl"><a class="header" href="#32-寄存器0x6auser_ctrl">3.2 寄存器0x6A——USER_CTRL</a></h3>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">Addr</th><th style="text-align: center">Register Name</th><th style="text-align: center">Bit7</th><th style="text-align: center">Bit6</th><th style="text-align: center">Bit5</th><th style="text-align: center">Bit4</th><th style="text-align: center">Bit3</th><th style="text-align: center">Bit2</th><th style="text-align: center">Bit1</th><th style="text-align: center">Bit0</th></tr></thead><tbody>
 <tr><td style="text-align: center">0x6A</td><td style="text-align: center">USER_CTRL</td><td style="text-align: center">*</td><td style="text-align: center">FIFO_EN</td><td style="text-align: center">I2C_MST_EN</td><td style="text-align: center">2C_IF_DIS</td><td style="text-align: center">*</td><td style="text-align: center">*</td><td style="text-align: center">*</td><td style="text-align: center">*</td></tr>
 </tbody></table>
@@ -5273,40 +5270,40 @@ WiFi.setHostname(hostname.c_str());
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第一章制作步骤"><a class="header" href="#第一章制作步骤">第一章——制作步骤</a></h1>
 <p>这个项目说难也不难，只是在制作过程中很考验耐心。我当时是有学姐作为帮手，另外还有郭鑫惺帮我焊接，所以总的来说还好，如果你们是自己做可能就要麻烦点了。</p>
 <h2 id="1-制作框架"><a class="header" href="#1-制作框架">1. 制作框架</a></h2>
-<p>对于电子元器件，我们后面介绍。制作框架需要用到一块木板，木板的尺寸看你的分辨率。我前后做了两个版本，一个是21x7的，一个是19x7的。这里我以21x7为例，你大概需要84x24.78cm的木板以及135个乒乓球。</p>
+<p>对于电子元器件，我们后面介绍。制作框架需要用到一块木板，木板的尺寸看你的分辨率。我前后做了两个版本，一个是 21x7 的，一个是 19x7 的。这里我以 21x7 为例，你大概需要 84x24.78cm 的木板以及 135 个乒乓球。</p>
 <p>零件清单大概如下：</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">零件</th><th style="text-align: center">数目</th></tr></thead><tbody>
-<tr><td style="text-align: center">轻木板</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">乒乓球</td><td style="text-align: center">135个</td></tr>
-<tr><td style="text-align: center">其他装饰性物品</td><td style="text-align: center">N个</td></tr>
+<tr><td style="text-align: center">轻木板</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">乒乓球</td><td style="text-align: center">135 个</td></tr>
+<tr><td style="text-align: center">其他装饰性物品</td><td style="text-align: center">N 个</td></tr>
 </tbody></table>
 </div>
 <p>准备好板子后，把板子按照如下尺寸进行切割：</p>
 <p><img src="Projects/LED-Board/Images/1-1.jpg" alt="Ping pong board layout" /></p>
 <h2 id="2-焊接灯条及乒乓球"><a class="header" href="#2-焊接灯条及乒乓球">2. 焊接灯条及乒乓球</a></h2>
 <p>切割好木板后，你可以按照上面的尺寸图对木板进行规划，把每一个灯条的位置标记好，接着就把剪下来的灯珠按照位置贴好，你可以通过导线把相邻的灯珠焊接在一起，或者用排针的针头，那样更好焊接一点。</p>
-<p>然后把135个乒乓球底部切掉大概1/4。</p>
+<p>然后把 135 个乒乓球底部切掉大概 1/4。</p>
 <p><img src="Projects/LED-Board/Images/1-2.png" alt="Cut Ping pong balls" /></p>
 <p>然后按照上面的位置把切好的乒乓球用热熔胶粘贴在每个灯珠上，留出三根导线就好了，你也可以对外观进行一些装饰。</p>
 <p>最终的成品大概如下：</p>
 <p><img src="Projects/LED-Board/Images/1-3.png" alt="Finished Project" /></p>
-<h2 id="3-原理图及pcb"><a class="header" href="#3-原理图及pcb">3. 原理图及PCB</a></h2>
+<h2 id="3-原理图及-pcb"><a class="header" href="#3-原理图及-pcb">3. 原理图及 PCB</a></h2>
 <p>这里使用到的电子元器件主要有：</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">零件</th><th style="text-align: center">数目</th></tr></thead><tbody>
-<tr><td style="text-align: center">DC005接头</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">5V3A电源适配器</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">ESP32</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">按钮</td><td style="text-align: center">4个</td></tr>
-<tr><td style="text-align: center">DS3231模块</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">100uF电容</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">10K电阻</td><td style="text-align: center">1个</td></tr>
-<tr><td style="text-align: center">3P接线端子</td><td style="text-align: center">1个</td></tr>
+<tr><td style="text-align: center">DC005 接头</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">5V3A 电源适配器</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">ESP32</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">按钮</td><td style="text-align: center">4 个</td></tr>
+<tr><td style="text-align: center">DS3231 模块</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">100uF 电容</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">10K 电阻</td><td style="text-align: center">1 个</td></tr>
+<tr><td style="text-align: center">3P 接线端子</td><td style="text-align: center">1 个</td></tr>
 </tbody></table>
 </div>
 <p>你可以按照如下原理把各个零件焊接洞洞板上：</p>
 <p><img src="Projects/LED-Board/Images/1-4.png" alt="Schematic" /></p>
-<p>也可以到我的<a href="https://github.com/MR-Addict/WS2812-LED-Ping-Pong-Board.git">GitHub仓库</a>下载Gerber文件进行PCB打样。</p>
-<p>下面是PCB的三维示意图：</p>
+<p>也可以到我的<a href="https://github.com/MR-Addict/WS2812-LED-Ping-Pong-Board.git">GitHub 仓库</a>下载 Gerber 文件进行 PCB 打样。</p>
+<p>下面是 PCB 的三维示意图：</p>
 <p><img src="Projects/LED-Board/Images/1-5.png" alt="PCB 3D viewer" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第二章代码及使用"><a class="header" href="#第二章代码及使用">第二章——代码及使用</a></h1>
 <p>有关代码部分我也比较建议大家前往我的<a href="https://github.com/MR-Addict/WS2812-LED-Ping-Pong-Board.git">GitHub仓库</a>下载使用，其中21x7版本的使用了WIFI，如果你不想使用WIFI，仅仅使用APP的话，可以使用19x7的版本。</p>
@@ -5629,7 +5626,7 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <p>CNC既神奇，又充满魅力，很值得大家深入探索哦。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="半小时入门介绍"><a class="header" href="#半小时入门介绍">半小时入门介绍</a></h1>
 <p>本专题的内容主要是对某个专题或者内容作简短的介绍，选择从整体的全貌来看某些问题，起到开拓视野的作用，不会涉及非常详细的内容。</p>
-<p>本专题也会涉及一些技术难度不高，但是非常有用的技术，比如Git，markdown等等。</p>
+<p>本专题也会涉及一些技术难度不高，但是非常有用的技术，比如 Git，markdown 等等。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="eda入门"><a class="header" href="#eda入门">EDA入门</a></h1>
 <h2 id="1-什么是eda"><a class="header" href="#1-什么是eda">1. 什么是EDA</a></h2>
 <img src="Speeches/EDA/Images/0-1.png" align="right" alt="EDA Designe"/>
@@ -5678,8 +5675,8 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <p>不同的R1，R2，和C能够获得不同的频率和占空比，计算公式如下：</p>
 <p>\(T_{high} = In(2)*(R_1+R_2)*C\)</p>
 <p>\(T_{low} = In(2)*{R_2}*C\)</p>
-<p>\(F = \frac{1}{T_{high}+T_{low}}=\frac{1}{In(2)*(R1+2R2)*C}\)</p>
-<p>\(W_{duty} = 100*\frac{T_{high}}{T_{high}+T_{low}}=100*\frac{R_1+R_2}{R1+2R2}\)</p>
+<p>\(F = \frac{1}{T*{high}+T*{low}}=\frac{1}{In(2)*(R1+2R2)*C}\)</p>
+<p>\(W*{duty} = 100*\frac{T*{high}}{T*{high}+T*{low}}=100*\frac{R_1+R_2}{R1+2R2}\)</p>
 <p>因此加入我们使用R1=1K，R2=470K，C=1uF，我们可以得到：</p>
 <ul>
 <li>\(T_{high} = 0.326\)</li>
@@ -5763,7 +5760,7 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">Markdown</th><th style="text-align: center">解释</th><th style="text-align: center">输出结果</th></tr></thead><tbody>
 <tr><td style="text-align: center">*斜体文本*</td><td style="text-align: center">文字斜体</td><td style="text-align: center"><em>斜体文本</em></td></tr>
 <tr><td style="text-align: center">**粗文本**</td><td style="text-align: center">加粗文本</td><td style="text-align: center"><strong>粗体文本</strong></td></tr>
-<tr><td style="text-align: center">***粗斜体***</td><td style="text-align: center">加粗并且倾斜文字</td><td style="text-align: center"><em><strong>粗斜体文本</strong></em></td></tr>
+<tr><td style="text-align: center">***粗斜体***</td><td style="text-align: center">加粗并且倾斜文字</td><td style="text-align: center"><strong><em>粗斜体文本</em></strong></td></tr>
 </tbody></table>
 </div>
 <h3 id="23-分割线"><a class="header" href="#23-分割线">2.3 分割线</a></h3>
@@ -5972,7 +5969,7 @@ git push origin main
 </code></pre>
 <h2 id="8-git-merge"><a class="header" href="#8-git-merge">8. git merge</a></h2>
 <p>合并分支命令。</p>
-<pre><code class="language-bash">git merge (branch name) 
+<pre><code class="language-bash">git merge (branch name)
 </code></pre>
 <h2 id="9-git-log"><a class="header" href="#9-git-log">9. git log</a></h2>
 <p>在使用 Git 提交了若干更新之后，又或者克隆了某个项目，想回顾下提交历史，我们可以使用 git log 命令查看。</p>
@@ -6002,7 +5999,7 @@ git push origin main
 <p>对于客户端来说，JavaScript通常被实现为一门解释语言，但如今它已经可以被即时编译（JIT）。随着HTML5和CSS3语言标准的推行，它还可以用于<strong>游戏</strong>、<strong>桌面</strong>和<strong>移动应用程序</strong>的开发，以及在服务器端网络环境运行（如Node.js）</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第二章html基础"><a class="header" href="#第二章html基础">第二章——HTML基础</a></h1>
 <h2 id="一hello-world"><a class="header" href="#一hello-world">一、Hello world</a></h2>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;This is a title.&lt;/title&gt;
@@ -6053,7 +6050,7 @@ git push origin main
 &lt;p&gt;第二段&lt;/p&gt;
 </code></pre>
 <p>换行：<code>&lt;br&gt;</code>：</p>
-<pre><code class="language-html">&lt;p&gt;這是&lt;br&gt;一個&lt;br&gt;使用換行&lt;br&gt;段落&lt;/p&gt;
+<pre><code class="language-html">&lt;p&gt;這是&lt;br /&gt;一個&lt;br /&gt;使用換行&lt;br /&gt;段落&lt;/p&gt;
 </code></pre>
 <p>链接：</p>
 <pre><code class="language-html">&lt;a href=&quot;https://punch.mraddict.top/&quot; target=&quot;_blank&quot;&gt;技术开发部的值班笔记！&lt;/a&gt;
@@ -6063,12 +6060,12 @@ git push origin main
 </code></pre>
 <p>文档引用：</p>
 <pre><code class="language-html">&lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="第三章css基础"><a class="header" href="#第三章css基础">第三章——CSS基础</a></h1>
 <h2 id="一hello-world-1"><a class="header" href="#一hello-world-1">一、Hello world</a></h2>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;This is a title.&lt;/title&gt;
@@ -6109,14 +6106,14 @@ git push origin main
 <li>属性选择器（如<code>input[type='submit']</code>）</li>
 </ul>
 <h2 id="三样式表的引用"><a class="header" href="#三样式表的引用">三、样式表的引用</a></h2>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
 </code></pre>
 <p>例如：</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;This is a title.&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1 class=&quot;header&quot;&gt;这是一个标题&lt;/h1&gt;
