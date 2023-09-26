@@ -1,13 +1,7 @@
 # 电子组培训文档
 
-## 1. 项目介绍
-
-本文档内容主要由markdown写成，使用[mdbook](https://rust-lang.github.io/mdBook/)作为文档框架，网页部署及CI由**卢老前辈**完成。
+本文档内容主要由 markdown 写成，使用[mdbook](https://rust-lang.github.io/mdBook/)作为文档框架，网页部署及 CI 由**卢老前辈**完成。
 
 本内容主要是用来给，南京工业大学校科协技术开发部电子组同学培训学习使用。
 
 本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
-
-## 2. 如何使用本文档
-
-![Intro-mdbook](Images/0-1.png)
