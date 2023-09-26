@@ -41,7 +41,6 @@ uint8_t read_data(uint8_t data);
 
 同时，因为DS3231支持一次性写入读取多个字节的数据，因此，我们可以把上述两个函数扩展成以下四个：
 
-
 ```cpp
 void write_data(uint8_t data);
 void write_data(uint8_t* data, uint8_t length);

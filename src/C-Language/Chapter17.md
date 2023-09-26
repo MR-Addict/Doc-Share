@@ -16,6 +16,7 @@
 那么我们该如何定义这样一个自定义的数据类型呢。
 
 ## 2. 定义结构体
+
 为了定义结构，您必须使用 struct 语句。struct 语句定义了一个包含多个成员的新的数据类型，struct 语句的格式如下：
 
 ```c
@@ -56,7 +57,7 @@ struct Time
 //此声明声明了拥有3个成员的结构体，分别为整型的a，字符型的b和双精度的c
 //同时又声明了结构体变量s1
 //这个结构体并没有标明其标签
-struct 
+struct
 {
     int a;
     char b;
@@ -75,15 +76,15 @@ struct SIMPLE
 };
 //用SIMPLE标签的结构体，另外声明了变量t1、t2、t3
 struct SIMPLE t1, t2[20], *t3;
- ```
+```
 
- ```c
+```c
 //也可以用typedef创建新类型
 typedef struct
 {
-    int a;
-    char b;
-    double c; 
+   int a;
+   char b;
+   double c;
 } Simple2;
 //现在可以用Simple2作为类型声明新的结构体变量
 Simple2 u1, u2[20], *u3;

@@ -20,4 +20,3 @@ git config --global user.email ******@***.com   #邮箱
 ```shell
 git config --global --list
 ```
-

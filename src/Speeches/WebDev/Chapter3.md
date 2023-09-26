@@ -3,7 +3,7 @@
 ## 一、Hello world
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>This is a title.</title>
@@ -48,17 +48,17 @@ CSS由多组规则组成。每个规则由**选择器**（selector）、**属性
 ## 三、样式表的引用
 
 ```html
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 ```
 
 例如：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>This is a title.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1 class="header">这是一个标题</h1>

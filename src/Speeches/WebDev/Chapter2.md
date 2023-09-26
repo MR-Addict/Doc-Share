@@ -3,7 +3,7 @@
 ## 一、Hello world
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>This is a title.</title>
@@ -63,7 +63,7 @@ HTML文档由嵌套的HTML元素构成。它们用HTML标签表示，包含于**
 换行：`<br>`：
 
 ```html
-<p>這是<br>一個<br>使用換行<br>段落</p>
+<p>這是<br />一個<br />使用換行<br />段落</p>
 ```
 
 链接：
@@ -82,6 +82,6 @@ HTML文档由嵌套的HTML元素构成。它们用HTML标签表示，包含于**
 
 ```html
 <script src="index.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 ```

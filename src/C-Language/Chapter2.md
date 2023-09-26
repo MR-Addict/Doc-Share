@@ -33,7 +33,7 @@ int，unsigned int，short，unsigned short，long，unsigned long，char，unsi
 ## 4. 其他类型
 
 - **void类型**
-- **指针类型(*)**
+- **指针类型(\*)**
 - **数组类型([])**
 - **结构类型(struct)**
 - **共用体类(union)**

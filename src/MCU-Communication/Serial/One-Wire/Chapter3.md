@@ -55,7 +55,6 @@ delayMicroseconds(40);
 
 然后MCU等待DHT11的应答，应答信号是80us的低电平和80us的高电平，这边我们不需要精确的时间，只需要等待高低电平过去。
 
-
 ```cpp
 /*接受DHT11做出的应答*/
 pinMode(sensorPin, INPUT_PULLUP);

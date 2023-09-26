@@ -14,7 +14,6 @@ uint8_t read_data(uint8_t data);
 
 有时候我们为了提高效率，一次性连续读写多个数据，就要将这三个函数扩展到下面六个：
 
-
 ```cpp
 void write_cmd(uint8_t cmd);
 void write_cmd(uint8_t* cmd, uint8_t length);

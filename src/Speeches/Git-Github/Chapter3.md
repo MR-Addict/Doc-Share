@@ -16,7 +16,7 @@ git clone [url]  # https://github.com/
 
 git add .命令可将所有文件添加到暂存区。
 
-## 4. git commit 
+## 4. git commit
 
 将暂存区的内容添加到**本地仓库中**。
 
@@ -68,7 +68,7 @@ git checkout (branch name)
 合并分支命令。
 
 ```bash
-git merge (branch name) 
+git merge (branch name)
 ```
 
 ## 9. git log
@@ -79,7 +79,7 @@ git merge (branch name)
 
 git status 命令用于查看在你上次提交之后是否有对文件进行再次修改。
 
- ## 11. git reset --hard
+## 11. git reset --hard
 
 git reset 命令用于回退版本，可以指定退回某一次提交的版本。
 

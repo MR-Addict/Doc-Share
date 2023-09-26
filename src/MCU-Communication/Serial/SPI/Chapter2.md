@@ -49,19 +49,19 @@
 
 ### 3.1 寄存器0x6B——PWR_MGMT_1
 
-| Addr  | Register Name |  Bit7   | Bit6  | Bit5  | Bit4  | Bit3  | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :-----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0x6B  |  PWR_MGMT_1   | H_RESET | SLEEP | CYCLE |   *   |   *   |   *   |   *   |   *   |
+| Addr | Register Name |  Bit7   | Bit6  | Bit5  | Bit4 | Bit3 | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :-----: | :---: | :---: | :--: | :--: | :--: | :--: | :--: |
+| 0x6B |  PWR_MGMT_1   | H_RESET | SLEEP | CYCLE |  \*  |  \*  |  \*  |  \*  |  \*  |
 
 该寄存器用于配置MPU9250的模式，Bit7用于重置设备，Bit6用于唤醒MPU9250。
 
 由于MPU650在上电时会进入睡眠模式，因此为了兼容MPU9250，建议上电时对此寄存器写入**0x00**。
 
-### 3.2  寄存器0x6A——USER_CTRL
+### 3.2 寄存器0x6A——USER_CTRL
 
-| Addr  | Register Name | Bit7  |  Bit6   |    Bit5    |   Bit4    | Bit3  | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :-----: | :--------: | :-------: | :---: | :---: | :---: | :---: |
-| 0x6A  |   USER_CTRL   |   *   | FIFO_EN | I2C_MST_EN | 2C_IF_DIS |   *   |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 |  Bit6   |    Bit5    |   Bit4    | Bit3 | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :-----: | :--------: | :-------: | :--: | :--: | :--: | :--: |
+| 0x6A |   USER_CTRL   |  \*  | FIFO_EN | I2C_MST_EN | 2C_IF_DIS |  \*  |  \*  |  \*  |  \*  |
 
 该寄存器用于配置MPU9250的功能，Bit6用于使能FIFO，Bit5用于使能I2C主机模式，**Bit4用于使能SPI模式**。
 
@@ -69,17 +69,17 @@
 
 ### 3.3 寄存器0x75——WHO_AM_I
 
-| Addr  | Register Name | Bit7  | Bit6  | Bit5  | Bit4  | Bit3  | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0x75  |   WHO_AM_I    |   *   |   *   |   *   |   *   |   *   |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 | Bit6 | Bit5 | Bit4 | Bit3 | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 0x75 |   WHO_AM_I    |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |
 
 该寄存器用于读取MPU9250的ID值，默认值为0x71，可以用来验证通信是否成功。
 
 ### 3.4 寄存器0x1A——CONFIG
 
-| Addr  | Register Name | Bit7  | Bit6  |     Bit5     |     Bit4     |     Bit3     | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :---: | :----------: | :----------: | :----------: | :---: | :---: | :---: |
-| 0x1A  |    CONFIG     |   *   |   *   | FSYNC_SET[2] | FSYNC_SET[1] | FSYNC_SET[0] |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 | Bit6 |     Bit5     |     Bit4     |     Bit3     | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :--: | :----------: | :----------: | :----------: | :--: | :--: | :--: |
+| 0x1A |    CONFIG     |  \*  |  \*  | FSYNC_SET[2] | FSYNC_SET[1] | FSYNC_SET[0] |  \*  |  \*  |  \*  |
 
 该寄存器用于配置FSYNC模式。
 
@@ -87,17 +87,17 @@
 
 ### 3.4 寄存器0x38——INT_ENABLE
 
-| Addr  | Register Name | Bit7  | Bit6  | Bit5  | Bit4  | Bit3  | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0x38  |  INT_ENABLE   |   *   |   *   |   *   |   *   |   *   |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 | Bit6 | Bit5 | Bit4 | Bit3 | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 0x38 |  INT_ENABLE   |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |  \*  |
 
 用于配置中断，写入0x00，不使用中断。
 
 ### 3.5 寄存器0x1B——GYRO_CONFIG
 
-| Addr  | Register Name | Bit7  | Bit6  | Bit5  |    Bit4    |    Bit3    | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :---: | :---: | :--------: | :--------: | :---: | :---: | :---: |
-| 0x1B  |  GYRO_CONFIG  |   *   |   *   |   *   | GYRO_FS[1] | GYRO_FS[0] |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 | Bit6 | Bit5 |    Bit4    |    Bit3    | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :--: | :--: | :--------: | :--------: | :--: | :--: | :--: |
+| 0x1B |  GYRO_CONFIG  |  \*  |  \*  |  \*  | GYRO_FS[1] | GYRO_FS[0] |  \*  |  \*  |  \*  |
 
 该寄存器可以设置陀螺仪的测量范围，下面是范围设置表：
 
@@ -110,9 +110,9 @@
 
 ### 3.6 寄存器0x1C——ACCEL_CONFIG
 
-| Addr  | Register Name | Bit7  | Bit6  | Bit5  |    Bit4     |    Bit3     | Bit2  | Bit1  | Bit0  |
-| :---: | :-----------: | :---: | :---: | :---: | :---------: | :---------: | :---: | :---: | :---: |
-| 0x1C  | ACCEL_CONFIG  |   *   |   *   |   *   | ACCEL_FS[1] | ACCEL_FS[0] |   *   |   *   |   *   |
+| Addr | Register Name | Bit7 | Bit6 | Bit5 |    Bit4     |    Bit3     | Bit2 | Bit1 | Bit0 |
+| :--: | :-----------: | :--: | :--: | :--: | :---------: | :---------: | :--: | :--: | :--: |
+| 0x1C | ACCEL_CONFIG  |  \*  |  \*  |  \*  | ACCEL_FS[1] | ACCEL_FS[0] |  \*  |  \*  |  \*  |
 
 该寄存器可以设置加速度的测量范围，下面是范围设置表：
 
@@ -138,7 +138,6 @@
 温度转换公式为：`TEMP_degC = ((TEMP_OUT –RoomTemp_Offset)/Temp_Sensitivity)+ 21degC`
 
 简化公式为：`TEMP_degC = (TEMP_OUT-0)/321.0 +21`
-
 
 ### 4. MPU9250的SPI通信
 

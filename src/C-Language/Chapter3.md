@@ -77,6 +77,7 @@
 ```
 
 使用const，如：
+
 ```c
 const uint8_t LED_PIN = 6;
 const uint8_t NUM_LEDS = 30;

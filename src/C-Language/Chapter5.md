@@ -8,15 +8,14 @@
 
 下面是一个真假值表：
 
-|  真   |  假   |
-| :---: | :---: |
-|   1   |   0   |
-| true  | false |
-|   2   |  !2   |
-|  3<4  |  3>4  |
+|  真  |  假   |
+| :--: | :---: |
+|  1   |   0   |
+| true | false |
+|  2   |  !2   |
+| 3<4  |  3>4  |
 
 C 语言提供了以下类型的判断语句。
-
 
 |  语句   |                         描述                          |
 | :-----: | :---------------------------------------------------: |
@@ -119,7 +118,7 @@ int main() {
     else if (salary < 3000) tax = 0.1;
     else if (salary < 5000) tax = 0.15;
     else tax = 0.2;
-    
+
     salary = salary * (1 - tax);
     printf("Your final salary is %.2f", salary);
     return 0;
@@ -156,7 +155,6 @@ switch (expression)
 - **不是每一个 case 都需要包含 break。如果 case 语句不包含 break，控制流将会 继续 后续的 case，直到遇到 break 为止。**
 - **一个 switch 语句可以有一个可选的 default case，出现在 switch 的结尾。default case 可用于在上面所有 case 都不为真时执行一个任务。default case 中的 break 语句不是必需的。**
 - **相同的标签不能出现两次。**
-
 
 大家可以试着将上面的薪资问题改成switch，以增进对switch的认识。
 

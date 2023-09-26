@@ -71,6 +71,7 @@ value参数：需要对应引脚输出的状态，value只能是一个布尔值�
 ```cpp
 delay(ms);
 ```
+
 delay()是一个用于延时的函数，它会使得程序在该处延时一定的时间。
 
 ms参数：参数就是延时时间，单位是毫秒，数据类型为`unsigned long`。在Arduino中，你还可以使用`delayMicroseconds(us)`达到微秒级的延时，数据类型依然为`unsigned long`。
