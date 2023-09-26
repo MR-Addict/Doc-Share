@@ -1658,9 +1658,9 @@ int main() {
 <h2 id="1-什么是数组"><a class="header" href="#1-什么是数组">1. 什么是数组</a></h2>
 <p>C 语言支持数组数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。</p>
 <p>所有的数组都是由连续的内存位置组成。最低的地址对应第一个元素，最高的地址对应最后一个元素。</p>
-<p><img src="C-Language/images/10-1.png" alt="数组内存" /></p>
+<p><img src="C-Language/Images/10-1.png" alt="数组内存" /></p>
 <p>数组中的特定元素可以通过索引访问，第一个索引值为 0。</p>
-<p><img src="C-Language/images/10-2.png" alt="数组索引值" /></p>
+<p><img src="C-Language/Images/10-2.png" alt="数组索引值" /></p>
 <h2 id="2-声明数组"><a class="header" href="#2-声明数组">2. 声明数组</a></h2>
 <p>在 C 中要声明一个数组，需要指定元素的<strong>类型</strong>和元素的<strong>数量</strong>，如下所示：</p>
 <pre><code class="language-c">type arrayName [ arraySize ];
@@ -1672,19 +1672,19 @@ int main() {
 <p>在 C 中，您可以逐个初始化数组，也可以使用一个初始化语句，如下所示：</p>
 <pre><code class="language-c">double balance[5] = {10.0, 20.6, 3.4, 7.2};
 </code></pre>
-<p>大括号 { } 之间的值的数目<strong>不能大于</strong>在数组声明时在方括号 [ ] 中指定的元素数目，未赋值的元素自动赋值为0。</p>
-<p><img src="C-Language/images/10-3.png" alt="数组声明" /></p>
+<p>大括号 { } 之间的值的数目<strong>不能大于</strong>在数组声明时在方括号 [ ] 中指定的元素数目，未赋值的元素自动赋值为 0。</p>
+<p><img src="C-Language/Images/10-3.png" alt="数组声明" /></p>
 <p>如果省略了数组的大小，数组的大小则为初始化时元素的个数。</p>
 <pre><code class="language-c">double balance[] = {10.0, 20.6, 3.4, 7.2};
 </code></pre>
-<p><img src="C-Language/images/10-4.png" alt="数组声明" /></p>
+<p><img src="C-Language/Images/10-4.png" alt="数组声明" /></p>
 <h2 id="4-访问数组元素"><a class="header" href="#4-访问数组元素">4. 访问数组元素</a></h2>
 <p>数组元素可以通过数组名称加索引进行访问。元素的索引是放在方括号内，跟在数组名称的后边。</p>
 <p>例如：</p>
 <pre><code class="language-c">double balance[5] = {10.0, 20.6, 3.4, 7.2};
 blance[4] = 50.6;
 </code></pre>
-<p>下面是一个将输入的5个值存储到数组中，显示输出并求和的一个程序：</p>
+<p>下面是一个将输入的 5 个值存储到数组中，显示输出并求和的一个程序：</p>
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
@@ -1706,7 +1706,7 @@ int main() {
 </code></pre>
 <h2 id="5-冒泡排序"><a class="header" href="#5-冒泡排序">5. 冒泡排序</a></h2>
 <p>冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法，是学习编程语言必不可少的以部分，它是循环和数组的结合，很适合初学者学习。</p>
-<p>冒泡排序重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。</p>
+<p>冒泡排序重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从 Z 到 A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。</p>
 <p>这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端（升序或降序排列），就如同碳酸饮料中二氧化碳的气泡最终会上浮到顶端一样，故名“冒泡排序”。</p>
 <p>下面是一个可供参考的冒泡排序代码：</p>
 <pre><code class="language-c">#include &lt;stdio.h&gt;
@@ -5814,14 +5814,14 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 </ol>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="第一章markdown语法-1"><a class="header" href="#第一章markdown语法-1">第一章——Markdown语法</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="第一章markdown-语法"><a class="header" href="#第一章markdown-语法">第一章——Markdown 语法</a></h1>
 <h2 id="1-代码"><a class="header" href="#1-代码">1. 代码</a></h2>
-<p>在Markdown中标注代码主要有三种方法。</p>
+<p>在 Markdown 中标注代码主要有三种方法。</p>
 <h3 id="11-第一种使用"><a class="header" href="#11-第一种使用">1.1 第一种，使用`</a></h3>
 <p>段落上的一个函数或片段的代码可以用反引号`把它包起来，例如 <strong>`printf()`</strong> 将会输出：</p>
 <p><code>printf()</code></p>
 <h3 id="12-第二种使用制表符"><a class="header" href="#12-第二种使用制表符">1.2 第二种，使用制表符</a></h3>
-<p>代码区块使用4个空格或者一个制表符（Tab键）。</p>
+<p>代码区块使用 4 个空格或者一个制表符（Tab 键）。</p>
 <p>例如：</p>
 <pre><code class="language-plaintext">    #include &lt;stdio.h&gt;
 
@@ -5868,11 +5868,11 @@ int main(){
 <p>例如：</p>
 <pre><code class="language-plaintext">![老友记](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-2e5240f843638b567930ab2b765e1cd0_1200x500.jpg&amp;refer=http%3A%2F%2Fpic4.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1650372506&amp;t=1f1d3e9d41d792cf4f7b03630101f367)
 
-![老友记](images/1-1.jpeg)
+![老友记](Images/1-1.jpeg)
 </code></pre>
 <p>将会输出:</p>
 <p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-2e5240f843638b567930ab2b765e1cd0_1200x500.jpg&amp;refer=http%3A%2F%2Fpic4.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1650372506&amp;t=1f1d3e9d41d792cf4f7b03630101f367" alt="老友记" /></p>
-<p><img src="Speeches/Markdown/images/1-1.jpeg" alt="老友记" /></p>
+<p><img src="Speeches/Markdown/Images/1-1.jpeg" alt="老友记" /></p>
 <h2 id="4-表格"><a class="header" href="#4-表格">4. 表格</a></h2>
 <p>使用<code>|</code>来分隔不同的单元格，使用<code>-</code>来分隔表头和其他行。</p>
 <p>例如：</p>
