@@ -1,14 +1,14 @@
 # 第二章——目前门禁版本
 
-## 1. 原理图及PCB
+## 1. 原理图及 PCB
 
-这个版本我画了PCB，大家可以到我的这个[Github仓库](https://github.com/MR-Addict/Door-lock-system.git)下载Gerber文件进行PCB打样。
+这个版本我画了 PCB，大家可以到我的这个[Github 仓库](https://github.com/MR-Addict/Door-lock-system.git)下载 Gerber 文件进行 PCB 打样。
 
 原理图如下：
 
 ![Schematic](Images/2-3.png)
 
-PCB三维示意图如下：
+PCB 三维示意图如下：
 
 ![PCB Preview](Images/2-4.png)
 
@@ -27,21 +27,21 @@ PCB三维示意图如下：
   - login.html
   - style.css
 
-其中`RFID_ESP32.ino`包含了主要的控制代码，`WIFI_WS.h`主要是有关包含了有关WIFI服务器和websocket的配置，而`data文件夹`就是网页服务器相关的文件了。
+其中`RFID_ESP32.ino`包含了主要的控制代码，`WIFI_WS.h`主要是有关包含了有关 WIFI 服务器和 websocket 的配置，而`data文件夹`就是网页服务器相关的文件了。
 
-关于示例代码，我也建议大家前往我的[Github仓库](https://github.com/MR-Addict/Door-lock-system.git)下载参考，因为这个项目相对来说比较大，代码量相对来说比较多，同时还有网页设计，服务器搭建等等，大家量力而行。
+关于示例代码，我也建议大家前往我的[Github 仓库](https://github.com/MR-Addict/Door-lock-system.git)下载参考，因为这个项目相对来说比较大，代码量相对来说比较多，同时还有网页设计，服务器搭建等等，大家量力而行。
 
-同时，这个项目因为需要把网页内容上传到到ESP32中，需要使用到`SPIFFS(SPI Flash File Storage)`技术，关于ESP32的SPIFFS大家可以参考以下内容:
+同时，这个项目因为需要把网页内容上传到到 ESP32 中，需要使用到`SPIFFS(SPI Flash File Storage)`技术，关于 ESP32 的 SPIFFS 大家可以参考以下内容:
 
 [Install ESP32 Filesystem Uploader in Arduino IDE](https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/)
 
-如果你不使用WIFI，那么可以把有关WIFI的内容删掉。
+如果你不使用 WIFI，那么可以把有关 WIFI 的内容删掉。
 
 在这边我强调几点重要的地方。
 
 ### 2.1 第一点
 
-首先为了安全，我在Arduino的库文件夹下创建了`arduino_secrets的文件夹`，里面有一个`arduino_secrets.h`的文件，我在里面定义了几个重要的变量，包括办公室网络名，网络密码，默认用户名，默认用户密码：
+首先为了安全，我在 Arduino 的库文件夹下创建了`arduino_secrets的文件夹`，里面有一个`arduino_secrets.h`的文件，我在里面定义了几个重要的变量，包括办公室网络名，网络密码，默认用户名，默认用户密码：
 
 ```cpp
 const char* ssid = "STAS-507";
@@ -54,7 +54,7 @@ const char* login_pwd = "dinghao666";
 
 ### 2.2 第二点
 
-你可以通过更改WIFI_WS中WIFI_Init函数里面以下几行来设置你的`ESP主机名`，这也是[http://unlockdoor-507](http://unlockdoor-507)的由来：
+你可以通过更改 WIFI_WS 中 WIFI_Init 函数里面以下几行来设置你的`ESP主机名`，这也是[http://unlockdoor-507](http://unlockdoor-507)的由来：
 
 ```cpp
 // change hostname to unlockdoor-507
@@ -66,7 +66,7 @@ WiFi.setHostname(hostname.c_str());
 
 ### 2.3 第三点
 
-由于这个项目跨度比较长，而Arduino的`MFRC522.h`库也在不断地改进和完善，目前的版本使用起来更加简单了，但是还是兼容旧版本的。新版本能够直接读取门禁卡数据，解码成4个8位的数据，因此我用数组存储每张卡的信息。
+由于这个项目跨度比较长，而 Arduino 的`MFRC522.h`库也在不断地改进和完善，目前的版本使用起来更加简单了，但是还是兼容旧版本的。新版本能够直接读取门禁卡数据，解码成 4 个 8 位的数据，因此我用数组存储每张卡的信息。
 
 如下：
 
@@ -88,11 +88,11 @@ const uint8_t UID[][4] = {
 
 ## 3. 使用方法
 
-目前的门禁是由ESP32作为核心，仍然使用MFRC522扫描门禁卡，使用步进电机来开门，用蜂鸣器作为提示音，同时使用避障传感器触发中断，兼有WIFI功能。
+目前的门禁是由 ESP32 作为核心，仍然使用 MFRC522 扫描门禁卡，使用步进电机来开门，用蜂鸣器作为提示音，同时使用避障传感器触发中断，兼有 WIFI 功能。
 
-当有人靠近NFC时会触发中断，然后MFRC522检测是否有门禁卡，如果该门禁卡是内部存储的卡则开门，并伴随两声短促的蜂鸣器声音；没有则不开门，同时蜂鸣器发出两声较长的声音。
+当有人靠近 NFC 时会触发中断，然后 MFRC522 检测是否有门禁卡，如果该门禁卡是内部存储的卡则开门，并伴随两声短促的蜂鸣器声音；没有则不开门，同时蜂鸣器发出两声较长的声音。
 
-你也可以通过WIFI，访问ESP32的内部服务器。在连接办公室网络的情况下，你可以通过[http://unlockdoor-507](http://unlockdoor-507)进行访问，`unlockdoor-507`是ESP32的主机名。进入网页的时候需要进行身份验证，默认的用户名是`admin`，默认密码`dinghao666`。
+你也可以通过 WIFI，访问 ESP32 的内部服务器。在连接办公室网络的情况下，你可以通过[http://unlockdoor-507](http://unlockdoor-507)进行访问，`unlockdoor-507`是 ESP32 的主机名。进入网页的时候需要进行身份验证，默认的用户名是`admin`，默认密码`dinghao666`。
 
 ![Login](Images/2-1.png)
 

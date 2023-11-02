@@ -1,65 +1,65 @@
-# 第一章——SPI通信原理
+# 第一章——SPI 通信原理
 
-## 1. SPI引脚介绍
+## 1. SPI 引脚介绍
 
-下面是典型的单主从机模式的SPI示意图：
+下面是典型的单主从机模式的 SPI 示意图：
 
 ![SPI Circuit](Images/1-1.png)
 
 - **MOSI(Master In Slave Out)**——用于主机向从机发送数据。
 - **MISO(Master In Slave Out)**——用于从机向主机发送数据。
 - **SCK(Serial Clock)**——用于同步主从机的时钟频率。
-- **CS(Chip Select)**——也称SS(Slave Select)，用于主机选择需要通信的从机。
+- **CS(Chip Select)**——也称 SS(Slave Select)，用于主机选择需要通信的从机。
 
-## 2. CPOL和CPHA
+## 2. CPOL 和 CPHA
 
-前面讲到，SPI的通信协议有着灵活的变种，这个变化主要是在时钟线上。即**CPOL(Clock Polarity)**和**CPHA(Clock Phase)**，也就是时钟极性和时钟相位。
+前面讲到，SPI 的通信协议有着灵活的变种，这个变化主要是在时钟线上。即**CPOL(Clock Polarity)**和**CPHA(Clock Phase)**，也就是时钟极性和时钟相位。
 
-CPOL简单来说，就是时钟是在高电平时空闲还是在低电平时空闲。如果CPOL＝0，则先出现上升沿，再出现下降沿；如果CPOL＝1，先出现下降沿，再出现上升沿。大部分设备CPOL＝0。
+CPOL 简单来说，就是时钟是在高电平时空闲还是在低电平时空闲。如果 CPOL ＝ 0，则先出现上升沿，再出现下降沿；如果 CPOL ＝ 1，先出现下降沿，再出现上升沿。大部分设备 CPOL ＝ 0。
 
-CPHA简单来说，就是数据是否在时钟信号的上升沿或下降沿移入或移出。如果CPHA=0，MOSI和MISO在时钟线的上升沿读取数据，下降沿改变数据；如果CPHA=1，MOSI和MISO在时钟线的下降沿读取数据，上升沿改变数据。大部分设备CPHA＝0。
+CPHA 简单来说，就是数据是否在时钟信号的上升沿或下降沿移入或移出。如果 CPHA=0，MOSI 和 MISO 在时钟线的上升沿读取数据，下降沿改变数据；如果 CPHA=1，MOSI 和 MISO 在时钟线的下降沿读取数据，上升沿改变数据。大部分设备 CPHA ＝ 0。
 
-根据CPOL和CPHA的不同，SPI通信可以分为以下四类：
+根据 CPOL 和 CPHA 的不同，SPI 通信可以分为以下四类：
 
 ![SPI模式示意图](Images/1-2.png)
 
-通常情况下，SPI的通信模式为**模式0**。
+通常情况下，SPI 的通信模式为**模式 0**。
 
-## 3. SPI的通信过程
+## 3. SPI 的通信过程
 
-SPI虽然不像UART那样，没有开始位和结束位；但是和I2C相似，有开始信号和结束信号。
+SPI 虽然不像 UART 那样，没有开始位和结束位；但是和 I2C 相似，有开始信号和结束信号。
 
-开始信号，主机拉低CS，表示通信开始。
+开始信号，主机拉低 CS，表示通信开始。
 
-结束信号，主机拉高CS，表示通信结束。
+结束信号，主机拉高 CS，表示通信结束。
 
-一般在通信过程中，MOSI和MISO可以不间断地传输数据，在这之间没有校验信息，通常都是**高位在前，低位在后**。
+一般在通信过程中，MOSI 和 MISO 可以不间断地传输数据，在这之间没有校验信息，通常都是**高位在前，低位在后**。
 
-下面是模式0的SPI通信时域图：
+下面是模式 0 的 SPI 通信时域图：
 
 ![SPI通信时域图](Images/1-3.png)
 
-## 4. SPI的优缺点
+## 4. SPI 的优缺点
 
-SPI通信的优点：
+SPI 通信的优点：
 
 - **没有开始位和结束位，可以连续发送数据**
-- **没有复杂的设备地址，取而代之的是CS**
-- **MOSI和MISO可以让设备同时收发送数据**
-- **传输速度快，正常都可以达到10MHz甚至更高**
+- **没有复杂的设备地址，取而代之的是 CS**
+- **MOSI 和 MISO 可以让设备同时收发送数据**
+- **传输速度快，正常都可以达到 10MHz 甚至更高**
 
-SPI通信的缺点：
+SPI 通信的缺点：
 
-- **四根线，有的设备还有D/C线，RST线等，接线相对复杂**
-- **无ACK验证信息是否传输成功**
+- **四根线，有的设备还有 D/C 线，RST 线等，接线相对复杂**
+- **无 ACK 验证信息是否传输成功**
 - **无校验信息**
 - **只能有一个主机**
 
-## 5. Arduino的SPI库
+## 5. Arduino 的 SPI 库
 
-Arduino的官方SPI库是`SPI.h`，Arduino Uno只有一个SPI接口，即**MOSI—D11，MISO—D12，SCK—D13，CS—D10**，你可以使用任何GPIO作为CS，不一定是D10。
+Arduino 的官方 SPI 库是`SPI.h`，Arduino Uno 只有一个 SPI 接口，即**MOSI—D11，MISO—D12，SCK—D13，CS—D10**，你可以使用任何 GPIO 作为 CS，不一定是 D10。
 
-下面我们对SPI库部分重要的函数做简单讲解。
+下面我们对 SPI 库部分重要的函数做简单讲解。
 
 ### 5.1 begin()
 
@@ -69,7 +69,7 @@ Arduino的官方SPI库是`SPI.h`，Arduino Uno只有一个SPI接口，即**MOSI�
 SPI.begin();
 ```
 
-用于初始化SPI。默认使用SPI模式0，4MHz时钟频率，拉高CS，拉低SCK和MOSI。
+用于初始化 SPI。默认使用 SPI 模式 0，4MHz 时钟频率，拉高 CS，拉低 SCK 和 MOSI。
 
 ### 5.2 setsetClockDivider()
 
@@ -79,7 +79,7 @@ SPI.begin();
 SPI.setClockDivider(divider);
 ```
 
-用来配置SPI的时钟频率，可选参数有：
+用来配置 SPI 的时钟频率，可选参数有：
 
 - **SPI_CLOCK_DIV2**
 - **SPI_CLOCK_DIV4**(Default speed)
@@ -98,7 +98,7 @@ SPI.setClockDivider(divider);
 SPI.setBitOrder(order);
 ```
 
-用来配置SPI的数据发送顺序，可选参数有：
+用来配置 SPI 的数据发送顺序，可选参数有：
 
 - **LSBFIRST**
 - **MSBFIRST**
@@ -111,7 +111,7 @@ SPI.setBitOrder(order);
 SPI.setDataMode(mode);
 ```
 
-用来配置SPI的模式，可选参数有：
+用来配置 SPI 的模式，可选参数有：
 
 - **SPI_MODE0**
 - **SPI_MODE1**
@@ -126,7 +126,7 @@ SPI.setDataMode(mode);
 SPI.beginTransaction(mySettings);
 ```
 
-用于配置更加详细的SPI参数，参数为**SPISettings**，建议不要同时使用`SPI.beginTransaction(mySettings)`和`SPI.setClockDivider`等，使用一个配置即可。
+用于配置更加详细的 SPI 参数，参数为**SPISettings**，建议不要同时使用`SPI.beginTransaction(mySettings)`和`SPI.setClockDivider`等，使用一个配置即可。
 
 ### 5.6 SPISettings
 
@@ -136,11 +136,11 @@ SPI.beginTransaction(mySettings);
 SPISettings mySettting(speedMaximum, dataOrder, dataMode);
 ```
 
-参数speedMaximum：用于设置SPI时钟频率，默认为4MHz，一般这个参数要小于单片机的时钟频率，Uno板可以达到14MHz。
+参数 speedMaximum：用于设置 SPI 时钟频率，默认为 4MHz，一般这个参数要小于单片机的时钟频率，Uno 板可以达到 14MHz。
 
-参数dataOrder：用于设置传输数据时，是低位在前还是高位在前，默认是高位在前。可选值有`MSBFIRST `和`LSBFIRST`。
+参数 dataOrder：用于设置传输数据时，是低位在前还是高位在前，默认是高位在前。可选值有`MSBFIRST `和`LSBFIRST`。
 
-参数dataMode：用于设置SPI的通信模式，模式为前面介绍的4种模式，默认为模式0。可选值有`SPI_MODE0`，`SPI_MODE1`，`SPI_MODE2`和`SPI_MODE3`。
+参数 dataMode：用于设置 SPI 的通信模式，模式为前面介绍的 4 种模式，默认为模式 0。可选值有`SPI_MODE0`，`SPI_MODE1`，`SPI_MODE2`和`SPI_MODE3`。
 
 一般设置为：
 
@@ -156,7 +156,7 @@ SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0));
 SPI.endTransaction();
 ```
 
-放在`SPI.beginTransaction(mySettings)`，用于结束SPI通信。
+放在`SPI.beginTransaction(mySettings)`，用于结束 SPI 通信。
 
 ### 5.8 transfer(), transfer16()
 
@@ -244,10 +244,10 @@ void loop() {
 
 ## 6. 适用于哪些设备
 
-常见的使用SPI的设备有以下几个：
+常见的使用 SPI 的设备有以下几个：
 
 |       SD Card Module       |       RFID Module       |    ST7735 TFT Display     |
 | :------------------------: | :---------------------: | :-----------------------: |
 | ![SD Card](Images/1-4.png) | ![RFID](Images/1-5.png) | ![ST7735](Images/1-6.png) |
 
-下一个章节我们将详细学习如何通过SPI向MPU9250读写数据。
+下一个章节我们将详细学习如何通过 SPI 向 MPU9250 读写数据。

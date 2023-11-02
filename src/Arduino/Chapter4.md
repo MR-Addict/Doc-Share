@@ -1,4 +1,4 @@
-# 第四章——中断Interrupt
+# 第四章——中断 Interrupt
 
 ## 1. 什么是中断
 
@@ -10,14 +10,14 @@
 
 在单片机中有**硬件中断**和**软件中断**：
 
-- 硬件中断：当外部事件发生时发生，例如**外部中断引脚**将其状态从LOW变为HIGH或HIGH变为LOW。
+- 硬件中断：当外部事件发生时发生，例如**外部中断引脚**将其状态从 LOW 变为 HIGH 或 HIGH 变为 LOW。
 - 软件中断：根据软件的指令发生。例如**定时器中断**是软件中断。
 
-下面我们介绍一下Arduino的硬件中断。
+下面我们介绍一下 Arduino 的硬件中断。
 
 ## 2. attachInterrupt()函数
 
-在Arduino中使用中断非常简单，直接使用`attachInterrupt()`进行中断配置就可以了。
+在 Arduino 中使用中断非常简单，直接使用`attachInterrupt()`进行中断配置就可以了。
 
 语法：
 
@@ -25,13 +25,13 @@
 attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
 ```
 
-pin参数：在这里还不能直接使用中断引脚，你必须使用`digitalPinToInterrupt()`，将对应的引脚映射到对应的中断序号上，在某些单片机芯片上，引脚号就是中断号，但是还是比较建议使用此函数进行映射。
+pin 参数：在这里还不能直接使用中断引脚，你必须使用`digitalPinToInterrupt()`，将对应的引脚映射到对应的中断序号上，在某些单片机芯片上，引脚号就是中断号，但是还是比较建议使用此函数进行映射。
 
-ISR参数：ISR(Interrupt Service Routine)是中断发生时需要调用的函数名，该函数必须无返回值，无参数。
+ISR 参数：ISR(Interrupt Service Routine)是中断发生时需要调用的函数名，该函数必须无返回值，无参数。
 
-mode参数：mode是指能够触发中断的模式，有以下三种模式可供选择：
+mode 参数：mode 是指能够触发中断的模式，有以下三种模式可供选择：
 
-下面是Arduino部分开发板支持的外部中断引脚分布：
+下面是 Arduino 部分开发板支持的外部中断引脚分布：
 
 |          Aduino Board          |      Pins       |
 | :----------------------------: | :-------------: |

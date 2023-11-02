@@ -1,6 +1,6 @@
-# 第七章——模数转换ADC
+# 第七章——模数转换 ADC
 
-AVR芯片内部自带有10位的模数转换器，能够读取输入的模拟电压值，将其转换为数字值。
+AVR 芯片内部自带有 10 位的模数转换器，能够读取输入的模拟电压值，将其转换为数字值。
 
 你可以通过`analogRead()`函数读取输入电压的数字值。
 
@@ -10,11 +10,11 @@ AVR芯片内部自带有10位的模数转换器，能够读取输入的模拟电
 analogRead(pin);
 ```
 
-pin参数：在Arduno Uno开发板上，你可以使用**A0-A5**当作模拟输入的引脚，而在Arudino Nano开发板上你可以使用**A0-A7**这8个引脚。
+pin 参数：在 Arduno Uno 开发板上，你可以使用**A0-A5**当作模拟输入的引脚，而在 Arudino Nano 开发板上你可以使用**A0-A7**这 8 个引脚。
 
-在Arduino中，默认的分辨率为10位，也就是可以将0-5V分割1024份。而某些单片机芯片支持12位的分辨率，你可以使用`analogReadResolution()`调整这个分辨率。更多相关详细信息可以参考以下内容：[analogReadResolution](https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/)。
+在 Arduino 中，默认的分辨率为 10 位，也就是可以将 0-5V 分割 1024 份。而某些单片机芯片支持 12 位的分辨率，你可以使用`analogReadResolution()`调整这个分辨率。更多相关详细信息可以参考以下内容：[analogReadResolution](https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/)。
 
-下面是一个使用ADC调整板载LED闪烁频率的程序：
+下面是一个使用 ADC 调整板载 LED 闪烁频率的程序：
 
 ```cpp
 int led = 13;

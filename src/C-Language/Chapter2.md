@@ -2,7 +2,7 @@
 
 ## 1. 什么是数据类型
 
-C语言的数据类型指的是某个数据元素在编译器中所占的存储空间，我们要用不同的数据类型来表示不同的数据，数据类型就是定义数据的大小。
+C 语言的数据类型指的是某个数据元素在编译器中所占的存储空间，我们要用不同的数据类型来表示不同的数据，数据类型就是定义数据的大小。
 
 数据类型主要分为**整型**，**浮点型**，**其他**。
 
@@ -13,7 +13,7 @@ int，unsigned int，short，unsigned short，long，unsigned long，char，unsi
 
 |    数据类型    | 字节数 |           大小           |
 | :------------: | :----: | :----------------------: |
-|      char      |   1    |     -127-128或0-255      |
+|      char      |   1    |    -127-128 或 0-255     |
 | unsigned char  |   1    |          0-255           |
 |      int       |   2    |       -32768-32767       |
 |  unsigned int  |   2    |         0-65535          |
@@ -24,15 +24,15 @@ int，unsigned int，short，unsigned short，long，unsigned long，char，unsi
 
 ## 3. 浮点类型
 
-|  数据类型   | 字节数 |   精度   |
-| :---------: | :----: | :------: |
-|    float    |   4    | 6位有效  |
-|   double    |   8    | 15位有效 |
-| long double |   16   | 19位有效 |
+|  数据类型   | 字节数 |   精度    |
+| :---------: | :----: | :-------: |
+|    float    |   4    | 6 位有效  |
+|   double    |   8    | 15 位有效 |
+| long double |   16   | 19 位有效 |
 
 ## 4. 其他类型
 
-- **void类型**
+- **void 类型**
 - **指针类型(\*)**
 - **数组类型([])**
 - **结构类型(struct)**
@@ -41,7 +41,7 @@ int，unsigned int，short，unsigned short，long，unsigned long，char，unsi
 
 ## 5. typedef
 
-使用typedef重新定义一个数据类型的名称，如：
+使用 typedef 重新定义一个数据类型的名称，如：
 
 ```c
 typedef int BOOL;

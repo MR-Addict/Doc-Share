@@ -1,22 +1,22 @@
-# 第一章——Arduino和Arduino IDE
+# 第一章——Arduino 和 Arduino IDE
 
-## 1. Arduino开发板
+## 1. Arduino 开发板
 
-Arduino至今拥有非常多的开发板，其中最为流行的就是8位的AVR单片机，当然Arduino也有32位单片机，下面是几款比较流行的开发板。
+Arduino 至今拥有非常多的开发板，其中最为流行的就是 8 位的 AVR 单片机，当然 Arduino 也有 32 位单片机，下面是几款比较流行的开发板。
 
-AVR开发板：
+AVR 开发板：
 
 |          Arduino Uno           |          Arduino Nano           | Arduino Mega                    |
 | :----------------------------: | :-----------------------------: | :------------------------------ |
 | ![Arduino Uno](Images/1-1.png) | ![Arduino Nano](Images/1-2.png) | ![Arduino Mega](Images/1-3.png) |
 
-Arduino Nano 33系列开发板：
+Arduino Nano 33 系列开发板：
 
 |          Arduino Nano 33 IOT           |          Arduino Nano 33 BLE           | Arduino Nano 33 BLE Sense                    |
 | :------------------------------------: | :------------------------------------: | :------------------------------------------- |
 | ![Arduino Nano 33 IOT](Images/1-4.png) | ![Arduino Nano 33 BLE](Images/1-5.png) | ![Arduino Nano 33 BLE Sense](Images/1-6.png) |
 
-Arduino还有一些工业级的开发板：
+Arduino 还有一些工业级的开发板：
 
 |           Arduino MKR Vidor 4000           |           Arduino MKR NB 1500           |           Arduino Portenta H7           |
 | :----------------------------------------: | :-------------------------------------: | :-------------------------------------: |
@@ -30,13 +30,13 @@ Arduino还有一些工业级的开发板：
 
 ## 2. Arduino Uno
 
-Arduino Uno可以说是Arduino开发板家族中最为流行的一款，可以说是每个Arduino初学者都会拥有的一款开发板，我们就以Uno板为例对AVR芯片硬件进行一些介绍。
+Arduino Uno 可以说是 Arduino 开发板家族中最为流行的一款，可以说是每个 Arduino 初学者都会拥有的一款开发板，我们就以 Uno 板为例对 AVR 芯片硬件进行一些介绍。
 
-下面是Arduino Uno的引脚图：
+下面是 Arduino Uno 的引脚图：
 
 ![Arduino引脚图](Images/1-9.png)
 
-可以发现Arduino Uno有以下几个引脚分布：
+可以发现 Arduino Uno 有以下几个引脚分布：
 
 - GPIO
   - **Digital(D0-D19)** X 20
@@ -52,11 +52,11 @@ Arduino Uno可以说是Arduino开发板家族中最为流行的一款，可以�
   - **3.3V**
   - **AREF**
 
-Arduino开发板有一个板载LED，接在**D13引脚**上，你也可以通过**LED_BUITIN**进行访问。另外还有两个LED，分别是RX和TX的指示灯，当进行数据传输的时候对应的LED会闪烁。还有一个电源指示灯，通电后会点亮。
+Arduino 开发板有一个板载 LED，接在**D13 引脚**上，你也可以通过**LED_BUITIN**进行访问。另外还有两个 LED，分别是 RX 和 TX 的指示灯，当进行数据传输的时候对应的 LED 会闪烁。还有一个电源指示灯，通电后会点亮。
 
-Arduino Uno是一个5V的单片机，IO口高电平时5V，开发板上还有一个3.3V的电源接口给3.3V的设备进行供电。
+Arduino Uno 是一个 5V 的单片机，IO 口高电平时 5V，开发板上还有一个 3.3V 的电源接口给 3.3V 的设备进行供电。
 
-如果你没有5V的电源，那你还可以通过VIN口输入5-12V的电压，Arduino开发板上有一个5V的降压芯片。
+如果你没有 5V 的电源，那你还可以通过 VIN 口输入 5-12V 的电压，Arduino 开发板上有一个 5V 的降压芯片。
 
 ## 3. Arduino IDE
 
@@ -68,7 +68,7 @@ Arduino IDE 是一个开源的软件，它使编写代码和上传到开发板�
 - Linux: [`点击下载`](https://downloads.arduino.cc/arduino-1.8.19-linux64.tar.xz)
 - MacOS: [`点击下载`](https://downloads.arduino.cc/arduino-1.8.19-macosx.zip)
 
-下面是Arduino IDE的基本信息，关于该IDE的更多使用可以访问官方教程：[Arduino IDE Guide](https://www.arduino.cc/en/Guide)
+下面是 Arduino IDE 的基本信息，关于该 IDE 的更多使用可以访问官方教程：[Arduino IDE Guide](https://www.arduino.cc/en/Guide)
 
 ![Arduino IDE](Images/1-10.png)
 

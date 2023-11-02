@@ -2,15 +2,15 @@
 
 ## 项目要求
 
-- 使用HTML写一个自我介绍
+- 使用 HTML 写一个自我介绍
 - 要有图片和段落标签
-- 自我介绍不少于100字
+- 自我介绍不少于 100 字
 - 欢迎根据个人能力进行自我发挥
 - 上传到分享网址
 
-## 一、VSCode插件
+## 一、VSCode 插件
 
-安装VSCode插件`HTML CSS Support`，输入`!`后按下回车会自动生成基础模板。
+安装 VSCode 插件`HTML CSS Support`，输入`!`后按下回车会自动生成基础模板。
 
 ![Extenstion](Images/4-1.png)
 

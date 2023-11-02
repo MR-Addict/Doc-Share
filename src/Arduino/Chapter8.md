@@ -1,10 +1,10 @@
-# 第八章——串口通信UART
+# 第八章——串口通信 UART
 
-## 1. Arduino的Serial
+## 1. Arduino 的 Serial
 
-Arduino AVR开发板只有一个UART，直接和USB相连。当然，你也可以通过使用RX(D0)和TX(D1)进行串口通信，但是，同时只能使用一个，任意一处被占用都无法正常通信。
+Arduino AVR 开发板只有一个 UART，直接和 USB 相连。当然，你也可以通过使用 RX(D0)和 TX(D1)进行串口通信，但是，同时只能使用一个，任意一处被占用都无法正常通信。
 
-在mega板上，一共有4个串口，默认的UART和USB相连，因此你除了可以使用**Serial**之外，还可以使用**Serial1**，**Serial2**，**Serial3**。
+在 mega 板上，一共有 4 个串口，默认的 UART 和 USB 相连，因此你除了可以使用**Serial**之外，还可以使用**Serial1**，**Serial2**，**Serial3**。
 
 ## 2. begin
 
@@ -15,9 +15,9 @@ Serial.begin(speed);
 Serial.begin(speed, config);
 ```
 
-speed参数：设置波特率，常用的波特率有300，600，1200，2400，4800，9600，14400，19200，28800，38400，57600，115200等。
+speed 参数：设置波特率，常用的波特率有 300，600，1200，2400，4800，9600，14400，19200，28800，38400，57600，115200 等。
 
-config参数：Arduino默认设置是一个起始位，一个终止位，没有校验位，你可以通过第二个可选参数设置进行设置，下面是可供选择的参数：
+config 参数：Arduino 默认设置是一个起始位，一个终止位，没有校验位，你可以通过第二个可选参数设置进行设置，下面是可供选择的参数：
 
 - SERIAL_5N1
 - SERIAL_6N1
@@ -53,9 +53,9 @@ Serial.print(val);
 Serial.print(val, format);
 ```
 
-val参数：需要输出的值，该值可以是int，long，flaot，double，char，String等等。
+val 参数：需要输出的值，该值可以是 int，long，flaot，double，char，String 等等。
 
-format参数：需要输出的格式，可以是以下四个参数：
+format 参数：需要输出的格式，可以是以下四个参数：
 
 - **BIN** 输出二进制
 - **OCT** 输出八进制
@@ -64,7 +64,7 @@ format参数：需要输出的格式，可以是以下四个参数：
 
 如果输出的是浮点数，第二个可选参数可以用来限制输出的小数位。
 
-下面是print的一些实例：
+下面是 print 的一些实例：
 
 |           语句           | 输出结果 |
 | :----------------------: | :------: |
@@ -74,7 +74,7 @@ format参数：需要输出的格式，可以是以下四个参数：
 |  Serial.print(78, HEX)   |    4E    |
 | Serial.print(1.23456, 2) |   1.23   |
 
-pintln和print用法基本相同，只是println会在结束输出后自动换行。
+pintln 和 print 用法基本相同，只是 println 会在结束输出后自动换行。
 
 下面是一个使用串口输出电位器模拟值的程序：
 
@@ -101,7 +101,7 @@ void loop() {
 Serial.available();
 ```
 
-该函数返回值为1表示当前串口缓存区有数据可以读取，返回值为0表示缓存区没有数据。
+该函数返回值为 1 表示当前串口缓存区有数据可以读取，返回值为 0 表示缓存区没有数据。
 
 ## 5. read
 
@@ -131,6 +131,6 @@ void loop() {
 }
 ```
 
-有关Arduino串口通信的其他函数可以参考以下内容：[Arduino Serial Function Lists](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
+有关 Arduino 串口通信的其他函数可以参考以下内容：[Arduino Serial Function Lists](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
 
-这里只对Arduino的串口通信进行简单介绍，有关UART的通信机制及更多内容，请参考后面的章节([通讯专题/UART](../MCU-Communication/Serial/UART/Intro.md))
+这里只对 Arduino 的串口通信进行简单介绍，有关 UART 的通信机制及更多内容，请参考后面的章节([通讯专题/UART](../MCU-Communication/Serial/UART/Intro.md))
