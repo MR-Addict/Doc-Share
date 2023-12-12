@@ -79,9 +79,10 @@
     - [总结和拓展](Projects/LED-Board/Chapter3.md)
   - [CNC-Engraver](Projects/CNC-Engraver/Intro.md)
     - [什么是 CNC](Projects/CNC-Engraver/Chapter1.md)
-    - [雕刻机硬件搭建](Projects/CNC-Engraver/Chapter2.md)
-    - [雕刻机控制软件](Projects/CNC-Engraver/Chapter3.md)
-    - [总结和拓展](Projects/CNC-Engraver/Chapter4.md)
+    - [编辑和配置 Grbl](Projects/CNC-Engraver/Chapter2.md)
+    - [雕刻机硬件搭建](Projects/CNC-Engraver/Chapter3.md)
+    - [雕刻机控制软件](Projects/CNC-Engraver/Chapter4.md)
+    - [总结和拓展](Projects/CNC-Engraver/Chapter5.md)
 
 - [半小时入门介绍](Speeches/Intro.md)
 
