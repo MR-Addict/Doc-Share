@@ -203,7 +203,7 @@
 int main() {
     for (int i = 0; i &lt; 10; i++) {
         if (i % 2 == 0)
-            printf(&quot;%d\n&quot;, i);
+            printf("%d\n", i);
     }
     return 0;
 }
@@ -219,7 +219,7 @@ int main() {
         sum = sum + i;
         // sum += i;
     }
-    printf(&quot;The sum is %d&quot;, sum);
+    printf("The sum is %d", sum);
     return 0;
 }
 </code></pre>
@@ -258,7 +258,7 @@ int main() {
         }
         //如果该因数等于这个数本身则表明为质数，输出
         if (j == i)
-            printf(&quot;%d\n&quot;, i);
+            printf("%d\n", i);
     }
     return 0;
 }
@@ -275,7 +275,7 @@ int main() {
         }
         //如果该因数等于这个数本身则表明为质数，输出
         if (j == i) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
@@ -298,9 +298,6 @@ int main() {
 <li><strong>输入两个整数，求其最大公约数和最小公倍数。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -314,16 +311,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -335,15 +334,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

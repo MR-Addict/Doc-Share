@@ -209,9 +209,6 @@ void read_data(uint8_t* data, uint8_t length);
 <p>在 Arduino 中，也有一个官方的软 I2C 库，也就是<code>SoftI2CMaster.h</code>库，这个库同样可以让你使用任何引脚作为 I2C 引脚，但是这个需要自己手动下载安装。</p>
 <p>官方资料在这里 <a href="https://github.com/felias-fogg/SoftI2CMaster">SoftI2CMaster</a></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -225,16 +222,18 @@ void read_data(uint8_t* data, uint8_t length);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -246,15 +245,11 @@ void read_data(uint8_t* data, uint8_t length);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

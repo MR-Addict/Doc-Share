@@ -194,9 +194,6 @@
 <p>另外你显然要懂得如何使用 Git 及 GitHub，建议撰写新内容时不要直接再 main 分支上写，先开一个本地的其他分支，在该分支上验证无误后在 merge 到 main 分支，最后再提交到云端。如果你还不怎么了解有关 Git 及 Github 的使用，可以阅读(<a href="../Speeches/Git-Github/Intro.html">半小时入门介绍——Git 及 Github 入门</a>)，你也可以自行上网学习相关内容。</p>
 <p>最后，因为你是要写新的内容，所以我认为你因该首先要了解一定的相关知识，在撰写的时候秉承严谨认真的态度，对要写的内容有了深入了解在下笔，不要一知半解地就写。这样是非常不可取的。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -210,16 +207,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -231,15 +230,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

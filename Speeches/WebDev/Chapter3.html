@@ -204,7 +204,7 @@
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1 class=&quot;header&quot;&gt;这是一个标题&lt;/h1&gt;
+    &lt;h1 class="header"&gt;这是一个标题&lt;/h1&gt;
     &lt;p&gt;Hello world!&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -225,25 +225,22 @@
 <li>属性选择器（如<code>input[type='submit']</code>）</li>
 </ul>
 <h2 id="三样式表的引用"><a class="header" href="#三样式表的引用">三、样式表的引用</a></h2>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+<pre><code class="language-html">&lt;link rel="stylesheet" href="style.css" /&gt;
 </code></pre>
 <p>例如：</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;This is a title.&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1 class=&quot;header&quot;&gt;这是一个标题&lt;/h1&gt;
+    &lt;h1 class="header"&gt;这是一个标题&lt;/h1&gt;
     &lt;p&gt;Hello world!&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -257,16 +254,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -278,15 +277,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

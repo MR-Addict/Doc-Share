@@ -190,9 +190,6 @@
 <p>目前这个灯板主要是放在办公室当作时钟使，整体效果挺不错的。一开始我是使用 DS1302，但是这个时钟芯片的精度很差，几个星期就要误差一两分钟，后来我换成了 DS3231，这个时钟芯片精度是真高，一年的误差也就在一分钟上下，而且还有两个闹钟可以使，非常不错。</p>
 <p>希望大家喜欢这个项目。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -206,16 +203,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -227,15 +226,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

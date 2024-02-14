@@ -267,7 +267,7 @@ struct Time {
 } now = {2022, 2, 5, 12, 30, 0};
 
 int main() {
-    printf(&quot;%d-%d-%d %d:%d:%d\n&quot;, now.year, now.month, now.date, now.hour,
+    printf("%d-%d-%d %d:%d:%d\n", now.year, now.month, now.date, now.hour,
            now.minute, now.second);
     return 0;
 }
@@ -286,7 +286,7 @@ struct Time {
 } now = {2022, 2, 5, 12, 30, 0};
 
 void getTime(struct Time time) {
-    printf(&quot;%d-%d-%d %d:%d:%d\n&quot;, time.year, time.month, time.date, time.hour,
+    printf("%d-%d-%d %d:%d:%d\n", time.year, time.month, time.date, time.hour,
            time.minute, time.second);
 }
 
@@ -297,9 +297,6 @@ int main() {
 </code></pre>
 <p>总之，结构体作为一种用户自定义的数据类型同其他数据类型一样，具有同等的功能，可以作为参数，可以作为返回值，可以使用指针，可以创建数组等等，这里仅作简单介绍，更多内容可自行学习。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -313,16 +310,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -334,15 +333,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

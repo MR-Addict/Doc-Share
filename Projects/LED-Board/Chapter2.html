@@ -234,14 +234,14 @@
 <p><img src="Images/1-6.png" alt="Android APP" /></p>
 <p>在使用 APP 前，你需要先连接 ESP32 的蓝牙，我设置了蓝牙名称为<code>LED Board 507</code>，你可以通过更改<code>LEDBoard21x7.ino</code>文件中<code>setup</code>函数的下面一行更改设备蓝牙名称：</p>
 <pre><code class="language-cpp">// 设置蓝牙名称
-SerialBT.begin(&quot;LED Board 507&quot;);
+SerialBT.begin("LED Board 507");
 </code></pre>
 <p>连接蓝牙后你就可以通过这个 APP 控制灯板，相信大家看了就会使用这个 APP，挺简单的，这里我不做介绍了。</p>
 <h3 id="23-wifi"><a class="header" href="#23-wifi">2.3 WIFI</a></h3>
 <p>这里 WIFI 的使用和 NFC 的 WIFI 开门是相似的，也需要先登录验证。在连接相同路由器的情况下，你可以通过 ESP32 的主机名进行访问，我设置的主机名是<code>ledboard-507</code>，即，你可以通过<a href="http://ledboard-507">http://ledboard-507</a>访问。</p>
 <p>你可以通过更改<code>WIFI.h</code>文件下的<code>WIFI_INIT</code>的以下几行更改 ESP32 的主机名：</p>
 <pre><code class="language-cpp">// change hostname to ledboard-507
-String hostname = &quot;ledboard-507&quot;;
+String hostname = "ledboard-507";
 WiFi.mode(WIFI_STA);
 WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, INADDR_NONE);
 WiFi.setHostname(hostname.c_str());
@@ -259,9 +259,6 @@ rtc.setAlarm1(DateTime(2021, 12, 28, 0, 0, 0), DS3231_A1_Hour); // 每日凌晨1
 rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8点打开LED
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -275,16 +272,18 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -296,15 +295,11 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

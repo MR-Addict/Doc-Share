@@ -197,9 +197,6 @@
 <p>JavaScript 与 Java 在名字和语法上都很相似，但这两门编程语言从设计之初就有很大不同。JavaScript 在语言设计上主要受到了 Self（一种基于原型的编程语言）和 Scheme（一门函数式编程语言）的影响，在语法结构上它和 C 语言很相似（如 if 条件语句、switch 语句、while 循环和 do-while 循环等）。</p>
 <p>对于客户端来说，JavaScript 通常被实现为一门解释语言，但如今它已经可以被即时编译（JIT）。随着 HTML5 和 CSS3 语言标准的推行，它还可以用于<strong>游戏</strong>、<strong>桌面</strong>和<strong>移动应用程序</strong>的开发，以及在服务器端网络环境运行（如 Node.js）</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -213,16 +210,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -234,15 +233,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

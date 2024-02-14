@@ -224,7 +224,7 @@ int main() {
     /* 输出数组中每个元素的值 */
     for (int i = 0; i &lt; 5; i++) {
         for (int j = 0; j &lt; 2; j++) {
-            printf(&quot;a[%d][%d] = %d &quot;, i, j, a[i][j]);
+            printf("a[%d][%d] = %d ", i, j, a[i][j]);
         }
         putchar('\n');
     }
@@ -240,9 +240,6 @@ a[4][0] = 4 a[4][1] = 8
 </code></pre>
 <p>在 C 语言中我们可以创建任意长的数组，但是在一般情况下，我们创建的数组都是一维数组和二维数组。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -256,16 +253,18 @@ a[4][0] = 4 a[4][1] = 8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -277,15 +276,11 @@ a[4][0] = 4 a[4][1] = 8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

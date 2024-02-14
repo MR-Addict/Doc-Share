@@ -331,9 +331,6 @@ void read_data(uint8_t* data, uint8_t length) {
 <p>完成了读写时间和温度，在 DS3231 上，我们其实还有一个功能没有使用，那就是闹钟。除了闹钟，还有输出方波，使用中断等等，我认为不需要全部都会使用。能够读取时间就可以了。</p>
 <p>因此，这里我将不再详介绍如何设置闹钟，读取闹钟状态，以及关闭闹钟等，完整代码在下一章。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -347,16 +344,18 @@ void read_data(uint8_t* data, uint8_t length) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -368,15 +367,11 @@ void read_data(uint8_t* data, uint8_t length) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

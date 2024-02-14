@@ -194,8 +194,8 @@
 <p>安装完成后，你可以在命令行中输入<code>git</code>测试你的 Git 是否安装成功。</p>
 <h2 id="2-安装-mdbook-及插件"><a class="header" href="#2-安装-mdbook-及插件">2. 安装 mdbook 及插件</a></h2>
 <p>首先我们要先安装 mdbook 插件。前往 <a href="https://github.com/rust-lang/mdBook/releases">Github 主页</a>下载已经编译好的文件，选择你的系统对应的文件下载。建议下载和项目相同的版本，这样可以避免一些兼容性问题。</p>
-<p><img src="Images/1-1.png" alt="mdbook" /></p>
-<p>然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：</p>
+<p><img src="Images/1-1.png" alt="mdbook" />
+然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：</p>
 <p><img src="Images/1-2.png" alt="PATH" />
 你可以在命令行中输入<code>mdbook</code>测试你的 mdbook 环境是否安装成功。</p>
 <p>同理，我们还需要安装下面的插件，也是下载完成后放到环境变量中：</p>
@@ -212,9 +212,6 @@
 <p>安装完成后，用 vscode 打开一个 markdown 文档时，你可以通过点击右上角的预览图标预览你的 markdown 文本。</p>
 <p><img src="Images/1-4.png" alt="Preview" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -228,16 +225,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -249,15 +248,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

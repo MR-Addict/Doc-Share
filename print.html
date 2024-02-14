@@ -185,9 +185,6 @@
 <p>本内容主要是用来给，南京工业大学校科协技术开发部电子组同学培训学习使用。</p>
 <p>本人能力有限，内容肯定存在错误和不足，欢迎大家指正。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -201,16 +198,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -222,15 +221,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -274,9 +269,6 @@
 <p>在这里我们也只对 Arduino 这个硬件和软件平台作简单的介绍，嵌入式学习肯定不是学习 Arduino，只是 arduino 很适合入门，不需要配置环境，使用非常之简便，很适合教学，也很适合做项目。</p>
 <p>同时本专题内容进队 Arduino 的基础硬件做简单介绍，有关 Arduino 硬件的通信内容可以学习后面的章节(<a href="Arduino/../MCU-Communication/Intro.html">通信专题</a>)</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -290,16 +282,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -311,15 +305,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -427,9 +417,6 @@
 <p>下面是 Arduino IDE 1.8.19 的基本信息。</p>
 <p><img src="Arduino/Images/1-10.png" alt="Arduino IDE 1.8.19" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -443,16 +430,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -464,15 +453,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -554,9 +539,6 @@ void loop() {
 <p>整个程序的流程示意图如下：</p>
 <p><img src="Arduino/Images/2-1.png" alt="Blink" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -570,16 +552,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -591,15 +575,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -755,9 +735,6 @@ void loop() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -771,16 +748,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -792,15 +771,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -910,9 +885,6 @@ void loop() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -926,16 +898,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -947,15 +921,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1032,9 +1002,6 @@ void loop() {
 </code></pre>
 <p>有关手动配置 Arduino Uno 定时器的内容这里不做详细介绍，有兴趣的可以参考以下文章：<a href="https://circuitdigest.com/microcontroller-projects/arduino-timer-tutorial">Arduino Timer Tutorial</a></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1048,16 +1015,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1069,15 +1038,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1180,9 +1145,6 @@ TCCR0B = TCCR0B &amp; B11111000 | B00000100; // for PWM frequency of 244.14 Hz
 TCCR0B = TCCR0B &amp; B11111000 | B00000101; // for PWM frequency of 61.04 Hz
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1196,16 +1158,18 @@ TCCR0B = TCCR0B &amp; B11111000 | B00000101; // for PWM frequency of 61.04 Hz
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1217,15 +1181,11 @@ TCCR0B = TCCR0B &amp; B11111000 | B00000101; // for PWM frequency of 61.04 Hz
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1282,9 +1242,6 @@ void loop() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1298,16 +1255,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1319,15 +1278,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1458,9 +1413,6 @@ void loop() {
 <p>有关 Arduino 串口通信的其他函数可以参考以下内容：<a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">Arduino Serial Function Lists</a></p>
 <p>这里只对 Arduino 的串口通信进行简单介绍，有关 UART 的通信机制及更多内容，请参考后面的章节(<a href="Arduino/../MCU-Communication/Serial/UART/Intro.html">通讯专题/UART</a>)</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1474,16 +1426,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1495,15 +1449,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1583,11 +1533,11 @@ void setup() {
   while (!Serial);
 
   // Write data to EEPROM
-  Serial.print(&quot;Write data to EEPROM: &quot;);
+  Serial.print("Write data to EEPROM: ");
   EEPROM.update(data, address);
 
   // Read data from EEPROM
-  Serial.print(&quot;\nRead data from EEPROM: &quot;);
+  Serial.print("\nRead data from EEPROM: ");
   data = EEPROM.read(address);
   Serial.println(data, 3);
 }
@@ -1621,11 +1571,11 @@ void setup() {
   while (!Serial);
 
   // Write float to EEPROM
-  Serial.print(&quot;Write float to EEPROM: &quot;);
+  Serial.print("Write float to EEPROM: ");
   EEPROM.put(data, address);
 
   // Read float from EEPROM
-  Serial.print(&quot;\nRead float from EEPROM: &quot;);
+  Serial.print("\nRead float from EEPROM: ");
   EEPROM.get(address, data);
   Serial.println(data, 3);
 }
@@ -1634,9 +1584,6 @@ void loop() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1650,16 +1597,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1671,15 +1620,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1714,9 +1659,6 @@ void loop() {
 <p>当前最新的 C 语言标准为 C18 ，在它之前的 C 语言标准有 C17、C11…C99 等。</p>
 <p>在这里我们也是只做简单的讲解和介绍，更多内容大家可以参考其他书籍和网站。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1730,16 +1672,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1751,15 +1695,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1795,10 +1735,10 @@ void loop() {
 
 int main() {
     int input, ouput;
-    printf(&quot;Input your age:&quot;);
-    scanf(&quot;%d&quot;, &amp;input);
+    printf("Input your age:");
+    scanf("%d", &amp;input);
     ouput = input;
-    printf(&quot;Your age is:%d&quot;, ouput);
+    printf("Your age is:%d", ouput);
     return 0;
 }
 </code></pre>
@@ -1834,7 +1774,7 @@ int main() {
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main(void) {
-    printf(&quot;Hello world!&quot;);
+    printf("Hello world!");
     return 0;
 }
 </code></pre>
@@ -1842,7 +1782,7 @@ int main(void) {
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 void printHelloWorld() {
-    printf(&quot;Hello world!&quot;);
+    printf("Hello world!");
 }
 
 int main() {
@@ -1864,9 +1804,6 @@ int main() {
 <li><strong>条件编译:#ifdef #define #endif</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1880,16 +1817,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -1901,15 +1840,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -1979,9 +1914,6 @@ int，unsigned int，short，unsigned short，long，unsigned long，char，unsi
 BOOL isDisplay = TRUE;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -1995,16 +1927,18 @@ BOOL isDisplay = TRUE;
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2016,15 +1950,11 @@ BOOL isDisplay = TRUE;
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2112,9 +2042,6 @@ BOOL isDisplay = TRUE;
 const uint8_t NUM_LEDS = 30;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -2128,16 +2055,18 @@ const uint8_t NUM_LEDS = 30;
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2149,15 +2078,11 @@ const uint8_t NUM_LEDS = 30;
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2248,9 +2173,6 @@ const uint8_t NUM_LEDS = 30;
 <p>而在一个运算量两侧的运算符优先级相同时，则按运算符的结合性所规定的结合方向处理，即左结合和右结合。</p>
 <p><img src="C-Language/Images/4-1.png" alt="运算符优先级和结合性" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -2264,16 +2186,18 @@ const uint8_t NUM_LEDS = 30;
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2285,15 +2209,11 @@ const uint8_t NUM_LEDS = 30;
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2365,12 +2285,12 @@ else
 
 int main() {
     int input;
-    printf(&quot;Input your age:&quot;);
-    scanf(&quot;%d&quot;, &amp;input);
+    printf("Input your age:");
+    scanf("%d", &amp;input);
     if (input &lt; 18) {
-        printf(&quot;You're an underage!&quot;);
+        printf("You're an underage!");
     } else {
-        printf(&quot;Congratulations! You're already an adult!&quot;);
+        printf("Congratulations! You're already an adult!");
     }
     return 0;
 }
@@ -2405,8 +2325,8 @@ else
 
 int main() {
     float salary, tax;
-    printf(&quot;Input your salary:&quot;);
-    scanf(&quot;%f&quot;, &amp;salary);
+    printf("Input your salary:");
+    scanf("%f", &amp;salary);
     if (salary &lt; 1000) tax = 0;
     else if (salary &lt; 2000) tax = 0.05;
     else if (salary &lt; 3000) tax = 0.1;
@@ -2414,7 +2334,7 @@ int main() {
     else tax = 0.2;
 
     salary = salary * (1 - tax);
-    printf(&quot;Your final salary is %.2f&quot;, salary);
+    printf("Your final salary is %.2f", salary);
     return 0;
 }
 </code></pre>
@@ -2451,8 +2371,8 @@ switch (expression)
 
 int main() {
     float salary, tax;
-    printf(&quot;Input your salary:&quot;);
-    scanf(&quot;%f&quot;, &amp;salary);
+    printf("Input your salary:");
+    scanf("%f", &amp;salary);
 
     switch ((int)(salary / 1000)) {
         case 0: tax = 0; break;
@@ -2464,7 +2384,7 @@ int main() {
     }
 
     salary = salary * (1 - tax);
-    printf(&quot;Your final salary is %.2f&quot;, salary);
+    printf("Your final salary is %.2f", salary);
     return 0;
 }
 </code></pre>
@@ -2474,9 +2394,6 @@ int main() {
 <li><strong>输入三个整数，求出三个数中的最大值。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -2490,16 +2407,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2511,15 +2430,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2565,7 +2480,7 @@ int main() {
     while (count &lt; 10) {
         // 如果是偶数则输出该数
         if (count % 2 == 0)
-            printf(&quot;%d\n&quot;, count);
+            printf("%d\n", count);
         count++;
     }
     return 0;
@@ -2587,7 +2502,7 @@ int main() {
     int count = 0;
     while (1) {
         if (count % 2 == 0)
-            printf(&quot;%d\n&quot;, count);
+            printf("%d\n", count);
         count++;
         if (count &gt;= 10)
             break;
@@ -2605,7 +2520,7 @@ int main() {
             count++;
             continue;
         } else
-            printf(&quot;%d\n&quot;, count);
+            printf("%d\n", count);
         count++;
     }
     return 0;
@@ -2627,7 +2542,7 @@ int main() {
     int count = 0;
     do {
         if (count % 2 == 0)
-            printf(&quot;%d\n&quot;, count);
+            printf("%d\n", count);
         count++;
     } while (count &lt; 10);
     return 0;
@@ -2639,9 +2554,6 @@ int main() {
 <li><strong>输入一个整数，逆向输出该数，如输入 123456，反向输出 654321.</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -2655,16 +2567,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2676,15 +2590,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2733,7 +2643,7 @@ int main() {
 int main() {
     for (int i = 0; i &lt; 10; i++) {
         if (i % 2 == 0)
-            printf(&quot;%d\n&quot;, i);
+            printf("%d\n", i);
     }
     return 0;
 }
@@ -2749,7 +2659,7 @@ int main() {
         sum = sum + i;
         // sum += i;
     }
-    printf(&quot;The sum is %d&quot;, sum);
+    printf("The sum is %d", sum);
     return 0;
 }
 </code></pre>
@@ -2788,7 +2698,7 @@ int main() {
         }
         //如果该因数等于这个数本身则表明为质数，输出
         if (j == i)
-            printf(&quot;%d\n&quot;, i);
+            printf("%d\n", i);
     }
     return 0;
 }
@@ -2805,7 +2715,7 @@ int main() {
         }
         //如果该因数等于这个数本身则表明为质数，输出
         if (j == i) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
@@ -2828,9 +2738,6 @@ int main() {
 <li><strong>输入两个整数，求其最大公约数和最小公倍数。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -2844,16 +2751,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -2865,15 +2774,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -2936,11 +2841,11 @@ int isPrime(int num) {
 int main() {
     for (int i = 2, count = 0; i &lt;= 100; i++) {
         if (isPrime(i)) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
-                printf(&quot;\n&quot;);
+                printf("\n");
         }
     }
     return 0;
@@ -2962,9 +2867,9 @@ int getGCD(int num1, int num2) {
 
 int main() {
     int num1, num2;
-    printf(&quot;Input two intergers:&quot;);
-    scanf(&quot;%d %d&quot;, &amp;num1, &amp;num2);
-    printf(&quot;The greatest common divisor between %d and %d is %d.\n&quot;,
+    printf("Input two intergers:");
+    scanf("%d %d", &amp;num1, &amp;num2);
+    printf("The greatest common divisor between %d and %d is %d.\n",
             num1, num2, getGCD(num1, num2));
     return 0;
 }
@@ -2985,9 +2890,9 @@ int getGCD(int num1, int num2);
 
 int main() {
     int num1, num2;
-    printf(&quot;Input two intergers:&quot;);
-    scanf(&quot;%d %d&quot;, &amp;num1, &amp;num2);
-    printf(&quot;The greatest common divisor between %d and %d is %d.\n&quot;,
+    printf("Input two intergers:");
+    scanf("%d %d", &amp;num1, &amp;num2);
+    printf("The greatest common divisor between %d and %d is %d.\n",
             num1, num2, getGCD(num1, num2));
     return 0;
 }
@@ -3008,9 +2913,6 @@ int getGCD(int num1, int num2) {
 <li><strong>输入一个整数，求其\(x^2\)的程序</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3024,16 +2926,18 @@ int getGCD(int num1, int num2) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3045,15 +2949,11 @@ int getGCD(int num1, int num2) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3111,11 +3011,11 @@ int isPrime(int num) {
 int main() {
     for (int i = 2, count = 0; i &lt;= 100; i++) {
         if (isPrime(i)) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
-                printf(&quot;\n&quot;);
+                printf("\n");
         }
     }
     return 0;
@@ -3134,7 +3034,7 @@ int main() {
     int a = 10, b = 20;
     /* 访问全局变量 */
     global = a + b;
-    printf(&quot;Value of a = %d, b = %d and global = %d.\n&quot;, a, b, global);
+    printf("Value of a = %d, b = %d and global = %d.\n", a, b, global);
     return 0;
 }
 </code></pre>
@@ -3147,16 +3047,13 @@ int global = 10;
 int main() {
     /* 局部变量声明 */
     int global = 20;
-    printf(&quot;Value of global = %d.\n&quot;, global);
+    printf("Value of global = %d.\n", global);
     return 0;
 }
 </code></pre>
 <h2 id="4-初始化局部变量和全局变量"><a class="header" href="#4-初始化局部变量和全局变量">4. 初始化局部变量和全局变量</a></h2>
 <p>当局部变量被定义时，系统不会对其初始化，您必须自行对其初始化。定义全局变量时，系统会自动对其初始化，因为全局变量属于静态变量(static)，而局部变量是动态变量(auto)，所有静态变量未初始化都默认为<strong>0 或者 NULL</strong>，而动态变量未初始化为<strong>任意有效值</strong>。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3170,16 +3067,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3191,15 +3090,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3263,17 +3158,17 @@ blance[4] = 50.6;
 int main() {
     int num[5], sum = 0;
     for (int i = 0; i &lt; 5; i++) {
-        printf(&quot;Input a number:&quot;);
+        printf("Input a number:");
         // 将输入的元素存入数组当中
-        scanf(&quot;%d&quot;, &amp;num[i]);
+        scanf("%d", &amp;num[i]);
     }
-    printf(&quot;These numbers are .&quot;);
+    printf("These numbers are .");
     for (int i = 0; i &lt; 5; i++) {
         // 求出所有元素之和
         sum += num[i];
-        printf(&quot;%d &quot;, num[i]);
+        printf("%d ", num[i]);
     }
-    printf(&quot;\nThe sum of them is %d\n.&quot;, sum);
+    printf("\nThe sum of them is %d\n.", sum);
     return 0;
 }
 </code></pre>
@@ -3303,7 +3198,7 @@ int main() {
     }
     // 输出结果
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, num[i]);
+        printf("%d ", num[i]);
     }
     return 0;
 }
@@ -3335,15 +3230,12 @@ int main() {
     }
     // 输出结果
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, num[i]);
+        printf("%d ", num[i]);
     }
     return 0;
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3357,16 +3249,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3378,15 +3272,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3456,7 +3346,7 @@ int main() {
     /* 输出数组中每个元素的值 */
     for (int i = 0; i &lt; 5; i++) {
         for (int j = 0; j &lt; 2; j++) {
-            printf(&quot;a[%d][%d] = %d &quot;, i, j, a[i][j]);
+            printf("a[%d][%d] = %d ", i, j, a[i][j]);
         }
         putchar('\n');
     }
@@ -3472,9 +3362,6 @@ a[4][0] = 4 a[4][1] = 8
 </code></pre>
 <p>在 C 语言中我们可以创建任意长的数组，但是在一般情况下，我们创建的数组都是一维数组和二维数组。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3488,16 +3375,18 @@ a[4][0] = 4 a[4][1] = 8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3509,15 +3398,11 @@ a[4][0] = 4 a[4][1] = 8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3553,7 +3438,7 @@ a[4][0] = 4 a[4][1] = 8
 <pre><code class="language-c">char site[7] = {'R', 'U', 'N', 'O', 'O', 'B', '\0'};
 </code></pre>
 <p>上面的初始化也可以写成如下格式：</p>
-<pre><code class="language-c">char site[] = &quot;RUNOOB&quot;;
+<pre><code class="language-c">char site[] = "RUNOOB";
 </code></pre>
 <p>以下是 C/C++ 中定义的字符串的内存表示：</p>
 <p><img src="C-Language/Images/12-1.png" alt="" /></p>
@@ -3562,8 +3447,8 @@ a[4][0] = 4 a[4][1] = 8
 
 int main() {
     char string[50];
-    puts(&quot;Input a string without space:&quot;);
-    scanf(&quot;%s&quot;, string);
+    puts("Input a string without space:");
+    scanf("%s", string);
     puts(string);
     return 0;
 }
@@ -3574,9 +3459,6 @@ int main() {
 <li><strong>输入一段任意长度的字符串，通过排序将其按照 A-Z，a-z 重新排序。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3590,16 +3472,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3611,15 +3495,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3657,7 +3537,7 @@ int main() {
 int main() {
     int virable = 0;
     int* pointer = &amp;virable;  // 定义指针变量
-    printf(&quot;The address of virable is %p.\n&quot;, pointer);
+    printf("The address of virable is %p.\n", pointer);
     return 0;
 }
 </code></pre>
@@ -3690,15 +3570,15 @@ int main() {
     ip = &amp;var; /* 在指针变量中存储 var 的地址 */
 
     /* 使用指针访问值 */
-    printf(&quot;The value of var is %d.\n&quot;, var);
+    printf("The value of var is %d.\n", var);
 
     /* 使用指针访问值 */
-    printf(&quot;The value of *ip is %d.\n&quot;, *ip);
+    printf("The value of *ip is %d.\n", *ip);
 
-    printf(&quot;The address of var is %p.\n&quot;, &amp;var);
+    printf("The address of var is %p.\n", &amp;var);
 
     /* 在指针变量中存储的地址 */
-    printf(&quot;The address of ip is %p.\n&quot;, ip);
+    printf("The address of ip is %p.\n", ip);
 
     return 0;
 }
@@ -3721,9 +3601,9 @@ void swap(int* num1, int* num2) {
 
 int main() {
     int a = 4, b = 6;
-    printf(&quot;a=%d, b=%d.\n&quot;, a, b);
+    printf("a=%d, b=%d.\n", a, b);
     swap(&amp;a, &amp;b);
-    printf(&quot;a=%d, b=%d.\n&quot;, a, b);
+    printf("a=%d, b=%d.\n", a, b);
     return 0;
 }
 </code></pre>
@@ -3740,7 +3620,7 @@ a=6, b=4.
 
 int main() {
     int* ptr = NULL;
-    printf(&quot;The address of ptr is %p\n&quot;, ptr);
+    printf("The address of ptr is %p\n", ptr);
     return 0;
 }
 </code></pre>
@@ -3748,9 +3628,6 @@ int main() {
 <pre><code class="language-plaintext">The address of ptr is 0000000000000000
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3764,16 +3641,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3785,15 +3664,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3847,8 +3722,8 @@ int main() {
     /* 指针中的数组地址 */
     ptr = num;
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;num[%d] = %d &quot;, i, *ptr);
-        printf(&quot;num[%d] = %p\n&quot;, i, ptr);
+        printf("num[%d] = %d ", i, *ptr);
+        printf("num[%d] = %p\n", i, ptr);
         /* 指向下一个位置 */
         ptr++;
     }
@@ -3871,8 +3746,8 @@ int main() {
     /* 指针中的数组地址 */
     ptr = &amp;num[2];
     for (int i = LENGTH - 1; i &gt;= 0; i--) {
-        printf(&quot;num[%d] = %d &quot;, i, *ptr);
-        printf(&quot;num[%d] = %p\n&quot;, i, ptr);
+        printf("num[%d] = %d ", i, *ptr);
+        printf("num[%d] = %p\n", i, ptr);
         /* 指向上一个位置 */
         ptr--;
     }
@@ -3894,20 +3769,17 @@ int main() {
     int *ptr, sum;
     /* 指针中的数组地址 */
     ptr = num;
-    printf(&quot;The arrey is [&quot;);
+    printf("The arrey is [");
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, *ptr);
+        printf("%d ", *ptr);
         sum += *ptr;
         ptr++;
     }
-    printf(&quot;]\nThe sum of arrey is %d.\n&quot;, sum);
+    printf("]\nThe sum of arrey is %d.\n", sum);
     return 0;
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -3921,16 +3793,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -3942,15 +3816,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -3993,11 +3863,11 @@ int main() {
     int* ptr = num;
     // 输出结果
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, num[i]);
+        printf("%d ", num[i]);
     }
     putchar('\n');
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, ptr[i]);
+        printf("%d ", ptr[i]);
     }
     return 0;
 }
@@ -4054,7 +3924,7 @@ int main() {
     bubbleSort(num, LENGTH);
     // 输出结果
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, num[i]);
+        printf("%d ", num[i]);
     }
     return 0;
 }
@@ -4080,13 +3950,13 @@ int main(void) {
     int (*p)(int, int) = &amp;MAX;  // &amp;可以省略
     int a, b, c, max;
 
-    printf(&quot;Input three numbers:&quot;);
-    scanf(&quot;%d %d %d&quot;, &amp;a, &amp;b, &amp;c);
+    printf("Input three numbers:");
+    scanf("%d %d %d", &amp;a, &amp;b, &amp;c);
 
     /* 与直接调用函数等价，max = MAX(MAX(a, b), c) */
     max = p(p(a, b), c);
 
-    printf(&quot;The biggest one is: %d\n&quot;, max);
+    printf("The biggest one is: %d\n", max);
 
     return 0;
 }
@@ -4094,9 +3964,6 @@ int main(void) {
 <p>同理我们可以将函数当作参数进行传递，这称之为<code>回调函数</code>，通过回调函数，我们让用户传入自定义的函数，这在中断中使用比较多，日常中使用的比较少，这里也不做介绍了，感兴趣的同学可以自行查阅相关资料进行学习。</p>
 <p>可见，指针在 C 语言中的功能真的非常多，有了指针可以实现很多更高级的功能，这里只对指针做简单介绍，更多内容可自行学习。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4110,16 +3977,18 @@ int main(void) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4131,15 +4000,11 @@ int main(void) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4212,15 +4077,12 @@ enum DAY { MON = 1, TUE, WED, THU, FRI, SAT, SUN } day;
 int main() {
     // 遍历枚举元素
     for (day = MON; day &lt;= SUN; day++) {
-        printf(&quot;The element is %d.\n&quot;, day);
+        printf("The element is %d.\n", day);
     }
 }
 </code></pre>
 <p>这里仅对枚举作简单介绍，更多内容可自行学习。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4234,16 +4096,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4255,15 +4119,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4376,7 +4236,7 @@ struct Time {
 } now = {2022, 2, 5, 12, 30, 0};
 
 int main() {
-    printf(&quot;%d-%d-%d %d:%d:%d\n&quot;, now.year, now.month, now.date, now.hour,
+    printf("%d-%d-%d %d:%d:%d\n", now.year, now.month, now.date, now.hour,
            now.minute, now.second);
     return 0;
 }
@@ -4395,7 +4255,7 @@ struct Time {
 } now = {2022, 2, 5, 12, 30, 0};
 
 void getTime(struct Time time) {
-    printf(&quot;%d-%d-%d %d:%d:%d\n&quot;, time.year, time.month, time.date, time.hour,
+    printf("%d-%d-%d %d:%d:%d\n", time.year, time.month, time.date, time.hour,
            time.minute, time.second);
 }
 
@@ -4406,9 +4266,6 @@ int main() {
 </code></pre>
 <p>总之，结构体作为一种用户自定义的数据类型同其他数据类型一样，具有同等的功能，可以作为参数，可以作为返回值，可以使用指针，可以创建数组等等，这里仅作简单介绍，更多内容可自行学习。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4422,16 +4279,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4443,15 +4302,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4513,7 +4368,7 @@ union Data {
 
 int main() {
     union Data data;
-    printf(&quot;Memory size occupied by data is %d.\n&quot;, sizeof(data));
+    printf("Memory size occupied by data is %d.\n", sizeof(data));
     return 0;
 }
 </code></pre>
@@ -4522,9 +4377,6 @@ int main() {
 </code></pre>
 <p>这里对共用体仅作简单介绍，更多内容可自行学习。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4538,16 +4390,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4559,15 +4413,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4616,9 +4466,6 @@ int main() {
   <li><a href="MCU-Communication/Datasheet/LCD1602.pdf" target="_blank">LCD1602数据手册</a></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4631,17 +4478,19 @@ padding: 0.75rem;
 bottom: 1.25rem;
 right: calc(1.25rem + var(--page-padding));
 
-border: none;
-border-radius: 50%;
-color: #fff;
-background-color: var(--icons);
-
 z-index: 999;
 cursor: pointer;
+color: #fff;
+border: none;
+border-radius: 50%;
+background-color: var(--icons);
 </code></pre>
 <p>}
 .scroll-to-top.hidden {
 display: none;
+}
+.scroll-to-top i {
+transform: translateY(-2px);
 }
 @media (min-width: 768px) {
 .scroll-to-top {
@@ -4653,15 +4502,11 @@ background-color: var(–icons-hover);
 }
 }
 </style></p>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4697,9 +4542,6 @@ background-color: var(–icons-hover);
 <p>正常情况下我们需要将通信接口拉高以保证数据的稳定。同时可能还需要在电源之间接一个电容进行滤波。</p>
 <p><img src="MCU-Communication/Serial/One-Wire/Images/0-1.png" alt="拉高稳定信号" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4713,16 +4555,18 @@ background-color: var(–icons-hover);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4734,15 +4578,11 @@ background-color: var(–icons-hover);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4782,9 +4622,6 @@ background-color: var(–icons-hover);
 </div>
 <p>后面我们将具体学习 DHT11 的单总线通信方式。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4798,16 +4635,18 @@ background-color: var(–icons-hover);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4819,15 +4658,11 @@ background-color: var(–icons-hover);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -4885,9 +4720,6 @@ background-color: var(–icons-hover);
 <p>值得注意的是，数据手册上说明了 DHT11 采集更新数据需要 2 秒钟，因此我建议每次和 DHT11 结束通信后至少<strong>延时 3 秒钟</strong>，保证数据的准确性。</p>
 <p><img src="MCU-Communication/Serial/One-Wire/Images/2-4.png" alt="DHT11和MCU的通信过程" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -4901,16 +4733,18 @@ background-color: var(–icons-hover);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -4922,15 +4756,11 @@ background-color: var(–icons-hover);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5036,9 +4866,6 @@ temperature = buffer[2] + buffer[3] * 0.1;
 return DHT11_OKAY;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5052,16 +4879,18 @@ return DHT11_OKAY;
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5073,15 +4902,11 @@ return DHT11_OKAY;
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5130,12 +4955,12 @@ void setup() {
 void loop() {
   switch (updataData()) {
     case DHT11_ERROR:
-      Serial.println(&quot;DHT11 ERROR!&quot;);
+      Serial.println("DHT11 ERROR!");
       break;
     case DHT11_OKAY:
-      Serial.print(&quot;DHT11 Okay,humidity is &quot;);
+      Serial.print("DHT11 Okay,humidity is ");
       Serial.print(humidity);
-      Serial.print(&quot;, temperature is &quot;);
+      Serial.print(", temperature is ");
       Serial.println(temperature);
       break;
   }
@@ -5201,9 +5026,6 @@ bool updataData() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5217,16 +5039,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5238,15 +5062,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5294,9 +5114,6 @@ bool updataData() {
 <p>下面是 WS2812 的时序表，想挑战一下的同学可以尝试如何自己驱动点亮 WS2812：</p>
 <p><img src="MCU-Communication/Serial/One-Wire/Images/5-3.png" alt="" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5310,16 +5127,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5331,15 +5150,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5379,9 +5194,6 @@ bool updataData() {
 <p>下面是一个典型的 CH340C 原理图：</p>
 <p><img src="MCU-Communication/Serial/UART/Images/0-2.png" alt="CH340C" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5395,16 +5207,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5416,15 +5230,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5484,9 +5294,6 @@ bool updataData() {
 </div>
 <p>我们会在下面的章节详细介绍 HC-05 蓝牙模块的使用。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5500,16 +5307,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5521,15 +5330,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5597,9 +5402,6 @@ bool updataData() {
 <p>总的来说，HC-05 的使用非常简单，UART 通讯也非常简单，是五种通讯当中最为简单的一个。</p>
 <p>下一章节我们学习以下如何通过 HC-05 蓝牙模块控制板载 LED。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5613,16 +5415,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5634,15 +5438,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5722,9 +5522,6 @@ void loop() {
 <p>最后点击左上角的开关返回就可以使用了，大家尝试点击一下，观察 LED 是不是可以被点亮和关闭。</p>
 <p>该软件还有其他非常实用的功能，大家可以自行探索使用。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5738,16 +5535,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5759,15 +5558,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5861,7 +5656,7 @@ void setup(){
 }
 
 void loop(){
-  serial.println(&quot;Hello world!&quot;);
+  serial.println("Hello world!");
   delay(1000);
 }
 </code></pre>
@@ -5881,7 +5676,7 @@ void setup() {
 void loop() {
   /* 读取硬件串口的AT命令 */
   if (Serial.available()) {
-    String message = &quot;&quot;;
+    String message = "";
     while (Serial.available()) {
       message += (char)Serial.read();
     }
@@ -5892,7 +5687,7 @@ void loop() {
   /* 读取软串口，也就是HC-05的应答数据 */
   if (serial.available()) {
     // 读取HC-05数据，同时发送到硬件串口
-    String message = &quot;&quot;;
+    String message = "";
     while (serial.available()) {
       message += (char)serial.read();
     }
@@ -5901,9 +5696,6 @@ void loop() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5917,16 +5709,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -5938,15 +5732,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -5982,9 +5772,6 @@ void loop() {
 <p>一般 I2C 设备都需要在两条总线上添加上拉电阻组成一个<strong>开漏电路</strong>。由于所有的 SCL 都接在一起，所有的 SDA 都接在一起，因此，各个设备之间是‘与’关系。也就是说，只有所有的设备是高电平总线才是高电平，任何一个设备是低电平都会拉低总线，任何一个设备也就都能成为主机。</p>
 <p><img src="MCU-Communication/Serial/I2C/Images/0-1.png" alt="I2C Bus" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -5998,16 +5785,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6019,15 +5808,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6153,9 +5938,6 @@ void loop() {
 </div>
 <p>下个的章节我们将学习如何通过 I2C 向 DS3231 读写数据。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6169,16 +5951,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6190,15 +5974,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6281,9 +6061,6 @@ void loop() {
 <p><img src="MCU-Communication/Serial/I2C/Images/2-10.png" alt="DS3231的I2C通信" /></p>
 <p>因此，这里我不再对 DS3231 的 I2C 通信过程进行介绍了，下一章我们将直接学习如何使用 DS3231。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6297,16 +6074,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6318,15 +6097,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6503,9 +6278,6 @@ void read_data(uint8_t* data, uint8_t length) {
 <p>完成了读写时间和温度，在 DS3231 上，我们其实还有一个功能没有使用，那就是闹钟。除了闹钟，还有输出方波，使用中断等等，我认为不需要全部都会使用。能够读取时间就可以了。</p>
 <p>因此，这里我将不再详介绍如何设置闹钟，读取闹钟状态，以及关闭闹钟等，完整代码在下一章。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6519,16 +6291,18 @@ void read_data(uint8_t* data, uint8_t length) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6540,15 +6314,11 @@ void read_data(uint8_t* data, uint8_t length) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6599,7 +6369,7 @@ struct Time {
 };
 
 // 星期字符串
-char weekofday[7][10] = {&quot;Sunday&quot;, &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;};
+char weekofday[7][10] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
 uint8_t bcd2dec(uint8_t);
 uint8_t dec2bcd(uint8_t);
@@ -6629,15 +6399,15 @@ void loop() {
   Time now = readTime();// 更新时间
   sprintf(// 格式化一段字符串数据
     str,
-    &quot;%d-%d-%d %d:%d:%d %s %d^C &quot;,
+    "%d-%d-%d %d:%d:%d %s %d^C ",
     now.year, now.mon, now.date, now.hour, now.min, now.sec, weekofday[now.day], readTemp()
   );
   Serial.print(str);
   if (readAlarmFlag()) {
-    Serial.println(&quot;Alarm ON!&quot;);
+    Serial.println("Alarm ON!");
     turnAlarmOFF();
   }
-  else Serial.println(&quot;Alarm OFF!&quot;);
+  else Serial.println("Alarm OFF!");
   delay(1000);
 }
 
@@ -6774,9 +6544,6 @@ int8_t readTemp() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6790,16 +6557,18 @@ int8_t readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6811,15 +6580,11 @@ int8_t readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6874,9 +6639,6 @@ void read_data(uint8_t* data, uint8_t length);
 <p>在 Arduino 中，也有一个官方的软 I2C 库，也就是<code>SoftI2CMaster.h</code>库，这个库同样可以让你使用任何引脚作为 I2C 引脚，但是这个需要自己手动下载安装。</p>
 <p>官方资料在这里 <a href="https://github.com/felias-fogg/SoftI2CMaster">SoftI2CMaster</a></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6890,16 +6652,18 @@ void read_data(uint8_t* data, uint8_t length);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6911,15 +6675,11 @@ void read_data(uint8_t* data, uint8_t length);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -6956,9 +6716,6 @@ void read_data(uint8_t* data, uint8_t length);
 <p>下面是标准的 SPI 通信示意图：</p>
 <p><img src="MCU-Communication/Serial/SPI/Images/0-1.png" alt="SPI Bus" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -6972,16 +6729,18 @@ void read_data(uint8_t* data, uint8_t length);
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -6993,15 +6752,11 @@ void read_data(uint8_t* data, uint8_t length);
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -7212,9 +6967,6 @@ void loop() {
 </div>
 <p>下一个章节我们将详细学习如何通过 SPI 向 MPU9250 读写数据。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -7228,16 +6980,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -7249,15 +7003,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -7397,9 +7147,6 @@ void loop() {
 <p><img src="MCU-Communication/Serial/SPI/Images/2-3.png" alt="MPU SPI Protocol" /></p>
 <p>下一章，我们将学习如何通过 SPI 对 MPU9250 进行读写操作。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -7413,16 +7160,18 @@ void loop() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -7434,15 +7183,11 @@ void loop() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -7596,9 +7341,6 @@ void readRawGyro(int16_t* gyro) {
 </code></pre>
 <p>这样，我们就完成了 MPU9250 的所有数据读写操作，完整代码在下一章。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -7612,16 +7354,18 @@ void readRawGyro(int16_t* gyro) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -7633,15 +7377,11 @@ void readRawGyro(int16_t* gyro) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -7700,9 +7440,9 @@ void readRawGyro(int16_t* gyro);
 void setup() {
     Serial.begin(115200);
     if (MPU_init()) {
-        Serial.println(&quot;MPU init success!&quot;);
+        Serial.println("MPU init success!");
     } else {
-        Serial.println(&quot;MPU init failed!&quot;);
+        Serial.println("MPU init failed!");
     }
     Serial.println();
 }
@@ -7712,21 +7452,21 @@ void loop() {
     readRawAccel(accel);
     readRawGyro(gyro);
 
-    Serial.print(&quot;Accel X=&quot;);
+    Serial.print("Accel X=");
     Serial.print(accel[0]);
-    Serial.print(&quot;,Y=&quot;);
+    Serial.print(",Y=");
     Serial.print(accel[1]);
-    Serial.print(&quot;,Z=&quot;);
+    Serial.print(",Z=");
     Serial.println(accel[2]);
 
-    Serial.print(&quot;Gyro X=&quot;);
+    Serial.print("Gyro X=");
     Serial.print(gyro[0]);
-    Serial.print(&quot;,Y=&quot;);
+    Serial.print(",Y=");
     Serial.print(gyro[1]);
-    Serial.print(&quot;,Z=&quot;);
+    Serial.print(",Z=");
     Serial.println(gyro[2]);
 
-    Serial.print(&quot;Temp=&quot;);
+    Serial.print("Temp=");
     Serial.println(readTemp(), 2);
     Serial.println();
     delay(1000);
@@ -7814,9 +7554,6 @@ float readTemp() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -7830,16 +7567,18 @@ float readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -7851,15 +7590,11 @@ float readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -7923,9 +7658,9 @@ void readRawGyro(int16_t* gyro);
 void setup() {
     Serial.begin(115200);
     if (MPU_init()) {
-        Serial.println(&quot;MPU init success!&quot;);
+        Serial.println("MPU init success!");
     } else {
-        Serial.println(&quot;MPU init failed!&quot;);
+        Serial.println("MPU init failed!");
     }
 }
 
@@ -7934,21 +7669,21 @@ void loop() {
     readRawAccel(accel);
     readRawGyro(gyro);
 
-    Serial.print(&quot;Accel X=&quot;);
+    Serial.print("Accel X=");
     Serial.print(accel[0]);
-    Serial.print(&quot;,Y=&quot;);
+    Serial.print(",Y=");
     Serial.print(accel[1]);
-    Serial.print(&quot;,Z=&quot;);
+    Serial.print(",Z=");
     Serial.println(accel[2]);
 
-    Serial.print(&quot;Gyro X=&quot;);
+    Serial.print("Gyro X=");
     Serial.print(gyro[0]);
-    Serial.print(&quot;,Y=&quot;);
+    Serial.print(",Y=");
     Serial.print(gyro[1]);
-    Serial.print(&quot;,Z=&quot;);
+    Serial.print(",Z=");
     Serial.println(gyro[2]);
 
-    Serial.print(&quot;Temp=&quot;);
+    Serial.print("Temp=");
     Serial.println(readTemp(), 2);
     Serial.println();
     delay(1000);
@@ -8028,9 +7763,6 @@ float readTemp() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -8044,16 +7776,18 @@ float readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -8065,15 +7799,11 @@ float readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -8109,9 +7839,6 @@ float readTemp() {
 <h2 id="2-并行通信的外设"><a class="header" href="#2-并行通信的外设">2. 并行通信的外设</a></h2>
 <p>相对来说，并行通信和 SPI 一样，不需要什么外设。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -8125,16 +7852,18 @@ float readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -8146,15 +7875,11 @@ float readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -8198,9 +7923,6 @@ float readTemp() {
 </div>
 <p>后面我们将具体学习如何通过并行通信驱动 LCD1602 显示屏。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -8214,16 +7936,18 @@ float readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -8235,15 +7959,11 @@ float readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -8454,9 +8174,6 @@ float readTemp() {
 <p><img src="MCU-Communication/Parallel/Images/2-7.png" alt="LCD1602 Init" /></p>
 <p>下一章我们将学习如何借助 8 总线方式驱动 LCD1602。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -8470,16 +8187,18 @@ float readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -8491,15 +8210,11 @@ float readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -8709,9 +8424,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 <p>另外，由于 LCD1602 使用 AC 指向 CGRAM 或者 DDRAM，因此完成自定义字符后，可能不能正常显示，因为<strong>AC 指向 CGRAM，而不是 DDRAM</strong>，你需要通过<code>set_cursor()</code>重新设置 AC 的指向。</p>
 <p>下一章有完整代码。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -8725,16 +8437,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -8746,15 +8460,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -8798,7 +8508,7 @@ uint8_t LCD_DISPLAY_CONTROL = 0x0C;
 const uint8_t EN = 10, RW = 11, RS = 12;
 const uint8_t data_pins[] = {9, 8, 7, 6, 5, 4, 3, 2};
 
-const char* message = &quot;Hello world!&quot;;
+const char* message = "Hello world!";
 uint8_t duck[] = {0x4, 0xe, 0xe, 0xe, 0x1f, 0x0, 0x4};
 
 void send_pins(uint8_t);
@@ -8829,7 +8539,7 @@ void setup() {
     print(message);
     print('*');
     set_cursor(7, 1);
-    print(&quot;Have a nice day! By Mr.Addict!&quot;);
+    print("Have a nice day! By Mr.Addict!");
     set_cursor(37, 1);
     write_data(0);
 }
@@ -9001,9 +8711,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9017,16 +8724,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9038,15 +8747,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -9096,7 +8801,7 @@ uint8_t LCD_DISPLAY_CONTROL = 0x0C;
 const uint8_t EN = 8, RS = 9;
 uint8_t data_pins[] = {7, 6, 5, 4};
 
-const char* message = &quot;Hello world!&quot;;
+const char* message = "Hello world!";
 uint8_t bell[8] = {0x4, 0xe, 0xe, 0xe, 0x1f, 0x0, 0x4};
 
 void send_pins(uint8_t);
@@ -9125,7 +8830,7 @@ void setup() {
     print(message);
     print('*');
     set_cursor(7, 1);
-    print(&quot;Have a nice day! By Mr.Addict!&quot;);
+    print("Have a nice day! By Mr.Addict!");
     set_cursor(37, 1);
     write_data(0);
 }
@@ -9276,9 +8981,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9292,16 +8994,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9313,15 +9017,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -9358,9 +9058,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 <li><a href="Projects/CNC-Engraver/Intro.html">DIY 激光雕刻机</a></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9374,16 +9071,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9395,15 +9094,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -9440,9 +9135,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 <p>后来我猜测可能是由于 Arduino 的 AVR 芯片太差，需要换一个更好的单片机。于是大二下学期开学我就把 AVR 单片机换成了<strong>ESP32</strong>，同时为了提高效率，减少单片机内存占用，我<strong>添加了中断</strong>，只有在有人的时候才会去检测 NFC 卡。同时我在这次的项目中加入了<strong>WIFI</strong>的功能，这样我们就可以在连接办公室网络的情况下开门了，即使没带门禁卡也没关系。其实呢，将 ESP32<strong>映射到公网</strong>也是可以做到的，这个功能可以让大家在日后添加，我认为暂时没有必要，技术上也没什么难度。</p>
 <p>这个版本也是目前的最新版本，但是我个人认为这个系统还有地方需要改进，等到日后有时间再说吧。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9456,16 +9148,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9477,15 +9171,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -9530,16 +9220,16 @@ const int Relay = 7;
 const int UIDNUM = 50;
 
 const String UID[UIDNUM] = {
-    &quot;F1 41 01 5F&quot;, &quot;01 5E 95 2B&quot;, &quot;1A FD A5 21&quot;, &quot;E1 D8 FC 5E&quot;, &quot;E1 E0 00 5F&quot;,
-    &quot;D1 7E FF 5E&quot;, &quot;21 DE 01 5F&quot;, &quot;D1 3A F6 5E&quot;, &quot;31 AB FD 5E&quot;, &quot;21 35 F7 5E&quot;,
-    &quot;0A 57 80 1C&quot;, &quot;FA 5D 70 7F&quot;, &quot;D2 AA 1C 3E&quot;, &quot;15 4F B9 E5&quot;, &quot;75 89 B6 E5&quot;,
-    &quot;0A 8C 36 B6&quot;, &quot;00 69 0F 93&quot;, &quot;75 89 B6 E5&quot;, &quot;FA 50 35 B6&quot;, &quot;EA B1 1C 3E&quot;,
-    &quot;60 DB 0D 93&quot;, &quot;5A 32 34 B6&quot;, &quot;72 B1 85 44&quot;, &quot;A3 A4 1B 3E&quot;, &quot;0C 3C 1A 3F&quot;,
-    &quot;72 B1 85 44&quot;, &quot;50 DF D3 03&quot;, &quot;A5 72 1B 3E&quot;, &quot;A1 C2 53 74&quot;, &quot;6C AE 73 17&quot;,
-    &quot;0A 46 95 1C&quot;, &quot;47 25 38 E1&quot;, &quot;DC 53 14 3E&quot;, &quot;80 54 0C 93&quot;, &quot;2A 76 64 21&quot;,
-    &quot;10 FD FC 2E&quot;, &quot;19 F0 95 B4&quot;, &quot;D7 FC 80 67&quot;, &quot;60 B9 2A BE&quot;, &quot;75 36 B5 E5&quot;,
-    &quot;87 90 91 5E&quot;, &quot;69 E9 1F C5&quot;, &quot;C9 DE 3B B4&quot;, &quot;08 71 21 DC&quot;, &quot;9C B3 BC 3E&quot;,
-    &quot;17 A4 91 5E&quot;, &quot;F7 88 94 5E&quot;, &quot;89 28 3A B4&quot;, &quot;BC C3 87 43&quot;, &quot;DC FB 0E 3F&quot;,
+    "F1 41 01 5F", "01 5E 95 2B", "1A FD A5 21", "E1 D8 FC 5E", "E1 E0 00 5F",
+    "D1 7E FF 5E", "21 DE 01 5F", "D1 3A F6 5E", "31 AB FD 5E", "21 35 F7 5E",
+    "0A 57 80 1C", "FA 5D 70 7F", "D2 AA 1C 3E", "15 4F B9 E5", "75 89 B6 E5",
+    "0A 8C 36 B6", "00 69 0F 93", "75 89 B6 E5", "FA 50 35 B6", "EA B1 1C 3E",
+    "60 DB 0D 93", "5A 32 34 B6", "72 B1 85 44", "A3 A4 1B 3E", "0C 3C 1A 3F",
+    "72 B1 85 44", "50 DF D3 03", "A5 72 1B 3E", "A1 C2 53 74", "6C AE 73 17",
+    "0A 46 95 1C", "47 25 38 E1", "DC 53 14 3E", "80 54 0C 93", "2A 76 64 21",
+    "10 FD FC 2E", "19 F0 95 B4", "D7 FC 80 67", "60 B9 2A BE", "75 36 B5 E5",
+    "87 90 91 5E", "69 E9 1F C5", "C9 DE 3B B4", "08 71 21 DC", "9C B3 BC 3E",
+    "17 A4 91 5E", "F7 88 94 5E", "89 28 3A B4", "BC C3 87 43", "DC FB 0E 3F",
 };
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
@@ -9568,7 +9258,7 @@ void setup()
     pinMode(Relay, OUTPUT);
     pinMode(Buzzer, OUTPUT);
     BuzzerRing();
-    Serial.print(&quot;System Started!\nBuilt in UID Num:&quot;);
+    Serial.print("System Started!\nBuilt in UID Num:");
     Serial.println(UIDNUM);
     delay(3000);
 }
@@ -9578,27 +9268,27 @@ void loop()
     if ( ! mfrc522.PICC_IsNewCardPresent())return;
     if ( ! mfrc522.PICC_ReadCardSerial())return;
 
-    String content = &quot;&quot;;
-    Serial.print(&quot;UID(&quot;);
+    String content = "";
+    Serial.print("UID(");
     for (byte i = 0; i &lt; mfrc522.uid.size; i++)
     {
-        Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;);
+        Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " ");
         Serial.print(mfrc522.uid.uidByte[i], HEX);
-        content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;));
+        content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " "));
         content.concat(String(mfrc522.uid.uidByte[i], HEX));
     }
     content.toUpperCase();
     String CONTECTED_UID = content.substring(1);
 
     if (GetKey(CONTECTED_UID)) {
-        Serial.println(&quot; ):Access Accpeted!&quot;);
+        Serial.println(" ):Access Accpeted!");
         BuzzerRing();
         digitalWrite(Relay, HIGH);
         delay(1000);
         digitalWrite(Relay, LOW);
     }
     else {
-        Serial.println(&quot; ):Access Denied!&quot;);
+        Serial.println(" ):Access Denied!");
         BuzzerRing(true);
     }
 }
@@ -9618,16 +9308,16 @@ const int Buzzer = 7;
 const int UIDNUM = 50;
 
 const String UID[UIDNUM] = {
-  &quot;F1 41 01 5F&quot;, &quot;01 5E 95 2B&quot;, &quot;1A FD A5 21&quot;, &quot;E1 D8 FC 5E&quot;, &quot;E1 E0 00 5F&quot;,
-  &quot;D1 7E FF 5E&quot;, &quot;21 DE 01 5F&quot;, &quot;D1 3A F6 5E&quot;, &quot;31 AB FD 5E&quot;, &quot;21 35 F7 5E&quot;,
-  &quot;0A 57 80 1C&quot;, &quot;FA 5D 70 7F&quot;, &quot;D2 AA 1C 3E&quot;, &quot;15 4F B9 E5&quot;, &quot;75 89 B6 E5&quot;,
-  &quot;0A 8C 36 B6&quot;, &quot;00 69 0F 93&quot;, &quot;75 89 B6 E5&quot;, &quot;FA 50 35 B6&quot;, &quot;EA B1 1C 3E&quot;,
-  &quot;60 DB 0D 93&quot;, &quot;5A 32 34 B6&quot;, &quot;72 B1 85 44&quot;, &quot;A3 A4 1B 3E&quot;, &quot;0C 3C 1A 3F&quot;,
-  &quot;72 B1 85 44&quot;, &quot;50 DF D3 03&quot;, &quot;A5 72 1B 3E&quot;, &quot;A1 C2 53 74&quot;, &quot;6C AE 73 17&quot;,
-  &quot;0A 46 95 1C&quot;, &quot;47 25 38 E1&quot;, &quot;DC 53 14 3E&quot;, &quot;80 54 0C 93&quot;, &quot;2A 76 64 21&quot;,
-  &quot;10 FD FC 2E&quot;, &quot;19 F0 95 B4&quot;, &quot;D7 FC 80 67&quot;, &quot;60 B9 2A BE&quot;, &quot;75 36 B5 E5&quot;,
-  &quot;87 90 91 5E&quot;, &quot;69 E9 1F C5&quot;, &quot;C9 DE 3B B4&quot;, &quot;08 71 21 DC&quot;, &quot;9C B3 BC 3E&quot;,
-  &quot;17 A4 91 5E&quot;, &quot;F7 88 94 5E&quot;, &quot;89 28 3A B4&quot;, &quot;BC C3 87 43&quot;, &quot;DC FB 0E 3F&quot;,
+  "F1 41 01 5F", "01 5E 95 2B", "1A FD A5 21", "E1 D8 FC 5E", "E1 E0 00 5F",
+  "D1 7E FF 5E", "21 DE 01 5F", "D1 3A F6 5E", "31 AB FD 5E", "21 35 F7 5E",
+  "0A 57 80 1C", "FA 5D 70 7F", "D2 AA 1C 3E", "15 4F B9 E5", "75 89 B6 E5",
+  "0A 8C 36 B6", "00 69 0F 93", "75 89 B6 E5", "FA 50 35 B6", "EA B1 1C 3E",
+  "60 DB 0D 93", "5A 32 34 B6", "72 B1 85 44", "A3 A4 1B 3E", "0C 3C 1A 3F",
+  "72 B1 85 44", "50 DF D3 03", "A5 72 1B 3E", "A1 C2 53 74", "6C AE 73 17",
+  "0A 46 95 1C", "47 25 38 E1", "DC 53 14 3E", "80 54 0C 93", "2A 76 64 21",
+  "10 FD FC 2E", "19 F0 95 B4", "D7 FC 80 67", "60 B9 2A BE", "75 36 B5 E5",
+  "87 90 91 5E", "69 E9 1F C5", "C9 DE 3B B4", "08 71 21 DC", "9C B3 BC 3E",
+  "17 A4 91 5E", "F7 88 94 5E", "89 28 3A B4", "BC C3 87 43", "DC FB 0E 3F",
 };
 
 Servo myservo;
@@ -9658,7 +9348,7 @@ void setup()
   myservo.write(40);
   pinMode(Buzzer, OUTPUT);
   BuzzerRing();
-  Serial.print(&quot;System Started!\nBuilt in UID Num:&quot;);
+  Serial.print("System Started!\nBuilt in UID Num:");
   Serial.println(UIDNUM);
   delay(3000);
 }
@@ -9668,20 +9358,20 @@ void loop()
   if ( ! mfrc522.PICC_IsNewCardPresent())return;
   if ( ! mfrc522.PICC_ReadCardSerial())return;
 
-  String content = &quot;&quot;;
-  Serial.print(&quot;UID(&quot;);
+  String content = "";
+  Serial.print("UID(");
   for (byte i = 0; i &lt; mfrc522.uid.size; i++)
   {
-    Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;);
+    Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " ");
     Serial.print(mfrc522.uid.uidByte[i], HEX);
-    content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;));
+    content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " "));
     content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
   content.toUpperCase();
   String CONTECTED_UID = content.substring(1);
 
   if (GetKey(CONTECTED_UID)) {
-    Serial.println(&quot; ):Access Accpeted!&quot;);
+    Serial.println(" ):Access Accpeted!");
     BuzzerRing();
     for (int pos = 40; pos &lt;= 60; pos += 1) {
       myservo.write(pos);
@@ -9694,7 +9384,7 @@ void loop()
     }
   }
   else {
-    Serial.println(&quot; ):Access Denied!&quot;);
+    Serial.println(" ):Access Denied!");
     BuzzerRing(true);
   }
 }
@@ -9719,14 +9409,14 @@ const uint16_t stepsPerRevolution = 400;
 const uint8_t UIDNUM = 37;
 
 const String UID[UIDNUM] = {
-  &quot;F1 41 01 5F&quot;, &quot;01 5E 95 2B&quot;, &quot;1A FD A5 21&quot;, &quot;E1 D8 FC 5E&quot;, &quot;E1 E0 00 5F&quot;,
-  &quot;D1 7E FF 5E&quot;, &quot;21 DE 01 5F&quot;, &quot;D1 3A F6 5E&quot;, &quot;31 AB FD 5E&quot;, &quot;21 35 F7 5E&quot;,
-  &quot;0A 57 80 1C&quot;, &quot;FA 5D 70 7F&quot;, &quot;D2 AA 1C 3E&quot;, &quot;15 4F B9 E5&quot;, &quot;75 89 B6 E5&quot;,
-  &quot;0A 8C 36 B6&quot;, &quot;00 69 0F 93&quot;, &quot;75 89 B6 E5&quot;, &quot;FA 50 35 B6&quot;, &quot;EA B1 1C 3E&quot;,
-  &quot;60 DB 0D 93&quot;, &quot;5A 32 34 B6&quot;, &quot;72 B1 85 44&quot;, &quot;A3 A4 1B 3E&quot;, &quot;0C 3C 1A 3F&quot;,
-  &quot;72 B1 85 44&quot;, &quot;50 DF D3 03&quot;, &quot;A5 72 1B 3E&quot;, &quot;A1 C2 53 74&quot;, &quot;6C AE 73 17&quot;,
-  &quot;0A 46 95 1C&quot;, &quot;47 25 38 E1&quot;, &quot;DC 53 14 3E&quot;, &quot;80 54 0C 93&quot;, &quot;2A 76 64 21&quot;,
-  &quot;DC FB 0E 3F&quot;, &quot;5A 20 4C 2D&quot;,
+  "F1 41 01 5F", "01 5E 95 2B", "1A FD A5 21", "E1 D8 FC 5E", "E1 E0 00 5F",
+  "D1 7E FF 5E", "21 DE 01 5F", "D1 3A F6 5E", "31 AB FD 5E", "21 35 F7 5E",
+  "0A 57 80 1C", "FA 5D 70 7F", "D2 AA 1C 3E", "15 4F B9 E5", "75 89 B6 E5",
+  "0A 8C 36 B6", "00 69 0F 93", "75 89 B6 E5", "FA 50 35 B6", "EA B1 1C 3E",
+  "60 DB 0D 93", "5A 32 34 B6", "72 B1 85 44", "A3 A4 1B 3E", "0C 3C 1A 3F",
+  "72 B1 85 44", "50 DF D3 03", "A5 72 1B 3E", "A1 C2 53 74", "6C AE 73 17",
+  "0A 46 95 1C", "47 25 38 E1", "DC 53 14 3E", "80 54 0C 93", "2A 76 64 21",
+  "DC FB 0E 3F", "5A 20 4C 2D",
 };
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
@@ -9758,7 +9448,7 @@ void setup()
   stepper.runToNewPosition(0);
   pinMode(Buzzer, OUTPUT);
   BuzzerRing();
-  Serial.print(&quot;System Started!\nBuilt in UID Num:&quot;);
+  Serial.print("System Started!\nBuilt in UID Num:");
   Serial.println(UIDNUM);
   delay(3000);
 }
@@ -9768,35 +9458,32 @@ void loop()
   if ( ! mfrc522.PICC_IsNewCardPresent())return;
   if ( ! mfrc522.PICC_ReadCardSerial())return;
 
-  String content = &quot;&quot;;
-  Serial.print(&quot;UID(&quot;);
+  String content = "";
+  Serial.print("UID(");
   for (byte i = 0; i &lt; mfrc522.uid.size; i++) {
-    Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;);
+    Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " ");
     Serial.print(mfrc522.uid.uidByte[i], HEX);
-    content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? &quot; 0&quot; : &quot; &quot;));
+    content.concat(String(mfrc522.uid.uidByte[i] &lt; 0x10 ? " 0" : " "));
     content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
   content.toUpperCase();
   String CONTECTED_UID = content.substring(1);
 
   if (GetKey(CONTECTED_UID)) {
-    Serial.println(&quot; ):Access Accpeted!&quot;);
+    Serial.println(" ):Access Accpeted!");
     BuzzerRing();
     stepper.runToNewPosition(stepsPerRevolution);
     delay(1000);
     stepper.runToNewPosition(0);
   }
   else {
-    Serial.println(&quot; ):Access Denied!&quot;);
+    Serial.println(" ):Access Denied!");
     BuzzerRing(true);
   }
   delay(3000);
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9810,16 +9497,18 @@ void loop()
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9831,15 +9520,11 @@ void loop()
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -9898,16 +9583,16 @@ void loop()
 <p>在这边我强调几点重要的地方。</p>
 <h3 id="21-第一点"><a class="header" href="#21-第一点">2.1 第一点</a></h3>
 <p>首先为了安全，我在 Arduino 的库文件夹下创建了<code>arduino_secrets的文件夹</code>，里面有一个<code>arduino_secrets.h</code>的文件，我在里面定义了几个重要的变量，包括办公室网络名，网络密码，默认用户名，默认用户密码：</p>
-<pre><code class="language-cpp">const char* ssid = &quot;STAS-507&quot;;
-const char* password = &quot;dinghao666&quot;;
-const char* login_user = &quot;admin&quot;;
-const char* login_pwd = &quot;dinghao666&quot;;
+<pre><code class="language-cpp">const char* ssid = "STAS-507";
+const char* password = "dinghao666";
+const char* login_user = "admin";
+const char* login_pwd = "dinghao666";
 </code></pre>
 <p>当然你也可以将这些变量直接定义在项目文件里。</p>
 <h3 id="22-第二点"><a class="header" href="#22-第二点">2.2 第二点</a></h3>
 <p>你可以通过更改 WIFI_WS 中 WIFI_Init 函数里面以下几行来设置你的<code>ESP主机名</code>，这也是<a href="http://unlockdoor-507">http://unlockdoor-507</a>的由来：</p>
 <pre><code class="language-cpp">// change hostname to unlockdoor-507
-String hostname = &quot;unlockdoor-507&quot;;
+String hostname = "unlockdoor-507";
 WiFi.mode(WIFI_STA);
 WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, INADDR_NONE);
 WiFi.setHostname(hostname.c_str());
@@ -9936,9 +9621,6 @@ WiFi.setHostname(hostname.c_str());
 <p>登录成功后点击<code>open</code>就可以开门了。</p>
 <p><img src="Projects/NFC/Images/2-2.png" alt="WEB UI" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -9952,16 +9634,18 @@ WiFi.setHostname(hostname.c_str());
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -9973,15 +9657,11 @@ WiFi.setHostname(hostname.c_str());
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10019,9 +9699,6 @@ WiFi.setHostname(hostname.c_str());
 <p>NFC 模块的稳定性是更大问题，据我观测，目前虽然使用了中断，但是 NFC 还是会宕机，但仍然可以通过 WIFI 开门，所以我推测应该是 NFC 模块的问题。我想到的一个办法是通过计时器时不时地重启 NFC，不需要重启 ESP32。另一个办法就是寻找更加稳定的 NFC 模块。</p>
 <p>希望大家日后可以有更多的想法，不断解决这些问题，完善我们的门禁系统。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10035,16 +9712,18 @@ WiFi.setHostname(hostname.c_str());
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10056,15 +9735,11 @@ WiFi.setHostname(hostname.c_str());
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10100,9 +9775,6 @@ WiFi.setHostname(hostname.c_str());
 <p>目前这个灯板主要是放在办公室当作时钟使，整体效果挺不错的。一开始我是使用 DS1302，但是这个时钟芯片的精度很差，几个星期就要误差一两分钟，后来我换成了 DS3231，这个时钟芯片精度是真高，一年的误差也就在一分钟上下，而且还有两个闹钟可以使，非常不错。</p>
 <p>希望大家喜欢这个项目。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10116,16 +9788,18 @@ WiFi.setHostname(hostname.c_str());
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10137,15 +9811,11 @@ WiFi.setHostname(hostname.c_str());
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10212,9 +9882,6 @@ WiFi.setHostname(hostname.c_str());
 <p>下面是 PCB 的三维示意图：</p>
 <p><img src="Projects/LED-Board/Images/1-5.png" alt="PCB 3D viewer" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10228,16 +9895,18 @@ WiFi.setHostname(hostname.c_str());
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10249,15 +9918,11 @@ WiFi.setHostname(hostname.c_str());
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10337,14 +10002,14 @@ WiFi.setHostname(hostname.c_str());
 <p><img src="Projects/LED-Board/Images/1-6.png" alt="Android APP" /></p>
 <p>在使用 APP 前，你需要先连接 ESP32 的蓝牙，我设置了蓝牙名称为<code>LED Board 507</code>，你可以通过更改<code>LEDBoard21x7.ino</code>文件中<code>setup</code>函数的下面一行更改设备蓝牙名称：</p>
 <pre><code class="language-cpp">// 设置蓝牙名称
-SerialBT.begin(&quot;LED Board 507&quot;);
+SerialBT.begin("LED Board 507");
 </code></pre>
 <p>连接蓝牙后你就可以通过这个 APP 控制灯板，相信大家看了就会使用这个 APP，挺简单的，这里我不做介绍了。</p>
 <h3 id="23-wifi"><a class="header" href="#23-wifi">2.3 WIFI</a></h3>
 <p>这里 WIFI 的使用和 NFC 的 WIFI 开门是相似的，也需要先登录验证。在连接相同路由器的情况下，你可以通过 ESP32 的主机名进行访问，我设置的主机名是<code>ledboard-507</code>，即，你可以通过<a href="http://ledboard-507">http://ledboard-507</a>访问。</p>
 <p>你可以通过更改<code>WIFI.h</code>文件下的<code>WIFI_INIT</code>的以下几行更改 ESP32 的主机名：</p>
 <pre><code class="language-cpp">// change hostname to ledboard-507
-String hostname = &quot;ledboard-507&quot;;
+String hostname = "ledboard-507";
 WiFi.mode(WIFI_STA);
 WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, INADDR_NONE);
 WiFi.setHostname(hostname.c_str());
@@ -10362,9 +10027,6 @@ rtc.setAlarm1(DateTime(2021, 12, 28, 0, 0, 0), DS3231_A1_Hour); // 每日凌晨1
 rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8点打开LED
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10378,16 +10040,18 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10399,15 +10063,11 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10450,9 +10110,6 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <p>后来我借助这个库，制作了另一个项目<a href="https://github.com/MR-Addict/SmartLED.git">SmartLED</a>大部分也就是上面提到的功能，我记得我还在这个灯阵上写了一个贪吃蛇的游戏，有兴趣的可以去看一下。</p>
 <p><img src="Projects/LED-Board/Images/2-3.jpg" alt="Mario" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10466,16 +10123,18 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10487,15 +10146,11 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10534,9 +10189,6 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <p><img src="Projects/CNC-Engraver/Images/0-3.png" alt="3D viewer" /></p>
 <p>激光雕刻机在硬件上要求比较高，同时还需要掌握一些额外的知识，软件方面大部分直接使用预先写好的固件就可以了，也就是说你有一台机器的话就相当于完成了整个项目。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10550,16 +10202,18 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10571,15 +10225,11 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10709,9 +10359,6 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
 <p><a href="https://inkscape.org/">Inksacpe</a>就是一个比较好用、功能强大开源的软件。</p>
 <p><img src="Projects/CNC-Engraver/Images/1-8.png" alt="Inkscape" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10725,16 +10372,18 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10746,15 +10395,11 @@ rtc.setAlarm2(DateTime(2021, 12, 28, 8, 0, 0), DS3231_A2_Hour); // 每日早晨8
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10843,9 +10488,6 @@ $132=300.000
 <pre><code>$N1=G92X0Y0
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10859,16 +10501,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -10880,15 +10524,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -10964,9 +10604,6 @@ $132=300.000
 <p><img src="Projects/CNC-Engraver/Images/0-2.jpg" alt="Assemble process" /></p>
 <p>另外扩展版的使用和焊接可以参考上面的原理图，或者多找一些 DIY 的 CNC 机器看一看，加深对 CNC 机制的了解，这里我也不做介绍了。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -10980,16 +10617,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11001,15 +10640,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11105,9 +10740,6 @@ $132=300.000
 <tr><td style="text-align: center"><img src="Projects/CNC-Engraver/Images/3-10.png" alt="image3" /></td><td style="text-align: center"><img src="Projects/CNC-Engraver/Images/3-11.png" alt="image4" /></td></tr>
 </tbody></table>
 </div><style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11121,16 +10753,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11142,15 +10776,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11183,9 +10813,6 @@ $132=300.000
 <p><img src="Projects/CNC-Engraver/Images/4-1.png" alt="String art cnc machine" /></p>
 <p>CNC 既神奇，又充满魅力，很值得大家深入探索哦。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11199,16 +10826,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11220,15 +10849,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11260,9 +10885,6 @@ $132=300.000
 <p>本专题的内容主要是对某个专题或者内容作简短的介绍，选择从整体的全貌来看某些问题，起到开拓视野的作用，不会涉及非常详细的内容。</p>
 <p>本专题也会涉及一些技术难度不高，但是非常有用的技术，比如 Git，markdown 等等。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11276,16 +10898,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11297,15 +10921,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11355,9 +10975,6 @@ $132=300.000
 <li><a href="Speeches/EDA/./Chapter4.html">设计 PCB</a></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11371,16 +10988,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11392,15 +11011,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11481,9 +11096,6 @@ $132=300.000
 <tr><td style="text-align: center">电阻</td><td style="text-align: center">3</td><td style="text-align: center">1K,1K,470K</td></tr>
 </tbody></table>
 </div><style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11497,16 +11109,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11518,15 +11132,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11574,9 +11184,6 @@ $132=300.000
 </ul>
 <p><a href="Speeches/EDA/PDF/IC-Packages.pdf"><img src="Speeches/EDA/Images/2-1.png" alt="IC-Packages" /></a></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11590,16 +11197,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11611,15 +11220,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11654,9 +11259,6 @@ $132=300.000
 <li>规划好板块，适当使用标记</li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11670,16 +11272,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11691,15 +11295,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11734,9 +11334,6 @@ $132=300.000
 <li>双层板上横下竖</li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11750,16 +11347,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11771,15 +11370,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11814,9 +11409,6 @@ $132=300.000
 <p>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。</p>
 <p>Markdown 尤其是受 Github 青睐的一种标记语言，大部分的 Github 的<code>README</code>都是 Markdown，还有 GitHub 的 issue 及各种文档也是支持 Markdowm 的。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11830,16 +11422,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11851,15 +11445,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -11962,9 +11552,6 @@ $132=300.000
 </li>
 </ol>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -11978,16 +11565,18 @@ $132=300.000
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -11999,15 +11588,11 @@ $132=300.000
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12047,7 +11632,7 @@ $132=300.000
 <pre><code class="language-plaintext">    #include &lt;stdio.h&gt;
 
     int main(){
-        printf(&quot;Hello world!&quot;);
+        printf("Hello world!");
         return 0;
     }
 </code></pre>
@@ -12055,7 +11640,7 @@ $132=300.000
 <pre><code>#include &lt;stdio.h&gt;
 
 int main(){
-    printf(&quot;Hello world!&quot;);
+    printf("Hello world!");
     return 0;
 }
 </code></pre>
@@ -12065,7 +11650,7 @@ int main(){
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main(){
-    printf(&quot;Hello world!&quot;);
+    printf("Hello world!");
     return 0;
 }
 </code></pre>
@@ -12126,9 +11711,6 @@ int main(){
 <tr><td style="text-align: left">单元格元素</td><td style="text-align: center">单元格元素</td><td style="text-align: right">单元格元素</td></tr>
 </tbody></table>
 </div><style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12142,16 +11724,18 @@ int main(){
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12163,15 +11747,11 @@ int main(){
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12208,9 +11788,6 @@ int main(){
 <p>看着这一堆乱七八糟的文件，心里难免会烦躁不安。于是你想，如果有一个软件，不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。如果想查看某次改动，只需要在软件里瞄一眼就可以，岂不是很方便？</p>
 <p>使用 Git 便可以达成以上的要求。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12224,16 +11801,18 @@ int main(){
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12245,15 +11824,11 @@ int main(){
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12295,9 +11870,6 @@ int main(){
 <p>不同于集中式版本控制系统的“中央服务器”，分布式版本控制系统可以通过推送版本库，实现不同的计算机之间的版本共享。就是说对于同一个文件 A，如果两个人同时对 A 文件进行了修改，最新的版本应该都保存在各自的计算机中，想要实现协同开发，只需要将各自的最新版本库推送给对方，就可以得到最新的版本库了。</p>
 <p><img src="Speeches/Git-Github/Images/1-2.png" alt="分布式" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12311,16 +11883,18 @@ int main(){
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12332,15 +11906,11 @@ int main(){
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12374,16 +11944,13 @@ int main(){
 <h2 id="2-git-的配置"><a class="header" href="#2-git-的配置">2. Git 的配置</a></h2>
 <p><strong>设置用户名与邮箱</strong>（用户标识，必要）</p>
 <p>当你安装 Git 后首先要做的事情是设置你的用户名称和 e-mail 地址。这是非常重要的，因为每次 Git 提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
-<pre><code class="language-shell">git config --global user.name &quot;*****&quot;           #名称
+<pre><code class="language-shell">git config --global user.name "*****"           #名称
 git config --global user.email ******@***.com   #邮箱
 </code></pre>
 <p>可以使用命令查看是否设置完成</p>
 <pre><code class="language-shell">git config --global --list
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12397,16 +11964,18 @@ git config --global user.email ******@***.com   #邮箱
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12418,15 +11987,11 @@ git config --global user.email ******@***.com   #邮箱
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12503,9 +12068,6 @@ git push origin main
 #(commit)保持一致，工作区文件内容保持不变。
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12519,16 +12081,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12540,15 +12104,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12578,9 +12138,6 @@ git push origin main
 ></script>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="前端开发入门"><a class="header" href="#前端开发入门">前端开发入门</a></h1>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12594,16 +12151,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12615,15 +12174,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12666,9 +12221,6 @@ git push origin main
 <p>JavaScript 与 Java 在名字和语法上都很相似，但这两门编程语言从设计之初就有很大不同。JavaScript 在语言设计上主要受到了 Self（一种基于原型的编程语言）和 Scheme（一门函数式编程语言）的影响，在语法结构上它和 C 语言很相似（如 if 条件语句、switch 语句、while 循环和 do-while 循环等）。</p>
 <p>对于客户端来说，JavaScript 通常被实现为一门解释语言，但如今它已经可以被即时编译（JIT）。随着 HTML5 和 CSS3 语言标准的推行，它还可以用于<strong>游戏</strong>、<strong>桌面</strong>和<strong>移动应用程序</strong>的开发，以及在服务器端网络环境运行（如 Node.js）</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12682,16 +12234,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12703,15 +12257,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12774,7 +12324,7 @@ git push origin main
 <p>开始标签也可包含<strong>标签属性</strong>。这些属性有诸如标识文档区块、将样式信息绑定到文档演示和为一些如<code>&lt;img&gt;</code>等的标签嵌入图像、引用图像来源等作用。</p>
 <p>一些元素如换行符<code>&lt;br&gt;</code>，不允许嵌入任何内容，无论是文字或其他标签。这些元素只需一个<strong>单一的空标签</strong>（类似于一个开始标签），无需结束标签。</p>
 <p>许多标签是可选的，尤其是那些很常用的段落元素<code>&lt;p&gt;</code>的闭合端标签。HTML 浏览器或其他介质可以从上下文识别出元素的闭合端以及由 HTML 标准所定义的结构规则。这些规则非常复杂，不是大多数 HTML 编码人员可以完全理解的。</p>
-<p>因此，一个 HTML 元素的一般形式为：<code>&lt;tag attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;&gt;content&lt;/tag&gt;</code>。一些 HTML 元素被定义为空元素，其形式为<code>&lt;tag attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;&gt;</code>。空元素不能封装任何内容。例如<code>&lt;br&gt;</code>标签或内联标签<code>&lt;img&gt;</code>。一个 HTML 元素的名称即为标签使用的名称。</p>
+<p>因此，一个 HTML 元素的一般形式为：<code>&lt;tag attribute1="value1" attribute2="value2"&gt;content&lt;/tag&gt;</code>。一些 HTML 元素被定义为空元素，其形式为<code>&lt;tag attribute1="value1" attribute2="value2"&gt;</code>。空元素不能封装任何内容。例如<code>&lt;br&gt;</code>标签或内联标签<code>&lt;img&gt;</code>。一个 HTML 元素的名称即为标签使用的名称。</p>
 <blockquote>
 <p>注意，结束标签的名称前面有一个斜杠“/”，空元素不需要也不允许结束标签。如果元素属性未标明，则使用其默认值。</p>
 </blockquote>
@@ -12795,20 +12345,17 @@ git push origin main
 <pre><code class="language-html">&lt;p&gt;這是&lt;br /&gt;一個&lt;br /&gt;使用換行&lt;br /&gt;段落&lt;/p&gt;
 </code></pre>
 <p>链接：</p>
-<pre><code class="language-html">&lt;a href=&quot;https://punch.mraddict.top/&quot; target=&quot;_blank&quot;&gt;技术开发部的值班笔记！&lt;/a&gt;
+<pre><code class="language-html">&lt;a href="https://punch.mraddict.top/" target="_blank"&gt;技术开发部的值班笔记！&lt;/a&gt;
 </code></pre>
 <p>注释：</p>
 <pre><code class="language-html">&lt;!-- This is a comment --&gt;
 </code></pre>
 <p>文档引用：</p>
-<pre><code class="language-html">&lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
-&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+<pre><code class="language-html">&lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /&gt;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12822,16 +12369,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12843,15 +12392,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -12901,7 +12446,7 @@ git push origin main
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1 class=&quot;header&quot;&gt;这是一个标题&lt;/h1&gt;
+    &lt;h1 class="header"&gt;这是一个标题&lt;/h1&gt;
     &lt;p&gt;Hello world!&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -12922,25 +12467,22 @@ git push origin main
 <li>属性选择器（如<code>input[type='submit']</code>）</li>
 </ul>
 <h2 id="三样式表的引用"><a class="header" href="#三样式表的引用">三、样式表的引用</a></h2>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+<pre><code class="language-html">&lt;link rel="stylesheet" href="style.css" /&gt;
 </code></pre>
 <p>例如：</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;This is a title.&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1 class=&quot;header&quot;&gt;这是一个标题&lt;/h1&gt;
+    &lt;h1 class="header"&gt;这是一个标题&lt;/h1&gt;
     &lt;p&gt;Hello world!&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -12954,16 +12496,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -12975,15 +12519,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -13031,9 +12571,6 @@ git push origin main
 <h2 id="三示例图片"><a class="header" href="#三示例图片">三、示例图片</a></h2>
 <p><img src="Speeches/WebDev/Images/4-2.png" alt="Preview" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -13047,16 +12584,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -13068,15 +12607,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -13116,9 +12651,6 @@ git push origin main
 <p>另外你显然要懂得如何使用 Git 及 GitHub，建议撰写新内容时不要直接再 main 分支上写，先开一个本地的其他分支，在该分支上验证无误后在 merge 到 main 分支，最后再提交到云端。如果你还不怎么了解有关 Git 及 Github 的使用，可以阅读(<a href="Join-us/../Speeches/Git-Github/Intro.html">半小时入门介绍——Git 及 Github 入门</a>)，你也可以自行上网学习相关内容。</p>
 <p>最后，因为你是要写新的内容，所以我认为你因该首先要了解一定的相关知识，在撰写的时候秉承严谨认真的态度，对要写的内容有了深入了解在下笔，不要一知半解地就写。这样是非常不可取的。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -13132,16 +12664,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -13153,15 +12687,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -13201,8 +12731,8 @@ git push origin main
 <p>安装完成后，你可以在命令行中输入<code>git</code>测试你的 Git 是否安装成功。</p>
 <h2 id="2-安装-mdbook-及插件"><a class="header" href="#2-安装-mdbook-及插件">2. 安装 mdbook 及插件</a></h2>
 <p>首先我们要先安装 mdbook 插件。前往 <a href="https://github.com/rust-lang/mdBook/releases">Github 主页</a>下载已经编译好的文件，选择你的系统对应的文件下载。建议下载和项目相同的版本，这样可以避免一些兼容性问题。</p>
-<p><img src="Join-us/Images/1-1.png" alt="mdbook" /></p>
-<p>然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：</p>
+<p><img src="Join-us/Images/1-1.png" alt="mdbook" />
+然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：</p>
 <p><img src="Join-us/Images/1-2.png" alt="PATH" />
 你可以在命令行中输入<code>mdbook</code>测试你的 mdbook 环境是否安装成功。</p>
 <p>同理，我们还需要安装下面的插件，也是下载完成后放到环境变量中：</p>
@@ -13219,9 +12749,6 @@ git push origin main
 <p>安装完成后，用 vscode 打开一个 markdown 文档时，你可以通过点击右上角的预览图标预览你的 markdown 文本。</p>
 <p><img src="Join-us/Images/1-4.png" alt="Preview" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -13235,16 +12762,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -13256,15 +12785,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -13395,9 +12920,6 @@ git push origin main
   - [第三章——其他细节要求](Join-us/Chapter3.md)
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -13411,16 +12933,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -13432,15 +12956,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
@@ -13492,9 +13012,6 @@ git push origin main
 </code></pre>
 <p>当你把你的提交 push 到云端的时候，CI 会自动识别这个动作，然后在一台云服务器上进行编译部署等操作，这些都是自动完成的，一般经过一分钟左右就部署完成了，然后你就可以通过<a href="https://book.jinhun.moe">https://book.jinhun.moe</a>这个网址进行访问本文档了。相关内容也会自动更新。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -13508,16 +13025,18 @@ git push origin main
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -13529,15 +13048,11 @@ git push origin main
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

@@ -217,7 +217,7 @@
 <p>开始标签也可包含<strong>标签属性</strong>。这些属性有诸如标识文档区块、将样式信息绑定到文档演示和为一些如<code>&lt;img&gt;</code>等的标签嵌入图像、引用图像来源等作用。</p>
 <p>一些元素如换行符<code>&lt;br&gt;</code>，不允许嵌入任何内容，无论是文字或其他标签。这些元素只需一个<strong>单一的空标签</strong>（类似于一个开始标签），无需结束标签。</p>
 <p>许多标签是可选的，尤其是那些很常用的段落元素<code>&lt;p&gt;</code>的闭合端标签。HTML 浏览器或其他介质可以从上下文识别出元素的闭合端以及由 HTML 标准所定义的结构规则。这些规则非常复杂，不是大多数 HTML 编码人员可以完全理解的。</p>
-<p>因此，一个 HTML 元素的一般形式为：<code>&lt;tag attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;&gt;content&lt;/tag&gt;</code>。一些 HTML 元素被定义为空元素，其形式为<code>&lt;tag attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;&gt;</code>。空元素不能封装任何内容。例如<code>&lt;br&gt;</code>标签或内联标签<code>&lt;img&gt;</code>。一个 HTML 元素的名称即为标签使用的名称。</p>
+<p>因此，一个 HTML 元素的一般形式为：<code>&lt;tag attribute1="value1" attribute2="value2"&gt;content&lt;/tag&gt;</code>。一些 HTML 元素被定义为空元素，其形式为<code>&lt;tag attribute1="value1" attribute2="value2"&gt;</code>。空元素不能封装任何内容。例如<code>&lt;br&gt;</code>标签或内联标签<code>&lt;img&gt;</code>。一个 HTML 元素的名称即为标签使用的名称。</p>
 <blockquote>
 <p>注意，结束标签的名称前面有一个斜杠“/”，空元素不需要也不允许结束标签。如果元素属性未标明，则使用其默认值。</p>
 </blockquote>
@@ -238,20 +238,17 @@
 <pre><code class="language-html">&lt;p&gt;這是&lt;br /&gt;一個&lt;br /&gt;使用換行&lt;br /&gt;段落&lt;/p&gt;
 </code></pre>
 <p>链接：</p>
-<pre><code class="language-html">&lt;a href=&quot;https://punch.mraddict.top/&quot; target=&quot;_blank&quot;&gt;技术开发部的值班笔记！&lt;/a&gt;
+<pre><code class="language-html">&lt;a href="https://punch.mraddict.top/" target="_blank"&gt;技术开发部的值班笔记！&lt;/a&gt;
 </code></pre>
 <p>注释：</p>
 <pre><code class="language-html">&lt;!-- This is a comment --&gt;
 </code></pre>
 <p>文档引用：</p>
-<pre><code class="language-html">&lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
-&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+<pre><code class="language-html">&lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /&gt;
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -265,16 +262,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -286,15 +285,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

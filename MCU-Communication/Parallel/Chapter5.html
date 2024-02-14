@@ -204,7 +204,7 @@ uint8_t LCD_DISPLAY_CONTROL = 0x0C;
 const uint8_t EN = 8, RS = 9;
 uint8_t data_pins[] = {7, 6, 5, 4};
 
-const char* message = &quot;Hello world!&quot;;
+const char* message = "Hello world!";
 uint8_t bell[8] = {0x4, 0xe, 0xe, 0xe, 0x1f, 0x0, 0x4};
 
 void send_pins(uint8_t);
@@ -233,7 +233,7 @@ void setup() {
     print(message);
     print('*');
     set_cursor(7, 1);
-    print(&quot;Have a nice day! By Mr.Addict!&quot;);
+    print("Have a nice day! By Mr.Addict!");
     set_cursor(37, 1);
     write_data(0);
 }
@@ -384,9 +384,6 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -400,16 +397,18 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -421,15 +420,11 @@ void creat_char(uint8_t num, uint8_t* bit_map) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

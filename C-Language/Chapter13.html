@@ -192,7 +192,7 @@
 int main() {
     int virable = 0;
     int* pointer = &amp;virable;  // 定义指针变量
-    printf(&quot;The address of virable is %p.\n&quot;, pointer);
+    printf("The address of virable is %p.\n", pointer);
     return 0;
 }
 </code></pre>
@@ -225,15 +225,15 @@ int main() {
     ip = &amp;var; /* 在指针变量中存储 var 的地址 */
 
     /* 使用指针访问值 */
-    printf(&quot;The value of var is %d.\n&quot;, var);
+    printf("The value of var is %d.\n", var);
 
     /* 使用指针访问值 */
-    printf(&quot;The value of *ip is %d.\n&quot;, *ip);
+    printf("The value of *ip is %d.\n", *ip);
 
-    printf(&quot;The address of var is %p.\n&quot;, &amp;var);
+    printf("The address of var is %p.\n", &amp;var);
 
     /* 在指针变量中存储的地址 */
-    printf(&quot;The address of ip is %p.\n&quot;, ip);
+    printf("The address of ip is %p.\n", ip);
 
     return 0;
 }
@@ -256,9 +256,9 @@ void swap(int* num1, int* num2) {
 
 int main() {
     int a = 4, b = 6;
-    printf(&quot;a=%d, b=%d.\n&quot;, a, b);
+    printf("a=%d, b=%d.\n", a, b);
     swap(&amp;a, &amp;b);
-    printf(&quot;a=%d, b=%d.\n&quot;, a, b);
+    printf("a=%d, b=%d.\n", a, b);
     return 0;
 }
 </code></pre>
@@ -275,7 +275,7 @@ a=6, b=4.
 
 int main() {
     int* ptr = NULL;
-    printf(&quot;The address of ptr is %p\n&quot;, ptr);
+    printf("The address of ptr is %p\n", ptr);
     return 0;
 }
 </code></pre>
@@ -283,9 +283,6 @@ int main() {
 <pre><code class="language-plaintext">The address of ptr is 0000000000000000
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -299,16 +296,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -320,15 +319,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

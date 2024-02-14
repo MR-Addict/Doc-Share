@@ -226,12 +226,12 @@ else
 
 int main() {
     int input;
-    printf(&quot;Input your age:&quot;);
-    scanf(&quot;%d&quot;, &amp;input);
+    printf("Input your age:");
+    scanf("%d", &amp;input);
     if (input &lt; 18) {
-        printf(&quot;You're an underage!&quot;);
+        printf("You're an underage!");
     } else {
-        printf(&quot;Congratulations! You're already an adult!&quot;);
+        printf("Congratulations! You're already an adult!");
     }
     return 0;
 }
@@ -266,8 +266,8 @@ else
 
 int main() {
     float salary, tax;
-    printf(&quot;Input your salary:&quot;);
-    scanf(&quot;%f&quot;, &amp;salary);
+    printf("Input your salary:");
+    scanf("%f", &amp;salary);
     if (salary &lt; 1000) tax = 0;
     else if (salary &lt; 2000) tax = 0.05;
     else if (salary &lt; 3000) tax = 0.1;
@@ -275,7 +275,7 @@ int main() {
     else tax = 0.2;
 
     salary = salary * (1 - tax);
-    printf(&quot;Your final salary is %.2f&quot;, salary);
+    printf("Your final salary is %.2f", salary);
     return 0;
 }
 </code></pre>
@@ -312,8 +312,8 @@ switch (expression)
 
 int main() {
     float salary, tax;
-    printf(&quot;Input your salary:&quot;);
-    scanf(&quot;%f&quot;, &amp;salary);
+    printf("Input your salary:");
+    scanf("%f", &amp;salary);
 
     switch ((int)(salary / 1000)) {
         case 0: tax = 0; break;
@@ -325,7 +325,7 @@ int main() {
     }
 
     salary = salary * (1 - tax);
-    printf(&quot;Your final salary is %.2f&quot;, salary);
+    printf("Your final salary is %.2f", salary);
     return 0;
 }
 </code></pre>
@@ -335,9 +335,6 @@ int main() {
 <li><strong>输入三个整数，求出三个数中的最大值。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -351,16 +348,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -372,15 +371,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

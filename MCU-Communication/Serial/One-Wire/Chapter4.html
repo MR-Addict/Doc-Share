@@ -203,12 +203,12 @@ void setup() {
 void loop() {
   switch (updataData()) {
     case DHT11_ERROR:
-      Serial.println(&quot;DHT11 ERROR!&quot;);
+      Serial.println("DHT11 ERROR!");
       break;
     case DHT11_OKAY:
-      Serial.print(&quot;DHT11 Okay,humidity is &quot;);
+      Serial.print("DHT11 Okay,humidity is ");
       Serial.print(humidity);
-      Serial.print(&quot;, temperature is &quot;);
+      Serial.print(", temperature is ");
       Serial.println(temperature);
       break;
   }
@@ -274,9 +274,6 @@ bool updataData() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -290,16 +287,18 @@ bool updataData() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -311,15 +310,11 @@ bool updataData() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

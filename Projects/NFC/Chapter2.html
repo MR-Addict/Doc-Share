@@ -213,16 +213,16 @@
 <p>在这边我强调几点重要的地方。</p>
 <h3 id="21-第一点"><a class="header" href="#21-第一点">2.1 第一点</a></h3>
 <p>首先为了安全，我在 Arduino 的库文件夹下创建了<code>arduino_secrets的文件夹</code>，里面有一个<code>arduino_secrets.h</code>的文件，我在里面定义了几个重要的变量，包括办公室网络名，网络密码，默认用户名，默认用户密码：</p>
-<pre><code class="language-cpp">const char* ssid = &quot;STAS-507&quot;;
-const char* password = &quot;dinghao666&quot;;
-const char* login_user = &quot;admin&quot;;
-const char* login_pwd = &quot;dinghao666&quot;;
+<pre><code class="language-cpp">const char* ssid = "STAS-507";
+const char* password = "dinghao666";
+const char* login_user = "admin";
+const char* login_pwd = "dinghao666";
 </code></pre>
 <p>当然你也可以将这些变量直接定义在项目文件里。</p>
 <h3 id="22-第二点"><a class="header" href="#22-第二点">2.2 第二点</a></h3>
 <p>你可以通过更改 WIFI_WS 中 WIFI_Init 函数里面以下几行来设置你的<code>ESP主机名</code>，这也是<a href="http://unlockdoor-507">http://unlockdoor-507</a>的由来：</p>
 <pre><code class="language-cpp">// change hostname to unlockdoor-507
-String hostname = &quot;unlockdoor-507&quot;;
+String hostname = "unlockdoor-507";
 WiFi.mode(WIFI_STA);
 WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, INADDR_NONE);
 WiFi.setHostname(hostname.c_str());
@@ -251,9 +251,6 @@ WiFi.setHostname(hostname.c_str());
 <p>登录成功后点击<code>open</code>就可以开门了。</p>
 <p><img src="Images/2-2.png" alt="WEB UI" /></p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -267,16 +264,18 @@ WiFi.setHostname(hostname.c_str());
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -288,15 +287,11 @@ WiFi.setHostname(hostname.c_str());
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

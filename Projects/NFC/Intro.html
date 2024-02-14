@@ -191,9 +191,6 @@
 <p>后来我猜测可能是由于 Arduino 的 AVR 芯片太差，需要换一个更好的单片机。于是大二下学期开学我就把 AVR 单片机换成了<strong>ESP32</strong>，同时为了提高效率，减少单片机内存占用，我<strong>添加了中断</strong>，只有在有人的时候才会去检测 NFC 卡。同时我在这次的项目中加入了<strong>WIFI</strong>的功能，这样我们就可以在连接办公室网络的情况下开门了，即使没带门禁卡也没关系。其实呢，将 ESP32<strong>映射到公网</strong>也是可以做到的，这个功能可以让大家在日后添加，我认为暂时没有必要，技术上也没什么难度。</p>
 <p>这个版本也是目前的最新版本，但是我个人认为这个系统还有地方需要改进，等到日后有时间再说吧。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -207,16 +204,18 @@
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -228,15 +227,11 @@
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

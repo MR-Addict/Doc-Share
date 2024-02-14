@@ -190,7 +190,7 @@
 <pre><code class="language-c">char site[7] = {'R', 'U', 'N', 'O', 'O', 'B', '\0'};
 </code></pre>
 <p>上面的初始化也可以写成如下格式：</p>
-<pre><code class="language-c">char site[] = &quot;RUNOOB&quot;;
+<pre><code class="language-c">char site[] = "RUNOOB";
 </code></pre>
 <p>以下是 C/C++ 中定义的字符串的内存表示：</p>
 <p><img src="Images/12-1.png" alt="" /></p>
@@ -199,8 +199,8 @@
 
 int main() {
     char string[50];
-    puts(&quot;Input a string without space:&quot;);
-    scanf(&quot;%s&quot;, string);
+    puts("Input a string without space:");
+    scanf("%s", string);
     puts(string);
     return 0;
 }
@@ -211,9 +211,6 @@ int main() {
 <li><strong>输入一段任意长度的字符串，通过排序将其按照 A-Z，a-z 重新排序。</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -227,16 +224,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -248,15 +247,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

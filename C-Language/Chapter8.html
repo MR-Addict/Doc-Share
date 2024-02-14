@@ -217,11 +217,11 @@ int isPrime(int num) {
 int main() {
     for (int i = 2, count = 0; i &lt;= 100; i++) {
         if (isPrime(i)) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
-                printf(&quot;\n&quot;);
+                printf("\n");
         }
     }
     return 0;
@@ -243,9 +243,9 @@ int getGCD(int num1, int num2) {
 
 int main() {
     int num1, num2;
-    printf(&quot;Input two intergers:&quot;);
-    scanf(&quot;%d %d&quot;, &amp;num1, &amp;num2);
-    printf(&quot;The greatest common divisor between %d and %d is %d.\n&quot;,
+    printf("Input two intergers:");
+    scanf("%d %d", &amp;num1, &amp;num2);
+    printf("The greatest common divisor between %d and %d is %d.\n",
             num1, num2, getGCD(num1, num2));
     return 0;
 }
@@ -266,9 +266,9 @@ int getGCD(int num1, int num2);
 
 int main() {
     int num1, num2;
-    printf(&quot;Input two intergers:&quot;);
-    scanf(&quot;%d %d&quot;, &amp;num1, &amp;num2);
-    printf(&quot;The greatest common divisor between %d and %d is %d.\n&quot;,
+    printf("Input two intergers:");
+    scanf("%d %d", &amp;num1, &amp;num2);
+    printf("The greatest common divisor between %d and %d is %d.\n",
             num1, num2, getGCD(num1, num2));
     return 0;
 }
@@ -289,9 +289,6 @@ int getGCD(int num1, int num2) {
 <li><strong>输入一个整数，求其\(x^2\)的程序</strong></li>
 </ul>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -305,16 +302,18 @@ int getGCD(int num1, int num2) {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -326,15 +325,11 @@ int getGCD(int num1, int num2) {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

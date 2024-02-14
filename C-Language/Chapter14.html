@@ -208,8 +208,8 @@ int main() {
     /* 指针中的数组地址 */
     ptr = num;
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;num[%d] = %d &quot;, i, *ptr);
-        printf(&quot;num[%d] = %p\n&quot;, i, ptr);
+        printf("num[%d] = %d ", i, *ptr);
+        printf("num[%d] = %p\n", i, ptr);
         /* 指向下一个位置 */
         ptr++;
     }
@@ -232,8 +232,8 @@ int main() {
     /* 指针中的数组地址 */
     ptr = &amp;num[2];
     for (int i = LENGTH - 1; i &gt;= 0; i--) {
-        printf(&quot;num[%d] = %d &quot;, i, *ptr);
-        printf(&quot;num[%d] = %p\n&quot;, i, ptr);
+        printf("num[%d] = %d ", i, *ptr);
+        printf("num[%d] = %p\n", i, ptr);
         /* 指向上一个位置 */
         ptr--;
     }
@@ -255,20 +255,17 @@ int main() {
     int *ptr, sum;
     /* 指针中的数组地址 */
     ptr = num;
-    printf(&quot;The arrey is [&quot;);
+    printf("The arrey is [");
     for (int i = 0; i &lt; LENGTH; i++) {
-        printf(&quot;%d &quot;, *ptr);
+        printf("%d ", *ptr);
         sum += *ptr;
         ptr++;
     }
-    printf(&quot;]\nThe sum of arrey is %d.\n&quot;, sum);
+    printf("]\nThe sum of arrey is %d.\n", sum);
     return 0;
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -282,16 +279,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -303,15 +302,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

@@ -205,7 +205,7 @@ struct Time {
 };
 
 // 星期字符串
-char weekofday[7][10] = {&quot;Sunday&quot;, &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;};
+char weekofday[7][10] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
 uint8_t bcd2dec(uint8_t);
 uint8_t dec2bcd(uint8_t);
@@ -235,15 +235,15 @@ void loop() {
   Time now = readTime();// 更新时间
   sprintf(// 格式化一段字符串数据
     str,
-    &quot;%d-%d-%d %d:%d:%d %s %d^C &quot;,
+    "%d-%d-%d %d:%d:%d %s %d^C ",
     now.year, now.mon, now.date, now.hour, now.min, now.sec, weekofday[now.day], readTemp()
   );
   Serial.print(str);
   if (readAlarmFlag()) {
-    Serial.println(&quot;Alarm ON!&quot;);
+    Serial.println("Alarm ON!");
     turnAlarmOFF();
   }
-  else Serial.println(&quot;Alarm OFF!&quot;);
+  else Serial.println("Alarm OFF!");
   delay(1000);
 }
 
@@ -380,9 +380,6 @@ int8_t readTemp() {
 }
 </code></pre>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -396,16 +393,18 @@ int8_t readTemp() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -417,15 +416,11 @@ int8_t readTemp() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);

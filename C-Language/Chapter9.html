@@ -212,11 +212,11 @@ int isPrime(int num) {
 int main() {
     for (int i = 2, count = 0; i &lt;= 100; i++) {
         if (isPrime(i)) {
-            printf(&quot;%-3d&quot;, i);
+            printf("%-3d", i);
             count++;
             //判断质数的个数，五个质数就换行
             if (count % 5 == 0)
-                printf(&quot;\n&quot;);
+                printf("\n");
         }
     }
     return 0;
@@ -235,7 +235,7 @@ int main() {
     int a = 10, b = 20;
     /* 访问全局变量 */
     global = a + b;
-    printf(&quot;Value of a = %d, b = %d and global = %d.\n&quot;, a, b, global);
+    printf("Value of a = %d, b = %d and global = %d.\n", a, b, global);
     return 0;
 }
 </code></pre>
@@ -248,16 +248,13 @@ int global = 10;
 int main() {
     /* 局部变量声明 */
     int global = 20;
-    printf(&quot;Value of global = %d.\n&quot;, global);
+    printf("Value of global = %d.\n", global);
     return 0;
 }
 </code></pre>
 <h2 id="4-初始化局部变量和全局变量"><a class="header" href="#4-初始化局部变量和全局变量">4. 初始化局部变量和全局变量</a></h2>
 <p>当局部变量被定义时，系统不会对其初始化，您必须自行对其初始化。定义全局变量时，系统会自动对其初始化，因为全局变量属于静态变量(static)，而局部变量是动态变量(auto)，所有静态变量未初始化都默认为<strong>0 或者 NULL</strong>，而动态变量未初始化为<strong>任意有效值</strong>。</p>
 <style>
-  .scroll-to-top i {
-    transform: translateY(-2px);
-  }
   .scroll-to-top {
     font-size: 2.5rem;
     width: 3.2rem;
@@ -271,16 +268,18 @@ int main() {
     bottom: 1.25rem;
     right: calc(1.25rem + var(--page-padding));
 
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    background-color: var(--icons);
-
     z-index: 999;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
   }
   .scroll-to-top.hidden {
     display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
   }
   @media (min-width: 768px) {
     .scroll-to-top {
@@ -292,15 +291,11 @@ int main() {
     }
   }
 </style>
-<p><button
-  type="button"
-  aria-label="scroll-top"
-  class="scroll-to-top hidden"
-  onclick="window.scroll({top: 0, behavior: 'smooth'})"
->
-<i class="fa fa-angle-up"></i>
-</button></p>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
 <script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   window.addEventListener("scroll", () => {
     const button = document.querySelector(".scroll-to-top");
     button.classList.toggle("hidden", window.scrollY < 200);
