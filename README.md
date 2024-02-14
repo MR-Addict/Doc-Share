@@ -6,16 +6,16 @@
 
 本人能力有限，内容肯定存在错误和不足，欢迎大家指正。
 
-你可以通过以下网址访问网页内容:
+**预览地址**
 
 - [https://book.jinhun.moe](https://book.jinhun.moe)
 - [https://book.mraddict.top](https://book.mraddict.top)
 - [https://book.mraddict.vercel.app](https://book.mraddict.vercel.app)
 - [https://mr-addict.github.io/Doc-Share](https://mr-addict.github.io/Doc-Share)
 
-版本信息：
+**版本信息**
 
-| Package         | Version | Repository                                                                  |
-| :-------------- | :------ | :-------------------------------------------------------------------------- |
-| mdbook          | 0.4.36  | [仓库地址](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36)        |
-| mdbook-embedify | 0.2.5   | [仓库地址](https://github.com/MR-Addict/mdbook-embedify/releases/tag/0.2.5) |
+| 包              | 版本   | 仓库                                                                        |
+| :-------------- | :----- | :-------------------------------------------------------------------------- |
+| mdbook          | 0.4.36 | [仓库地址](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36)        |
+| mdbook-embedify | 0.2.5  | [仓库地址](https://github.com/MR-Addict/mdbook-embedify/releases/tag/0.2.5) |
