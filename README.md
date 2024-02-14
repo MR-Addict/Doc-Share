@@ -12,3 +12,10 @@
 - [https://book.mraddict.top](https://book.mraddict.top)
 - [https://book.mraddict.vercel.app](https://book.mraddict.vercel.app)
 - [https://mr-addict.github.io/Doc-Share](https://mr-addict.github.io/Doc-Share)
+
+版本信息：
+
+| Package         | Version | Repository                                                                  |
+| :-------------- | :------ | :-------------------------------------------------------------------------- |
+| mdbook          | 0.4.36  | [仓库地址](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36)        |
+| mdbook-embedify | 0.2.5   | [仓库地址](https://github.com/MR-Addict/mdbook-embedify/releases/tag/0.2.5) |
