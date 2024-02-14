@@ -17,5 +17,5 @@
 
 | 包              | 版本   | 仓库                                                                        |
 | :-------------- | :----- | :-------------------------------------------------------------------------- |
-| mdbook          | 0.4.36 | [仓库地址](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36)        |
-| mdbook-embedify | 0.2.5  | [仓库地址](https://github.com/MR-Addict/mdbook-embedify/releases/tag/0.2.5) |
+| mdbook          | 0.4.37 | [仓库地址](https://github.com/rust-lang/mdBook/releases/tag/v0.4.37)        |
+| mdbook-embedify | 0.2.7  | [仓库地址](https://github.com/MR-Addict/mdbook-embedify/releases/tag/0.2.7) |

@@ -27,12 +27,6 @@ enable = true
 enable = true
 level = 2
 
-[output.html.playground]
-editable = true
-copyable = true
-copy-js = true
-line-numbers = true
-
 [output.html.search]
 enable = true
 limit-results = 30
@@ -56,3 +50,4 @@ giscus.category-id = "DIC_kwDOGyWqEc4CdNrz"
 giscus.reactions-enabled = "1"
 giscus.theme = "light"
 giscus.lang = "zh-CN"
+giscus.loading = "eager"

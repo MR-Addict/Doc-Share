@@ -17,7 +17,6 @@
 首先我们要先安装 mdbook 插件。前往 [Github 主页](https://github.com/rust-lang/mdBook/releases)下载已经编译好的文件，选择你的系统对应的文件下载。建议下载和项目相同的版本，这样可以避免一些兼容性问题。
 
 ![mdbook](Images/1-1.png)
-
 然后将下载的文件放到你的环境变量里面。如果你是 windows，那么需要放到 PATH 地址当中：
 
 ![PATH](Images/1-2.png)
