@@ -5,11 +5,6 @@ name: hk
 
 steps:
   - name: build
-    image: harbor.jinhun.moe/library/mdbook_builder:v0.4.21
-    commands:
-      - mdbook build
-
-  - name: publish
     image: plugins/docker:latest
     settings:
       dockerfile: .drone/Dockerfile

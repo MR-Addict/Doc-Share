@@ -12,19 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: setup
-        run: |
-          cp assets/mdbook /usr/local/bin
-          chmod u+x /usr/local/bin/mdbook
+      - name: Build
+        run: chmod u+x assets/bin/* && cp assets/bin/* /usr/local/bin && mdbook build
 
-      - name: build
-        run: mdbook build
-
-      - name: deploy to vercel
-        uses: amondnet/vercel-action@v25
+      - uses: amondnet/vercel-action@v25
         with:
           vercel-args: --prod
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -32,8 +25,7 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           working-directory: ./book
 
-      - name: push to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book

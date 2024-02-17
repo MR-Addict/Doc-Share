@@ -1,22 +1,24 @@
 [book]
 authors = ["MR-Addcit"]
-language = "zh-cn"
+language = "zh-CN"
 src = "src"
 title = "电子组培训文档"
 
 [build]
 build-dir = "book"
 create-missing = false
-use-default-preprocessors = true
+use-default-preprocessors = false
 
 [output.html]
 default-theme = "Light"
-preferred-dark-theme = "Navy"
+preferred-dark-theme = "Ayu"
 curly-quotes = true
 mathjax-support = true
 copy-fonts = true
 no-section-label = false
 git-repository-url = "https://github.com/MR-Addict/Doc-Share.git"
+edit-url-template = "https://github.com/MR-Addict/Doc-Share/edit/main/example/{path}"
+additional-css = ["assets/css/patch.css"]
 
 [output.html.print]
 enable = true
@@ -24,12 +26,6 @@ enable = true
 [output.html.fold]
 enable = true
 level = 2
-
-[output.html.playground]
-editable = true
-copyable = true
-copy-js = true
-line-numbers = true
 
 [output.html.search]
 enable = true
@@ -42,3 +38,16 @@ boost-paragraph = 1
 expand = true
 heading-split-level = 3
 copy-js = true
+
+[preprocessor.embedify]
+scroll-to-top.enable = true
+
+giscus.enable = true
+giscus.repo = "MR-Addict/Doc-Share"
+giscus.repo-id = "R_kgDOGyWqEQ"
+giscus.category = "General"
+giscus.category-id = "DIC_kwDOGyWqEc4CdNrz"
+giscus.reactions-enabled = "1"
+giscus.theme = "light"
+giscus.lang = "zh-CN"
+giscus.loading = "eager"
