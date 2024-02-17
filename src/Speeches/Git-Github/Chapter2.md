@@ -2,7 +2,13 @@
 
 ## 1. Git 的安装
 
-打开 git 官网下载 git 对应操作系统的版本。如果官网下载太慢，我们可以使用淘宝镜像下载：[链接](http://npm.taobao.org/mirrors/git-for-windows/)找到最新版本的 Git 点击下载。
+打开 [git 官网](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe)下载 git 对应操作系统的版本。如果官网下载太慢，我们可以使用淘宝镜像下载：[链接](http://npm.taobao.org/mirrors/git-for-windows/)找到最新版本的 Git 点击下载。
+
+还可以使用终端下载
+
+```sh
+winget install --id Git.Git -e --source winget
+```
 
 ## 2. Git 的配置
 
