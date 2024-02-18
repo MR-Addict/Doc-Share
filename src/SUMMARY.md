@@ -35,6 +35,15 @@
   - [结构体(struct)](C-Language/Chapter17.md)
   - [共用体(union)](C-Language/Chapter18.md)
 
+<!-- - [Python基础](Python/Intro.md)
+  - [环境搭建](Python/Chapter1.md)
+  - [基础语法](Python/Chapter2.md)
+  - [数据类型和转换](Python/Chapter3.md)
+  - [运算符](Python/Chapter4.md)
+  - [变量类型](Python/Chapter5.md)
+  - [条件语句](Python/Chapter6.md)
+  - [循环语句](Python/Chapter7.md) -->
+  
 - [通信专题](MCU-Communication/Intro.md)
 
   - [One-Wire](MCU-Communication/Serial/One-Wire/Intro.md)
