@@ -35,15 +35,16 @@
   - [结构体(struct)](C-Language/Chapter17.md)
   - [共用体(union)](C-Language/Chapter18.md)
 
-<!-- - [Python基础](Python/Intro.md)
+- [Python 基础](Python/Intro.md)
+
   - [环境搭建](Python/Chapter1.md)
   - [基础语法](Python/Chapter2.md)
   - [数据类型和转换](Python/Chapter3.md)
   - [运算符](Python/Chapter4.md)
   - [变量类型](Python/Chapter5.md)
   - [条件语句](Python/Chapter6.md)
-  - [循环语句](Python/Chapter7.md) -->
-  
+  - [循环语句](Python/Chapter7.md)
+
 - [通信专题](MCU-Communication/Intro.md)
 
   - [One-Wire](MCU-Communication/Serial/One-Wire/Intro.md)
@@ -96,16 +97,19 @@
 - [半小时入门介绍](Speeches/Intro.md)
 
   - [EDA 入门](Speeches/EDA/Intro.md)
+
     - [555 计时器](Speeches/EDA/Chapter1.md)
     - [绘制符号和封装](Speeches/EDA/Chapter2.md)
     - [设计原理图](Speeches/EDA/Chapter3.md)
     - [设计 PCB](Speeches/EDA/Chapter4.md)
-  
+
   - [Markdown 入门](Speeches/Markdown/Intro.md)
+
     - [基础语法 1](Speeches/Markdown/Chapter1.md)
     - [基础语法 2](Speeches/Markdown/Chapter2.md)
 
   - [Git 及 Github 入门](Speeches/Git-Github/Intro.md)
+
     - [集中式 vs 分布式](Speeches/Git-Github/Chapter1.md)
     - [Git 的安装与配置](Speeches/Git-Github/Chapter2.md)
     - [Git 常用命令](Speeches/Git-Github/Chapter3.md)

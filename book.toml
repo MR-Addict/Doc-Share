@@ -51,3 +51,5 @@ giscus.reactions-enabled = "1"
 giscus.theme = "light"
 giscus.lang = "zh-CN"
 giscus.loading = "eager"
+
+[preprocessor.repl]

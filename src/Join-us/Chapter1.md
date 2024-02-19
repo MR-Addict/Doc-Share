@@ -24,6 +24,7 @@
 
 同理，我们还需要安装下面的插件，也是下载完成后放到环境变量中：
 
+- [mdbook-repl](https://github.com/MR-Addict/mdbook-repl) 一个用于插入实时运行代码的插件
 - [mdbook-embedify](https://github.com/MR-Addict/mdbook-embedify) 一个用于方便插入一些外部资源的插件
 
 ## 3. 安装 vscode 的 markdown 预览插件
