@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>基础语法 - 技术部培训文档</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../assets/css/patch.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Intro.html">电子组培训文档</a></li><li class="chapter-item expanded "><a href="../Arduino/Intro.html"><strong aria-hidden="true">1.</strong> Arduino 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Arduino/Chapter1.html"><strong aria-hidden="true">1.1.</strong> Arduino 和 Arduino IDE</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter2.html"><strong aria-hidden="true">1.2.</strong> 第一个程序 Blink</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter3.html"><strong aria-hidden="true">1.3.</strong> 使用按钮</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter4.html"><strong aria-hidden="true">1.4.</strong> 中断 Interrupt</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter5.html"><strong aria-hidden="true">1.5.</strong> 定时器 Timer</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter6.html"><strong aria-hidden="true">1.6.</strong> 脉冲宽度调制 PWM</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter7.html"><strong aria-hidden="true">1.7.</strong> 模数转换 ADC</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter8.html"><strong aria-hidden="true">1.8.</strong> 串口通信 UART</a></li><li class="chapter-item expanded "><a href="../Arduino/Chapter9.html"><strong aria-hidden="true">1.9.</strong> 单片机的存储器和 EEPROM</a></li></ol></li><li class="chapter-item expanded "><a href="../C-Language/Intro.html"><strong aria-hidden="true">2.</strong> C 语言基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../C-Language/Chapter1.html"><strong aria-hidden="true">2.1.</strong> C 语言基本语法</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter2.html"><strong aria-hidden="true">2.2.</strong> 数据类型</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter3.html"><strong aria-hidden="true">2.3.</strong> 变量和常量</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter4.html"><strong aria-hidden="true">2.4.</strong> 运算符</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter5.html"><strong aria-hidden="true">2.5.</strong> 条件判断 if 和 switch</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter6.html"><strong aria-hidden="true">2.6.</strong> 循环 while 和 do/while</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter7.html"><strong aria-hidden="true">2.7.</strong> 循环 for</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter8.html"><strong aria-hidden="true">2.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter9.html"><strong aria-hidden="true">2.9.</strong> 函数的作用域规则</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter10.html"><strong aria-hidden="true">2.10.</strong> 数组</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter11.html"><strong aria-hidden="true">2.11.</strong> 多维数组</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter12.html"><strong aria-hidden="true">2.12.</strong> 字符串</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter13.html"><strong aria-hidden="true">2.13.</strong> 指针</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter14.html"><strong aria-hidden="true">2.14.</strong> 指针的算数运算</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter15.html"><strong aria-hidden="true">2.15.</strong> 指针和数组、函数</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter16.html"><strong aria-hidden="true">2.16.</strong> 枚举(enum)</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter17.html"><strong aria-hidden="true">2.17.</strong> 结构体(struct)</a></li><li class="chapter-item expanded "><a href="../C-Language/Chapter18.html"><strong aria-hidden="true">2.18.</strong> 共用体(union)</a></li></ol></li><li class="chapter-item expanded "><a href="../Python/Intro.html"><strong aria-hidden="true">3.</strong> Python 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Python/Chapter1.html"><strong aria-hidden="true">3.1.</strong> 环境搭建</a></li><li class="chapter-item expanded "><a href="../Python/Chapter2.html" class="active"><strong aria-hidden="true">3.2.</strong> 基础语法</a></li><li class="chapter-item expanded "><a href="../Python/Chapter3.html"><strong aria-hidden="true">3.3.</strong> 数据类型和转换</a></li><li class="chapter-item expanded "><a href="../Python/Chapter4.html"><strong aria-hidden="true">3.4.</strong> 运算符</a></li><li class="chapter-item expanded "><a href="../Python/Chapter5.html"><strong aria-hidden="true">3.5.</strong> 变量类型</a></li><li class="chapter-item expanded "><a href="../Python/Chapter6.html"><strong aria-hidden="true">3.6.</strong> 条件语句</a></li><li class="chapter-item expanded "><a href="../Python/Chapter7.html"><strong aria-hidden="true">3.7.</strong> 循环语句</a></li></ol></li><li class="chapter-item expanded "><a href="../MCU-Communication/Intro.html"><strong aria-hidden="true">4.</strong> 通信专题</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../MCU-Communication/Serial/One-Wire/Intro.html"><strong aria-hidden="true">4.1.</strong> One-Wire</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MCU-Communication/Serial/One-Wire/Chapter1.html"><strong aria-hidden="true">4.1.1.</strong> One-Wire 通信原理</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/One-Wire/Chapter2.html"><strong aria-hidden="true">4.1.2.</strong> DHT11 数据手册速览</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/One-Wire/Chapter3.html"><strong aria-hidden="true">4.1.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/One-Wire/Chapter4.html"><strong aria-hidden="true">4.1.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/One-Wire/Chapter5.html"><strong aria-hidden="true">4.1.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../MCU-Communication/Serial/UART/Intro.html"><strong aria-hidden="true">4.2.</strong> UART</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MCU-Communication/Serial/UART/Chapter1.html"><strong aria-hidden="true">4.2.1.</strong> UART 通信原理</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/UART/Chapter2.html"><strong aria-hidden="true">4.2.2.</strong> HC-05 数据手册速览</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/UART/Chapter3.html"><strong aria-hidden="true">4.2.3.</strong> HC-05 蓝牙的使用</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/UART/Chapter4.html"><strong aria-hidden="true">4.2.4.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../MCU-Communication/Serial/I2C/Intro.html"><strong aria-hidden="true">4.3.</strong> I2C</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MCU-Communication/Serial/I2C/Chapter1.html"><strong aria-hidden="true">4.3.1.</strong> I2C 的通信原理</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/I2C/Chapter2.html"><strong aria-hidden="true">4.3.2.</strong> DS3231 数据手册速览</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/I2C/Chapter3.html"><strong aria-hidden="true">4.3.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/I2C/Chapter4.html"><strong aria-hidden="true">4.3.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/I2C/Chapter5.html"><strong aria-hidden="true">4.3.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../MCU-Communication/Serial/SPI/Intro.html"><strong aria-hidden="true">4.4.</strong> SPI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MCU-Communication/Serial/SPI/Chapter1.html"><strong aria-hidden="true">4.4.1.</strong> SPI 通信原理</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/SPI/Chapter2.html"><strong aria-hidden="true">4.4.2.</strong> MPU9250 数据手册速览</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/SPI/Chapter3.html"><strong aria-hidden="true">4.4.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/SPI/Chapter4.html"><strong aria-hidden="true">4.4.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../MCU-Communication/Serial/SPI/Chapter5.html"><strong aria-hidden="true">4.4.5.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../MCU-Communication/Parallel/Intro.html"><strong aria-hidden="true">4.5.</strong> 并行通信</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MCU-Communication/Parallel/Chapter1.html"><strong aria-hidden="true">4.5.1.</strong> 并行通信原理</a></li><li class="chapter-item "><a href="../MCU-Communication/Parallel/Chapter2.html"><strong aria-hidden="true">4.5.2.</strong> LCD1602 数据手册速览</a></li><li class="chapter-item "><a href="../MCU-Communication/Parallel/Chapter3.html"><strong aria-hidden="true">4.5.3.</strong> 代码逻辑分析</a></li><li class="chapter-item "><a href="../MCU-Communication/Parallel/Chapter4.html"><strong aria-hidden="true">4.5.4.</strong> 整合打包代码</a></li><li class="chapter-item "><a href="../MCU-Communication/Parallel/Chapter5.html"><strong aria-hidden="true">4.5.5.</strong> 总结和拓展</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../Projects/Intro.html"><strong aria-hidden="true">5.</strong> 项目制作</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Projects/NFC/Intro.html"><strong aria-hidden="true">5.1.</strong> NFC</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Projects/NFC/Chapter1.html"><strong aria-hidden="true">5.1.1.</strong> 初代门禁版本</a></li><li class="chapter-item "><a href="../Projects/NFC/Chapter2.html"><strong aria-hidden="true">5.1.2.</strong> 目前门禁版本</a></li><li class="chapter-item "><a href="../Projects/NFC/Chapter3.html"><strong aria-hidden="true">5.1.3.</strong> 未来的改进</a></li></ol></li><li class="chapter-item expanded "><a href="../Projects/LED-Board/Intro.html"><strong aria-hidden="true">5.2.</strong> LED Board</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Projects/LED-Board/Chapter1.html"><strong aria-hidden="true">5.2.1.</strong> 制作步骤</a></li><li class="chapter-item "><a href="../Projects/LED-Board/Chapter2.html"><strong aria-hidden="true">5.2.2.</strong> 代码及使用</a></li><li class="chapter-item "><a href="../Projects/LED-Board/Chapter3.html"><strong aria-hidden="true">5.2.3.</strong> 总结和拓展</a></li></ol></li><li class="chapter-item expanded "><a href="../Projects/CNC-Engraver/Intro.html"><strong aria-hidden="true">5.3.</strong> CNC-Engraver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Projects/CNC-Engraver/Chapter1.html"><strong aria-hidden="true">5.3.1.</strong> 什么是 CNC</a></li><li class="chapter-item "><a href="../Projects/CNC-Engraver/Chapter2.html"><strong aria-hidden="true">5.3.2.</strong> 编辑和配置 Grbl</a></li><li class="chapter-item "><a href="../Projects/CNC-Engraver/Chapter3.html"><strong aria-hidden="true">5.3.3.</strong> 雕刻机硬件搭建</a></li><li class="chapter-item "><a href="../Projects/CNC-Engraver/Chapter4.html"><strong aria-hidden="true">5.3.4.</strong> 雕刻机控制软件</a></li><li class="chapter-item "><a href="../Projects/CNC-Engraver/Chapter5.html"><strong aria-hidden="true">5.3.5.</strong> 总结和拓展</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../Speeches/Intro.html"><strong aria-hidden="true">6.</strong> 半小时入门介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Speeches/EDA/Intro.html"><strong aria-hidden="true">6.1.</strong> EDA 入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Speeches/EDA/Chapter1.html"><strong aria-hidden="true">6.1.1.</strong> 555 计时器</a></li><li class="chapter-item "><a href="../Speeches/EDA/Chapter2.html"><strong aria-hidden="true">6.1.2.</strong> 绘制符号和封装</a></li><li class="chapter-item "><a href="../Speeches/EDA/Chapter3.html"><strong aria-hidden="true">6.1.3.</strong> 设计原理图</a></li><li class="chapter-item "><a href="../Speeches/EDA/Chapter4.html"><strong aria-hidden="true">6.1.4.</strong> 设计 PCB</a></li></ol></li><li class="chapter-item expanded "><a href="../Speeches/Markdown/Intro.html"><strong aria-hidden="true">6.2.</strong> Markdown 入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Speeches/Markdown/Chapter1.html"><strong aria-hidden="true">6.2.1.</strong> 基础语法 1</a></li><li class="chapter-item "><a href="../Speeches/Markdown/Chapter2.html"><strong aria-hidden="true">6.2.2.</strong> 基础语法 2</a></li></ol></li><li class="chapter-item expanded "><a href="../Speeches/Git-Github/Intro.html"><strong aria-hidden="true">6.3.</strong> Git 及 Github 入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Speeches/Git-Github/Chapter1.html"><strong aria-hidden="true">6.3.1.</strong> 集中式 vs 分布式</a></li><li class="chapter-item "><a href="../Speeches/Git-Github/Chapter2.html"><strong aria-hidden="true">6.3.2.</strong> Git 的安装与配置</a></li><li class="chapter-item "><a href="../Speeches/Git-Github/Chapter3.html"><strong aria-hidden="true">6.3.3.</strong> Git 常用命令</a></li></ol></li><li class="chapter-item expanded "><a href="../Speeches/WebDev/Intro.html"><strong aria-hidden="true">6.4.</strong> 前端开发入门</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Speeches/WebDev/Chapter1.html"><strong aria-hidden="true">6.4.1.</strong> 前端三语言</a></li><li class="chapter-item "><a href="../Speeches/WebDev/Chapter2.html"><strong aria-hidden="true">6.4.2.</strong> HTML 基础</a></li><li class="chapter-item "><a href="../Speeches/WebDev/Chapter3.html"><strong aria-hidden="true">6.4.3.</strong> CSS 基础</a></li><li class="chapter-item "><a href="../Speeches/WebDev/Chapter4.html"><strong aria-hidden="true">6.4.4.</strong> 自我介绍</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../Join-us/Intro.html"><strong aria-hidden="true">7.</strong> 参与完善本文档</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Join-us/Chapter1.html"><strong aria-hidden="true">7.1.</strong> 配置环境</a></li><li class="chapter-item expanded "><a href="../Join-us/Chapter2.html"><strong aria-hidden="true">7.2.</strong> 文档撰写规范</a></li><li class="chapter-item expanded "><a href="../Join-us/Chapter3.html"><strong aria-hidden="true">7.3.</strong> 编译发布文档</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">技术部培训文档</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/example/src/Python/Chapter2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+  .repl {
+    margin-block: 2rem;
+  }
+  .repl iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+  }
+</style>
+<h1 id="python-基础语法"><a class="header" href="#python-基础语法">python 基础语法</a></h1>
+<h2 id="1hello-world"><a class="header" href="#1hello-world">1.Hello world!</a></h2>
+<p>输出<code>Hello world!</code>程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。</p>
+<div class="repl" data-id="5b9a6901-a562-44fc-bfe6-d8ba95e2118c" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">print("Hello world!")
+</code></pre>
+<h2 id="2标识符"><a class="header" href="#2标识符">2.标识符</a></h2>
+<ul>
+<li>
+<p>第一个字符必须是字母表中字母或下划线<code>_</code>。</p>
+</li>
+<li>
+<p>标识符的其他的部分由字母、数字和下划线组成。</p>
+</li>
+<li>
+<p>标识符对大小写敏感。</p>
+</li>
+</ul>
+<h2 id="3保留字"><a class="header" href="#3保留字">3.保留字</a></h2>
+<p>python 标准库中有<code>keyword</code>模块，可以输出目前版本的保留字：</p>
+<div class="repl" data-id="5e5d6313-ba5c-4140-be62-8b75e5bab1c1" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">import keyword
+
+print(keyword.kwlist)
+</code></pre>
+<h2 id="4-注释"><a class="header" href="#4-注释">4. 注释</a></h2>
+<p>Python 中单行注释以<code>#</code>开头，实例如下：</p>
+<div class="repl" data-id="46514a26-6285-465b-b79d-6f324e7ec450" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python"># This is a comment
+
+print("hello world!")
+</code></pre>
+<p>多行注释通常使用<code>'''</code>或<code>"""</code></p>
+<div class="repl" data-id="da94b599-2042-4400-a8ef-266aeaa7ad59" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">'''
+first comment
+second comment
+'''
+</code></pre>
+<h2 id="5-行与缩进"><a class="header" href="#5-行与缩进">5. 行与缩进</a></h2>
+<p>缩进是 python 的一大特色,不同于 C 语言的<code>{}</code></p>
+<div class="repl" data-id="22467109-ff3e-4440-9549-4f968ff399c2" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">if True:
+    print ("True")
+else:
+    print ("False")
+</code></pre>
+<p>在不同的位置缩进极可能会有不同的实现效果</p>
+<div class="repl" data-id="e35dbc3e-6b2d-4079-9c62-daa73b12a96d" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">#缩进一致的循环体
+for i in range(3):
+    print("i",i)
+    for j in range(3):
+        print("j",j)
+
+#缩进不一致的循环体
+for i in range(3):
+    print("i",i)
+  for j in range(3):
+    print("j",j)
+</code></pre>
+<p>第一个能正常运行，第二个就会报错，内部循环的缩进不一致，导致它无法正确嵌套在外部循环中，因此会产生缩进错误</p>
+<pre><code class="language-sh">IndentationError: unindent does not match any outer indentation level
+</code></pre>
+<h2 id="6-多行语句"><a class="header" href="#6-多行语句">6. 多行语句</a></h2>
+<p>大部分情况下，python 都要求一行完整语句，但是如果有特殊情况的话就需要反斜杠<code>\</code>实现多行语句。</p>
+<p>但是数组<code>[]</code>，字典<code>{}</code>，元组<code>()</code>不使用反斜杠</p>
+<div class="repl" data-id="9a4933c5-b782-4731-8b35-fcd80110394d" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">num1 = 1
+num2 = 2
+num3 = 3
+
+#换行
+item = num1 + \
+       num2
+print(item)
+
+#数组
+item = [num1,num2,num3]
+print(item)
+</code></pre>
+<h2 id="7-数字类型"><a class="header" href="#7-数字类型">7. 数字类型</a></h2>
+<p>python 中有四种数字类型</p>
+<div class="table-wrapper"><table><thead><tr><th>表达式</th><th>数据类型</th><th>举例</th></tr></thead><tbody>
+<tr><td><strong>int</strong></td><td>整数类型</td><td>114</td></tr>
+<tr><td><strong>bool</strong></td><td>布尔类型</td><td>True,false</td></tr>
+<tr><td><strong>float</strong></td><td>浮点数</td><td>114.51</td></tr>
+<tr><td><strong>complex</strong></td><td>复数</td><td>1 + 2j , 3 + 3.2j</td></tr>
+</tbody></table>
+</div>
+<h2 id="8-字符串"><a class="header" href="#8-字符串">8. 字符串</a></h2>
+<ul>
+<li>
+<p>pyhton 由 UTF-8 编码，字符串可以是 unicode 字符串。</p>
+</li>
+<li>
+<p>Python 中单引号 ’ 和双引号 “ 使用完全相同。</p>
+</li>
+<li>
+<p>使用三引号(‘’’ 或 “”“)可以指定一个多行字符串。</p>
+</li>
+<li>
+<p>反斜杠可以用来转义，使用 r 可以让反斜杠不发生转义。 如 r“this is a line with \n“ 则 \n 会显示，并不是换行。</p>
+</li>
+<li>
+<p>按字面意义级联字符串，如 “this “ “is “ “string” 会被自动转换为 this is string。</p>
+</li>
+<li>
+<p>字符串可以用 + 运算符连接在一起，用 * 运算符重复。</p>
+</li>
+<li>
+<p>Python 中的字符串有两种索引方式，从左往右以 0 开始，从右往左以 -1 开始。</p>
+</li>
+<li>
+<p><code>str[1:4:2]</code>中<code>1</code>为起始位置,<code>4</code>为结束位置，<code>2</code>为步长。</p>
+</li>
+</ul>
+<div class="repl" data-id="bd872def-d9d0-44e5-91a5-15fb1c1de48a" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">str = "abcdefg"
+
+print (str[1:4:2])
+</code></pre>
+<h2 id="9-用户输入"><a class="header" href="#9-用户输入">9. 用户输入</a></h2>
+<p><code>input</code>用户输入也是程序重要的一部分，执行下面的程序会要求输入次数。</p>
+<div class="repl" data-id="4116aa30-c43f-496a-a757-960a296a07ae" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python">count = int(input("输入需要多少次Hello world: "))
+
+for _ in range(count):
+    print("Hello world")
+</code></pre>
+<h2 id="10-代码组"><a class="header" href="#10-代码组">10. 代码组</a></h2>
+<p>缩进相同的一组语句构成一个代码块，我们称之代码组。</p>
+<p>像 if、while、def 和 class 这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。</p>
+<p>我们将首行及后面的代码组称为一个子句(clause)。</p>
+<p>如下实例：</p>
+<div class="repl" data-id="26f7d0a3-ff05-44a7-bea3-701983bbeebf" data-readonly="false" data-lang="python">
+  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div>
+<pre><code class="language-python"># Get user input
+choice = input("Enter True, False, or any other value: ")
+choice_lower = choice.lower()
+
+if choice_lower == 'true':
+    print("It's True")
+elif choice_lower == 'false':
+    print("It's False")
+else:
+    print("Input: " + choice)
+</code></pre>
+<h2 id="11-导入库或模块"><a class="header" href="#11-导入库或模块">11. 导入库或模块</a></h2>
+<ul>
+<li>
+<p>在 python 中使用<code>import</code>或者<code>from...import</code>来导入相应的模块。</p>
+</li>
+<li>
+<p>将整个模块(somemodule)导入，格式为： <code>import somemodule</code></p>
+</li>
+<li>
+<p>从某个模块中导入某个函数,格式为： <code>from somemodule import somefunction</code></p>
+</li>
+<li>
+<p>从某个模块中导入多个函数,格式为：<code> from somemodule import firstfunc, secondfunc, thirdfunc</code></p>
+</li>
+<li>
+<p>将某个模块中的全部函数导入，格式为： <code>from somemodule import *</code></p>
+</li>
+</ul>
+<style>
+  .scroll-to-top {
+    font-size: 2.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    padding: 0.75rem;
+    bottom: 4rem;
+    right: calc(1.25rem + 90px + var(--page-padding));
+
+    z-index: 999;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--icons);
+  }
+  .scroll-to-top:hover {
+    background-color: var(--icons-hover);
+  }
+  .scroll-to-top.hidden {
+    display: none;
+  }
+  .scroll-to-top i {
+    transform: translateY(-2px);
+  }
+  @media (min-width: 1080px) {
+    .scroll-to-top {
+      display: flex;
+    }
+  }
+</style>
+<button type="button" aria-label="scroll-to-top" class="scroll-to-top hidden" onclick="scrollToTop()">
+  <i class="fa fa-angle-up"></i>
+</button>
+<script>
+  const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
+  window.addEventListener("scroll", () => {
+    const button = document.querySelector(".scroll-to-top");
+    button.classList.toggle("hidden", window.scrollY < 200);
+  });
+</script>
+<style>
+  .giscus {
+    margin-top: 6rem;
+  }
+</style>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="MR-Addict/Doc-Share"
+  data-repo-id="R_kgDOGyWqEQ"
+  data-category="General"
+  data-category-id="DIC_kwDOGyWqEc4CdNrz"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="zh-CN"
+  data-loading="eager"
+  crossorigin="anonymous"
+  async
+></script>
+<!-- Custom REPL Script -->
+<script>
+  document.querySelectorAll(".repl").forEach((replElement) => {
+    const iframeElement = replElement.querySelector("iframe");
+
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = replElement.nextElementSibling.innerText.trim();
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme"));
+
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+
+    function mapTheme(bookTheme) {
+      if (bookTheme === "coal" || bookTheme === "navy" || bookTheme === "ayu") return "dark";
+      else return "light";
+    }
+
+    window.addEventListener("message", (event) => {
+      if (event.source === window || !event.data.repl) return;
+
+      const repl = event.data.repl;
+      // if id is empty means iframe is first loaded, so we send configurations to it
+      if (repl.id === "") postmessage({ id, editor: { theme, lang, code, defaultCode: code, readonly } });
+      // if id is not empty and it's the same as the current repl, we can receive the data
+      else if (repl.id === id) {
+        if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
+        else {
+          // update the iframe height
+          replElement.style.height = repl.dimensions.height + "px";
+          // show the iframe and hide the pre element
+          iframeElement.style.display = "block";
+          replElement.nextElementSibling.style.display = "none";
+        }
+      }
+    });
+
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ editor: { theme } });
+      });
+    });
+  });
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Python/Chapter1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Python/Chapter3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Python/Chapter1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Python/Chapter3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
