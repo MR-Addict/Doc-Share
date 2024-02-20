@@ -1,6 +1,6 @@
 # python 基础语法
 
-## 1.Hello world!
+## 1. Hello world!
 
 输出`Hello world!`程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。
 
@@ -8,7 +8,7 @@
 print("Hello world!")
 ```
 
-## 2.标识符
+## 2. 标识符
 
 - 第一个字符必须是字母表中字母或下划线`_`。
 
@@ -16,7 +16,7 @@ print("Hello world!")
 
 - 标识符对大小写敏感。
 
-## 3.保留字
+## 3. 保留字
 
 python 标准库中有`keyword`模块，可以输出目前版本的保留字：
 

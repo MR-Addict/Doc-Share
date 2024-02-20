@@ -141,7 +141,7 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 
 ## 8. Try yourself
 
-1. 通过用户输入三角形三边长度，并计算三角形的面积，面积公式：s = (d(d-a)(d-b)(d-c))<sup>0.5</sup>。
+通过用户输入三角形三边长度，并计算三角形的面积，面积公式：s = (d(d-a)(d-b)(d-c))<sup>0.5</sup>。
 
 ```sh
 #example
@@ -151,6 +151,6 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 
 ```py
 #--------------------
-#Enter your code here
+#Enter your code below
 #--------------------
 ```

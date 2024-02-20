@@ -17,7 +17,7 @@ mathjax-support = true
 copy-fonts = true
 no-section-label = false
 git-repository-url = "https://github.com/MR-Addict/Doc-Share.git"
-edit-url-template = "https://github.com/MR-Addict/Doc-Share/edit/main/example/{path}"
+edit-url-template = "https://github.com/MR-Addict/Doc-Share/edit/main/{path}"
 additional-css = ["assets/css/patch.css"]
 
 [output.html.print]
@@ -53,3 +53,5 @@ giscus.lang = "zh-CN"
 giscus.loading = "eager"
 
 [preprocessor.repl]
+python.enable = true
+python.loading = "lazy"

@@ -81,6 +81,8 @@ match data:
         print("未匹配到任何模式")
 ```
 
-! !**请注意**，match...case 是在 Python 3.10 版本引入的，因此如果你使用的是较旧的 Python 版本，可能需要升级到 Python 3.10 才能使用这个特性。
+> **请注意**
+>
+> match...case 是在 Python 3.10 版本引入的，因此如果你使用的是较旧的 Python 版本，可能需要升级到 Python 3.10 才能使用这个特性。
 
 `match...case` 更多内容参考[Python match](https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching)

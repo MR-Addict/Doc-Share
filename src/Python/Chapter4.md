@@ -27,6 +27,6 @@ my_list = [4, 5, 6]
 zero = 0
 one = 1
 
-print(type(num_str_int),type(int(num_str_int)))
-#Enter your code here
+print(type(num_str_int), type(int(num_str_int)))
+#Enter your code below
 ```

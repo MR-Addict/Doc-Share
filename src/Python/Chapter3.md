@@ -85,6 +85,7 @@ print("最大整数值:", sys.maxsize)
 ```py
 num1 = 5
 num2 = 2
+
 print(num1 + num2)
 print(num1 - num2)
 print(num1 * num2)
@@ -115,7 +116,6 @@ print(index)  # 输出: 7
 
 new_string = str1.replace("Hello", "Hi")
 print(new_string)  # 输出: Hi, World!
-
 ```
 
 ## 6. 布尔类型(True,False)
@@ -139,7 +139,6 @@ print(result)  # 输出: True
 
 logical_result = True and False
 print(logical_result)  # 输出: False
-
 ```
 
 ## 7. 列表(list)
@@ -271,7 +270,7 @@ my_bytes[0] = 105
 
 ## 12. Try yourself
 
-1. 摄氏温度转华氏温度，取两位小数 `1.8 x 摄氏温度 = (华氏温度 - 32)`:
+摄氏温度转华氏温度，取两位小数 `1.8 x 摄氏温度 = (华氏温度 - 32)`:
 
 example: 摄氏度 15 => 华氏度 -9.44
 
@@ -283,6 +282,6 @@ example: 摄氏度 15 => 华氏度 -9.44
 
 ```py
 #--------------------
-#Enter your code here
+#Enter your code below
 #--------------------
 ```
