@@ -39,9 +39,9 @@
 
   - [环境搭建](Python/Chapter1.md)
   - [基础语法](Python/Chapter2.md)
-  - [数据类型和转换](Python/Chapter3.md)
-  - [运算符](Python/Chapter4.md)
-  - [变量类型](Python/Chapter5.md)
+  - [数据类型](Python/Chapter3.md)
+  - [数据类型转换](Python/Chapter4.md)
+  - [运算符](Python/Chapter5.md)
   - [条件语句](Python/Chapter6.md)
   - [循环语句](Python/Chapter7.md)
 
