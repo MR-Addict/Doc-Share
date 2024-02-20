@@ -1,6 +1,6 @@
 # Summary
 
-[电子组培训文档](./Intro.md)
+[技术部培训文档](./Intro.md)
 
 - [Arduino 基础](Arduino/Intro.md)
 
