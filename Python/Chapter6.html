@@ -153,7 +153,7 @@
                         <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/example/src/Python/Chapter6.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/src/Python/Chapter6.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -190,7 +190,11 @@
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
+  }
+  .repl iframe.hide {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
   }
 </style>
 <h1 id="条件语句"><a class="header" href="#条件语句">条件语句</a></h1>
@@ -203,8 +207,14 @@
 <h2 id="2-if-语句"><a class="header" href="#2-if-语句">2. if 语句</a></h2>
 <p><code>if</code> 语句用于根据条件执行不同的代码块。下面是一个简单的例子:</p>
 <p>随机取 1-20 间的一个数来和 10 比较大小。</p>
-<div class="repl" data-id="4d12dcba-540e-4016-be56-aedb847572af" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="692392d1-1459-4298-92ba-8d5769eae48c" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">import random
 number = random.randint(1, 20)
@@ -231,8 +241,14 @@ print(number)
 </div>
 <h2 id="4-if-嵌套"><a class="header" href="#4-if-嵌套">4. if 嵌套</a></h2>
 <p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中。</p>
-<div class="repl" data-id="f81470a3-5700-4f1b-a093-183fd59cd803" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="00078fcc-e004-44b7-b245-b819d77c0dc9" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">import random
 num1 = random.randint(1, 20)
@@ -248,8 +264,14 @@ else:
 </code></pre>
 <h2 id="5-matchcase"><a class="header" href="#5-matchcase">5. match…case</a></h2>
 <p>Python 3.10 引入的新特性，用于模式匹配（Pattern Matching）。它是一种更灵活、清晰的方式来处理复杂的条件分支，尤其适用于对数据结构进行模式匹配和解构。</p>
-<div class="repl" data-id="5e5d0684-ae0f-4dcb-b391-823a253306a4" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="af29e966-546b-4fd6-9ea4-a1da62d892ba" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">import random
 data = random.randint(1, 20)
@@ -265,7 +287,10 @@ match data:
     case _:
         print("未匹配到任何模式")
 </code></pre>
-<p>! !<strong>请注意</strong>，match…case 是在 Python 3.10 版本引入的，因此如果你使用的是较旧的 Python 版本，可能需要升级到 Python 3.10 才能使用这个特性。</p>
+<blockquote>
+<p><strong>请注意</strong></p>
+<p>match…case 是在 Python 3.10 版本引入的，因此如果你使用的是较旧的 Python 版本，可能需要升级到 Python 3.10 才能使用这个特性。</p>
+</blockquote>
 <p><code>match...case</code> 更多内容参考<a href="https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching">Python match</a></p>
 <style>
   .scroll-to-top {
@@ -362,11 +387,14 @@ match data:
       // if id is not empty and it's the same as the current repl, we can receive the data
       else if (repl.id === id) {
         if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
+        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
+        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
+        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
         else {
           // update the iframe height
           replElement.style.height = repl.dimensions.height + "px";
           // show the iframe and hide the pre element
-          iframeElement.style.display = "block";
+          iframeElement.classList.remove("hide");
           replElement.nextElementSibling.style.display = "none";
         }
       }

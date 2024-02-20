@@ -153,7 +153,7 @@
                         <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/example/src/Python/Chapter4.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/src/Python/Chapter4.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -190,7 +190,11 @@
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
+  }
+  .repl iframe.hide {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
   }
 </style>
 <h1 id="数据类型转换"><a class="header" href="#数据类型转换">数据类型转换</a></h1>
@@ -208,8 +212,14 @@
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="49d88ef6-65bf-45d4-af4f-e849f61058e0" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="6fbf5ca9-3003-42f4-b5b1-a7553f27a38a" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
 num_str_float = "3.14"
@@ -219,8 +229,8 @@ my_list = [4, 5, 6]
 zero = 0
 one = 1
 
-print(type(num_str_int),type(int(num_str_int)))
-#Enter your code here
+print(type(num_str_int), type(int(num_str_int)))
+#Enter your code below
 </code></pre>
 <style>
   .scroll-to-top {
@@ -317,11 +327,14 @@ print(type(num_str_int),type(int(num_str_int)))
       // if id is not empty and it's the same as the current repl, we can receive the data
       else if (repl.id === id) {
         if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
+        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
+        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
+        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
         else {
           // update the iframe height
           replElement.style.height = repl.dimensions.height + "px";
           // show the iframe and hide the pre element
-          iframeElement.style.display = "block";
+          iframeElement.classList.remove("hide");
           replElement.nextElementSibling.style.display = "none";
         }
       }

@@ -153,7 +153,7 @@
                         <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/example/src/Python/Chapter2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/src/Python/Chapter2.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -190,18 +190,28 @@
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
+  }
+  .repl iframe.hide {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
   }
 </style>
 <h1 id="python-基础语法"><a class="header" href="#python-基础语法">python 基础语法</a></h1>
-<h2 id="1hello-world"><a class="header" href="#1hello-world">1.Hello world!</a></h2>
+<h2 id="1-hello-world"><a class="header" href="#1-hello-world">1. Hello world!</a></h2>
 <p>输出<code>Hello world!</code>程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。</p>
-<div class="repl" data-id="329abcca-2fda-4326-92d2-ae4fc2e0b35f" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="3b5fc4d2-7da8-41c0-b320-a5b47fc2287a" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">print("Hello world!")
 </code></pre>
-<h2 id="2标识符"><a class="header" href="#2标识符">2.标识符</a></h2>
+<h2 id="2-标识符"><a class="header" href="#2-标识符">2. 标识符</a></h2>
 <ul>
 <li>
 <p>第一个字符必须是字母表中字母或下划线<code>_</code>。</p>
@@ -213,10 +223,16 @@
 <p>标识符对大小写敏感。</p>
 </li>
 </ul>
-<h2 id="3保留字"><a class="header" href="#3保留字">3.保留字</a></h2>
+<h2 id="3-保留字"><a class="header" href="#3-保留字">3. 保留字</a></h2>
 <p>python 标准库中有<code>keyword</code>模块，可以输出目前版本的保留字：</p>
-<div class="repl" data-id="6afb9281-1ceb-4fe9-aa7e-3c86b49937ba" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="83b25c62-1285-45bd-b73d-bc10a8ef98d5" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">import keyword
 
@@ -224,16 +240,28 @@ print(keyword.kwlist)
 </code></pre>
 <h2 id="4-注释"><a class="header" href="#4-注释">4. 注释</a></h2>
 <p>Python 中单行注释以<code>#</code>开头，实例如下：</p>
-<div class="repl" data-id="6d1d143b-3756-4419-ae08-a179f23d71b7" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="4106b7dd-e95d-48a7-9c1a-4b97f47201c5" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python"># This is a comment
 
 print("hello world!")
 </code></pre>
 <p>多行注释通常使用<code>'''</code>或<code>"""</code></p>
-<div class="repl" data-id="fd16720e-d834-4222-b17d-b5ecd3d616c5" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="b4effd13-5879-4f2d-96f3-2964ee9d7f23" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">'''
 first comment
@@ -242,8 +270,14 @@ second comment
 </code></pre>
 <h2 id="5-行与缩进"><a class="header" href="#5-行与缩进">5. 行与缩进</a></h2>
 <p>缩进是 python 的一大特色,不同于 C 语言的<code>{}</code></p>
-<div class="repl" data-id="40f59a4d-584b-4b5f-a911-03f1b07fd289" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="6e59077f-a0b7-43ea-8499-843b42af9231" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">if True:
     print ("True")
@@ -251,8 +285,14 @@ else:
     print ("False")
 </code></pre>
 <p>在不同的位置缩进极可能会有不同的实现效果</p>
-<div class="repl" data-id="c57211f2-0ce8-4560-9072-c13892f2f300" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="50011961-2b59-4de6-893b-ba70983eaf08" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">#缩进一致的循环体
 for i in range(3):
@@ -272,8 +312,14 @@ for i in range(3):
 <h2 id="6-多行语句"><a class="header" href="#6-多行语句">6. 多行语句</a></h2>
 <p>大部分情况下，python 都要求一行完整语句，但是如果有特殊情况的话就需要反斜杠<code>\</code>实现多行语句。</p>
 <p>但是数组<code>[]</code>，字典<code>{}</code>，元组<code>()</code>不使用反斜杠</p>
-<div class="repl" data-id="b0251074-74a1-4e9e-a64f-66260034d2bf" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="00f61679-6906-4849-959d-c9ff520321bd" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">num1 = 1
 num2 = 2
@@ -324,8 +370,14 @@ print(item)
 <p><code>str[1:4:2]</code>中<code>1</code>为起始位置,<code>4</code>为结束位置，<code>2</code>为步长。</p>
 </li>
 </ul>
-<div class="repl" data-id="01323c6f-784e-4e8f-a288-91331214e3fa" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="ef1ac52b-28b2-466c-846f-2593c5823f83" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">str = "abcdefg"
 
@@ -333,8 +385,14 @@ print (str[1:4:2])
 </code></pre>
 <h2 id="9-用户输入"><a class="header" href="#9-用户输入">9. 用户输入</a></h2>
 <p><code>input</code>用户输入也是程序重要的一部分，执行下面的程序会要求输入次数。</p>
-<div class="repl" data-id="00af6e63-a4a5-403d-87ad-643bfb949f0a" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="960a31d1-e0ee-4352-b9b7-87fb30643a62" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">count = int(input("输入需要多少次Hello world: "))
 
@@ -346,8 +404,14 @@ for _ in range(count):
 <p>像 if、while、def 和 class 这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。</p>
 <p>我们将首行及后面的代码组称为一个子句(clause)。</p>
 <p>如下实例：</p>
-<div class="repl" data-id="d573a029-6700-4eae-b9cc-7402fcf03530" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="1bb8997b-8f81-4f1f-8b12-9b1885d996c6" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python"># Get user input
 choice = input("Enter True, False, or any other value: ")
@@ -473,11 +537,14 @@ else:
       // if id is not empty and it's the same as the current repl, we can receive the data
       else if (repl.id === id) {
         if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
+        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
+        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
+        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
         else {
           // update the iframe height
           replElement.style.height = repl.dimensions.height + "px";
           // show the iframe and hide the pre element
-          iframeElement.style.display = "block";
+          iframeElement.classList.remove("hide");
           replElement.nextElementSibling.style.display = "none";
         }
       }

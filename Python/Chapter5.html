@@ -153,7 +153,7 @@
                         <a href="https://github.com/MR-Addict/Doc-Share.git" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/example/src/Python/Chapter5.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/MR-Addict/Doc-Share/edit/main/src/Python/Chapter5.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -190,7 +190,11 @@
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
+  }
+  .repl iframe.hide {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
   }
 </style>
 <h1 id="运算符"><a class="header" href="#运算符">运算符</a></h1>
@@ -208,8 +212,14 @@
 <tr><td style="text-align: center">&gt;=</td><td style="text-align: center">大于等于</td><td style="text-align: center">(a &gt;= b) return False。</td></tr>
 <tr><td style="text-align: center">&lt;=</td><td style="text-align: center">小于等于</td><td style="text-align: center">(a &lt;= b) return True。</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="5bb37136-295d-4a17-8a02-9accdd605ac5" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div><div class="repl" data-id="b01a38d3-67f8-4d9a-9cb9-53422072b3ed" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">x = 1
 y = 2
@@ -228,8 +238,14 @@ print(x == y,x != y,x &gt; y,x &lt; y,x &gt;= y,x &lt;= y)
 <tr><td style="text-align: center">**=</td><td style="text-align: center">幂</td><td style="text-align: center">c **= a =&gt; c = c ** a</td></tr>
 <tr><td style="text-align: center">//=</td><td style="text-align: center">取整除</td><td style="text-align: center">c //= a =&gt; c = c // a</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="63a3573b-15ae-401a-be2e-f9e5552895d6" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+</div><div class="repl" data-id="26935425-e7f6-404d-82bc-668a321254f6" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">a, b, c = 1, 2, 3
 d = a
@@ -240,8 +256,14 @@ print(a, b, c, d, a + b, b - c, c * a)
 <p>位运算符是把数字看作二进制来进行计算的。</p>
 <p>位运算符通常用于处理底层的位操作，例如在编码、加密、图形处理等领域。在一般情况下，位运算符不太常见，但在某些特定的计算机科学和嵌入式系统的应用中非常有用。</p>
 <p>下表中变量 a 为 60，b 为 13 二进制格式如下：</p>
-<div class="repl" data-id="d98e6806-3270-4171-99c7-c8782b262427" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="59646557-0be0-44b7-a20f-6342dc8997e6" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">a , b, c = 2 , 1 , 0
 
@@ -266,8 +288,14 @@ print ("6 - c 的值为：", c)
 <h2 id="5-逻辑运算符"><a class="header" href="#5-逻辑运算符">5. 逻辑运算符</a></h2>
 <p>逻辑运算符通常用于控制程序的流程，例如在条件语句中判断多个条件。逻辑运算符返回布尔值，可以帮助你在程序中做出合理的决策。</p>
 <p>与<code>and</code>或<code>or</code>非<code> not</code></p>
-<div class="repl" data-id="43b5e3dd-319d-4ab5-8704-a4f38efc4337" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="13310776-af1a-4623-ad69-1cdf3b6a2401" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python"># 逻辑与
 x = True
@@ -279,8 +307,14 @@ print(x and y , x or y , not x)  # 输出: False True False
 <p>in：如果在序列中找到指定的值，则返回<code>True</code>，否则返回<code>False</code>。</p>
 <p>not in：如果在序列中找到指定的值，则返回<code>False</code>，否则返回<code>True</code>。</p>
 <p>成员运算符常用于在条件语句中检查某个值是否存在于给定的序列中。</p>
-<div class="repl" data-id="62543179-d882-4418-ae7b-ba59f9267040" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="570cd480-30e9-42ab-8095-79a54587ff36" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
 
@@ -296,8 +330,14 @@ print("Python" not in string)  # 输出: True
 <p>身份运算符用于比较对象的存储地址，判断它们是否是同一个对象。在 Python 中，有两个身份运算符：<code>is</code> 和 <code>is not</code>。</p>
 <p>is：如果两个变量引用同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
 <p>is not：如果两个变量引用的不是同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
-<div class="repl" data-id="5f2aca3c-569a-4a01-8b56-447c3d62009a" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="319f27f2-9a44-47f1-bd56-a68e2dfd5623" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">a = [1, 2, 3]
 b = a  # b引用了和a相同的对象
@@ -312,18 +352,22 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 </code></pre>
 <p>虽然 a 和 c 都是[1,2,3]的数组，但是由于存储地址不同，所以 a 不是 c。</p>
 <h2 id="8-try-yourself"><a class="header" href="#8-try-yourself">8. Try yourself</a></h2>
-<ol>
-<li>通过用户输入三角形三边长度，并计算三角形的面积，面积公式：s = (d(d-a)(d-b)(d-c))<sup>0.5</sup>。</li>
-</ol>
+<p>通过用户输入三角形三边长度，并计算三角形的面积，面积公式：s = (d(d-a)(d-b)(d-c))<sup>0.5</sup>。</p>
 <pre><code class="language-sh">#example
 &gt;&gt;&gt; 输入三角形的三条边长度，用空格分隔: 2 5 6
 &gt;&gt;&gt; 三角形的面积：4.68
 </code></pre>
-<div class="repl" data-id="3d71d9c2-6ac4-49f6-b21c-5cc8e96296a0" data-readonly="false" data-lang="python">
-  <iframe src="https://mr-addict.github.io/mdbook-repl/embed" allow="clipboard-write"></iframe>
+<div class="repl" data-id="cd59b0af-c170-43c0-b2aa-b42370f31e0c" data-readonly="false" data-lang="python">
+  <iframe
+    class="hide"
+    loading="lazy"
+    name="mdbook-python-repl"
+    allow="clipboard-write"
+    src="https://mr-addict.github.io/mdbook-repl/embed"
+  ></iframe>
 </div>
 <pre><code class="language-python">#--------------------
-#Enter your code here
+#Enter your code below
 #--------------------
 </code></pre>
 <style>
@@ -421,11 +465,14 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
       // if id is not empty and it's the same as the current repl, we can receive the data
       else if (repl.id === id) {
         if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
+        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
+        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
+        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
         else {
           // update the iframe height
           replElement.style.height = repl.dimensions.height + "px";
           // show the iframe and hide the pre element
-          iframeElement.style.display = "block";
+          iframeElement.classList.remove("hide");
           replElement.nextElementSibling.style.display = "none";
         }
       }
