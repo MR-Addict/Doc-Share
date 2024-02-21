@@ -218,7 +218,7 @@
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="1d95b016-9201-489a-96f2-d1f403413d6a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="87688895-62b5-4057-864c-dc7bd3dce95a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
@@ -309,7 +309,7 @@ print(type(num_str_int), type(int(num_str_int)))
     const lang = replElement.getAttribute("data-lang");
     const code = replElement.nextElementSibling.innerText.trim();
     const readonly = replElement.getAttribute("data-readonly") === "true";
-    let theme = mapTheme(localStorage.getItem("mdbook-theme"));
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || "light");
 
     const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
 
@@ -340,7 +340,7 @@ print(type(num_str_int), type(int(num_str_int)))
     document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
       btn.addEventListener("click", (event) => {
         theme = mapTheme(event.target.id);
-        postmessage({ editor: { theme } });
+        postmessage({ id, editor: { theme } });
       });
     });
   });
