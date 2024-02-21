@@ -14,8 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build
-        run: chmod u+x assets/bin/* && cp assets/bin/* /usr/local/bin && mdbook build
+      - name: Setup book
+        run: |
+          chmod u+x assets/bin/* && cp assets/bin/* /usr/local/bin
+          git clone https://github.com/MR-Addict/mdbook-repl.git -b gh-pages --depth 1
+
+      - name: Build books
+        run: |
+          mdbook build --dest-dir github
+          echo 'src = "/embed/"' >> book.toml && mdbook build --dest-dir vercel && mv mdbook-repl/embed vercel
 
       - uses: amondnet/vercel-action@v25
         with:
@@ -23,9 +30,9 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          working-directory: ./book
+          working-directory: ./vercel
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          publish_dir: ./github
