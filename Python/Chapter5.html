@@ -182,9 +182,12 @@
 
                 <div id="content" class="content">
                     <main>
-                        <style>
+                        <!-- Custom REPL Style -->
+<style>
   .repl {
     margin-block: 2rem;
+    position: relative;
+    isolation: isolate;
   }
   .repl iframe {
     width: 100%;
@@ -192,9 +195,12 @@
     border: none;
   }
   .repl iframe.hide {
+    top: 0;
+    left: 0;
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    z-index: -1;
   }
 </style>
 <h1 id="运算符"><a class="header" href="#运算符">运算符</a></h1>
@@ -212,14 +218,8 @@
 <tr><td style="text-align: center">&gt;=</td><td style="text-align: center">大于等于</td><td style="text-align: center">(a &gt;= b) return False。</td></tr>
 <tr><td style="text-align: center">&lt;=</td><td style="text-align: center">小于等于</td><td style="text-align: center">(a &lt;= b) return True。</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="29b39f3d-b3e8-4cd4-909c-f2216033cc94" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+</div><div class="repl" data-id="af664802-2952-4439-92ac-281873706207" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">x = 1
 y = 2
@@ -238,14 +238,8 @@ print(x == y,x != y,x &gt; y,x &lt; y,x &gt;= y,x &lt;= y)
 <tr><td style="text-align: center">**=</td><td style="text-align: center">幂</td><td style="text-align: center">c **= a =&gt; c = c ** a</td></tr>
 <tr><td style="text-align: center">//=</td><td style="text-align: center">取整除</td><td style="text-align: center">c //= a =&gt; c = c // a</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="466c6b17-9221-4b33-a8a1-84a9b12a2810" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+</div><div class="repl" data-id="bf1c8b4f-9eeb-4c17-9bcf-01eb0b8a1fc9" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c = 1, 2, 3
 d = a
@@ -256,14 +250,8 @@ print(a, b, c, d, a + b, b - c, c * a)
 <p>位运算符是把数字看作二进制来进行计算的。</p>
 <p>位运算符通常用于处理底层的位操作，例如在编码、加密、图形处理等领域。在一般情况下，位运算符不太常见，但在某些特定的计算机科学和嵌入式系统的应用中非常有用。</p>
 <p>下表中变量 a 为 60，b 为 13 二进制格式如下：</p>
-<div class="repl" data-id="7e6cd588-c99e-4c01-8fbc-893ff3df1eb3" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="e0e790c1-b67a-4d3d-b85b-6156434c47ae" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a , b, c = 2 , 1 , 0
 
@@ -288,14 +276,8 @@ print ("6 - c 的值为：", c)
 <h2 id="5-逻辑运算符"><a class="header" href="#5-逻辑运算符">5. 逻辑运算符</a></h2>
 <p>逻辑运算符通常用于控制程序的流程，例如在条件语句中判断多个条件。逻辑运算符返回布尔值，可以帮助你在程序中做出合理的决策。</p>
 <p>与<code>and</code>或<code>or</code>非<code> not</code></p>
-<div class="repl" data-id="9e714b87-6e07-4546-90d1-3f3214111d00" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="4d618712-27bc-4d9a-98df-10f4e5f9f859" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># 逻辑与
 x = True
@@ -307,14 +289,8 @@ print(x and y , x or y , not x)  # 输出: False True False
 <p>in：如果在序列中找到指定的值，则返回<code>True</code>，否则返回<code>False</code>。</p>
 <p>not in：如果在序列中找到指定的值，则返回<code>False</code>，否则返回<code>True</code>。</p>
 <p>成员运算符常用于在条件语句中检查某个值是否存在于给定的序列中。</p>
-<div class="repl" data-id="5a6060ee-7cc5-4f9a-bb49-87f4909f88ed" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="9539875c-9dcc-4a83-9d01-d5da0ceba7c3" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
 
@@ -330,14 +306,8 @@ print("Python" not in string)  # 输出: True
 <p>身份运算符用于比较对象的存储地址，判断它们是否是同一个对象。在 Python 中，有两个身份运算符：<code>is</code> 和 <code>is not</code>。</p>
 <p>is：如果两个变量引用同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
 <p>is not：如果两个变量引用的不是同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
-<div class="repl" data-id="da2d7a8d-abd5-4152-9cfe-59d90cbbac0f" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="a4d1e916-7096-44f0-b6e9-182f39eafa92" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a = [1, 2, 3]
 b = a  # b引用了和a相同的对象
@@ -357,14 +327,8 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 &gt;&gt;&gt; 输入三角形的三条边长度，用空格分隔: 2 5 6
 &gt;&gt;&gt; 三角形的面积：4.68
 </code></pre>
-<div class="repl" data-id="770dc7ca-5cb7-4280-9e91-a51022d8cfc6" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="df7698b9-9e45-4c11-86ee-152fd4a25095" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
 #Enter your code below
@@ -449,7 +413,8 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
     const readonly = replElement.getAttribute("data-readonly") === "true";
     let theme = mapTheme(localStorage.getItem("mdbook-theme"));
 
-    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    const message = { id, editor: { theme, lang, code, defaultCode: code, readonly } };
+    const postmessage = () => iframeElement.contentWindow.postMessage({ repl: message }, "*");
 
     function mapTheme(bookTheme) {
       if (bookTheme === "coal" || bookTheme === "navy" || bookTheme === "ayu") return "dark";
@@ -458,23 +423,20 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 
     window.addEventListener("message", (event) => {
       if (event.source === window || !event.data.repl) return;
-
-      const repl = event.data.repl;
-      // if id is empty means iframe is first loaded, so we send configurations to it
-      if (repl.id === "") postmessage({ id, editor: { theme, lang, code, defaultCode: code, readonly } });
-      // if id is not empty and it's the same as the current repl, we can receive the data
-      else if (repl.id === id) {
-        if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
-        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
-        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
-        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
-        else {
-          // update the iframe height
-          replElement.style.height = repl.dimensions.height + "px";
-          // show the iframe and hide the pre element
-          iframeElement.classList.remove("hide");
-          replElement.nextElementSibling.style.display = "none";
-        }
+      if (
+        event.data.repl.id !== id ||
+        event.data.repl.editor.theme !== theme ||
+        event.data.repl.editor.lang !== lang ||
+        event.data.repl.editor.readonly !== readonly ||
+        event.data.repl.editor.defaultCode !== code
+      )
+        postmessage();
+      else {
+        // update the iframe height
+        replElement.style.height = event.data.repl.dimensions.height + "px";
+        // show the iframe and hide the pre element
+        iframeElement.classList.remove("hide");
+        replElement.nextElementSibling.style.display = "none";
       }
     });
 

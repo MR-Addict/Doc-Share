@@ -182,9 +182,12 @@
 
                 <div id="content" class="content">
                     <main>
-                        <style>
+                        <!-- Custom REPL Style -->
+<style>
   .repl {
     margin-block: 2rem;
+    position: relative;
+    isolation: isolate;
   }
   .repl iframe {
     width: 100%;
@@ -192,9 +195,12 @@
     border: none;
   }
   .repl iframe.hide {
+    top: 0;
+    left: 0;
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    z-index: -1;
   }
 </style>
 <h1 id="数据类型转换"><a class="header" href="#数据类型转换">数据类型转换</a></h1>
@@ -212,14 +218,8 @@
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="6a253fe3-e28d-4a75-97e5-c7c2fa697efe" data-readonly="false" data-lang="python">
-  <iframe
-    class="hide"
-    loading="lazy"
-    name="mdbook-python-repl"
-    allow="clipboard-write"
-    src="https://mr-addict.github.io/mdbook-repl/embed"
-  ></iframe>
+<div class="repl" data-id="4d3d1b22-f312-41d1-b58c-81448e171e00" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
 num_str_float = "3.14"
@@ -311,7 +311,8 @@ print(type(num_str_int), type(int(num_str_int)))
     const readonly = replElement.getAttribute("data-readonly") === "true";
     let theme = mapTheme(localStorage.getItem("mdbook-theme"));
 
-    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    const message = { id, editor: { theme, lang, code, defaultCode: code, readonly } };
+    const postmessage = () => iframeElement.contentWindow.postMessage({ repl: message }, "*");
 
     function mapTheme(bookTheme) {
       if (bookTheme === "coal" || bookTheme === "navy" || bookTheme === "ayu") return "dark";
@@ -320,23 +321,20 @@ print(type(num_str_int), type(int(num_str_int)))
 
     window.addEventListener("message", (event) => {
       if (event.source === window || !event.data.repl) return;
-
-      const repl = event.data.repl;
-      // if id is empty means iframe is first loaded, so we send configurations to it
-      if (repl.id === "") postmessage({ id, editor: { theme, lang, code, defaultCode: code, readonly } });
-      // if id is not empty and it's the same as the current repl, we can receive the data
-      else if (repl.id === id) {
-        if (repl.editor.theme !== theme) postmessage({ editor: { theme } });
-        else if (repl.editor.lang !== lang) postmessage({ editor: { lang } });
-        else if (repl.editor.readonly !== readonly) postmessage({ editor: { readonly } });
-        else if (repl.editor.defaultCode !== code) postmessage({ editor: { defaultCode: code } });
-        else {
-          // update the iframe height
-          replElement.style.height = repl.dimensions.height + "px";
-          // show the iframe and hide the pre element
-          iframeElement.classList.remove("hide");
-          replElement.nextElementSibling.style.display = "none";
-        }
+      if (
+        event.data.repl.id !== id ||
+        event.data.repl.editor.theme !== theme ||
+        event.data.repl.editor.lang !== lang ||
+        event.data.repl.editor.readonly !== readonly ||
+        event.data.repl.editor.defaultCode !== code
+      )
+        postmessage();
+      else {
+        // update the iframe height
+        replElement.style.height = event.data.repl.dimensions.height + "px";
+        // show the iframe and hide the pre element
+        iframeElement.classList.remove("hide");
+        replElement.nextElementSibling.style.display = "none";
       }
     });
 
