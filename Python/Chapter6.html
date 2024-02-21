@@ -213,7 +213,7 @@
 <h2 id="2-if-语句"><a class="header" href="#2-if-语句">2. if 语句</a></h2>
 <p><code>if</code> 语句用于根据条件执行不同的代码块。下面是一个简单的例子:</p>
 <p>随机取 1-20 间的一个数来和 10 比较大小。</p>
-<div class="repl" data-id="afd2e17a-64a0-4adb-a504-4fea4ad0075f" data-readonly="false" data-lang="python">
+<div class="repl" data-id="e222234f-54e6-4c00-b471-30b381060f4a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -241,7 +241,7 @@ print(number)
 </div>
 <h2 id="4-if-嵌套"><a class="header" href="#4-if-嵌套">4. if 嵌套</a></h2>
 <p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中。</p>
-<div class="repl" data-id="98890bf0-8f08-4de6-81e7-bc6a641f567c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="64c5a525-3459-4744-9f2d-6f4ebb6e8ef2" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -258,7 +258,7 @@ else:
 </code></pre>
 <h2 id="5-matchcase"><a class="header" href="#5-matchcase">5. match…case</a></h2>
 <p>Python 3.10 引入的新特性，用于模式匹配（Pattern Matching）。它是一种更灵活、清晰的方式来处理复杂的条件分支，尤其适用于对数据结构进行模式匹配和解构。</p>
-<div class="repl" data-id="7ab64a5a-8861-4b98-9d9e-48790d18c28e" data-readonly="false" data-lang="python">
+<div class="repl" data-id="16379b5e-72f2-438e-b211-ff6459004cb3" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -359,31 +359,29 @@ match data:
     const readonly = replElement.getAttribute("data-readonly") === "true";
     let theme = mapTheme(localStorage.getItem("mdbook-theme"));
 
-    const message = { id, editor: { theme, lang, code, defaultCode: code, readonly } };
-    const postmessage = () => iframeElement.contentWindow.postMessage({ repl: message }, "*");
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
 
     function mapTheme(bookTheme) {
-      if (bookTheme === "coal" || bookTheme === "navy" || bookTheme === "ayu") return "dark";
-      else return "light";
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
     }
 
     window.addEventListener("message", (event) => {
-      if (event.source === window || !event.data.repl) return;
-      if (
-        event.data.repl.id !== id ||
-        event.data.repl.editor.theme !== theme ||
-        event.data.repl.editor.lang !== lang ||
-        event.data.repl.editor.readonly !== readonly ||
-        event.data.repl.editor.defaultCode !== code
-      )
-        postmessage();
-      else {
-        // update the iframe height
-        replElement.style.height = event.data.repl.dimensions.height + "px";
-        // show the iframe and hide the pre element
-        iframeElement.classList.remove("hide");
-        replElement.nextElementSibling.style.display = "none";
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
       }
+
+      if (repl.id !== id) return;
+
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
     });
 
     // listen to theme change
