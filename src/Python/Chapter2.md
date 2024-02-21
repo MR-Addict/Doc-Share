@@ -137,7 +137,7 @@ print (str[1:4:2])
 
 `input`用户输入也是程序重要的一部分，执行下面的程序会要求输入次数。
 
-```py
+```py,norepl
 count = int(input("输入需要多少次Hello world: "))
 
 for _ in range(count):
@@ -154,7 +154,7 @@ for _ in range(count):
 
 如下实例：
 
-```py
+```py,norepl
 # Get user input
 choice = input("Enter True, False, or any other value: ")
 choice_lower = choice.lower()
