@@ -182,7 +182,96 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="循环语句"><a class="header" href="#循环语句">循环语句</a></h1>
+                        <!-- Custom REPL Style -->
+<style>
+  .repl {
+    margin-block: 2rem;
+    position: relative;
+    isolation: isolate;
+  }
+  .repl iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .repl iframe.hide {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+</style>
+<h1 id="循环语句"><a class="header" href="#循环语句">循环语句</a></h1>
+<h2 id="1-while-循环语句"><a class="header" href="#1-while-循环语句">1. While 循环语句</a></h2>
+<pre><code class="language-sh">while 判断条件(condition)：
+    执行语句(statements)……
+</code></pre>
+<p>执行语句可以是单个语句或语句块。判断条件可以是任何表达式，任何非零、或非空（null）的值均为 true。当判断条件假 false 时，循环结束。</p>
+<p>可以通过下图来简单了解循环句的执行过程:</p>
+<p><img src="Images/whileProcess.png" alt="alt text" /></p>
+<p>示例：</p>
+<div class="repl" data-id="7c3d4340-8aef-4432-9cc3-6f324823a42a" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
+</div>
+<pre><code class="language-python">count = 0
+while (count &lt; 5):
+   print ('The count is:', count)
+   count = count + 1
+print("Good bye!")
+</code></pre>
+<h2 id="2-跳过和退出循环"><a class="header" href="#2-跳过和退出循环">2. 跳过和退出循环</a></h2>
+<p>while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外“判断条件“还可以是个常值，表示循环必定成立，具体用法如下：</p>
+<div class="repl" data-id="9135d4a1-ed38-4662-8009-9869b627a47b" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
+</div>
+<pre><code class="language-python">i = 0
+while i &lt; 5:
+    i += 1
+    print(i)
+    if i % 2 == 0:
+        continue
+
+j = 0
+while j &lt; 5:
+    j += 1
+    print(j)
+    if j % 2 == 0:
+        break
+</code></pre>
+<h2 id="3-无限循环"><a class="header" href="#3-无限循环">3. 无限循环</a></h2>
+<p>while 语句中如果<code>条件</code>为<code>true</code>的情况时，循环会无限的执行下去，下面是示例：</p>
+<div class="repl" data-id="ec1f8a1b-5845-49ee-9a45-670b93a3b649" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
+</div>
+<pre><code class="language-python"># ！！不建议尝试运行
+i = 0
+while True:
+    i += 1
+    print(i)
+</code></pre>
+<h2 id="4-whileelse-语法"><a class="header" href="#4-whileelse-语法">4. while…else 语法</a></h2>
+<p>在 <code>while … else</code> 在循环条件为 <code>false</code> 时执行<code>else</code> 语句块：</p>
+<div class="repl" data-id="a78035d4-6177-4279-9281-f6a2ac0306a7" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
+</div>
+<pre><code class="language-python">count = 0
+while count &lt; 5:
+  print (count,"小于5"),
+  count += 1
+else:
+  print (count,"大于5"),
+</code></pre>
+<h2 id="5-简单-while-语句"><a class="header" href="#5-简单-while-语句">5. 简单 while 语句</a></h2>
+<p>假如你的 while 循环体只有一条语句的话，可以使用一行 while 语句来实现。</p>
+<div class="repl" data-id="dfcbf50c-9f2d-4a70-af26-34717d13c8ad" data-readonly="false" data-lang="python">
+  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
+</div>
+<pre><code class="language-python"># ！！不建议尝试运行
+condition = True
+while(condition):print ("Hello World!")
+</code></pre>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;
@@ -251,6 +340,51 @@
   crossorigin="anonymous"
   async
 ></script>
+<!-- Custom REPL Script -->
+<script>
+  document.querySelectorAll(".repl").forEach((replElement) => {
+    const iframeElement = replElement.querySelector("iframe");
+
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = replElement.nextElementSibling.innerText.trim();
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || "light");
+
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+
+      if (repl.id !== id) return;
+
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
+  });
+</script>
 
                     </main>
 
