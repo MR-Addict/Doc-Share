@@ -2,7 +2,7 @@
 
 ## 1. While 循环语句
 
-```sh
+```py,norepl
 while 判断条件(condition)：
     执行语句(statements)……
 ```
@@ -49,7 +49,7 @@ while j < 5:
 
 while 语句中如果 `条件`为 `true`的情况时，循环会无限的执行下去，下面是示例：
 
-```py
+```py,norepl
 # ！！不建议尝试运行
 i = 0
 while True:
@@ -74,7 +74,7 @@ else:
 
 假如你的 while 循环体只有一条语句的话，可以使用一行 while 语句来实现。
 
-```py
+```py,norepl
 # ！！不建议尝试运行
 condition = True
 while(condition):print ("Hello World!")
