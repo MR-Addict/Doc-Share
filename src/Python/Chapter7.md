@@ -11,7 +11,9 @@ while 判断条件(condition)：
 
 可以通过下图来简单了解循环句的执行过程:
 
-![alt text](Images/whileProcess.png)
+<div style="text-align: center;">
+    <img src="./Images/whileProcess.png" height="300px" style="display: inline-block;">
+</div>
 
 示例：
 
@@ -45,7 +47,7 @@ while j < 5:
 
 ## 3. 无限循环
 
-while 语句中如果`条件`为`true`的情况时，循环会无限的执行下去，下面是示例：
+while 语句中如果 `条件`为 `true`的情况时，循环会无限的执行下去，下面是示例：
 
 ```py
 # ！！不建议尝试运行
@@ -57,7 +59,7 @@ while True:
 
 ## 4. while...else 语法
 
-在 `while … else` 在循环条件为 `false` 时执行`else` 语句块：
+在 `while … else` 在循环条件为 `false` 时执行 `else` 语句块：
 
 ```py
 count = 0
@@ -77,3 +79,9 @@ else:
 condition = True
 while(condition):print ("Hello World!")
 ```
+
+## 6. for 循环
+
+python 中 for 循环可以遍历一个任何一个序列，例如一个字符串或者一个数组。
+
+for 循环的语法格式如下
