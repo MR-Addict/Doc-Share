@@ -205,7 +205,7 @@
 </style>
 <h1 id="循环语句"><a class="header" href="#循环语句">循环语句</a></h1>
 <h2 id="1-while-循环语句"><a class="header" href="#1-while-循环语句">1. While 循环语句</a></h2>
-<pre><code class="language-sh">while 判断条件(condition)：
+<pre><code class="language-python">while 判断条件(condition)：
     执行语句(statements)……
 </code></pre>
 <p>执行语句可以是单个语句或语句块。判断条件可以是任何表达式，任何非零、或非空（null）的值均为 true。当判断条件假 false 时，循环结束。</p>
@@ -214,7 +214,7 @@
     <img src="./Images/whileProcess.png" height="300px" style="display: inline-block;">
 </div>
 <p>示例：</p>
-<div class="repl" data-id="c1dd24ae-8287-4f30-834a-8855c8f47fe5" data-readonly="false" data-lang="python">
+<div class="repl" data-id="98da653c-f8f3-4954-aceb-16c4db4a218b" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -225,7 +225,7 @@ print("Good bye!")
 </code></pre>
 <h2 id="2-跳过和退出循环"><a class="header" href="#2-跳过和退出循环">2. 跳过和退出循环</a></h2>
 <p>while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外“判断条件“还可以是个常值，表示循环必定成立，具体用法如下：</p>
-<div class="repl" data-id="565f5721-f068-4cd3-8efa-764b1a6608c4" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d5f2d931-af13-46b2-aa68-630e912de509" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">i = 0
@@ -244,9 +244,6 @@ while j &lt; 5:
 </code></pre>
 <h2 id="3-无限循环"><a class="header" href="#3-无限循环">3. 无限循环</a></h2>
 <p>while 语句中如果 <code>条件</code>为 <code>true</code>的情况时，循环会无限的执行下去，下面是示例：</p>
-<div class="repl" data-id="1e99583b-6c5e-42da-9379-3956eb725de2" data-readonly="false" data-lang="python">
-  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
-</div>
 <pre><code class="language-python"># ！！不建议尝试运行
 i = 0
 while True:
@@ -255,7 +252,7 @@ while True:
 </code></pre>
 <h2 id="4-whileelse-语法"><a class="header" href="#4-whileelse-语法">4. while…else 语法</a></h2>
 <p>在 <code>while … else</code> 在循环条件为 <code>false</code> 时执行 <code>else</code> 语句块：</p>
-<div class="repl" data-id="81e23a76-47c9-4f50-806f-c0efdeaf0272" data-readonly="false" data-lang="python">
+<div class="repl" data-id="853837e5-d78b-4841-8df1-1061186a7aa9" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -267,9 +264,6 @@ else:
 </code></pre>
 <h2 id="5-简单-while-语句"><a class="header" href="#5-简单-while-语句">5. 简单 while 语句</a></h2>
 <p>假如你的 while 循环体只有一条语句的话，可以使用一行 while 语句来实现。</p>
-<div class="repl" data-id="34dbfbd1-c6e2-4f44-ba55-ffcd0c2dee93" data-readonly="false" data-lang="python">
-  <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
-</div>
 <pre><code class="language-python"># ！！不建议尝试运行
 condition = True
 while(condition):print ("Hello World!")
