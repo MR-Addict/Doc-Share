@@ -6,7 +6,7 @@ python 中主要有七类运算符。
 
 ## 1. 算数运算符
 
-可以参考上一篇 [数值运算](https://book.jinhun.moe/Python/Chapter3.html#5-%E6%95%B0%E5%80%BC%E8%BF%90%E7%AE%97)
+可以参考上一篇 [数值运算](./Chapter4.md) 。
 
 ## 2. 比较运算符
 

@@ -1,4 +1,4 @@
-# 技术部培训文档 👻 ![pages](https://github.com/MR-Addict/Doc-Share/actions/workflows/pages.yml/badge.svg) [![drone](https://drone.jinhun.moe/api/badges/MR-Addict/Doc-Share/status.svg)](https://drone.jinhun.moe/MR-Addict/Doc-Share)
+# 技术部培训文档 👻 ![pages](https://github.com/MR-Addict/Doc-Share/actions/workflows/pages.yml/badge.svg)
 
 本文档内容主要由 markdown 写成，使用[mdbook](https://rust-lang.github.io/mdBook/)作为文档框架，网页部署及 CI 由**卢老前辈**完成。
 
@@ -8,8 +8,6 @@
 
 **预览地址**
 
-- [https://book.jinhun.moe](https://book.jinhun.moe)
-- [https://book.mraddict.top](https://book.mraddict.top)
 - [https://book.mraddict.vercel.app](https://book.mraddict.vercel.app)
 - [https://mr-addict.github.io/Doc-Share](https://mr-addict.github.io/Doc-Share)
 
