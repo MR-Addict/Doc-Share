@@ -4967,7 +4967,7 @@ int main() {
 <h1 id="python-基础语法"><a class="header" href="#python-基础语法">python 基础语法</a></h1>
 <h2 id="1-hello-world"><a class="header" href="#1-hello-world">1. Hello world!</a></h2>
 <p>输出<code>Hello world!</code>程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。</p>
-<div class="repl" data-id="174394c8-3294-4532-84e3-75341bb21e4f" data-readonly="false" data-lang="python">
+<div class="repl" data-id="33debeda-e5a3-4be9-8f01-49baa4b5b069" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">print("Hello world!")
@@ -4986,7 +4986,7 @@ int main() {
 </ul>
 <h2 id="3-保留字"><a class="header" href="#3-保留字">3. 保留字</a></h2>
 <p>python 标准库中有<code>keyword</code>模块，可以输出目前版本的保留字：</p>
-<div class="repl" data-id="9c53122d-0c17-432b-80c9-f4d7421cd614" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d323b76f-c7ef-454a-a0c8-27a4d632a264" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import keyword
@@ -4995,7 +4995,7 @@ print(keyword.kwlist)
 </code></pre>
 <h2 id="4-注释"><a class="header" href="#4-注释">4. 注释</a></h2>
 <p>Python 中单行注释以<code>#</code>开头，实例如下：</p>
-<div class="repl" data-id="2ce01303-eb26-449e-af25-dbbf68fe403e" data-readonly="false" data-lang="python">
+<div class="repl" data-id="78e25834-2f4f-4a39-a25b-4578d81b4da6" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># This is a comment
@@ -5003,7 +5003,7 @@ print(keyword.kwlist)
 print("hello world!")
 </code></pre>
 <p>多行注释通常使用<code>'''</code>或<code>"""</code></p>
-<div class="repl" data-id="8747779f-4838-4415-9d8a-b219864f2d2b" data-readonly="false" data-lang="python">
+<div class="repl" data-id="91f85a64-cea4-460e-a8a9-2de7e0aad681" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">'''
@@ -5013,7 +5013,7 @@ second comment
 </code></pre>
 <h2 id="5-行与缩进"><a class="header" href="#5-行与缩进">5. 行与缩进</a></h2>
 <p>缩进是 python 的一大特色,不同于 C 语言的<code>{}</code></p>
-<div class="repl" data-id="85b27dd7-d8b3-40f1-bd7f-1aabbd356158" data-readonly="false" data-lang="python">
+<div class="repl" data-id="897c88f7-c618-4aa2-b9a1-df89a0b182f0" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">if True:
@@ -5022,7 +5022,7 @@ else:
     print ("False")
 </code></pre>
 <p>在不同的位置缩进极可能会有不同的实现效果</p>
-<div class="repl" data-id="43f92e83-6839-4d21-b393-a8c7ca827bfb" data-readonly="false" data-lang="python">
+<div class="repl" data-id="a9f946ee-6967-439d-97e2-65319623ecbe" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#缩进一致的循环体
@@ -5043,7 +5043,7 @@ for i in range(3):
 <h2 id="6-多行语句"><a class="header" href="#6-多行语句">6. 多行语句</a></h2>
 <p>大部分情况下，python 都要求一行完整语句，但是如果有特殊情况的话就需要反斜杠<code>\</code>实现多行语句。</p>
 <p>但是数组<code>[]</code>，字典<code>{}</code>，元组<code>()</code>不使用反斜杠</p>
-<div class="repl" data-id="e167e808-75cc-4045-89e7-8b2a17e97323" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f4158439-3309-4644-b2b5-16cd924ec441" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 1
@@ -5095,7 +5095,7 @@ print(item)
 <p><code>str[1:4:2]</code>中<code>1</code>为起始位置,<code>4</code>为结束位置，<code>2</code>为步长。</p>
 </li>
 </ul>
-<div class="repl" data-id="20036209-3889-4a7a-b3cb-a3575ddf5075" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b1b462df-ea82-4354-aea8-afd157734ece" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str = "abcdefg"
@@ -5226,54 +5226,45 @@ else:
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><!-- Custom REPL Style -->
 <style>
   .repl {
@@ -5301,7 +5292,7 @@ document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
 <p>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。</p>
 <p>在 Python 中，变量就是变量，它没有类型，我们所说的“类型“是变量所指的内存中对象的类型。</p>
 <p>等号（=）用来给变量赋值，也可以同时给多个变量赋值。</p>
-<div class="repl" data-id="097b6676-25e1-4983-9c6a-2fa98e2f1ebe" data-readonly="false" data-lang="python">
+<div class="repl" data-id="37fa2bdf-378a-485f-947d-ff69fe563fd2" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">integer = 10
@@ -5336,7 +5327,7 @@ function_name
 <p>整数的大小不受固定的上限限制，而是受限于系统的内存。在 Python 3 中，整数是无限精度的，可以表示任意大小的整数。</p>
 <p>像大多数语言一样，数值类型的赋值和计算都是很直观的。</p>
 <p>内置的 type() 函数可以用来查询变量所指的对象类型。</p>
-<div class="repl" data-id="f3fc62ee-ac21-483f-bf7b-4b35a64a437a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="0528d30a-47b1-400a-adc7-fb3f94829ae5" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c, d = 20, 5.5, True, 4+3j
@@ -5344,7 +5335,7 @@ print(type(a), type(b), type(c), type(d))
 </code></pre>
 <p>您也可以使用<code>del</code>语句删除一些对象引用。</p>
 <p>要了解 Python 中整数的具体范围，可以使用 sys.maxsize 来获取系统上的最大整数值：</p>
-<div class="repl" data-id="5e1cd577-b2ad-44a1-92dc-7dbcfa5f38ad" data-readonly="false" data-lang="python">
+<div class="repl" data-id="92891fa6-4bf4-4c91-beda-1c2a3d574467" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import sys
@@ -5360,7 +5351,7 @@ print("最大整数值:", sys.maxsize)
 <tr><td style="text-align: center">取余</td><td style="text-align: center">17 % 3</td><td style="text-align: center">2</td></tr>
 <tr><td style="text-align: center">乘方</td><td style="text-align: center">2 ** 5</td><td style="text-align: center">32</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="2b772068-6eb1-44e5-ad20-e0953c8fdf18" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="327fe639-6c54-4501-a550-7e475e8393d8" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 5
@@ -5377,7 +5368,7 @@ print(num1 ** num2)
 <h2 id="6-字符串string"><a class="header" href="#6-字符串string">6. 字符串(string)</a></h2>
 <p>Python 中的字符串用单引号 ’ 或双引号 “ 括起来，同时使用反斜杠 \ 转义特殊字符。</p>
 <p>字符串的截取的语法格式如下：</p>
-<div class="repl" data-id="b6938373-c599-450f-b5b1-ad1a23607548" data-readonly="false" data-lang="python">
+<div class="repl" data-id="44c4bce3-716e-447a-a0da-0354f5797d38" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str1 = 'Hello, World!'
@@ -5409,7 +5400,7 @@ print(new_string)  # 输出: Hi, World!
 <p>布尔类型可以和逻辑运算符一起使用，包括 and、or 和 not。这些运算符可以用来组合多个布尔表达式，生成一个新的布尔值。</p>
 </li>
 </ul>
-<div class="repl" data-id="eae42329-c3fa-4506-9594-c40d9c88806f" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f8c1a8fc-143e-4c8b-aafb-513724a05bde" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">is_true = True
@@ -5428,7 +5419,7 @@ print(logical_result)  # 输出: False
 <li>列表的元素可以修改，也可以添加或删除元素。</li>
 <li>列表可以包含不同数据类型的元素。</li>
 </ul>
-<div class="repl" data-id="fef8bcbb-bab5-43ba-97cf-ff39cdb2ee4b" data-readonly="false" data-lang="python">
+<div class="repl" data-id="4b940c3a-9d2d-4029-8ff0-b66757bfdfe8" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_list = [1, 2, 3, 'hello', True]
@@ -5448,7 +5439,7 @@ print(subset)  # 输出: [42, 3, 'hello']
 <h2 id="8-元组tuple"><a class="header" href="#8-元组tuple">8. 元组(Tuple)</a></h2>
 <p>元组(tuple)与列表类似，不同之处在于元组的元素不能修改。元组写在小括号<code>()</code>里，元素之间用逗号隔开。</p>
 <p>元组可以解构赋值，可以轻松地将元组的值分配给变量。</p>
-<div class="repl" data-id="bb73101f-ace0-4e91-9d96-2bcf3d7de0fd" data-readonly="false" data-lang="python">
+<div class="repl" data-id="90a7e0ca-9822-4a85-8e52-0e36823e77cc" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_tuple = (1, 2, 'three', 4.0)
@@ -5467,7 +5458,7 @@ print(f"X 坐标: {x}, Y 坐标: {y}")#输出X,Y坐标
 <p>集合（Set）是一种无序、可变的数据结构，用于存储唯一的元素。集合中的元素不能重复，而且集合是无序的，因此不能通过索引访问。</p>
 <p>集合使用大括号 {} 或者使用 set()构造函数来创建，集合是在某些情况下用于存储一组唯一元素的有用数据结构。</p>
 <p>集合可以求，并集，交集，差集。</p>
-<div class="repl" data-id="e0775f00-b977-4c8f-b2cb-f1efc8a8b9fc" data-readonly="false" data-lang="python">
+<div class="repl" data-id="49c792e3-ea76-49a5-b9a2-e5218bae2b62" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_set = {1, 2, 3, 4, 4, 5}
@@ -5480,7 +5471,7 @@ print(my_set)  # 输出: {1, 2, 3, 4, 5, 6}
 my_set.remove(3)
 print(my_set)  # 输出: {1, 2, 4, 5, 6}
 </code></pre>
-<div class="repl" data-id="538237df-7a59-4b19-afc3-fff12f23baf1" data-readonly="false" data-lang="python">
+<div class="repl" data-id="16f89f1f-f7d7-495f-a8d8-1bb1330b1d42" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">set1 = {1, 2, 3, 4}
@@ -5498,7 +5489,7 @@ print(difference_set)  # 输出: {1, 2}
 <h2 id="10-字典dictionary"><a class="header" href="#10-字典dictionary">10. 字典(Dictionary)</a></h2>
 <p>字典（Dictionary）是一种无序的数据结构，用于存储键值对（key-value pairs）。字典中的每个键都关联着一个值，形成了键值对的映射。字典使用花括号 {} 来定义，键和值之间使用冒号 : 分隔，键值对之间使用逗号 , 分隔。</p>
 <p>字典在许多情况下都是一种非常有用的数据结构，特别是当需要通过名称（键）而不是索引来访问数据时。字典可以用来表示和操作各种信息，例如配置设置、用户信息等。键必须是不可变的类型，如字符串或数字，而值可以是任何类型。</p>
-<div class="repl" data-id="a71f2a8b-c8c1-4482-b631-4a0f789d18f0" data-readonly="false" data-lang="python">
+<div class="repl" data-id="4ca663d0-493e-42f7-b26d-197a7d67d753" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_dict = {'name': 'mr-addict', 'age': 22, 'city': 'Nanjing'}
@@ -5520,7 +5511,7 @@ print('gender' in my_dict)  # 输出: False
 </code></pre>
 <h2 id="11-bytes-类型"><a class="header" href="#11-bytes-类型">11. bytes 类型</a></h2>
 <p><code>bytes</code>是一种不可变的二进制数据类型。bytes 对象表示一个字节序列，其中的每个元素是一个范围在 0 到 255 之间的整数,<code>bytes</code>类型在处理二进制数据时非常有用，特别是在网络编程、文件读写和加密等领域。</p>
-<div class="repl" data-id="44023040-895b-492b-9127-6feac991ba61" data-readonly="false" data-lang="python">
+<div class="repl" data-id="59295063-b924-4860-aa76-b75769ee0008" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_bytes = b'hello'
@@ -5544,7 +5535,7 @@ my_bytes[0] = 105
 &gt;&gt;&gt; 摄氏度:15
 &gt;&gt;&gt; 华氏度:-9.44
 </code></pre>
-<div class="repl" data-id="1365bde2-10bb-446d-86da-605fd8503a50" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3d7a941a-c4d6-4352-ac2d-ba52c35394dc" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
@@ -5634,54 +5625,45 @@ my_bytes[0] = 105
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><!-- Custom REPL Style -->
 <style>
   .repl {
@@ -5718,7 +5700,7 @@ document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="82bd15c1-35cb-4474-bf5b-bc937e5b6592" data-readonly="false" data-lang="python">
+<div class="repl" data-id="11fc8b2a-1b1e-4623-bf93-d1d2f429b74e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
@@ -5815,54 +5797,45 @@ print(type(num_str_int), type(int(num_str_int)))
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><!-- Custom REPL Style -->
 <style>
   .repl {
@@ -5899,7 +5872,7 @@ document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
 <tr><td style="text-align: center">&gt;=</td><td style="text-align: center">大于等于</td><td style="text-align: center">(a &gt;= b) return False。</td></tr>
 <tr><td style="text-align: center">&lt;=</td><td style="text-align: center">小于等于</td><td style="text-align: center">(a &lt;= b) return True。</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="e783599b-bebb-4914-a5c2-e4c2fc31e06e" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="49085ddc-8b38-471d-94d1-625389af4595" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">x = 1
@@ -5919,7 +5892,7 @@ print(x == y,x != y,x &gt; y,x &lt; y,x &gt;= y,x &lt;= y)
 <tr><td style="text-align: center">**=</td><td style="text-align: center">幂</td><td style="text-align: center">c **= a =&gt; c = c ** a</td></tr>
 <tr><td style="text-align: center">//=</td><td style="text-align: center">取整除</td><td style="text-align: center">c //= a =&gt; c = c // a</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="d4d6f635-61ca-4b59-b1fd-836fb9744991" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="0fcf342f-5f72-4141-a3fe-1ef0bbd71025" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c = 1, 2, 3
@@ -5931,7 +5904,7 @@ print(a, b, c, d, a + b, b - c, c * a)
 <p>位运算符是把数字看作二进制来进行计算的。</p>
 <p>位运算符通常用于处理底层的位操作，例如在编码、加密、图形处理等领域。在一般情况下，位运算符不太常见，但在某些特定的计算机科学和嵌入式系统的应用中非常有用。</p>
 <p>下表中变量 a 为 60，b 为 13 二进制格式如下：</p>
-<div class="repl" data-id="24adb10b-fcc5-4f7b-9457-7886dd8ee284" data-readonly="false" data-lang="python">
+<div class="repl" data-id="7b4b3eb0-9531-47b3-a847-4f4bcfe969fb" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a , b, c = 2 , 1 , 0
@@ -5957,7 +5930,7 @@ print ("6 - c 的值为：", c)
 <h2 id="5-逻辑运算符"><a class="header" href="#5-逻辑运算符">5. 逻辑运算符</a></h2>
 <p>逻辑运算符通常用于控制程序的流程，例如在条件语句中判断多个条件。逻辑运算符返回布尔值，可以帮助你在程序中做出合理的决策。</p>
 <p>与<code>and</code>或<code>or</code>非<code> not</code></p>
-<div class="repl" data-id="8459df92-5036-4d6d-8206-eba36ce77a78" data-readonly="false" data-lang="python">
+<div class="repl" data-id="dfc5b1c3-bc27-49de-98de-1d8bed795d93" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># 逻辑与
@@ -5970,7 +5943,7 @@ print(x and y , x or y , not x)  # 输出: False True False
 <p>in：如果在序列中找到指定的值，则返回<code>True</code>，否则返回<code>False</code>。</p>
 <p>not in：如果在序列中找到指定的值，则返回<code>False</code>，否则返回<code>True</code>。</p>
 <p>成员运算符常用于在条件语句中检查某个值是否存在于给定的序列中。</p>
-<div class="repl" data-id="6584603e-57eb-43ff-b2b9-d3e0646425bb" data-readonly="false" data-lang="python">
+<div class="repl" data-id="bee22352-f513-470b-9420-ec17fe36e69a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
@@ -5987,7 +5960,7 @@ print("Python" not in string)  # 输出: True
 <p>身份运算符用于比较对象的存储地址，判断它们是否是同一个对象。在 Python 中，有两个身份运算符：<code>is</code> 和 <code>is not</code>。</p>
 <p>is：如果两个变量引用同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
 <p>is not：如果两个变量引用的不是同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
-<div class="repl" data-id="76298a3d-6ee9-47f4-bfd2-95b44a378d8c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="7c33be2b-5963-4ef2-9d42-f06392ee9932" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a = [1, 2, 3]
@@ -6008,7 +5981,7 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 &gt;&gt;&gt; 输入三角形的三条边长度，用空格分隔: 2 5 6
 &gt;&gt;&gt; 三角形的面积：4.68
 </code></pre>
-<div class="repl" data-id="f01e4867-612a-41ef-aa8b-51eebdf41aa9" data-readonly="false" data-lang="python">
+<div class="repl" data-id="292013a4-f1dc-4a0f-89ea-80a8b6207932" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
@@ -6098,54 +6071,45 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><!-- Custom REPL Style -->
 <style>
   .repl {
@@ -6177,7 +6141,7 @@ document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
 <h2 id="2-if-语句-1"><a class="header" href="#2-if-语句-1">2. if 语句</a></h2>
 <p><code>if</code> 语句用于根据条件执行不同的代码块。下面是一个简单的例子:</p>
 <p>随机取 1-20 间的一个数来和 10 比较大小。</p>
-<div class="repl" data-id="3f3dda55-fc2e-4c35-812a-8e00938a9a8a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6b35805b-3e75-4971-be39-cd1210a2a2cb" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6205,7 +6169,7 @@ print(number)
 </div>
 <h2 id="4-if-嵌套"><a class="header" href="#4-if-嵌套">4. if 嵌套</a></h2>
 <p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中。</p>
-<div class="repl" data-id="f2fc0608-fd0c-4422-a4b1-288718df932a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="e87711b2-b2a6-453e-bcc6-fc8852fa9bec" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6222,7 +6186,7 @@ else:
 </code></pre>
 <h2 id="5-matchcase"><a class="header" href="#5-matchcase">5. match…case</a></h2>
 <p>Python 3.10 引入的新特性，用于模式匹配（Pattern Matching）。它是一种更灵活、清晰的方式来处理复杂的条件分支，尤其适用于对数据结构进行模式匹配和解构。</p>
-<div class="repl" data-id="945f1102-1e2b-485b-b4eb-1c7a6500d25a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="54d1debd-6ce8-4bc9-8d3f-cbe5158ee232" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6327,54 +6291,45 @@ match data:
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><!-- Custom REPL Style -->
 <style>
   .repl {
@@ -6407,7 +6362,7 @@ document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
     <img src="Python/./Images/whileProcess.png" height="300px" style="display: inline-block;">
 </div>
 <p>示例：</p>
-<div class="repl" data-id="9debac2a-ac29-42bf-adc1-447abe2d2ec5" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5bbc7a7e-9a84-464a-a987-7d97b3a4c3ee" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -6418,7 +6373,7 @@ print("Good bye!")
 </code></pre>
 <h2 id="2-跳过和退出循环"><a class="header" href="#2-跳过和退出循环">2. 跳过和退出循环</a></h2>
 <p>while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外“判断条件“还可以是个常值，表示循环必定成立，具体用法如下：</p>
-<div class="repl" data-id="0f78b086-e4e3-4484-86e2-6827adaa8ff3" data-readonly="false" data-lang="python">
+<div class="repl" data-id="16d503d0-246c-4108-b55e-c4bc186dd7a1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">i = 0
@@ -6445,7 +6400,7 @@ while True:
 </code></pre>
 <h2 id="4-whileelse-语法"><a class="header" href="#4-whileelse-语法">4. while…else 语法</a></h2>
 <p>在 <code>while … else</code> 在循环条件为 <code>false</code> 时执行 <code>else</code> 语句块：</p>
-<div class="repl" data-id="efd0a161-20fe-490c-8825-abba7b6d2a62" data-readonly="false" data-lang="python">
+<div class="repl" data-id="461e1738-ffaf-489f-8ace-c7f4f68dbdd0" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -6547,54 +6502,45 @@ while(condition):print ("Hello World!")
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="通信专题"><a class="header" href="#通信专题">通信专题</a></h1>
 <p>通信，在单片机中尤其重要，没有了通信，那么单片机就只能是一个孤岛，就不能延伸它的能力。</p>
 <p>在这里，我们只对单片机中很常用的通信方式做简单介绍，至于蓝牙，WIFI 等无线及其他通信方式，这里不会涉及。同时，这里所有代码都是基于 Arudino 框架进行编写的，主要是环境搭建方便，但是内容是基于通信原理，所以完全可以移植到其他任何一种单片机，重要的学习每一种通信其中的原理。</p>

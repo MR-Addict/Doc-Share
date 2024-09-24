@@ -214,7 +214,7 @@
     <img src="./Images/whileProcess.png" height="300px" style="display: inline-block;">
 </div>
 <p>示例：</p>
-<div class="repl" data-id="9debac2a-ac29-42bf-adc1-447abe2d2ec5" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5bbc7a7e-9a84-464a-a987-7d97b3a4c3ee" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -225,7 +225,7 @@ print("Good bye!")
 </code></pre>
 <h2 id="2-跳过和退出循环"><a class="header" href="#2-跳过和退出循环">2. 跳过和退出循环</a></h2>
 <p>while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外“判断条件“还可以是个常值，表示循环必定成立，具体用法如下：</p>
-<div class="repl" data-id="0f78b086-e4e3-4484-86e2-6827adaa8ff3" data-readonly="false" data-lang="python">
+<div class="repl" data-id="16d503d0-246c-4108-b55e-c4bc186dd7a1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">i = 0
@@ -252,7 +252,7 @@ while True:
 </code></pre>
 <h2 id="4-whileelse-语法"><a class="header" href="#4-whileelse-语法">4. while…else 语法</a></h2>
 <p>在 <code>while … else</code> 在循环条件为 <code>false</code> 时执行 <code>else</code> 语句块：</p>
-<div class="repl" data-id="efd0a161-20fe-490c-8825-abba7b6d2a62" data-readonly="false" data-lang="python">
+<div class="repl" data-id="461e1738-ffaf-489f-8ace-c7f4f68dbdd0" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -354,54 +354,45 @@ while(condition):print ("Hello World!")
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
-<pre><code>const id = replElement.getAttribute("data-id");
-const lang = replElement.getAttribute("data-lang");
-const code = getCode(replElement.nextElementSibling);
-const readonly = replElement.getAttribute("data-readonly") === "true";
-let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
-
-const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
-
-function mapTheme(bookTheme) {
-  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-}
-
-function getCode(element) {
-  // remove all the boring elements
-  const code = element.cloneNode(true);
-  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
-  return code.innerText.trim();
-}
-
-window.addEventListener("message", (event) =&gt; {
-  const repl = event.data.repl;
-  if (event.source === window || !repl) return;
-
-  // if the id is empty, then it's the first time the iframe is loaded
-  if (repl.id === "") {
-    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-    return;
-  }
-
-  if (repl.id !== id) return;
-
-  // update the iframe height
-  replElement.style.height = repl.dimensions.height + "px";
-  // show the iframe and hide the pre element
-  iframeElement.classList.remove("hide");
-  replElement.nextElementSibling.style.display = "none";
-});
-
-// listen to theme change
-document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
-  btn.addEventListener("click", (event) =&gt; {
-    theme = mapTheme(event.target.id);
-    postmessage({ id, editor: { theme } });
+    const id = replElement.getAttribute("data-id");
+    const lang = replElement.getAttribute("data-lang");
+    const code = getCode(replElement.nextElementSibling);
+    const readonly = replElement.getAttribute("data-readonly") === "true";
+    let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
+    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+    function mapTheme(bookTheme) {
+      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+    }
+    function getCode(element) {
+      // remove all the boring elements
+      const code = element.cloneNode(true);
+      code.querySelectorAll(".boring").forEach((boring) => boring.remove());
+      return code.innerText.trim();
+    }
+    window.addEventListener("message", (event) => {
+      const repl = event.data.repl;
+      if (event.source === window || !repl) return;
+      // if the id is empty, then it's the first time the iframe is loaded
+      if (repl.id === "") {
+        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+        return;
+      }
+      if (repl.id !== id) return;
+      // update the iframe height
+      replElement.style.height = repl.dimensions.height + "px";
+      // show the iframe and hide the pre element
+      iframeElement.classList.remove("hide");
+      replElement.nextElementSibling.style.display = "none";
+    });
+    // listen to theme change
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        postmessage({ id, editor: { theme } });
+      });
+    });
   });
-});
-</code></pre>
-<p>});
-</script></p>
+</script>
 
                     </main>
 
