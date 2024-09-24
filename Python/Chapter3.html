@@ -209,7 +209,7 @@
 <p>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。</p>
 <p>在 Python 中，变量就是变量，它没有类型，我们所说的“类型“是变量所指的内存中对象的类型。</p>
 <p>等号（=）用来给变量赋值，也可以同时给多个变量赋值。</p>
-<div class="repl" data-id="c7bb6d7f-1269-47ec-a1cf-a1b49ece254c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="097b6676-25e1-4983-9c6a-2fa98e2f1ebe" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">integer = 10
@@ -244,7 +244,7 @@ function_name
 <p>整数的大小不受固定的上限限制，而是受限于系统的内存。在 Python 3 中，整数是无限精度的，可以表示任意大小的整数。</p>
 <p>像大多数语言一样，数值类型的赋值和计算都是很直观的。</p>
 <p>内置的 type() 函数可以用来查询变量所指的对象类型。</p>
-<div class="repl" data-id="270a16de-5163-468f-85ca-93399af583d9" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f3fc62ee-ac21-483f-bf7b-4b35a64a437a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c, d = 20, 5.5, True, 4+3j
@@ -252,7 +252,7 @@ print(type(a), type(b), type(c), type(d))
 </code></pre>
 <p>您也可以使用<code>del</code>语句删除一些对象引用。</p>
 <p>要了解 Python 中整数的具体范围，可以使用 sys.maxsize 来获取系统上的最大整数值：</p>
-<div class="repl" data-id="1f36168e-b644-4009-8a4f-cdbcd38aabe4" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5e1cd577-b2ad-44a1-92dc-7dbcfa5f38ad" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import sys
@@ -268,7 +268,7 @@ print("最大整数值:", sys.maxsize)
 <tr><td style="text-align: center">取余</td><td style="text-align: center">17 % 3</td><td style="text-align: center">2</td></tr>
 <tr><td style="text-align: center">乘方</td><td style="text-align: center">2 ** 5</td><td style="text-align: center">32</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="9dec6f11-8ebc-47e3-85e7-44c2c79331c9" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="2b772068-6eb1-44e5-ad20-e0953c8fdf18" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 5
@@ -285,7 +285,7 @@ print(num1 ** num2)
 <h2 id="6-字符串string"><a class="header" href="#6-字符串string">6. 字符串(string)</a></h2>
 <p>Python 中的字符串用单引号 ’ 或双引号 “ 括起来，同时使用反斜杠 \ 转义特殊字符。</p>
 <p>字符串的截取的语法格式如下：</p>
-<div class="repl" data-id="2572e5a7-89bf-495d-8abe-a8b46cd57620" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b6938373-c599-450f-b5b1-ad1a23607548" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str1 = 'Hello, World!'
@@ -317,7 +317,7 @@ print(new_string)  # 输出: Hi, World!
 <p>布尔类型可以和逻辑运算符一起使用，包括 and、or 和 not。这些运算符可以用来组合多个布尔表达式，生成一个新的布尔值。</p>
 </li>
 </ul>
-<div class="repl" data-id="79219ae7-10a1-4eed-87c1-496971101c22" data-readonly="false" data-lang="python">
+<div class="repl" data-id="eae42329-c3fa-4506-9594-c40d9c88806f" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">is_true = True
@@ -336,7 +336,7 @@ print(logical_result)  # 输出: False
 <li>列表的元素可以修改，也可以添加或删除元素。</li>
 <li>列表可以包含不同数据类型的元素。</li>
 </ul>
-<div class="repl" data-id="c590953e-6417-4a5b-a629-8a326ea37df6" data-readonly="false" data-lang="python">
+<div class="repl" data-id="fef8bcbb-bab5-43ba-97cf-ff39cdb2ee4b" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_list = [1, 2, 3, 'hello', True]
@@ -356,7 +356,7 @@ print(subset)  # 输出: [42, 3, 'hello']
 <h2 id="8-元组tuple"><a class="header" href="#8-元组tuple">8. 元组(Tuple)</a></h2>
 <p>元组(tuple)与列表类似，不同之处在于元组的元素不能修改。元组写在小括号<code>()</code>里，元素之间用逗号隔开。</p>
 <p>元组可以解构赋值，可以轻松地将元组的值分配给变量。</p>
-<div class="repl" data-id="1684c166-9da6-47c0-abb5-6716da21e18f" data-readonly="false" data-lang="python">
+<div class="repl" data-id="bb73101f-ace0-4e91-9d96-2bcf3d7de0fd" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_tuple = (1, 2, 'three', 4.0)
@@ -375,7 +375,7 @@ print(f"X 坐标: {x}, Y 坐标: {y}")#输出X,Y坐标
 <p>集合（Set）是一种无序、可变的数据结构，用于存储唯一的元素。集合中的元素不能重复，而且集合是无序的，因此不能通过索引访问。</p>
 <p>集合使用大括号 {} 或者使用 set()构造函数来创建，集合是在某些情况下用于存储一组唯一元素的有用数据结构。</p>
 <p>集合可以求，并集，交集，差集。</p>
-<div class="repl" data-id="e59f43d8-2ca0-470f-b0ce-c85a05a97184" data-readonly="false" data-lang="python">
+<div class="repl" data-id="e0775f00-b977-4c8f-b2cb-f1efc8a8b9fc" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_set = {1, 2, 3, 4, 4, 5}
@@ -388,7 +388,7 @@ print(my_set)  # 输出: {1, 2, 3, 4, 5, 6}
 my_set.remove(3)
 print(my_set)  # 输出: {1, 2, 4, 5, 6}
 </code></pre>
-<div class="repl" data-id="d69c0260-34ad-4a42-8d35-8c7f64d15ac0" data-readonly="false" data-lang="python">
+<div class="repl" data-id="538237df-7a59-4b19-afc3-fff12f23baf1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">set1 = {1, 2, 3, 4}
@@ -406,7 +406,7 @@ print(difference_set)  # 输出: {1, 2}
 <h2 id="10-字典dictionary"><a class="header" href="#10-字典dictionary">10. 字典(Dictionary)</a></h2>
 <p>字典（Dictionary）是一种无序的数据结构，用于存储键值对（key-value pairs）。字典中的每个键都关联着一个值，形成了键值对的映射。字典使用花括号 {} 来定义，键和值之间使用冒号 : 分隔，键值对之间使用逗号 , 分隔。</p>
 <p>字典在许多情况下都是一种非常有用的数据结构，特别是当需要通过名称（键）而不是索引来访问数据时。字典可以用来表示和操作各种信息，例如配置设置、用户信息等。键必须是不可变的类型，如字符串或数字，而值可以是任何类型。</p>
-<div class="repl" data-id="efd25b5a-e22f-45d0-b2d3-e9767eb5b4e3" data-readonly="false" data-lang="python">
+<div class="repl" data-id="a71f2a8b-c8c1-4482-b631-4a0f789d18f0" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_dict = {'name': 'mr-addict', 'age': 22, 'city': 'Nanjing'}
@@ -428,7 +428,7 @@ print('gender' in my_dict)  # 输出: False
 </code></pre>
 <h2 id="11-bytes-类型"><a class="header" href="#11-bytes-类型">11. bytes 类型</a></h2>
 <p><code>bytes</code>是一种不可变的二进制数据类型。bytes 对象表示一个字节序列，其中的每个元素是一个范围在 0 到 255 之间的整数,<code>bytes</code>类型在处理二进制数据时非常有用，特别是在网络编程、文件读写和加密等领域。</p>
-<div class="repl" data-id="ef79bf23-f221-4e31-8660-bf5c38e00a33" data-readonly="false" data-lang="python">
+<div class="repl" data-id="44023040-895b-492b-9127-6feac991ba61" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_bytes = b'hello'
@@ -452,7 +452,7 @@ my_bytes[0] = 105
 &gt;&gt;&gt; 摄氏度:15
 &gt;&gt;&gt; 华氏度:-9.44
 </code></pre>
-<div class="repl" data-id="7e6ca091-f116-41aa-a694-024cc29a7b4d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="1365bde2-10bb-446d-86da-605fd8503a50" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
@@ -467,21 +467,16 @@ my_bytes[0] = 105
     display: none;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     padding: 0.75rem;
     bottom: 4rem;
     right: calc(1.25rem + 90px + var(--page-padding));
-
     z-index: 999;
     cursor: pointer;
-    color: #fff;
     border: none;
+    color: var(--bg);
+    background: var(--fg);
     border-radius: 50%;
-    background-color: var(--icons);
-  }
-  .scroll-to-top:hover {
-    background-color: var(--icons-hover);
   }
   .scroll-to-top.hidden {
     display: none;
@@ -527,51 +522,74 @@ my_bytes[0] = 105
   crossorigin="anonymous"
   async
 ></script>
+<script>
+  (() => {
+    const giscusScript = document.querySelector("script[data-repo][data-repo-id]");
+    if (giscusScript?.getAttribute("data-theme") !== "book") return;
+    const mapTheme = (theme) => (theme === "light" || theme === "rust" ? "light" : "dark");
+    const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class");
+    giscusScript.setAttribute("data-theme", mapTheme(bookTheme));
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*");
+      });
+    });
+  })();
+</script>
 <!-- Custom REPL Script -->
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
+<pre><code>const id = replElement.getAttribute("data-id");
+const lang = replElement.getAttribute("data-lang");
+const code = getCode(replElement.nextElementSibling);
+const readonly = replElement.getAttribute("data-readonly") === "true";
+let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
 
-    const id = replElement.getAttribute("data-id");
-    const lang = replElement.getAttribute("data-lang");
-    const code = replElement.nextElementSibling.innerText.trim();
-    const readonly = replElement.getAttribute("data-readonly") === "true";
-    let theme = mapTheme(localStorage.getItem("mdbook-theme") || "light");
+const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
 
-    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+function mapTheme(bookTheme) {
+  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+}
 
-    function mapTheme(bookTheme) {
-      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-    }
+function getCode(element) {
+  // remove all the boring elements
+  const code = element.cloneNode(true);
+  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
+  return code.innerText.trim();
+}
 
-    window.addEventListener("message", (event) => {
-      const repl = event.data.repl;
-      if (event.source === window || !repl) return;
+window.addEventListener("message", (event) =&gt; {
+  const repl = event.data.repl;
+  if (event.source === window || !repl) return;
 
-      // if the id is empty, then it's the first time the iframe is loaded
-      if (repl.id === "") {
-        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-        return;
-      }
+  // if the id is empty, then it's the first time the iframe is loaded
+  if (repl.id === "") {
+    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+    return;
+  }
 
-      if (repl.id !== id) return;
+  if (repl.id !== id) return;
 
-      // update the iframe height
-      replElement.style.height = repl.dimensions.height + "px";
-      // show the iframe and hide the pre element
-      iframeElement.classList.remove("hide");
-      replElement.nextElementSibling.style.display = "none";
-    });
+  // update the iframe height
+  replElement.style.height = repl.dimensions.height + "px";
+  // show the iframe and hide the pre element
+  iframeElement.classList.remove("hide");
+  replElement.nextElementSibling.style.display = "none";
+});
 
-    // listen to theme change
-    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
-      btn.addEventListener("click", (event) => {
-        theme = mapTheme(event.target.id);
-        postmessage({ id, editor: { theme } });
-      });
-    });
+// listen to theme change
+document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
+  btn.addEventListener("click", (event) =&gt; {
+    theme = mapTheme(event.target.id);
+    postmessage({ id, editor: { theme } });
   });
-</script>
+});
+</code></pre>
+<p>});
+</script></p>
 
                     </main>
 

@@ -264,21 +264,16 @@ TCCR0B = TCCR0B &amp; B11111000 | B00000101; // for PWM frequency of 61.04 Hz
     display: none;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     padding: 0.75rem;
     bottom: 4rem;
     right: calc(1.25rem + 90px + var(--page-padding));
-
     z-index: 999;
     cursor: pointer;
-    color: #fff;
     border: none;
+    color: var(--bg);
+    background: var(--fg);
     border-radius: 50%;
-    background-color: var(--icons);
-  }
-  .scroll-to-top:hover {
-    background-color: var(--icons-hover);
   }
   .scroll-to-top.hidden {
     display: none;
@@ -324,6 +319,22 @@ TCCR0B = TCCR0B &amp; B11111000 | B00000101; // for PWM frequency of 61.04 Hz
   crossorigin="anonymous"
   async
 ></script>
+<script>
+  (() => {
+    const giscusScript = document.querySelector("script[data-repo][data-repo-id]");
+    if (giscusScript?.getAttribute("data-theme") !== "book") return;
+    const mapTheme = (theme) => (theme === "light" || theme === "rust" ? "light" : "dark");
+    const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class");
+    giscusScript.setAttribute("data-theme", mapTheme(bookTheme));
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*");
+      });
+    });
+  })();
+</script>
 
                     </main>
 

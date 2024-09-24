@@ -213,7 +213,7 @@
 <h2 id="2-if-语句"><a class="header" href="#2-if-语句">2. if 语句</a></h2>
 <p><code>if</code> 语句用于根据条件执行不同的代码块。下面是一个简单的例子:</p>
 <p>随机取 1-20 间的一个数来和 10 比较大小。</p>
-<div class="repl" data-id="909bab26-7fda-4174-a333-644cca0d8cf8" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3f3dda55-fc2e-4c35-812a-8e00938a9a8a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -241,7 +241,7 @@ print(number)
 </div>
 <h2 id="4-if-嵌套"><a class="header" href="#4-if-嵌套">4. if 嵌套</a></h2>
 <p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中。</p>
-<div class="repl" data-id="7b784fac-b9fb-4d30-85a5-dc2d60f1e48d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f2fc0608-fd0c-4422-a4b1-288718df932a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -258,7 +258,7 @@ else:
 </code></pre>
 <h2 id="5-matchcase"><a class="header" href="#5-matchcase">5. match…case</a></h2>
 <p>Python 3.10 引入的新特性，用于模式匹配（Pattern Matching）。它是一种更灵活、清晰的方式来处理复杂的条件分支，尤其适用于对数据结构进行模式匹配和解构。</p>
-<div class="repl" data-id="9ac83c29-c89a-4e05-b1ae-15080691ad3d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="945f1102-1e2b-485b-b4eb-1c7a6500d25a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -288,21 +288,16 @@ match data:
     display: none;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     padding: 0.75rem;
     bottom: 4rem;
     right: calc(1.25rem + 90px + var(--page-padding));
-
     z-index: 999;
     cursor: pointer;
-    color: #fff;
     border: none;
+    color: var(--bg);
+    background: var(--fg);
     border-radius: 50%;
-    background-color: var(--icons);
-  }
-  .scroll-to-top:hover {
-    background-color: var(--icons-hover);
   }
   .scroll-to-top.hidden {
     display: none;
@@ -348,51 +343,74 @@ match data:
   crossorigin="anonymous"
   async
 ></script>
+<script>
+  (() => {
+    const giscusScript = document.querySelector("script[data-repo][data-repo-id]");
+    if (giscusScript?.getAttribute("data-theme") !== "book") return;
+    const mapTheme = (theme) => (theme === "light" || theme === "rust" ? "light" : "dark");
+    const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class");
+    giscusScript.setAttribute("data-theme", mapTheme(bookTheme));
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*");
+      });
+    });
+  })();
+</script>
 <!-- Custom REPL Script -->
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
+<pre><code>const id = replElement.getAttribute("data-id");
+const lang = replElement.getAttribute("data-lang");
+const code = getCode(replElement.nextElementSibling);
+const readonly = replElement.getAttribute("data-readonly") === "true";
+let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
 
-    const id = replElement.getAttribute("data-id");
-    const lang = replElement.getAttribute("data-lang");
-    const code = replElement.nextElementSibling.innerText.trim();
-    const readonly = replElement.getAttribute("data-readonly") === "true";
-    let theme = mapTheme(localStorage.getItem("mdbook-theme") || "light");
+const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
 
-    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+function mapTheme(bookTheme) {
+  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+}
 
-    function mapTheme(bookTheme) {
-      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-    }
+function getCode(element) {
+  // remove all the boring elements
+  const code = element.cloneNode(true);
+  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
+  return code.innerText.trim();
+}
 
-    window.addEventListener("message", (event) => {
-      const repl = event.data.repl;
-      if (event.source === window || !repl) return;
+window.addEventListener("message", (event) =&gt; {
+  const repl = event.data.repl;
+  if (event.source === window || !repl) return;
 
-      // if the id is empty, then it's the first time the iframe is loaded
-      if (repl.id === "") {
-        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-        return;
-      }
+  // if the id is empty, then it's the first time the iframe is loaded
+  if (repl.id === "") {
+    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+    return;
+  }
 
-      if (repl.id !== id) return;
+  if (repl.id !== id) return;
 
-      // update the iframe height
-      replElement.style.height = repl.dimensions.height + "px";
-      // show the iframe and hide the pre element
-      iframeElement.classList.remove("hide");
-      replElement.nextElementSibling.style.display = "none";
-    });
+  // update the iframe height
+  replElement.style.height = repl.dimensions.height + "px";
+  // show the iframe and hide the pre element
+  iframeElement.classList.remove("hide");
+  replElement.nextElementSibling.style.display = "none";
+});
 
-    // listen to theme change
-    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
-      btn.addEventListener("click", (event) => {
-        theme = mapTheme(event.target.id);
-        postmessage({ id, editor: { theme } });
-      });
-    });
+// listen to theme change
+document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
+  btn.addEventListener("click", (event) =&gt; {
+    theme = mapTheme(event.target.id);
+    postmessage({ id, editor: { theme } });
   });
-</script>
+});
+</code></pre>
+<p>});
+</script></p>
 
                     </main>
 

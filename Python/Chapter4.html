@@ -218,7 +218,7 @@
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="72d2b5d9-0175-4744-9f16-77d6138270d0" data-readonly="false" data-lang="python">
+<div class="repl" data-id="82bd15c1-35cb-4474-bf5b-bc937e5b6592" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
@@ -240,21 +240,16 @@ print(type(num_str_int), type(int(num_str_int)))
     display: none;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     padding: 0.75rem;
     bottom: 4rem;
     right: calc(1.25rem + 90px + var(--page-padding));
-
     z-index: 999;
     cursor: pointer;
-    color: #fff;
     border: none;
+    color: var(--bg);
+    background: var(--fg);
     border-radius: 50%;
-    background-color: var(--icons);
-  }
-  .scroll-to-top:hover {
-    background-color: var(--icons-hover);
   }
   .scroll-to-top.hidden {
     display: none;
@@ -300,51 +295,74 @@ print(type(num_str_int), type(int(num_str_int)))
   crossorigin="anonymous"
   async
 ></script>
+<script>
+  (() => {
+    const giscusScript = document.querySelector("script[data-repo][data-repo-id]");
+    if (giscusScript?.getAttribute("data-theme") !== "book") return;
+    const mapTheme = (theme) => (theme === "light" || theme === "rust" ? "light" : "dark");
+    const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class");
+    giscusScript.setAttribute("data-theme", mapTheme(bookTheme));
+    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        theme = mapTheme(event.target.id);
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*");
+      });
+    });
+  })();
+</script>
 <!-- Custom REPL Script -->
 <script>
   document.querySelectorAll(".repl").forEach((replElement) => {
     const iframeElement = replElement.querySelector("iframe");
+<pre><code>const id = replElement.getAttribute("data-id");
+const lang = replElement.getAttribute("data-lang");
+const code = getCode(replElement.nextElementSibling);
+const readonly = replElement.getAttribute("data-readonly") === "true";
+let theme = mapTheme(localStorage.getItem("mdbook-theme") || document.querySelector(".theme.theme-selected")?.id);
 
-    const id = replElement.getAttribute("data-id");
-    const lang = replElement.getAttribute("data-lang");
-    const code = replElement.nextElementSibling.innerText.trim();
-    const readonly = replElement.getAttribute("data-readonly") === "true";
-    let theme = mapTheme(localStorage.getItem("mdbook-theme") || "light");
+const postmessage = (msg) =&gt; iframeElement.contentWindow.postMessage({ repl: msg }, "*");
 
-    const postmessage = (msg) => iframeElement.contentWindow.postMessage({ repl: msg }, "*");
+function mapTheme(bookTheme) {
+  return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
+}
 
-    function mapTheme(bookTheme) {
-      return bookTheme === "light" || bookTheme === "rust" ? "light" : "dark";
-    }
+function getCode(element) {
+  // remove all the boring elements
+  const code = element.cloneNode(true);
+  code.querySelectorAll(".boring").forEach((boring) =&gt; boring.remove());
+  return code.innerText.trim();
+}
 
-    window.addEventListener("message", (event) => {
-      const repl = event.data.repl;
-      if (event.source === window || !repl) return;
+window.addEventListener("message", (event) =&gt; {
+  const repl = event.data.repl;
+  if (event.source === window || !repl) return;
 
-      // if the id is empty, then it's the first time the iframe is loaded
-      if (repl.id === "") {
-        postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
-        return;
-      }
+  // if the id is empty, then it's the first time the iframe is loaded
+  if (repl.id === "") {
+    postmessage({ id, editor: { theme, lang, code, readonly, defaultCode: code } });
+    return;
+  }
 
-      if (repl.id !== id) return;
+  if (repl.id !== id) return;
 
-      // update the iframe height
-      replElement.style.height = repl.dimensions.height + "px";
-      // show the iframe and hide the pre element
-      iframeElement.classList.remove("hide");
-      replElement.nextElementSibling.style.display = "none";
-    });
+  // update the iframe height
+  replElement.style.height = repl.dimensions.height + "px";
+  // show the iframe and hide the pre element
+  iframeElement.classList.remove("hide");
+  replElement.nextElementSibling.style.display = "none";
+});
 
-    // listen to theme change
-    document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => {
-      btn.addEventListener("click", (event) => {
-        theme = mapTheme(event.target.id);
-        postmessage({ id, editor: { theme } });
-      });
-    });
+// listen to theme change
+document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) =&gt; {
+  btn.addEventListener("click", (event) =&gt; {
+    theme = mapTheme(event.target.id);
+    postmessage({ id, editor: { theme } });
   });
-</script>
+});
+</code></pre>
+<p>});
+</script></p>
 
                     </main>
 
