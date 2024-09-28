@@ -1,6 +1,6 @@
 # Summary
 
-[技术部培训文档](./Intro.md)
+[电子组培训文档](./Intro.md)
 
 - [Arduino 基础](Arduino/Intro.md)
 
@@ -42,9 +42,13 @@
   - [数据类型](Python/Chapter3.md)
   - [数据类型转换](Python/Chapter4.md)
   - [运算符](Python/Chapter5.md)
-  - [条件语句](Python/Chapter6.md)
-  - [循环语句](Python/Chapter7.md)
-
+  - [if条件语句](Python/Chapter6.md)
+  - [while和for循环语句](Python/Chapter7.md)
+  - [小测验](Python/Chapter8.md)
+  - [def函数](Python/Chapter9.md)
+  - [lambda 表达式](Python/Chapter10.md)
+  - [import 模块导入](Python/Chapter11.md)
+  
 - [通信专题](MCU-Communication/Intro.md)
 
   - [One-Wire](MCU-Communication/Serial/One-Wire/Intro.md)

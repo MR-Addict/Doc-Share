@@ -1,4 +1,4 @@
-# 技术部培训文档
+# 电子组培训文档
 
 本文档内容主要由 markdown 写成，使用[mdbook](https://rust-lang.github.io/mdBook)作为文档框架~~，网页部署及 CI 由**卢老前辈**完成~~。
 

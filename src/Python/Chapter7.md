@@ -82,6 +82,94 @@ while(condition):print ("Hello World!")
 
 ## 6. for 循环
 
+## 6.1 for 循环的基本语法
 python 中 for 循环可以遍历一个任何一个序列，例如一个字符串或者一个数组。
 
-for 循环的语法格式如下
+for 循环的语法格式如下:
+
+```
+for 变量 in 序列:
+    语句块
+```
+
+![python中for循环原理](./Images/python中for循环原理.png)
+
+尝试一下：
+
+```py
+fruits = ["apple", "banana", "cherry"]  
+for x in fruits:  
+    print(x)  
+```
+输出结果：apple banana cherry
+
+同时整数范围值可以配合 range() 函数使用：
+
+```py
+for i in range(5):
+    print(i)
+```
+输出结果：0 1 2 3 4
+
+### 6.2 for...else 语法
+
+在 Python 中，for...else 语句用于在循环结束后执行一段代码。
+
+```py
+for num in range(10, 20):
+    if num % 2 == 0:
+        print(num)
+    else:
+        print("Odd number")
+else:
+    print("Loop is over")
+```
+
+## 循环中的break和continue
+
+`break`：用于跳出当前循环，直接执行循环后的语句。
+
+![python中break语句的执行流程](./Images/python中break运行原理.png)
+
+在while中使用break语句：
+
+```py
+n = 5
+while n > 0:
+    n -= 1
+    if n == 2:
+        break
+    print(n)
+print('循环结束。')
+```
+
+`continue`：用于跳过当前循环，直接开始下一轮循环。
+
+![python中continue语句的执行流程](Images/python中continue执行流程.png)
+
+在while中使用continue语句：
+
+```py
+n = 5
+while n > 0:
+    n -= 1
+    if n == 2:
+        continue
+    print(n)s
+print('循环结束。')
+```
+
+从上面两个代码可以很明显的看出，`break`和`continue`的执行流程。
+
+试一试：
+
+1. 输出ptsfdtz的字母，到第二个t时停止输出。
+
+```py
+s = 'ptsfdtz'
+for i in s:
+    if i == 't':
+        break
+    print(i)
+```
+
