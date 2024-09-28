@@ -206,7 +206,7 @@
 <h1 id="python-基础语法"><a class="header" href="#python-基础语法">python 基础语法</a></h1>
 <h2 id="1-hello-world"><a class="header" href="#1-hello-world">1. Hello world!</a></h2>
 <p>输出<code>Hello world!</code>程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。</p>
-<div class="repl" data-id="2999d665-87eb-491c-9cd5-cd12b5d52b28" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5700530c-d323-4d41-93db-ddae7658a112" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">print("Hello world!")
@@ -225,7 +225,7 @@
 </ul>
 <h2 id="3-保留字"><a class="header" href="#3-保留字">3. 保留字</a></h2>
 <p>python 标准库中有<code>keyword</code>模块，可以输出目前版本的保留字：</p>
-<div class="repl" data-id="5b820c62-d798-46e2-904d-eaf58a8941ce" data-readonly="false" data-lang="python">
+<div class="repl" data-id="e6aa51a8-ce07-4378-adc0-a764838058ac" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import keyword
@@ -234,7 +234,7 @@ print(keyword.kwlist)
 </code></pre>
 <h2 id="4-注释"><a class="header" href="#4-注释">4. 注释</a></h2>
 <p>Python 中单行注释以<code>#</code>开头，实例如下：</p>
-<div class="repl" data-id="90162e60-bad8-4146-8378-8e91a2240572" data-readonly="false" data-lang="python">
+<div class="repl" data-id="892884ae-26e8-4956-926d-5db7826e68d7" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># This is a comment
@@ -242,7 +242,7 @@ print(keyword.kwlist)
 print("hello world!")
 </code></pre>
 <p>多行注释通常使用<code>'''</code>或<code>"""</code></p>
-<div class="repl" data-id="35a30dd8-f36c-4b02-96c6-c91eb59bb58d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6d475ca6-2737-4272-b6cd-7bddf7f1c516" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">'''
@@ -252,7 +252,7 @@ second comment
 </code></pre>
 <h2 id="5-行与缩进"><a class="header" href="#5-行与缩进">5. 行与缩进</a></h2>
 <p>缩进是 python 的一大特色,不同于 C 语言的<code>{}</code></p>
-<div class="repl" data-id="7406e625-4b79-4ef7-93c2-8c12c74e250a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d50af3bc-81ca-43a5-bf4c-9eea7c87e3ec" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">if True:
@@ -261,7 +261,7 @@ else:
     print ("False")
 </code></pre>
 <p>在不同的位置缩进极可能会有不同的实现效果</p>
-<div class="repl" data-id="5477dacb-8cac-4102-a28e-599244dfbe92" data-readonly="false" data-lang="python">
+<div class="repl" data-id="267eb53b-9f07-4ca5-a6bd-6cd48d53afe1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#缩进一致的循环体
@@ -282,7 +282,7 @@ for i in range(3):
 <h2 id="6-多行语句"><a class="header" href="#6-多行语句">6. 多行语句</a></h2>
 <p>大部分情况下，python 都要求一行完整语句，但是如果有特殊情况的话就需要反斜杠<code>\</code>实现多行语句。</p>
 <p>但是数组<code>[]</code>，字典<code>{}</code>，元组<code>()</code>不使用反斜杠</p>
-<div class="repl" data-id="a4223df8-a791-48df-9a43-34d383f71708" data-readonly="false" data-lang="python">
+<div class="repl" data-id="25058dc7-ee99-48ed-b9b1-440c2d1f2fb6" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 1
@@ -334,7 +334,7 @@ print(item)
 <p><code>str[1:4:2]</code>中<code>1</code>为起始位置,<code>4</code>为结束位置，<code>2</code>为步长。</p>
 </li>
 </ul>
-<div class="repl" data-id="bb5a01e3-8a46-40f7-85b0-3b67abd13b26" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6811bd06-4315-4b61-868d-19a0c2f8884e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str = "abcdefg"

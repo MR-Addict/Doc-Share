@@ -4967,7 +4967,7 @@ int main() {
 <h1 id="python-基础语法"><a class="header" href="#python-基础语法">python 基础语法</a></h1>
 <h2 id="1-hello-world"><a class="header" href="#1-hello-world">1. Hello world!</a></h2>
 <p>输出<code>Hello world!</code>程序通常是由新编程语言的学生编写的第一个程序，python 只需要一行就能完成。</p>
-<div class="repl" data-id="2999d665-87eb-491c-9cd5-cd12b5d52b28" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5700530c-d323-4d41-93db-ddae7658a112" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">print("Hello world!")
@@ -4986,7 +4986,7 @@ int main() {
 </ul>
 <h2 id="3-保留字"><a class="header" href="#3-保留字">3. 保留字</a></h2>
 <p>python 标准库中有<code>keyword</code>模块，可以输出目前版本的保留字：</p>
-<div class="repl" data-id="5b820c62-d798-46e2-904d-eaf58a8941ce" data-readonly="false" data-lang="python">
+<div class="repl" data-id="e6aa51a8-ce07-4378-adc0-a764838058ac" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import keyword
@@ -4995,7 +4995,7 @@ print(keyword.kwlist)
 </code></pre>
 <h2 id="4-注释"><a class="header" href="#4-注释">4. 注释</a></h2>
 <p>Python 中单行注释以<code>#</code>开头，实例如下：</p>
-<div class="repl" data-id="90162e60-bad8-4146-8378-8e91a2240572" data-readonly="false" data-lang="python">
+<div class="repl" data-id="892884ae-26e8-4956-926d-5db7826e68d7" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># This is a comment
@@ -5003,7 +5003,7 @@ print(keyword.kwlist)
 print("hello world!")
 </code></pre>
 <p>多行注释通常使用<code>'''</code>或<code>"""</code></p>
-<div class="repl" data-id="35a30dd8-f36c-4b02-96c6-c91eb59bb58d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6d475ca6-2737-4272-b6cd-7bddf7f1c516" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">'''
@@ -5013,7 +5013,7 @@ second comment
 </code></pre>
 <h2 id="5-行与缩进"><a class="header" href="#5-行与缩进">5. 行与缩进</a></h2>
 <p>缩进是 python 的一大特色,不同于 C 语言的<code>{}</code></p>
-<div class="repl" data-id="7406e625-4b79-4ef7-93c2-8c12c74e250a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d50af3bc-81ca-43a5-bf4c-9eea7c87e3ec" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">if True:
@@ -5022,7 +5022,7 @@ else:
     print ("False")
 </code></pre>
 <p>在不同的位置缩进极可能会有不同的实现效果</p>
-<div class="repl" data-id="5477dacb-8cac-4102-a28e-599244dfbe92" data-readonly="false" data-lang="python">
+<div class="repl" data-id="267eb53b-9f07-4ca5-a6bd-6cd48d53afe1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#缩进一致的循环体
@@ -5043,7 +5043,7 @@ for i in range(3):
 <h2 id="6-多行语句"><a class="header" href="#6-多行语句">6. 多行语句</a></h2>
 <p>大部分情况下，python 都要求一行完整语句，但是如果有特殊情况的话就需要反斜杠<code>\</code>实现多行语句。</p>
 <p>但是数组<code>[]</code>，字典<code>{}</code>，元组<code>()</code>不使用反斜杠</p>
-<div class="repl" data-id="a4223df8-a791-48df-9a43-34d383f71708" data-readonly="false" data-lang="python">
+<div class="repl" data-id="25058dc7-ee99-48ed-b9b1-440c2d1f2fb6" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 1
@@ -5095,7 +5095,7 @@ print(item)
 <p><code>str[1:4:2]</code>中<code>1</code>为起始位置,<code>4</code>为结束位置，<code>2</code>为步长。</p>
 </li>
 </ul>
-<div class="repl" data-id="bb5a01e3-8a46-40f7-85b0-3b67abd13b26" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6811bd06-4315-4b61-868d-19a0c2f8884e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str = "abcdefg"
@@ -5292,7 +5292,7 @@ else:
 <p>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。</p>
 <p>在 Python 中，变量就是变量，它没有类型，我们所说的“类型“是变量所指的内存中对象的类型。</p>
 <p>等号（=）用来给变量赋值，也可以同时给多个变量赋值。</p>
-<div class="repl" data-id="881ab9d5-d310-47e2-8bb8-a80df83612d0" data-readonly="false" data-lang="python">
+<div class="repl" data-id="c01ed152-47e1-4760-9bb1-e96379232b75" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">integer = 10
@@ -5327,7 +5327,7 @@ function_name
 <p>整数的大小不受固定的上限限制，而是受限于系统的内存。在 Python 3 中，整数是无限精度的，可以表示任意大小的整数。</p>
 <p>像大多数语言一样，数值类型的赋值和计算都是很直观的。</p>
 <p>内置的 type() 函数可以用来查询变量所指的对象类型。</p>
-<div class="repl" data-id="5ccf8ac3-818d-4f9f-b89b-fb4abc59f868" data-readonly="false" data-lang="python">
+<div class="repl" data-id="872f0cbe-a685-4cc5-9920-8adaa10303b4" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c, d = 20, 5.5, True, 4+3j
@@ -5335,7 +5335,7 @@ print(type(a), type(b), type(c), type(d))
 </code></pre>
 <p>您也可以使用<code>del</code>语句删除一些对象引用。</p>
 <p>要了解 Python 中整数的具体范围，可以使用 sys.maxsize 来获取系统上的最大整数值：</p>
-<div class="repl" data-id="bf2ded74-a971-4bc1-96de-b779c1c6b174" data-readonly="false" data-lang="python">
+<div class="repl" data-id="664490fe-dcab-4ef6-adcf-ce95bb2bc3c1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import sys
@@ -5351,7 +5351,7 @@ print("最大整数值:", sys.maxsize)
 <tr><td style="text-align: center">取余</td><td style="text-align: center">17 % 3</td><td style="text-align: center">2</td></tr>
 <tr><td style="text-align: center">乘方</td><td style="text-align: center">2 ** 5</td><td style="text-align: center">32</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="706f5e01-8139-44ed-adc9-ebe5d949b61d" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="bcc45237-b01a-4dcc-aaa8-f8278c35584c" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num1 = 5
@@ -5368,7 +5368,7 @@ print(num1 ** num2)
 <h2 id="6-字符串string"><a class="header" href="#6-字符串string">6. 字符串(string)</a></h2>
 <p>Python 中的字符串用单引号 ’ 或双引号 “ 括起来，同时使用反斜杠 \ 转义特殊字符。</p>
 <p>字符串的截取的语法格式如下：</p>
-<div class="repl" data-id="c9332f5c-b3e1-4de4-973f-fa0f29067dea" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5cd867c2-6c96-47bc-b93a-d668357cc7be" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">str1 = 'Hello, World!'
@@ -5400,7 +5400,7 @@ print(new_string)  # 输出: Hi, World!
 <p>布尔类型可以和逻辑运算符一起使用，包括 and、or 和 not。这些运算符可以用来组合多个布尔表达式，生成一个新的布尔值。</p>
 </li>
 </ul>
-<div class="repl" data-id="ab3687fb-728b-4289-9d96-e4baa0a02302" data-readonly="false" data-lang="python">
+<div class="repl" data-id="a9a015a1-b36a-4fca-9607-7870ed918a16" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">is_true = True
@@ -5419,7 +5419,7 @@ print(logical_result)  # 输出: False
 <li>列表的元素可以修改，也可以添加或删除元素。</li>
 <li>列表可以包含不同数据类型的元素。</li>
 </ul>
-<div class="repl" data-id="6d928629-633f-46d2-b043-1f66106dd97c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="a7472a29-f4c2-427e-9902-54cb2af9e10a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_list = [1, 2, 3, 'hello', True]
@@ -5439,7 +5439,7 @@ print(subset)  # 输出: [42, 3, 'hello']
 <h2 id="8-元组tuple"><a class="header" href="#8-元组tuple">8. 元组(Tuple)</a></h2>
 <p>元组(tuple)与列表类似，不同之处在于元组的元素不能修改。元组写在小括号<code>()</code>里，元素之间用逗号隔开。</p>
 <p>元组可以解构赋值，可以轻松地将元组的值分配给变量。</p>
-<div class="repl" data-id="399f1c1f-232e-4d7c-a7bd-5d7cd9151666" data-readonly="false" data-lang="python">
+<div class="repl" data-id="68ce5d42-83e2-4c64-a86a-348d421eb05b" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_tuple = (1, 2, 'three', 4.0)
@@ -5458,7 +5458,7 @@ print(f"X 坐标: {x}, Y 坐标: {y}")#输出X,Y坐标
 <p>集合（Set）是一种无序、可变的数据结构，用于存储唯一的元素。集合中的元素不能重复，而且集合是无序的，因此不能通过索引访问。</p>
 <p>集合使用大括号 {} 或者使用 set()构造函数来创建，集合是在某些情况下用于存储一组唯一元素的有用数据结构。</p>
 <p>集合可以求，并集，交集，差集。</p>
-<div class="repl" data-id="7b1c4b11-6c5e-4f56-83b2-54b3afa7b260" data-readonly="false" data-lang="python">
+<div class="repl" data-id="7fdde4d7-0017-4673-af26-b546d8487ac5" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_set = {1, 2, 3, 4, 4, 5}
@@ -5471,7 +5471,7 @@ print(my_set)  # 输出: {1, 2, 3, 4, 5, 6}
 my_set.remove(3)
 print(my_set)  # 输出: {1, 2, 4, 5, 6}
 </code></pre>
-<div class="repl" data-id="34ed9718-9885-45ec-a37b-22d471d353bf" data-readonly="false" data-lang="python">
+<div class="repl" data-id="ce0da77d-1c63-43d3-b2ad-c38dc819ca8a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">set1 = {1, 2, 3, 4}
@@ -5489,7 +5489,7 @@ print(difference_set)  # 输出: {1, 2}
 <h2 id="10-字典dictionary"><a class="header" href="#10-字典dictionary">10. 字典(Dictionary)</a></h2>
 <p>字典（Dictionary）是一种无序的数据结构，用于存储键值对（key-value pairs）。字典中的每个键都关联着一个值，形成了键值对的映射。字典使用花括号 {} 来定义，键和值之间使用冒号 : 分隔，键值对之间使用逗号 , 分隔。</p>
 <p>字典在许多情况下都是一种非常有用的数据结构，特别是当需要通过名称（键）而不是索引来访问数据时。字典可以用来表示和操作各种信息，例如配置设置、用户信息等。键必须是不可变的类型，如字符串或数字，而值可以是任何类型。</p>
-<div class="repl" data-id="9e9939f4-c22c-4144-9cad-944131f11096" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d3a9a285-de08-4aa4-bbff-d55e9e1d673b" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_dict = {'name': 'mr-addict', 'age': 22, 'city': 'Nanjing'}
@@ -5511,7 +5511,7 @@ print('gender' in my_dict)  # 输出: False
 </code></pre>
 <h2 id="11-bytes-类型"><a class="header" href="#11-bytes-类型">11. bytes 类型</a></h2>
 <p><code>bytes</code>是一种不可变的二进制数据类型。bytes 对象表示一个字节序列，其中的每个元素是一个范围在 0 到 255 之间的整数,<code>bytes</code>类型在处理二进制数据时非常有用，特别是在网络编程、文件读写和加密等领域。</p>
-<div class="repl" data-id="e94548eb-3e9d-4599-9091-dacc4dc84a0e" data-readonly="false" data-lang="python">
+<div class="repl" data-id="975f80a5-b6e5-4a29-980a-d74f98332a5c" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">my_bytes = b'hello'
@@ -5535,7 +5535,7 @@ my_bytes[0] = 105
 &gt;&gt;&gt; 摄氏度:15
 &gt;&gt;&gt; 华氏度:-9.44
 </code></pre>
-<div class="repl" data-id="9be6861b-4269-4ab6-a387-e9cacaf6bb52" data-readonly="false" data-lang="python">
+<div class="repl" data-id="de6ffbdf-a3e7-4475-9374-d54177973796" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
@@ -5700,7 +5700,7 @@ my_bytes[0] = 105
 </div>
 <h2 id="try-yourself"><a class="header" href="#try-yourself">Try yourself</a></h2>
 <p>试着去转换下面的变量：</p>
-<div class="repl" data-id="4315c7af-212e-4001-9cdd-7f8ec37b0349" data-readonly="false" data-lang="python">
+<div class="repl" data-id="73078895-a8af-46a4-8fec-645687edf347" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">num_str_int = "42"
@@ -5872,7 +5872,7 @@ print(type(num_str_int), type(int(num_str_int)))
 <tr><td style="text-align: center">&gt;=</td><td style="text-align: center">大于等于</td><td style="text-align: center">(a &gt;= b) return False。</td></tr>
 <tr><td style="text-align: center">&lt;=</td><td style="text-align: center">小于等于</td><td style="text-align: center">(a &lt;= b) return True。</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="f4b2e667-ffe2-443c-8387-7bd3621a74bb" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="8bbffcdc-9376-42a1-9928-022b03f2ce5c" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">x = 1
@@ -5892,7 +5892,7 @@ print(x == y,x != y,x &gt; y,x &lt; y,x &gt;= y,x &lt;= y)
 <tr><td style="text-align: center">**=</td><td style="text-align: center">幂</td><td style="text-align: center">c **= a =&gt; c = c ** a</td></tr>
 <tr><td style="text-align: center">//=</td><td style="text-align: center">取整除</td><td style="text-align: center">c //= a =&gt; c = c // a</td></tr>
 </tbody></table>
-</div><div class="repl" data-id="7d876d33-0761-446b-94c2-67e931d13a24" data-readonly="false" data-lang="python">
+</div><div class="repl" data-id="65ae61ee-cd59-41bc-be99-66c9f23e5336" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a, b, c = 1, 2, 3
@@ -5904,7 +5904,7 @@ print(a, b, c, d, a + b, b - c, c * a)
 <p>位运算符是把数字看作二进制来进行计算的。</p>
 <p>位运算符通常用于处理底层的位操作，例如在编码、加密、图形处理等领域。在一般情况下，位运算符不太常见，但在某些特定的计算机科学和嵌入式系统的应用中非常有用。</p>
 <p>下表中变量 a 为 60，b 为 13 二进制格式如下：</p>
-<div class="repl" data-id="04dca09d-8f9d-40a4-9e20-a68b458371c0" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b6a34d38-66e4-4445-b049-bc356cc34740" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a , b, c = 2 , 1 , 0
@@ -5930,7 +5930,7 @@ print ("6 - c 的值为：", c)
 <h2 id="5-逻辑运算符"><a class="header" href="#5-逻辑运算符">5. 逻辑运算符</a></h2>
 <p>逻辑运算符通常用于控制程序的流程，例如在条件语句中判断多个条件。逻辑运算符返回布尔值，可以帮助你在程序中做出合理的决策。</p>
 <p>与<code>and</code>或<code>or</code>非<code> not</code></p>
-<div class="repl" data-id="a7bbb670-ab1e-4097-8f2a-105e10a27f64" data-readonly="false" data-lang="python">
+<div class="repl" data-id="4de521a7-b167-40f0-ba9c-c0715a223492" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># 逻辑与
@@ -5943,7 +5943,7 @@ print(x and y , x or y , not x)  # 输出: False True False
 <p>in：如果在序列中找到指定的值，则返回<code>True</code>，否则返回<code>False</code>。</p>
 <p>not in：如果在序列中找到指定的值，则返回<code>False</code>，否则返回<code>True</code>。</p>
 <p>成员运算符常用于在条件语句中检查某个值是否存在于给定的序列中。</p>
-<div class="repl" data-id="1295efc4-55fd-4467-bebe-75a968b46269" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5e27f428-bfd0-42fd-9150-19a1fc055e08" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
@@ -5960,7 +5960,7 @@ print("Python" not in string)  # 输出: True
 <p>身份运算符用于比较对象的存储地址，判断它们是否是同一个对象。在 Python 中，有两个身份运算符：<code>is</code> 和 <code>is not</code>。</p>
 <p>is：如果两个变量引用同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
 <p>is not：如果两个变量引用的不是同一个对象，则返回 <code>True</code>；否则返回 <code>False</code>。</p>
-<div class="repl" data-id="217043db-3ed7-4482-b78f-4c818500bde7" data-readonly="false" data-lang="python">
+<div class="repl" data-id="80710007-94d8-4996-bd7a-ed9c83aed502" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a = [1, 2, 3]
@@ -5981,7 +5981,7 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 &gt;&gt;&gt; 输入三角形的三条边长度，用空格分隔: 2 5 6
 &gt;&gt;&gt; 三角形的面积：4.68
 </code></pre>
-<div class="repl" data-id="e42aad0f-3739-4ceb-bef9-88f36b0547f1" data-readonly="false" data-lang="python">
+<div class="repl" data-id="45062064-ff39-4e58-a06a-9d3094a10728" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">#--------------------
@@ -6141,7 +6141,7 @@ print(a is not c)  # 输出: True，因为a和c引用不同的对象
 <h2 id="2-if-语句-1"><a class="header" href="#2-if-语句-1">2. if 语句</a></h2>
 <p><code>if</code> 语句用于根据条件执行不同的代码块。下面是一个简单的例子:</p>
 <p>随机取 1-20 间的一个数来和 10 比较大小。</p>
-<div class="repl" data-id="f572212b-c3be-4c15-afa7-9fe9cd613b70" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6f01630c-c25b-458e-bdfa-e60ed6d817bc" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6169,7 +6169,7 @@ print(number)
 </div>
 <h2 id="4-if-嵌套"><a class="header" href="#4-if-嵌套">4. if 嵌套</a></h2>
 <p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中。</p>
-<div class="repl" data-id="2fe47b4a-409e-466e-ace5-e767f4f87666" data-readonly="false" data-lang="python">
+<div class="repl" data-id="c15a37ac-d0cb-4810-91ae-8a347c7bd0bc" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6186,7 +6186,7 @@ else:
 </code></pre>
 <h2 id="5-matchcase"><a class="header" href="#5-matchcase">5. match…case</a></h2>
 <p>Python 3.10 引入的新特性，用于模式匹配（Pattern Matching）。它是一种更灵活、清晰的方式来处理复杂的条件分支，尤其适用于对数据结构进行模式匹配和解构。</p>
-<div class="repl" data-id="713bfc55-fd88-4c4d-b651-c9291e85eaad" data-readonly="false" data-lang="python">
+<div class="repl" data-id="530275d7-c4cd-4592-b477-6e392727493f" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import random
@@ -6362,7 +6362,7 @@ match data:
     <img src="Python/./Images/whileProcess.png" height="300px" style="display: inline-block;">
 </div>
 <p>示例：</p>
-<div class="repl" data-id="20b55343-880f-433c-8e10-fe47c607fe00" data-readonly="false" data-lang="python">
+<div class="repl" data-id="31bacd78-b7fa-4e4b-9c69-860621a088ba" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -6373,7 +6373,7 @@ print("Good bye!")
 </code></pre>
 <h2 id="2-跳过和退出循环"><a class="header" href="#2-跳过和退出循环">2. 跳过和退出循环</a></h2>
 <p>while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外“判断条件“还可以是个常值，表示循环必定成立，具体用法如下：</p>
-<div class="repl" data-id="f6210cdc-5e17-4cb7-b783-d32af37dea0e" data-readonly="false" data-lang="python">
+<div class="repl" data-id="5338ecd9-9e27-48ea-bedd-59ca9469c27c" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">i = 0
@@ -6400,7 +6400,7 @@ while True:
 </code></pre>
 <h2 id="4-whileelse-语法"><a class="header" href="#4-whileelse-语法">4. while…else 语法</a></h2>
 <p>在 <code>while … else</code> 在循环条件为 <code>false</code> 时执行 <code>else</code> 语句块：</p>
-<div class="repl" data-id="67a42c62-a65c-4fd1-878f-1f569a61dfcb" data-readonly="false" data-lang="python">
+<div class="repl" data-id="c53ece66-1dfd-477d-92df-51a792820012" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">count = 0
@@ -6425,7 +6425,7 @@ while(condition):print ("Hello World!")
 </code></pre>
 <p><img src="Python/./Images/python%E4%B8%ADfor%E5%BE%AA%E7%8E%AF%E5%8E%9F%E7%90%86.png" alt="python中for循环原理" /></p>
 <p>尝试一下：</p>
-<div class="repl" data-id="7ee062e6-e8c8-4f2d-a01f-71e502d65fc3" data-readonly="false" data-lang="python">
+<div class="repl" data-id="592ed1d3-9f21-4e1f-90b3-fb68cbbf7aed" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]  
@@ -6434,7 +6434,7 @@ for x in fruits:
 </code></pre>
 <p>输出结果：apple banana cherry</p>
 <p>同时整数范围值可以配合 range() 函数使用：</p>
-<div class="repl" data-id="64a9c901-1248-4e0f-8b27-082d1cff7f5a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="47f0d7c2-b9e2-429c-a823-88ec329e4463" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">for i in range(5):
@@ -6443,7 +6443,7 @@ for x in fruits:
 <p>输出结果：0 1 2 3 4</p>
 <h3 id="62-forelse-语法"><a class="header" href="#62-forelse-语法">6.2 for…else 语法</a></h3>
 <p>在 Python 中，for…else 语句用于在循环结束后执行一段代码。</p>
-<div class="repl" data-id="855063c8-d1cb-4170-b079-667160421a81" data-readonly="false" data-lang="python">
+<div class="repl" data-id="0a5d6765-79f3-4b5d-95fb-0d4138c07c85" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">for num in range(10, 20):
@@ -6458,7 +6458,7 @@ else:
 <p><code>break</code>：用于跳出当前循环，直接执行循环后的语句。</p>
 <p><img src="Python/./Images/python%E4%B8%ADbreak%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" alt="python中break语句的执行流程" /></p>
 <p>在while中使用break语句：</p>
-<div class="repl" data-id="71b5be77-7296-46f5-84ff-93c1de8f8fe6" data-readonly="false" data-lang="python">
+<div class="repl" data-id="ad42bf08-f30f-4094-8ffa-9d7a0f4dd406" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">n = 5
@@ -6472,7 +6472,7 @@ print('循环结束。')
 <p><code>continue</code>：用于跳过当前循环，直接开始下一轮循环。</p>
 <p><img src="Python/Images/python%E4%B8%ADcontinue%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png" alt="python中continue语句的执行流程" /></p>
 <p>在while中使用continue语句：</p>
-<div class="repl" data-id="5ac815d1-a00f-4f3d-8dec-0ea9a1c7a639" data-readonly="false" data-lang="python">
+<div class="repl" data-id="199ac569-768b-47e7-9afa-3957de3b3dc1" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">n = 5
@@ -6488,7 +6488,7 @@ print('循环结束。')
 <ol>
 <li>输出ptsfdtz的字母，到第二个t时停止输出。</li>
 </ol>
-<div class="repl" data-id="1f6ead67-727c-4b44-97f2-be1110a63529" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3e6981b0-054f-4f48-843c-7294f07a71bd" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">s = 'ptsfdtz'
@@ -6644,79 +6644,34 @@ for i in s:
 <p>你已经学习了python中的一些基本语法，下面请你回答以下问题，来练一练手。</p>
 <p>如果遇到了不会的题目，可以参考答案<code>答案在评论区</code>，有疑问可以在评论区提问。</p>
 <p><strong>1. 制作一个斐波那契数列生成器，要求用户输入一个整数n，然后生成n个斐波那契数列的元素。例如，用户输入n=5，则生成的斐波那契数列为：0，1，1，2，3。</strong></p>
-<div class="repl" data-id="8d8127a8-941f-45b9-a15a-85e09e667c5b" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f3a7c6d1-f34a-48c3-82c7-b30ba57292fb" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">zhihu = 0
-l = [0, 1]
-n = int(input("请输入一个整数："))
-for i in range(2, n):
-    zhihu = l[i-1] + l[i-2]
-    l.append(zhihu)
-print(l)
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>2. 编写一个代码，输入一个整数n，判断n是否为素数。如果n是素数，则输出“是素数”，否则输出“不是素数”。</strong></p>
-<div class="repl" data-id="cf1a9645-9391-4e09-a0fd-69dc14cab7b6" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3b0476a7-4b77-4180-9fe2-12dd033d766e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个整数："))
-if n &lt; 2:
-    print("不是素数")
-else:
-    for i in range(2, n):
-        if n % i == 0:
-            print("不是素数")
-            break
-    else:
-        print("是素数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>3. 编写一个代码，输入一个整数n，判断n是否为回文数。如果n是回文数，则输出“是回文数”，否则输出“不是回文数”。</strong></p>
-<div class="repl" data-id="2c51696e-d1d3-4338-af48-999ace0fdfb9" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b33ee1ae-1af7-417d-bf4b-d739ce010dc8" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个整数："))
-m = n
-reverse = 0
-while m &gt; 0:
-    reverse = reverse * 10 + m % 10
-    m //= 10
-if n == reverse:
-    print("是回文数")
-else:
-    print("不是回文数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>4. 水仙花数：一个3位数，其各位数字的立方和等于该数本身。例如，153是一个水仙花数，因为153=1的立方+5的立方+3的立方。编写一个程序，输入一个3位数，判断它是否为水仙花数。</strong></p>
-<div class="repl" data-id="81e37131-f756-4c32-ad81-497739dcdbda" data-readonly="false" data-lang="python">
+<div class="repl" data-id="fb9d3df4-fba5-4864-b8f7-5c6760fca1f6" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个3位数："))   
-if n &lt; 10 or n &gt; 99:
-    print("不是水仙花数")
-    else:
-    a = n // 100
-    b = (n % 100) // 10
-    c = n % 10
-    if a ** 3 + b ** 3 + c ** 3 == n:
-        print("是水仙花数")
-    else:
-        print("不是水仙花数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>5. 编写一个程序，能够随机生成100以内的<code>加减法</code>，并且在<code>前面有题号</code>，<code>后面有正确答案</code>。</strong></p>
-<div class="repl" data-id="40fb36a5-d706-44fb-8cff-9360e7eb87d8" data-readonly="false" data-lang="python">
+<div class="repl" data-id="14ade730-2555-493c-8bea-b3e9c14fcb00" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">import random
-
-for i in range(1, 101):
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-    operator = random.choice(['+', '-'])
-    if operator == '+':
-        answer = a + b
-    else:
-        answer = a - b if a &gt;= b else b - a 
-    
-    print(f"{i}. {a} {operator} {b} = {answer}")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <style>
   .scroll-to-top {
@@ -6868,7 +6823,7 @@ for i in range(1, 101):
     函数体
 </code></pre>
 <p>让我们用<code>def</code>来输出<code>"Hello, World!"</code>：</p>
-<div class="repl" data-id="34464f3b-720c-476a-a956-08123968a818" data-readonly="false" data-lang="python">
+<div class="repl" data-id="18279b86-0524-4aac-862b-71b9f5dfd56d" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def say_hello():
@@ -6879,7 +6834,7 @@ say_hello()
 <h2 id="2-参数传递"><a class="header" href="#2-参数传递">2. 参数传递</a></h2>
 <p>在python中可以传递多种参数，可以是<strong>不可变参数</strong>、<strong>可变参数</strong>、<strong>关键字参数</strong>、<strong>默认参数</strong>。</p>
 <p><strong>传递不可变参数</strong></p>
-<div class="repl" data-id="da7b1c5a-7352-4f27-bf92-a5cb2b2870d5" data-readonly="false" data-lang="python">
+<div class="repl" data-id="898deb65-028d-409f-9536-1e2afdd58da3" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def add(a, b):
@@ -6888,7 +6843,7 @@ say_hello()
 print(add(1, 2)) # 3
 </code></pre>
 <p><strong>传递可变参数</strong></p>
-<div class="repl" data-id="3feb3d66-e409-4dbd-adc9-59186ee44e20" data-readonly="false" data-lang="python">
+<div class="repl" data-id="d477f48d-f66d-478a-a64e-29f3734544c8" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def add_list(lst):
@@ -6900,7 +6855,7 @@ print(add(1, 2)) # 3
 print(add_list([1, 2, 3, 4, 5])) # 15
 </code></pre>
 <p><strong>传递关键字参数</strong></p>
-<div class="repl" data-id="1834653d-ceed-4d55-b6bb-eb68e66eb49a" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6beb7c79-741d-416b-805e-2b33fb52284d" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def greet(name, age):
@@ -6909,7 +6864,7 @@ print(add_list([1, 2, 3, 4, 5])) # 15
 greet(name="John", age=25) # Hello, John, you are 25 years old.
 </code></pre>
 <p><strong>传递默认参数</strong></p>
-<div class="repl" data-id="815bf97e-c01b-43f8-bcde-298aa7fa84ad" data-readonly="false" data-lang="python">
+<div class="repl" data-id="9233f50c-a08e-4307-95af-3ca59e2aa749" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def greet(name, age=25):
@@ -6920,7 +6875,7 @@ greet("John") # Hello, John, you are 25 years old.
 <p>在python开发中，函数的参数传递是很重要的一部分，会让你的代码更加灵活，更加易于维护。</p>
 <h2 id="3-return语句"><a class="header" href="#3-return语句">3. return语句</a></h2>
 <p>函数的return语句用于返回函数的结果，如果没有return语句，函数的返回值是None。</p>
-<div class="repl" data-id="53aea6b7-44d1-41d5-9271-3b2a6534e59c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="7596d2bb-e428-49e2-91b2-0a8fb2e3f05e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def add(a, b):
@@ -7081,28 +7036,28 @@ print(add(1, 2)) # 3
 <p>-<code>arguments</code>：函数的参数，可以有多个参数，用逗号分隔。
 -<code>expression</code>：函数的表达式，可以是任意有效的Python表达式。</p>
 <p>下面是一个例子：</p>
-<div class="repl" data-id="35b5832c-6685-4c63-89d7-b1fcb8747b27" data-readonly="false" data-lang="python">
+<div class="repl" data-id="27c328ec-6ad6-4ef3-b39e-051a208559e3" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">a = lambda: "Hello, world!"
 print(a())  # 输出: Hello, world!
 </code></pre>
 <p><strong>lambda函数也可以传入参数</strong></p>
-<div class="repl" data-id="e01b0d47-484d-45d2-b060-a170fc80cd15" data-readonly="false" data-lang="python">
+<div class="repl" data-id="01c308b4-9dc7-4bc3-9bfe-07ec049c4d2f" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">b = lambda x: x**2
 print(b(2))  # 输出: 4
 </code></pre>
 <p><strong>lambda函数也可以有多个参数</strong></p>
-<div class="repl" data-id="d43429f3-95fa-418c-9112-fa96c2bc8a56" data-readonly="false" data-lang="python">
+<div class="repl" data-id="8cd5ba6c-15c3-4b48-95a5-3976615d919a" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">c = lambda x, y: x + y
 print(c(2, 3))  # 输出: 5
 </code></pre>
 <p><strong>同时lambda函数也可以作为函数的返回值,以及函数传入的参数。</strong></p>
-<div class="repl" data-id="c2fe6502-74ea-4325-bc95-e90ae948453e" data-readonly="false" data-lang="python">
+<div class="repl" data-id="1d737b4b-b23c-42d3-b31f-cbd8e8cf93c9" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def add(x, y):
@@ -7113,7 +7068,7 @@ print(d())  # 输出: 5
 </code></pre>
 <h2 id="应用"><a class="header" href="#应用">应用</a></h2>
 <p>lambda函数可以用来简化代码，提高代码的可读性。</p>
-<div class="repl" data-id="a568b033-240d-442b-b428-b41634cf5cf7" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f3bc7511-f3b6-4a97-83ae-42e81b2b2b6d" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python"># 传统方式
@@ -7270,13 +7225,13 @@ print((lambda x, y: x + y)(2, 3))  # 输出: 5
 <h1 id="模块导入"><a class="header" href="#模块导入">模块导入</a></h1>
 <p>Python 允许在一个程序中导入多个模块。导入模块的语法如下：</p>
 <h2 id="import-语句"><a class="header" href="#import-语句">import 语句</a></h2>
-<div class="repl" data-id="1c2f6b1c-cacf-4940-af12-7742c0cc2002" data-readonly="false" data-lang="python">
+<div class="repl" data-id="6e41e996-5bdd-4fd2-8125-540d0b5deb0d" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import module1, module2, module3
 </code></pre>
 <p>可以新建一个<code>fibo.py</code>文件，内容如下：</p>
-<div class="repl" data-id="74f0c026-bacd-485e-8f91-9b82a161ff37" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b2487d80-0b62-47eb-9b4f-7eb7fe26e240" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def fib(n):
@@ -7288,7 +7243,7 @@ print((lambda x, y: x + y)(2, 3))  # 输出: 5
         return fib(n-1) + fib(n-2)
 </code></pre>
 <p>然后可以在主文件<code>main.py</code>中导入<code>fibo.py</code>模块：</p>
-<div class="repl" data-id="e19e3ae3-9896-4b2a-b368-527f833e6a64" data-readonly="false" data-lang="python">
+<div class="repl" data-id="0bf6dffb-9b9b-4e6d-87f9-707e939b2b04" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import fibo
@@ -7297,7 +7252,7 @@ print(fibo.fib(10))
 <p>运行<code>main.py</code>文件，输出结果为<code>55</code>。</p>
 <h2 id="fromimport-语句"><a class="header" href="#fromimport-语句">from…import 语句</a></h2>
 <p>如果只需要导入模块中的特定函数，可以使用<code>from...import</code>语句：</p>
-<div class="repl" data-id="5e927ca1-6924-4e64-ab72-cd46c2572cda" data-readonly="false" data-lang="python">
+<div class="repl" data-id="fbca6fe4-5f5f-4274-a21f-b10bf120544c" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">from fibo import fib
@@ -7306,7 +7261,7 @@ print(fib(10))
 <h2 id="from--import--语句"><a class="header" href="#from--import--语句">from … import * 语句</a></h2>
 <p>如果要导入模块中的所有函数，可以使用<code>from...import *</code>语句：</p>
 <p>但是不推荐使用，因为会导致命名空间污染，容易造成命名冲突。</p>
-<div class="repl" data-id="45311ec7-38aa-4c1f-9ab3-140bf8f438a5" data-readonly="false" data-lang="python">
+<div class="repl" data-id="fc5a705f-3894-4a7e-9da6-d5b150c66024" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">from fibo import *

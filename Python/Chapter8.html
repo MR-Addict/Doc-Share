@@ -207,79 +207,34 @@
 <p>你已经学习了python中的一些基本语法，下面请你回答以下问题，来练一练手。</p>
 <p>如果遇到了不会的题目，可以参考答案<code>答案在评论区</code>，有疑问可以在评论区提问。</p>
 <p><strong>1. 制作一个斐波那契数列生成器，要求用户输入一个整数n，然后生成n个斐波那契数列的元素。例如，用户输入n=5，则生成的斐波那契数列为：0，1，1，2，3。</strong></p>
-<div class="repl" data-id="8d8127a8-941f-45b9-a15a-85e09e667c5b" data-readonly="false" data-lang="python">
+<div class="repl" data-id="f3a7c6d1-f34a-48c3-82c7-b30ba57292fb" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">zhihu = 0
-l = [0, 1]
-n = int(input("请输入一个整数："))
-for i in range(2, n):
-    zhihu = l[i-1] + l[i-2]
-    l.append(zhihu)
-print(l)
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>2. 编写一个代码，输入一个整数n，判断n是否为素数。如果n是素数，则输出“是素数”，否则输出“不是素数”。</strong></p>
-<div class="repl" data-id="cf1a9645-9391-4e09-a0fd-69dc14cab7b6" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3b0476a7-4b77-4180-9fe2-12dd033d766e" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个整数："))
-if n &lt; 2:
-    print("不是素数")
-else:
-    for i in range(2, n):
-        if n % i == 0:
-            print("不是素数")
-            break
-    else:
-        print("是素数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>3. 编写一个代码，输入一个整数n，判断n是否为回文数。如果n是回文数，则输出“是回文数”，否则输出“不是回文数”。</strong></p>
-<div class="repl" data-id="2c51696e-d1d3-4338-af48-999ace0fdfb9" data-readonly="false" data-lang="python">
+<div class="repl" data-id="b33ee1ae-1af7-417d-bf4b-d739ce010dc8" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个整数："))
-m = n
-reverse = 0
-while m &gt; 0:
-    reverse = reverse * 10 + m % 10
-    m //= 10
-if n == reverse:
-    print("是回文数")
-else:
-    print("不是回文数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>4. 水仙花数：一个3位数，其各位数字的立方和等于该数本身。例如，153是一个水仙花数，因为153=1的立方+5的立方+3的立方。编写一个程序，输入一个3位数，判断它是否为水仙花数。</strong></p>
-<div class="repl" data-id="81e37131-f756-4c32-ad81-497739dcdbda" data-readonly="false" data-lang="python">
+<div class="repl" data-id="fb9d3df4-fba5-4864-b8f7-5c6760fca1f6" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">n = int(input("请输入一个3位数："))   
-if n &lt; 10 or n &gt; 99:
-    print("不是水仙花数")
-    else:
-    a = n // 100
-    b = (n % 100) // 10
-    c = n % 10
-    if a ** 3 + b ** 3 + c ** 3 == n:
-        print("是水仙花数")
-    else:
-        print("不是水仙花数")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <p><strong>5. 编写一个程序，能够随机生成100以内的<code>加减法</code>，并且在<code>前面有题号</code>，<code>后面有正确答案</code>。</strong></p>
-<div class="repl" data-id="40fb36a5-d706-44fb-8cff-9360e7eb87d8" data-readonly="false" data-lang="python">
+<div class="repl" data-id="14ade730-2555-493c-8bea-b3e9c14fcb00" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
-<pre><code class="language-python">import random
-
-for i in range(1, 101):
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-    operator = random.choice(['+', '-'])
-    if operator == '+':
-        answer = a + b
-    else:
-        answer = a - b if a &gt;= b else b - a 
-    
-    print(f"{i}. {a} {operator} {b} = {answer}")
+<pre><code class="language-python"># please write your code here
 </code></pre>
 <style>
   .scroll-to-top {
