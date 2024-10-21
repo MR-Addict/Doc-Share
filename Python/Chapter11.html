@@ -206,13 +206,13 @@
 <h1 id="模块导入"><a class="header" href="#模块导入">模块导入</a></h1>
 <p>Python 允许在一个程序中导入多个模块。导入模块的语法如下：</p>
 <h2 id="import-语句"><a class="header" href="#import-语句">import 语句</a></h2>
-<div class="repl" data-id="6e41e996-5bdd-4fd2-8125-540d0b5deb0d" data-readonly="false" data-lang="python">
+<div class="repl" data-id="86687236-30cd-415d-b463-ea29a8a6e970" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import module1, module2, module3
 </code></pre>
 <p>可以新建一个<code>fibo.py</code>文件，内容如下：</p>
-<div class="repl" data-id="b2487d80-0b62-47eb-9b4f-7eb7fe26e240" data-readonly="false" data-lang="python">
+<div class="repl" data-id="1953cc72-2d32-441f-bf44-2bc71baff668" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">def fib(n):
@@ -224,7 +224,7 @@
         return fib(n-1) + fib(n-2)
 </code></pre>
 <p>然后可以在主文件<code>main.py</code>中导入<code>fibo.py</code>模块：</p>
-<div class="repl" data-id="0bf6dffb-9b9b-4e6d-87f9-707e939b2b04" data-readonly="false" data-lang="python">
+<div class="repl" data-id="70fc043f-1d2b-4ec3-99ef-4c81d3bdbe4b" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">import fibo
@@ -233,7 +233,7 @@ print(fibo.fib(10))
 <p>运行<code>main.py</code>文件，输出结果为<code>55</code>。</p>
 <h2 id="fromimport-语句"><a class="header" href="#fromimport-语句">from…import 语句</a></h2>
 <p>如果只需要导入模块中的特定函数，可以使用<code>from...import</code>语句：</p>
-<div class="repl" data-id="fbca6fe4-5f5f-4274-a21f-b10bf120544c" data-readonly="false" data-lang="python">
+<div class="repl" data-id="52c791f0-a811-4903-96d0-87c854dd1006" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">from fibo import fib
@@ -242,7 +242,7 @@ print(fib(10))
 <h2 id="from--import--语句"><a class="header" href="#from--import--语句">from … import * 语句</a></h2>
 <p>如果要导入模块中的所有函数，可以使用<code>from...import *</code>语句：</p>
 <p>但是不推荐使用，因为会导致命名空间污染，容易造成命名冲突。</p>
-<div class="repl" data-id="fc5a705f-3894-4a7e-9da6-d5b150c66024" data-readonly="false" data-lang="python">
+<div class="repl" data-id="3ac94c6b-2910-43ec-a27d-5be8b9d301a9" data-readonly="false" data-lang="python">
   <iframe class="hide" loading="lazy" name="mdbook-python-repl" allow="clipboard-write" src="https://mr-addict.github.io/mdbook-repl/embed/"></iframe>
 </div>
 <pre><code class="language-python">from fibo import *
@@ -305,7 +305,7 @@ print(fib(10))
   data-reactions-enabled="1"
   data-emit-metadata="0"
   data-input-position="bottom"
-  data-theme="light"
+  data-theme="book"
   data-lang="zh-CN"
   data-loading="eager"
   crossorigin="anonymous"
