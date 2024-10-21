@@ -48,7 +48,7 @@ giscus.repo-id = "R_kgDOGyWqEQ"
 giscus.category = "General"
 giscus.category-id = "DIC_kwDOGyWqEc4CdNrz"
 giscus.reactions-enabled = "1"
-giscus.theme = "light"
+giscus.theme = "book"
 giscus.lang = "zh-CN"
 giscus.loading = "eager"
 
